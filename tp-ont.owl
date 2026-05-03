@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+    <rdfs:comment>a property that relates an action to an action effect that results from it</rdfs:comment>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Action">
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Relation"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#State"/>
+    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#VerbalConcept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Logistics_in-city_hasArg1">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#City"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_can_traverse_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_visible_from_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Objective"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_lifting_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Hoist"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#PlanningProblem">
+    <rdfs:subClassOf rdf:nodeID="Nd862436cb4104a2c905525c2f36944d2"/>
+    <rdfs:subClassOf rdf:nodeID="N21e3e1b1d48a489788d13d174cf2c3d9"/>
+    <rdfs:subClassOf rdf:nodeID="Nd05135f0cfc74027a1d2fa2f6520ccab"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Relation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">represents a task of the planning domain that requires a plan to be solved</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Truck">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Locatable"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Vehicle"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_visible_hasArg1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_have_soil_analysis_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_above_hasArg1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Floor"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasType">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasFluent">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Proposition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Fluent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_on_board_hasArg1">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_above_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Floor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Object">
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Relation"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#NominalConcept"/>
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Logistics_in-city_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Place"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Physobj">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_have_soil_analysis_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_have_image_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Direction"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasInitialState">
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#InitialState"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>a property that relates a planning problem to an initial state that is given for it</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_at_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Logistics_at_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Physobj"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_calibration_target_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Camera"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Effect">
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_calibrated_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_supports_hasArg1">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Mode"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasParameter">
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>a property that relates an action to an action parameter that is involved in it</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_visible_from_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_store_of_hasArg1">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Predicate">
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemPredicate"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#State"/>
+    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Relation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_at_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#State">
+    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Relation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Parameter">
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#NominalConcept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Logistics_at_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Place"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasPlanCost">
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Blocks_on_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Block"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_calibrated_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Instrument"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_pointing_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Satellite"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_calibration_target_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Instrument"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasProblem">
+    <rdfs:comment>a property that relates a planning domain to a planning problem that is defined in it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ActionParameter">
+    <rdfs:comment xml:lang="en">a class that represents what is involved in an action</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#DomainAction">
+    <rdfs:comment xml:lang="en">a class that represents a type of action that can be performed in a planning domain</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N7ab7e0e42c79467b9e59940ab9f93cb4"/>
+    <rdfs:subClassOf rdf:nodeID="N942903eb82cc4860a2f2d4bbf4aff52f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Airplane">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Vehicle"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#happensBefore">
+    <owl:inverseOf rdf:resource="http://tp-ont.org/ontology#happensAfter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Step"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Step"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_at_hasArg1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#PlanningDomain">
+    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <owl:disjointWith rdf:resource="http://tp-ont.org/ontology#Relation"/>
+    <rdfs:subClassOf rdf:nodeID="Nffb2c5260fa645d384979b29d32346c6"/>
+    <rdfs:subClassOf rdf:nodeID="Nb82f3a7ffee64c5f9e115d0d06827113"/>
+    <rdfs:subClassOf rdf:nodeID="N3cb3411dc6e74f2aac0967de3de7b27b"/>
+    <rdfs:comment xml:lang="en">a class that represents a problem setting for automated planning</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_link_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Location"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_on_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Crate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasState">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Plan"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#State"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_path_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Location"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_at_lander_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Lander"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_equipped_for_imaging_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Objective">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Waypoint">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasAction">
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+    <rdfs:comment>a property that relates a planning domain to a domain action that is available in it</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_communicated_image_data_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Objective"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_at_lander_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasPlan">
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+    <rdfs:comment>a property that relates a planning problem to a plan that solves it</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_available_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Hoist"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_driving_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Driver"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#NumericFluent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_served_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Passenger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_equipped_for_soil_analysis_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_not-served_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Passenger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#NegatedFluent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Fluent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_on_board_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Instrument"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasStep">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Plan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Step"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_equipped_for_rock_analysis_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_destin_hasArg1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Floor"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#TemporalConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Precondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Camera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#partOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Proposition"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#State"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_calibration_target_hasArg1">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Direction"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_origin_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Passenger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_have_image_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_origin_hasArg1">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Floor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Instrument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_at_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Locatable"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Blocks_clear_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Block"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#KnowledgeGraph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_supports_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Camera"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Blocks_ontable_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Block"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#VerbalConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_clear_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Surface"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ProblemObject">
+    <rdfs:comment xml:lang="en">represents an entity or a constant that is involved in a planning problem</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_have_image_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Objective"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_in_hasArg1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Truck"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Package">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Physobj"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nffb2c5260fa645d384979b29d32346c6">
+    <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasRequirement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#DomainRequirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_pointing_hasArg1">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Direction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#InitialState">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">represents the starting or the given state of a planning problem</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#goalStateOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Location">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Place"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_in_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Crate"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3cb3411dc6e74f2aac0967de3de7b27b">
+    <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasPredicate"/>
+    <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#DomainPredicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_can_traverse_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#happensAfter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Step"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Step"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Hoist">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Locatable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_at_hasArg1">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_available_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_power_avail_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Satellite"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_supports_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Instrument"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_on_board_hasArg1">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Satellite"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_communicated_soil_data_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driver">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Locatable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_have_image_hasArg1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Mode"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasNumericValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#NumericFluent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_in_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Obj"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_have_rock_analysis_hasArg1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_destin_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Passenger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Logistics_in_hasArg1">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Vehicle"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Obj">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Locatable"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Direction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N21e3e1b1d48a489788d13d174cf2c3d9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasObject"/>
+    <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasArg2">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArgument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_calibrated_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Camera"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_at_soil_sample_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pddl-kg.org/relations#goalStateOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#PDDLProblem"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#GoalState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#precedes">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#State"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#State"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_visible_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pddl-kg.org/relations#hasVariable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Step">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_lift-at_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Floor"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Logistics_in_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Package"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Blocks_holding_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Block"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_link_hasArg1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Location"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ActionEffect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_have_rock_analysis_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Rover"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#initialStateOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_channel_free_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Lander"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ActionPrecondition">
+    <rdfs:comment xml:lang="en">a class that represents what needs to be true before an action can be done</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pddl-kg.org/relations#hasPredicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#PDDLDomain"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Proposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Surface">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Locatable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_communicated_rock_data_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_boarded_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Passenger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pddl-kg.org/relations#admissible">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Action"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://tp-ont.org/ontology#hasAction"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#PDDLDomain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_at_rock_sample_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ProblemPredicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_lifting_hasArg1">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Crate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasArgument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArgument"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_on_hasArg1">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Surface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite_power_on_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Instrument"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Place">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_empty_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Store"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_have_image_hasArg2">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Mode"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg2"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_store_of_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Store"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#DomainPredicate">
+    <rdfs:comment xml:lang="en">a class that represents a condition or a fact that can be true or false in a planning domain</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_driving_hasArg1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Truck"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_full_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Store"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N942903eb82cc4860a2f2d4bbf4aff52f">
+    <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasEffect"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Blocks_on_hasArg0">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Block"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Miconic_not-boarded_hasArg0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Passenger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_on_board_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Camera"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#State">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">represents a situation or a configuration of the world in a planning problem</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_empty_hasArg0">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Truck"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Mode">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasGoalState">
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+    <rdfs:comment>a property that relates a planning problem to a goal state that is desired for it</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_in_hasArg1">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Truck"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://pddl-kg.org/relations#initialStateOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#PDDLProblem"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#InitialState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot_at_hasArg0">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Locatable"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd05135f0cfc74027a1d2fa2f6520ccab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+    <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasGoalState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_communicated_image_data_hasArg1">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Mode"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#NominalConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Driverlog_path_hasArg1">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_calibration_target_hasArg1">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Objective"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasNumericFluent">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#NumericFluent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Plan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasPrecondition">
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>a property that relates an action to an action precondition that is required for it</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Depot">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Place"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasObject">
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+    <rdfs:comment>a property that relates a planning problem to a problem object that is involved in it</rdfs:comment>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_supports_hasArg1">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg1"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Mode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasDuration">
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Duration"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Action"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#hasPredicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#GoalState">
+    <rdfs:comment xml:lang="en">represents a desired or a target state defined in a task that a plan should achieve</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover_can_traverse_hasArg2">
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Predicate"/>
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArg2"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#Waypoint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb82f3a7ffee64c5f9e115d0d06827113">
+    <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology">
+    <rdfs:comment>TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Distributor">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Place"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Rover">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Vehicle">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Physobj"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Store">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasTemporalConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://tp-ont.org/ontology#TemporalConstraint"/>
+    <rdfs:domain rdf:resource="http://tp-ont.org/ontology#Plan"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd862436cb4104a2c905525c2f36944d2">
+    <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasInitialState"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#InitialState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Pallet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Surface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Crate">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Surface"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#admissible">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Floor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Lander">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Satellite">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#City">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Relation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Duration">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ab7e0e42c79467b9e59940ab9f93cb4">
+    <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasEffect"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Locatable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Block">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Airport">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Place"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Plan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Passenger">
+    <rdfs:subClassOf rdf:resource="http://tp-ont.org/ontology#Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#hasArg1">
+    <rdfs:subPropertyOf rdf:resource="http://tp-ont.org/ontology#hasArgument"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#Fluent">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tp-ont.org/ontology#isNegationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,112 @@
+Type-checking load-truck
+...action passes type checking.
+Type-checking unload-truck
+...action passes type checking.
+Type-checking board-truck
+...action passes type checking.
+Type-checking disembark-truck
+...action passes type checking.
+Type-checking drive-truck
+...action passes type checking.
+Type-checking walk
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.driverlog-strips-automatic/instance-3.pddl_plan.txt
+Plan to validate:
+
+Plan size: 12
+1:
+(board-truck driver1 truck1 s1)
+ 
+2:
+(load-truck package3 truck1 s1)
+ 
+3:
+(walk driver2 s0 p2-0)
+ 
+4:
+(walk driver2 p2-0 s2)
+ 
+5:
+(drive-truck truck1 s1 s0 driver1)
+ 
+6:
+(load-truck package2 truck1 s0)
+ 
+7:
+(load-truck package1 truck1 s0)
+ 
+8:
+(drive-truck truck1 s0 s2 driver1)
+ 
+9:
+(unload-truck package3 truck1 s2)
+ 
+10:
+(drive-truck truck1 s2 s1 driver1)
+ 
+11:
+(unload-truck package2 truck1 s1)
+ 
+12:
+(unload-truck package1 truck1 s1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at driver1 s1)
+Deleting (empty truck1)
+Adding (driving driver1 truck1)
+
+Checking next happening (time 2)
+Deleting (at package3 s1)
+Adding (in package3 truck1)
+
+Checking next happening (time 3)
+Deleting (at driver2 s0)
+Adding (at driver2 p2-0)
+
+Checking next happening (time 4)
+Deleting (at driver2 p2-0)
+Adding (at driver2 s2)
+
+Checking next happening (time 5)
+Deleting (at truck1 s1)
+Adding (at truck1 s0)
+
+Checking next happening (time 6)
+Deleting (at package2 s0)
+Adding (in package2 truck1)
+
+Checking next happening (time 7)
+Deleting (at package1 s0)
+Adding (in package1 truck1)
+
+Checking next happening (time 8)
+Deleting (at truck1 s0)
+Adding (at truck1 s2)
+
+Checking next happening (time 9)
+Deleting (in package3 truck1)
+Adding (at package3 s2)
+
+Checking next happening (time 10)
+Deleting (at truck1 s2)
+Adding (at truck1 s1)
+
+Checking next happening (time 11)
+Deleting (in package2 truck1)
+Adding (at package2 s1)
+
+Checking next happening (time 12)
+Deleting (in package1 truck1)
+Adding (at package1 s1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 12 
+
+Successful plans:
+Value: 12
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.driverlog-strips-automatic/instance-3.pddl_plan.txt 12 
+

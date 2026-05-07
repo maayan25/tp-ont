@@ -1,0 +1,1233 @@
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg2', 'RoverDomain_have_image_hasArg2'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg2', 'hasArg2'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArgument', 'hasArgument'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_rock_analysis_hasArg1', 'RoverDomain_have_rock_analysis_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_image_data_hasArg1', 'RoverDomain_communicated_image_data_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Mode', 'Mode'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_on_hasArg0', 'DepotDomain_on_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Crate', 'Crate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Effect', 'Effect'), 'predicate': ('http://www.w3.org/2002/07/owl#equivalentClass', 'equivalentClass'), 'object': ('https://purl.org/ai4s/ontology/planning#ActionEffect', 'ActionEffect'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_power_on_hasArg0', 'SatelliteDomain_power_on_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_hasArg0', 'RoverDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_at_hasArg1', 'LogisticsDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_rock_analysis_hasArg1', 'RoverDomain_have_rock_analysis_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasType', 'hasType'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasFluent', 'hasFluent'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasProblem', 'hasProblem'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Vehicle', 'Vehicle'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#precedes', 'precedes'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_channel_free_hasArg0', 'RoverDomain_channel_free_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_hasArg1', 'RoverDomain_visible_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_boarded_hasArg0', 'MiconicDomain_boarded_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Passenger', 'Passenger'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_in_hasArg0', 'DepotDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_hasArg1', 'RoverDomain_visible_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_imaging_hasArg0', 'RoverDomain_equipped_for_imaging_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_soil_sample_hasArg0', 'RoverDomain_at_soil_sample_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibration_target_hasArg0', 'SatelliteDomain_calibration_target_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Depot', 'Depot'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Place', 'Place'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ActionPrecondition', 'ActionPrecondition'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibrated_hasArg0', 'SatelliteDomain_calibrated_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg2', 'RoverDomain_can_traverse_hasArg2'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_lander_hasArg0', 'RoverDomain_at_lander_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Step', 'Step'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.w3.org/2002/07/owl#Thing', 'Thing'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Hoist', 'Hoist'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_empty_hasArg0', 'DriverlogDomain_empty_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasTemporalConstraint', 'hasTemporalConstraint'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_holding_hasArg0', 'BlocksDomain_holding_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_lift-at_hasArg0', 'MiconicDomain_lift-at_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_store_of_hasArg0', 'RoverDomain_store_of_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibrated_hasArg0', 'RoverDomain_calibrated_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in_hasArg0', 'LogisticsDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Package', 'Package'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in-city_hasArg1', 'LogisticsDomain_in-city_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#City', 'City'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Satellite', 'Satellite'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_lift-at_hasArg0', 'MiconicDomain_lift-at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Floor', 'Floor'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasNumericFluent', 'hasNumericFluent'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#NumericFluent', 'NumericFluent'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_on_board_hasArg0', 'SatelliteDomain_on_board_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Store', 'Store'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasParameter', 'hasParameter'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Place', 'Place'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#admissible', 'admissible'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Location', 'Location'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_supports_hasArg1', 'RoverDomain_supports_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Mode', 'Mode'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_imaging_hasArg0', 'RoverDomain_equipped_for_imaging_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'predicate': ('http://www.w3.org/2002/07/owl#equivalentClass', 'equivalentClass'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainAction', 'DomainAction'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_clear_hasArg0', 'DepotDomain_clear_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_soil_analysis_hasArg0', 'RoverDomain_have_soil_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_in_hasArg1', 'DepotDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_soil_sample_hasArg0', 'RoverDomain_at_soil_sample_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_clear_hasArg0', 'BlocksDomain_clear_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Mode', 'Mode'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Truck', 'Truck'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Vehicle', 'Vehicle'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_soil_data_hasArg0', 'RoverDomain_communicated_soil_data_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_on_hasArg1', 'BlocksDomain_on_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Block', 'Block'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Relation', 'Relation'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#precedes', 'precedes'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Vehicle', 'Vehicle'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Physobj', 'Physobj'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg2', 'RoverDomain_have_image_hasArg2'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_not-boarded_hasArg0', 'MiconicDomain_not-boarded_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Passenger', 'Passenger'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_link_hasArg0', 'DriverlogDomain_link_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_path_hasArg1', 'DriverlogDomain_path_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in_hasArg1', 'LogisticsDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_destin_hasArg1', 'MiconicDomain_destin_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Floor', 'Floor'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibration_target_hasArg0', 'RoverDomain_calibration_target_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_not-served_hasArg0', 'MiconicDomain_not-served_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasTemporalConstraint', 'hasTemporalConstraint'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#TemporalConstraint', 'TemporalConstraint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in_hasArg1', 'LogisticsDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_destin_hasArg0', 'MiconicDomain_destin_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_origin_hasArg1', 'MiconicDomain_origin_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_rock_data_hasArg0', 'RoverDomain_communicated_rock_data_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#happensBefore', 'happensBefore'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_soil_analysis_hasArg1', 'RoverDomain_have_soil_analysis_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasDuration', 'hasDuration'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Duration', 'Duration'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_hasArg1', 'RoverDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_origin_hasArg1', 'MiconicDomain_origin_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Floor', 'Floor'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_image_data_hasArg0', 'RoverDomain_communicated_image_data_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Airplane', 'Airplane'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_image_data_hasArg0', 'RoverDomain_communicated_image_data_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_origin_hasArg0', 'MiconicDomain_origin_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_soil_data_hasArg0', 'RoverDomain_communicated_soil_data_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_store_of_hasArg0', 'RoverDomain_store_of_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#happensBefore', 'happensBefore'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Step', 'Step'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasNumericFluent', 'hasNumericFluent'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_from_hasArg1', 'RoverDomain_visible_from_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_link_hasArg0', 'DriverlogDomain_link_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_supports_hasArg1', 'RoverDomain_supports_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_path_hasArg1', 'DriverlogDomain_path_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg0', 'RoverDomain_have_image_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg1', 'RoverDomain_can_traverse_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_rock_analysis_hasArg0', 'RoverDomain_have_rock_analysis_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_at_hasArg1', 'DriverlogDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_on_hasArg0', 'BlocksDomain_on_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg1', 'RoverDomain_have_image_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Vehicle', 'Vehicle'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_hasArg0', 'RoverDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#', ''), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_supports_hasArg0', 'RoverDomain_supports_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_at_hasArg1', 'DriverlogDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Location', 'Location'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasNumericValue', 'hasNumericValue'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.w3.org/2001/XMLSchema#float', 'float'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in-city_hasArg0', 'LogisticsDomain_in-city_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Precondition', 'Precondition'), 'predicate': ('http://www.w3.org/2002/07/owl#equivalentClass', 'equivalentClass'), 'object': ('https://purl.org/ai4s/ontology/planning#ActionPrecondition', 'ActionPrecondition'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Relation', 'Relation'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPrecondition', 'hasPrecondition'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasEffect', 'hasEffect'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_above_hasArg1', 'MiconicDomain_above_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_on_board_hasArg0', 'RoverDomain_on_board_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_empty_hasArg0', 'DriverlogDomain_empty_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Truck', 'Truck'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_on_board_hasArg0', 'RoverDomain_on_board_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_available_hasArg0', 'DepotDomain_available_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Direction', 'Direction'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Relation', 'Relation'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Objective', 'Objective'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg1', 'RoverDomain_can_traverse_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_destin_hasArg0', 'MiconicDomain_destin_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_supports_hasArg1', 'RoverDomain_supports_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_available_hasArg0', 'RoverDomain_available_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_have_image_hasArg0', 'SatelliteDomain_have_image_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_path_hasArg0', 'DriverlogDomain_path_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Location', 'Location'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Camera', 'Camera'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_rock_analysis_hasArg0', 'RoverDomain_equipped_for_rock_analysis_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_hasArg0', 'RoverDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#happensAfter', 'happensAfter'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Step', 'Step'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArgument', 'hasArgument'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology', 'ontology'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Ontology', 'Ontology'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Physobj', 'Physobj'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg2', 'hasArg2'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_boarded_hasArg0', 'MiconicDomain_boarded_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Obj', 'Obj'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Locatable', 'Locatable'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Airport', 'Airport'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Place', 'Place'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_boarded_hasArg0', 'MiconicDomain_boarded_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Mode', 'Mode'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_store_of_hasArg1', 'RoverDomain_store_of_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_soil_analysis_hasArg0', 'RoverDomain_have_soil_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_ontable_hasArg0', 'BlocksDomain_ontable_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'predicate': ('http://www.w3.org/2002/07/owl#equivalentClass', 'equivalentClass'), 'object': ('https://purl.org/ai4s/ontology/planning#ProblemPredicate', 'ProblemPredicate'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_in_hasArg1', 'DriverlogDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_rock_sample_hasArg0', 'RoverDomain_at_rock_sample_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_in_hasArg1', 'DriverlogDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Pallet', 'Pallet'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_channel_free_hasArg0', 'RoverDomain_channel_free_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Lander', 'Lander'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Surface', 'Surface'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_have_image_hasArg0', 'SatelliteDomain_have_image_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Instrument', 'Instrument'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasDuration', 'hasDuration'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_on_hasArg1', 'BlocksDomain_on_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Satellite', 'Satellite'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_origin_hasArg0', 'MiconicDomain_origin_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Passenger', 'Passenger'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Crate', 'Crate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Surface', 'Surface'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_above_hasArg1', 'MiconicDomain_above_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Floor', 'Floor'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_at_hasArg1', 'LogisticsDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg2', 'RoverDomain_can_traverse_hasArg2'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Package', 'Package'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Place', 'Place'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Airplane', 'Airplane'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg0', 'RoverDomain_have_image_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_link_hasArg1', 'DriverlogDomain_link_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_on_hasArg1', 'BlocksDomain_on_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg2', 'hasArg2'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasInitialState', 'hasInitialState'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Precondition', 'Precondition'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_empty_hasArg0', 'RoverDomain_empty_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Store', 'Store'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_served_hasArg0', 'MiconicDomain_served_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasPredicate', 'hasPredicate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Locatable', 'Locatable'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Pallet', 'Pallet'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Surface', 'Surface'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Obj', 'Obj'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasFluent', 'hasFluent'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Proposition', 'Proposition'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#NominalConcept', 'NominalConcept'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_driving_hasArg1', 'DriverlogDomain_driving_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_power_avail_hasArg0', 'SatelliteDomain_power_avail_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_from_hasArg0', 'RoverDomain_visible_from_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Floor', 'Floor'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasNumericValue', 'hasNumericValue'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#DatatypeProperty', 'DatatypeProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_at_hasArg0', 'LogisticsDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#City', 'City'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg2', 'hasArg2'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#TemporalConstraint', 'TemporalConstraint'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg0', 'RoverDomain_have_image_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibration_target_hasArg0', 'RoverDomain_calibration_target_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Camera', 'Camera'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_holding_hasArg0', 'BlocksDomain_holding_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#precedes', 'precedes'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_at_hasArg1', 'LogisticsDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasGoalState', 'hasGoalState'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg2', 'RoverDomain_have_image_hasArg2'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Mode', 'Mode'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasStep', 'hasStep'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_on_hasArg1', 'BlocksDomain_on_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Truck', 'Truck'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Locatable', 'Locatable'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_in_hasArg0', 'DepotDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Duration', 'Duration'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in-city_hasArg1', 'LogisticsDomain_in-city_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_power_avail_hasArg0', 'SatelliteDomain_power_avail_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_in_hasArg1', 'DepotDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_channel_free_hasArg0', 'RoverDomain_channel_free_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_not-boarded_hasArg0', 'MiconicDomain_not-boarded_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_driving_hasArg0', 'DriverlogDomain_driving_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Driver', 'Driver'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Proposition', 'Proposition'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Block', 'Block'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Package', 'Package'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Physobj', 'Physobj'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#admissible', 'admissible'), 'predicate': ('http://www.w3.org/2002/07/owl#inverseOf', 'inverseOf'), 'object': ('https://purl.org/ai4s/ontology/planning#hasAction', 'hasAction'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_from_hasArg0', 'RoverDomain_visible_from_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_at_hasArg0', 'LogisticsDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Physobj', 'Physobj'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibrated_hasArg1', 'RoverDomain_calibrated_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Effect', 'Effect'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Lander', 'Lander'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_link_hasArg1', 'DriverlogDomain_link_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Location', 'Location'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#VerbalConcept', 'VerbalConcept'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg0', 'RoverDomain_can_traverse_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_supports_hasArg0', 'SatelliteDomain_supports_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Instrument', 'Instrument'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Crate', 'Crate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_not-boarded_hasArg0', 'MiconicDomain_not-boarded_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasNumericFluent', 'hasNumericFluent'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_path_hasArg0', 'DriverlogDomain_path_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_empty_hasArg0', 'DriverlogDomain_empty_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_store_of_hasArg1', 'RoverDomain_store_of_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_in_hasArg1', 'DepotDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_clear_hasArg0', 'DepotDomain_clear_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Surface', 'Surface'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_at_hasArg0', 'DepotDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Plan', 'Plan'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_store_of_hasArg1', 'RoverDomain_store_of_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_on_board_hasArg0', 'RoverDomain_on_board_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Camera', 'Camera'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Pallet', 'Pallet'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_at_hasArg0', 'LogisticsDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ActionEffect', 'ActionEffect'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_at_hasArg1', 'DriverlogDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Duration', 'Duration'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.w3.org/2002/07/owl#Thing', 'Thing'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Relation', 'Relation'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#partOf', 'partOf'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_soil_data_hasArg0', 'RoverDomain_communicated_soil_data_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_power_on_hasArg0', 'SatelliteDomain_power_on_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Instrument', 'Instrument'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_channel_free_hasArg0', 'RoverDomain_channel_free_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in_hasArg1', 'LogisticsDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_full_hasArg0', 'RoverDomain_full_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Store', 'Store'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_soil_sample_hasArg0', 'RoverDomain_at_soil_sample_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Airport', 'Airport'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_clear_hasArg0', 'DepotDomain_clear_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Depot', 'Depot'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Package', 'Package'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in_hasArg0', 'LogisticsDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_rock_data_hasArg0', 'RoverDomain_communicated_rock_data_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_empty_hasArg0', 'RoverDomain_empty_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Passenger', 'Passenger'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_destin_hasArg1', 'MiconicDomain_destin_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ActionParameter', 'ActionParameter'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibrated_hasArg0', 'SatelliteDomain_calibrated_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_above_hasArg0', 'MiconicDomain_above_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibrated_hasArg0', 'SatelliteDomain_calibrated_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#goalStateOf', 'goalStateOf'), 'predicate': ('http://www.w3.org/2002/07/owl#inverseOf', 'inverseOf'), 'object': ('https://purl.org/ai4s/ontology/planning#hasGoalState', 'hasGoalState'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Physobj', 'Physobj'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_driving_hasArg1', 'DriverlogDomain_driving_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Truck', 'Truck'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_destin_hasArg1', 'MiconicDomain_destin_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Truck', 'Truck'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_in_hasArg0', 'DepotDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Crate', 'Crate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#TemporalConstraint', 'TemporalConstraint'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.w3.org/2002/07/owl#Thing', 'Thing'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_store_of_hasArg0', 'RoverDomain_store_of_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibrated_hasArg1', 'RoverDomain_calibrated_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Parameter', 'Parameter'), 'predicate': ('http://www.w3.org/2002/07/owl#equivalentClass', 'equivalentClass'), 'object': ('https://purl.org/ai4s/ontology/planning#ActionParameter', 'ActionParameter'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasPredicate', 'hasPredicate'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibrated_hasArg0', 'RoverDomain_calibrated_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_lander_hasArg1', 'RoverDomain_at_lander_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Hoist', 'Hoist'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Locatable', 'Locatable'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Driver', 'Driver'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#VerbalConcept', 'VerbalConcept'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg2', 'RoverDomain_have_image_hasArg2'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg1', 'RoverDomain_can_traverse_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in_hasArg0', 'LogisticsDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_driving_hasArg0', 'DriverlogDomain_driving_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#City', 'City'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_above_hasArg0', 'MiconicDomain_above_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#initialStateOf', 'initialStateOf'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#InitialState', 'InitialState'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_at_hasArg0', 'DriverlogDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_at_hasArg1', 'DepotDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_on_hasArg0', 'DepotDomain_on_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPredicate', 'hasPredicate'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_on_board_hasArg0', 'SatelliteDomain_on_board_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Instrument', 'Instrument'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_at_hasArg1', 'DriverlogDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Plan', 'Plan'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.w3.org/2002/07/owl#Thing', 'Thing'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Fluent', 'Fluent'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_origin_hasArg0', 'MiconicDomain_origin_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_at_hasArg1', 'DepotDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Place', 'Place'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_on_board_hasArg1', 'RoverDomain_on_board_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasType', 'hasType'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'predicate': ('http://www.w3.org/2002/07/owl#equivalentClass', 'equivalentClass'), 'object': ('https://purl.org/ai4s/ontology/planning#ProblemObject', 'ProblemObject'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg2', 'hasArg2'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArgument', 'hasArgument'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Distributor', 'Distributor'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Place', 'Place'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_from_hasArg1', 'RoverDomain_visible_from_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_in_hasArg0', 'DriverlogDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_from_hasArg1', 'RoverDomain_visible_from_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibrated_hasArg1', 'RoverDomain_calibrated_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_not-served_hasArg0', 'MiconicDomain_not-served_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Passenger', 'Passenger'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Obj', 'Obj'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasStep', 'hasStep'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_lifting_hasArg1', 'DepotDomain_lifting_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Parameter', 'Parameter'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_at_hasArg0', 'DriverlogDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_destin_hasArg0', 'MiconicDomain_destin_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_full_hasArg0', 'RoverDomain_full_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_on_hasArg1', 'DepotDomain_on_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Surface', 'Surface'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_hasArg1', 'RoverDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_ontable_hasArg0', 'BlocksDomain_ontable_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#initialStateOf', 'initialStateOf'), 'predicate': ('http://www.w3.org/2002/07/owl#inverseOf', 'inverseOf'), 'object': ('https://purl.org/ai4s/ontology/planning#hasInitialState', 'hasInitialState'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_soil_analysis_hasArg0', 'RoverDomain_equipped_for_soil_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_supports_hasArg0', 'RoverDomain_supports_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_pointing_hasArg0', 'SatelliteDomain_pointing_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_origin_hasArg0', 'MiconicDomain_origin_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Store', 'Store'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#NumericFluent', 'NumericFluent'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_on_hasArg1', 'DepotDomain_on_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#goalStateOf', 'goalStateOf'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#GoalState', 'GoalState'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Location', 'Location'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_lifting_hasArg0', 'DepotDomain_lifting_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Hoist', 'Hoist'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_on_hasArg1', 'DepotDomain_on_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_link_hasArg1', 'DriverlogDomain_link_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_link_hasArg1', 'DriverlogDomain_link_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_soil_analysis_hasArg0', 'RoverDomain_have_soil_analysis_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibration_target_hasArg1', 'RoverDomain_calibration_target_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Objective', 'Objective'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_hasArg0', 'RoverDomain_visible_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_power_avail_hasArg0', 'SatelliteDomain_power_avail_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Satellite', 'Satellite'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_pointing_hasArg1', 'SatelliteDomain_pointing_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_hasArg0', 'RoverDomain_visible_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_lifting_hasArg0', 'DepotDomain_lifting_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_served_hasArg0', 'MiconicDomain_served_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Hoist', 'Hoist'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_pointing_hasArg1', 'SatelliteDomain_pointing_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Direction', 'Direction'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_at_hasArg0', 'DepotDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Locatable', 'Locatable'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasVariable', 'hasVariable'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_pointing_hasArg0', 'SatelliteDomain_pointing_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibration_target_hasArg1', 'SatelliteDomain_calibration_target_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Direction', 'Direction'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasVariable', 'hasVariable'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_supports_hasArg0', 'SatelliteDomain_supports_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_supports_hasArg0', 'RoverDomain_supports_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_rock_sample_hasArg0', 'RoverDomain_at_rock_sample_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_on_board_hasArg1', 'SatelliteDomain_on_board_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#isNegationOf', 'isNegationOf'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#partOf', 'partOf'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#isNegationOf', 'isNegationOf'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_power_on_hasArg0', 'SatelliteDomain_power_on_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#admissible', 'admissible'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Truck', 'Truck'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibration_target_hasArg1', 'RoverDomain_calibration_target_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_in_hasArg0', 'DriverlogDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Obj', 'Obj'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_rock_analysis_hasArg1', 'RoverDomain_have_rock_analysis_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_pointing_hasArg1', 'SatelliteDomain_pointing_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasVariable', 'hasVariable'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in-city_hasArg1', 'LogisticsDomain_in-city_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibration_target_hasArg1', 'RoverDomain_calibration_target_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Relation', 'Relation'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg0', 'RoverDomain_have_image_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.w3.org/2002/07/owl#Thing', 'Thing'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#initialStateOf', 'initialStateOf'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibration_target_hasArg0', 'SatelliteDomain_calibration_target_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg0', 'RoverDomain_can_traverse_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Fluent', 'Fluent'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.w3.org/2002/07/owl#Thing', 'Thing'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_have_image_hasArg1', 'SatelliteDomain_have_image_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_driving_hasArg1', 'DriverlogDomain_driving_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasFluent', 'hasFluent'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Fluent', 'Fluent'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#happensAfter', 'happensAfter'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ProblemObject', 'ProblemObject'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_on_board_hasArg1', 'SatelliteDomain_on_board_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_lift-at_hasArg0', 'MiconicDomain_lift-at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_on_board_hasArg1', 'SatelliteDomain_on_board_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Passenger', 'Passenger'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Relation', 'Relation'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasType', 'hasType'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_at_hasArg0', 'DriverlogDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Locatable', 'Locatable'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_driving_hasArg1', 'DriverlogDomain_driving_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_at_hasArg0', 'LogisticsDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_on_board_hasArg1', 'RoverDomain_on_board_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_on_hasArg0', 'BlocksDomain_on_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Block', 'Block'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_lifting_hasArg0', 'DepotDomain_lifting_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in-city_hasArg1', 'LogisticsDomain_in-city_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_on_board_hasArg0', 'SatelliteDomain_on_board_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Driver', 'Driver'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Locatable', 'Locatable'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#DomainAction', 'DomainAction'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_supports_hasArg1', 'SatelliteDomain_supports_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Direction', 'Direction'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_have_image_hasArg1', 'SatelliteDomain_have_image_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_imaging_hasArg0', 'RoverDomain_equipped_for_imaging_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_supports_hasArg0', 'SatelliteDomain_supports_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_hasArg1', 'RoverDomain_visible_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Objective', 'Objective'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#NumericFluent', 'NumericFluent'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.w3.org/2002/07/owl#Thing', 'Thing'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_clear_hasArg0', 'BlocksDomain_clear_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_supports_hasArg1', 'SatelliteDomain_supports_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in_hasArg1', 'LogisticsDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Vehicle', 'Vehicle'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Distributor', 'Distributor'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_served_hasArg0', 'MiconicDomain_served_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Passenger', 'Passenger'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Camera', 'Camera'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Relation', 'Relation'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_rock_analysis_hasArg0', 'RoverDomain_have_rock_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasState', 'hasState'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_on_board_hasArg1', 'RoverDomain_on_board_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibration_target_hasArg0', 'RoverDomain_calibration_target_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_not-boarded_hasArg0', 'MiconicDomain_not-boarded_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_not-served_hasArg0', 'MiconicDomain_not-served_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_on_board_hasArg1', 'RoverDomain_on_board_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_path_hasArg0', 'DriverlogDomain_path_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Parameter', 'Parameter'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#NominalConcept', 'NominalConcept'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg0', 'RoverDomain_can_traverse_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_clear_hasArg0', 'BlocksDomain_clear_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_power_avail_hasArg0', 'SatelliteDomain_power_avail_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#happensBefore', 'happensBefore'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Step', 'Step'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_soil_analysis_hasArg1', 'RoverDomain_have_soil_analysis_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_store_of_hasArg1', 'RoverDomain_store_of_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_image_data_hasArg0', 'RoverDomain_communicated_image_data_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Precondition', 'Precondition'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_available_hasArg0', 'RoverDomain_available_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_in_hasArg1', 'DriverlogDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Truck', 'Truck'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Surface', 'Surface'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_holding_hasArg0', 'BlocksDomain_holding_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_soil_data_hasArg0', 'RoverDomain_communicated_soil_data_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_ontable_hasArg0', 'BlocksDomain_ontable_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Block', 'Block'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Instrument', 'Instrument'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_lift-at_hasArg0', 'MiconicDomain_lift-at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_rock_analysis_hasArg0', 'RoverDomain_equipped_for_rock_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_lander_hasArg1', 'RoverDomain_at_lander_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Effect', 'Effect'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_soil_sample_hasArg0', 'RoverDomain_at_soil_sample_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibrated_hasArg0', 'RoverDomain_calibrated_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Camera', 'Camera'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_supports_hasArg0', 'RoverDomain_supports_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Camera', 'Camera'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_link_hasArg0', 'DriverlogDomain_link_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Proposition', 'Proposition'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.w3.org/2002/07/owl#Thing', 'Thing'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasTemporalConstraint', 'hasTemporalConstraint'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg1', 'RoverDomain_have_image_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Objective', 'Objective'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_hasArg1', 'RoverDomain_visible_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_on_board_hasArg0', 'SatelliteDomain_on_board_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_at_hasArg0', 'DepotDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_destin_hasArg1', 'MiconicDomain_destin_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#goalStateOf', 'goalStateOf'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibration_target_hasArg0', 'SatelliteDomain_calibration_target_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Instrument', 'Instrument'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_image_data_hasArg0', 'RoverDomain_communicated_image_data_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Objective', 'Objective'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_on_hasArg0', 'BlocksDomain_on_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_power_on_hasArg0', 'SatelliteDomain_power_on_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_empty_hasArg0', 'DriverlogDomain_empty_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_image_data_hasArg1', 'RoverDomain_communicated_image_data_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Airplane', 'Airplane'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Vehicle', 'Vehicle'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasPredicate', 'hasPredicate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_soil_analysis_hasArg0', 'RoverDomain_equipped_for_soil_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in-city_hasArg0', 'LogisticsDomain_in-city_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibrated_hasArg0', 'RoverDomain_calibrated_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasNumericValue', 'hasNumericValue'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#NumericFluent', 'NumericFluent'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_lifting_hasArg1', 'DepotDomain_lifting_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_available_hasArg0', 'DepotDomain_available_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Hoist', 'Hoist'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_lifting_hasArg1', 'DepotDomain_lifting_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_soil_analysis_hasArg1', 'RoverDomain_have_soil_analysis_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_lander_hasArg1', 'RoverDomain_at_lander_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_on_board_hasArg0', 'RoverDomain_on_board_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_rock_data_hasArg0', 'RoverDomain_communicated_rock_data_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg0', 'RoverDomain_can_traverse_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_available_hasArg0', 'DepotDomain_available_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_lander_hasArg1', 'RoverDomain_at_lander_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_soil_analysis_hasArg1', 'RoverDomain_have_soil_analysis_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_above_hasArg0', 'MiconicDomain_above_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_pointing_hasArg0', 'SatelliteDomain_pointing_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Satellite', 'Satellite'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_origin_hasArg1', 'MiconicDomain_origin_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_hasArg1', 'RoverDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibration_target_hasArg0', 'RoverDomain_calibration_target_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_not-served_hasArg0', 'MiconicDomain_not-served_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_holding_hasArg0', 'BlocksDomain_holding_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Block', 'Block'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_clear_hasArg0', 'DepotDomain_clear_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_available_hasArg0', 'RoverDomain_available_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg1', 'RoverDomain_have_image_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_origin_hasArg1', 'MiconicDomain_origin_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#goalStateOf', 'goalStateOf'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_at_hasArg1', 'DepotDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_above_hasArg0', 'MiconicDomain_above_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Floor', 'Floor'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_at_hasArg1', 'DepotDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_on_board_hasArg1', 'SatelliteDomain_on_board_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Satellite', 'Satellite'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_driving_hasArg0', 'DriverlogDomain_driving_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg1', 'RoverDomain_can_traverse_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in-city_hasArg0', 'LogisticsDomain_in-city_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Place', 'Place'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in-city_hasArg0', 'LogisticsDomain_in-city_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_at_hasArg0', 'DepotDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_rock_analysis_hasArg0', 'RoverDomain_equipped_for_rock_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_image_data_hasArg1', 'RoverDomain_communicated_image_data_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_from_hasArg1', 'RoverDomain_visible_from_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_image_data_hasArg1', 'RoverDomain_communicated_image_data_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_hasArg0', 'RoverDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Locatable', 'Locatable'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibrated_hasArg1', 'RoverDomain_calibrated_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_rock_analysis_hasArg0', 'RoverDomain_have_rock_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Location', 'Location'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Place', 'Place'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_driving_hasArg0', 'DriverlogDomain_driving_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_in_hasArg1', 'DepotDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Truck', 'Truck'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Block', 'Block'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.w3.org/2002/07/owl#Thing', 'Thing'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_boarded_hasArg0', 'MiconicDomain_boarded_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_in_hasArg0', 'DriverlogDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Lander', 'Lander'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_path_hasArg1', 'DriverlogDomain_path_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_soil_analysis_hasArg0', 'RoverDomain_have_soil_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_on_hasArg0', 'DepotDomain_on_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_communicated_rock_data_hasArg0', 'RoverDomain_communicated_rock_data_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_in_hasArg0', 'LogisticsDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibrated_hasArg0', 'SatelliteDomain_calibrated_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Instrument', 'Instrument'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_empty_hasArg0', 'RoverDomain_empty_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Floor', 'Floor'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_link_hasArg0', 'DriverlogDomain_link_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Location', 'Location'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_empty_hasArg0', 'RoverDomain_empty_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_hasArg1', 'RoverDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_path_hasArg1', 'DriverlogDomain_path_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Location', 'Location'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_image_hasArg1', 'RoverDomain_have_image_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArgument', 'hasArgument'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_in_hasArg0', 'DriverlogDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_on_hasArg0', 'BlocksDomain_on_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_have_image_hasArg0', 'SatelliteDomain_have_image_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#isNegationOf', 'isNegationOf'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_imaging_hasArg0', 'RoverDomain_equipped_for_imaging_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Rover', 'Rover'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_have_image_hasArg1', 'SatelliteDomain_have_image_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Mode', 'Mode'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_rock_analysis_hasArg0', 'RoverDomain_have_rock_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_on_hasArg1', 'DepotDomain_on_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArgument', 'hasArgument'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_lander_hasArg0', 'RoverDomain_at_lander_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Lander', 'Lander'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasState', 'hasState'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasState', 'hasState'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#State', 'State'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_available_hasArg0', 'DepotDomain_available_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg2', 'RoverDomain_can_traverse_hasArg2'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg2', 'hasArg2'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_supports_hasArg1', 'RoverDomain_supports_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#happensBefore', 'happensBefore'), 'predicate': ('http://www.w3.org/2002/07/owl#inverseOf', 'inverseOf'), 'object': ('https://w3id.org/tp-ont/ontology#happensAfter', 'happensAfter'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_at_hasArg0', 'DriverlogDomain_at_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_on_hasArg0', 'DepotDomain_on_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_available_hasArg0', 'RoverDomain_available_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Distributor', 'Distributor'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_rock_sample_hasArg0', 'RoverDomain_at_rock_sample_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_rock_analysis_hasArg0', 'RoverDomain_equipped_for_rock_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_have_image_hasArg0', 'SatelliteDomain_have_image_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Direction', 'Direction'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_clear_hasArg0', 'BlocksDomain_clear_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Block', 'Block'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_store_of_hasArg0', 'RoverDomain_store_of_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Store', 'Store'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Step', 'Step'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#NegatedFluent', 'NegatedFluent'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Depot', 'Depot'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#NominalConcept', 'NominalConcept'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Crate', 'Crate'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_full_hasArg0', 'RoverDomain_full_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasStep', 'hasStep'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Step', 'Step'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_calibration_target_hasArg1', 'RoverDomain_calibration_target_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_full_hasArg0', 'RoverDomain_full_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_in_hasArg1', 'DriverlogDomain_in_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibration_target_hasArg1', 'SatelliteDomain_calibration_target_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_pointing_hasArg1', 'SatelliteDomain_pointing_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_in_hasArg0', 'DepotDomain_in_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Driver', 'Driver'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ProblemPredicate', 'ProblemPredicate'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#BlocksDomain_ontable_hasArg0', 'BlocksDomain_ontable_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_soil_analysis_hasArg0', 'RoverDomain_equipped_for_soil_analysis_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibration_target_hasArg1', 'SatelliteDomain_calibration_target_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_equipped_for_soil_analysis_hasArg0', 'RoverDomain_equipped_for_soil_analysis_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibration_target_hasArg1', 'SatelliteDomain_calibration_target_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_rock_sample_hasArg0', 'RoverDomain_at_rock_sample_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasDuration', 'hasDuration'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_above_hasArg1', 'MiconicDomain_above_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg1', 'hasArg1'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_from_hasArg0', 'RoverDomain_visible_from_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Objective', 'Objective'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_lifting_hasArg1', 'DepotDomain_lifting_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Crate', 'Crate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_pointing_hasArg0', 'SatelliteDomain_pointing_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_lander_hasArg0', 'RoverDomain_at_lander_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasAction', 'hasAction'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_can_traverse_hasArg2', 'RoverDomain_can_traverse_hasArg2'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Waypoint', 'Waypoint'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_above_hasArg1', 'MiconicDomain_above_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#hasArgument', 'hasArgument'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_from_hasArg0', 'RoverDomain_visible_from_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Airport', 'Airport'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Object', 'Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_have_rock_analysis_hasArg1', 'RoverDomain_have_rock_analysis_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#LogisticsDomain_at_hasArg1', 'LogisticsDomain_at_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Place', 'Place'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_at_lander_hasArg0', 'RoverDomain_at_lander_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_hasArg0', 'RoverDomain_visible_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#NegatedFluent', 'NegatedFluent'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Fluent', 'Fluent'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#RoverDomain_visible_hasArg0', 'RoverDomain_visible_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Action', 'Action'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DepotDomain_lifting_hasArg0', 'DepotDomain_lifting_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#happensAfter', 'happensAfter'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Step', 'Step'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#partOf', 'partOf'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Proposition', 'Proposition'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_calibration_target_hasArg0', 'SatelliteDomain_calibration_target_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_served_hasArg0', 'MiconicDomain_served_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/tp-ont/ontology#Predicate', 'Predicate'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#initialStateOf', 'initialStateOf'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#admissible', 'admissible'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_supports_hasArg1', 'SatelliteDomain_supports_hasArg1'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Mode', 'Mode'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_supports_hasArg0', 'SatelliteDomain_supports_hasArg0'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#MiconicDomain_destin_hasArg0', 'MiconicDomain_destin_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/tp-ont/ontology#Passenger', 'Passenger'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#DriverlogDomain_path_hasArg0', 'DriverlogDomain_path_hasArg0'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/tp-ont/ontology#hasArg0', 'hasArg0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#Surface', 'Surface'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/tp-ont/ontology#Locatable', 'Locatable'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_supports_hasArg1', 'SatelliteDomain_supports_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/tp-ont/ontology#SatelliteDomain_have_image_hasArg1', 'SatelliteDomain_have_image_hasArg1'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}

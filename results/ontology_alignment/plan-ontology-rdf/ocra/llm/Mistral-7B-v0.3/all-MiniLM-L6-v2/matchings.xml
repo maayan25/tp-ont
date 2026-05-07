@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationRisk"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Non-physicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainConstant"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainPredicate"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#MacroAction"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationRisk"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Non-physicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationRisk"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#TypeTag"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#TypeTag"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Non-physicalCollaboration"/>
+        <relation>=</relation>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

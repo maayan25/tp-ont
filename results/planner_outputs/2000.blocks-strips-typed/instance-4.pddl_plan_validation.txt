@@ -1,0 +1,138 @@
+Type-checking pick-up
+...action passes type checking.
+Type-checking put-down
+...action passes type checking.
+Type-checking stack
+...action passes type checking.
+Type-checking unstack
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.blocks-strips-typed/instance-4.pddl_plan.txt
+Plan to validate:
+
+Plan size: 12
+1:
+(unstack c e)
+ 
+2:
+(put-down c)
+ 
+3:
+(pick-up d)
+ 
+4:
+(stack d c)
+ 
+5:
+(unstack e b)
+ 
+6:
+(put-down e)
+ 
+7:
+(unstack b a)
+ 
+8:
+(stack b d)
+ 
+9:
+(pick-up e)
+ 
+10:
+(stack e b)
+ 
+11:
+(pick-up a)
+ 
+12:
+(stack a e)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (clear c)
+Deleting (handempty)
+Deleting (on c e)
+Adding (holding c)
+Adding (clear e)
+
+Checking next happening (time 2)
+Deleting (holding c)
+Adding (clear c)
+Adding (handempty)
+Adding (ontable c)
+
+Checking next happening (time 3)
+Deleting (ontable d)
+Deleting (clear d)
+Deleting (handempty)
+Adding (holding d)
+
+Checking next happening (time 4)
+Deleting (holding d)
+Deleting (clear c)
+Adding (clear d)
+Adding (handempty)
+Adding (on d c)
+
+Checking next happening (time 5)
+Deleting (clear e)
+Deleting (handempty)
+Deleting (on e b)
+Adding (holding e)
+Adding (clear b)
+
+Checking next happening (time 6)
+Deleting (holding e)
+Adding (clear e)
+Adding (handempty)
+Adding (ontable e)
+
+Checking next happening (time 7)
+Deleting (clear b)
+Deleting (handempty)
+Deleting (on b a)
+Adding (holding b)
+Adding (clear a)
+
+Checking next happening (time 8)
+Deleting (holding b)
+Deleting (clear d)
+Adding (clear b)
+Adding (handempty)
+Adding (on b d)
+
+Checking next happening (time 9)
+Deleting (ontable e)
+Deleting (clear e)
+Deleting (handempty)
+Adding (holding e)
+
+Checking next happening (time 10)
+Deleting (holding e)
+Deleting (clear b)
+Adding (clear e)
+Adding (handempty)
+Adding (on e b)
+
+Checking next happening (time 11)
+Deleting (ontable a)
+Deleting (clear a)
+Deleting (handempty)
+Adding (holding a)
+
+Checking next happening (time 12)
+Deleting (holding a)
+Deleting (clear e)
+Adding (clear a)
+Adding (handempty)
+Adding (on a e)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 12 
+
+Successful plans:
+Value: 12
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.blocks-strips-typed/instance-4.pddl_plan.txt 12 
+

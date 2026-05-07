@@ -1,0 +1,337 @@
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'proper part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalEndurant', 'Physical Endurant'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature', 'Feature'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalEndurant', 'Physical Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'specifically depends on'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'atomic part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalObject', 'Non-Physical Object'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialAgent', 'Social Agent'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'temporal part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'part of'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Particular', 'Particular'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'present at'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality', 'Quality'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Particular', 'Particular'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Abstract', 'Abstract'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'constant participation of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AbstractRegion', 'Abstract Region'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalRegion', 'Physical Region'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#ArbitrarySum', 'Arbitrary Sum'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AbstractQuality', 'Abstract Quality'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom', 'Constant Atom'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://purl.org/vocab/vann/preferredNamespacePrefix', 'preferredNamespacePrefix'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Accomplishment', 'Accomplishment'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalObject', 'Non-Physical Object'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalEndurant', 'Non-Physical Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AgentiveSocialObject', 'Agentive Social Object'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonAgentiveSocialObject', 'Non-Agentive Social Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SpatialLocation', 'Spatial Location'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalQuality', 'Physical Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'direct quality of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AmountOfMatter', 'Amount of Matter'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature', 'Feature'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'constant proper part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'constant part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'constantly overlaps'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#MentalObject', 'Mental Object'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalObject', 'Non-Physical Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'quale of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality', 'Temporal Quality'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'constantly overlaps'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Process', 'Process'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Event', 'Event'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Stative', 'Stative'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'temporal part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'temporal part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialObject', 'Social Object'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#TransitiveProperty', 'TransitiveProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'constant participation of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom', 'Atom'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Particular', 'Particular'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#ArbitrarySum', 'Arbitrary Sum'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalEndurant', 'Physical Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialAgent', 'Social Agent'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AgentiveSocialObject', 'Agentive Social Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'constant part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#TransitiveProperty', 'TransitiveProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Society', 'Society'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality', 'Temporal Quality'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Region', 'Region'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Abstract', 'Abstract'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AmountOfMatter', 'Amount of Matter'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject', 'Physical Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Event', 'Event'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalRegion', 'Physical Region'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'present at'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval', 'Time Interval'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AgentiveSocialObject', 'Agentive Social Object'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialObject', 'Social Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Accomplishment', 'Accomplishment'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Event', 'Event'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#MentalObject', 'Mental Object'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalQuality', 'Physical Quality'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality', 'Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'temporal part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'quale of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion', 'Temporal Region'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'constant constituent of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Achievement', 'Achievement'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Event', 'Event'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'constant atomic part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#ArbitrarySum', 'Arbitrary Sum'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Abstract', 'Abstract'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality', 'Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalQuality', 'Physical Quality'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality', 'Temporal Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality', 'Quality'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalEndurant', 'Non-Physical Endurant'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalEndurant', 'Physical Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'constant proper part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion', 'Temporal Region'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Region', 'Region'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalLocation', 'Temporal Location'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl', 'TV_pl'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Society', 'Society'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AgentiveSocialObject', 'Agentive Social Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'overlaps'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'quale of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#InverseFunctionalProperty', 'InverseFunctionalProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Stative', 'Stative'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalEndurant', 'Non-Physical Endurant'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AmountOfMatter', 'Amount of Matter'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalEndurant', 'Physical Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AbstractRegion', 'Abstract Region'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic', 'DOLCEbasic'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Ontology', 'Ontology'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SpaceRegion', 'Space Region'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalRegion', 'Physical Region'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'quale of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Particular', 'Particular'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'constant part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Abstract', 'Abstract'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality', 'Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SpaceRegion', 'Space Region'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Particular', 'Particular'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalRegion', 'Physical Region'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Region', 'Region'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'constantly overlaps'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#SymmetricProperty', 'SymmetricProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Event', 'Event'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AbstractRegion', 'Abstract Region'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Region', 'Region'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#State', 'State'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Stative', 'Stative'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom', 'Atom'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AbstractQuality', 'Abstract Quality'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalQuality', 'Physical Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonAgentiveSocialObject', 'Non-Agentive Social Object'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://purl.org/dc/terms/contributor', 'contributor'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom', 'Constant Atom'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialAgent', 'Social Agent'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Society', 'Society'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval', 'Time Interval'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion', 'Temporal Region'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'constant participation of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic', 'DOLCEbasic'), 'predicate': ('http://purl.org/dc/terms/license', 'license'), 'object': ('http://creativecommons.org/licenses/by/4.0/', ''), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialObject', 'Social Object'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalObject', 'Non-Physical Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature', 'Feature'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'constant part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'direct quality of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'specifically depends on'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonAgentivePhysicalObject', 'Non-Agentive Physical Object'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject', 'Physical Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AmountOfMatter', 'Amount of Matter'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalQuality', 'Physical Quality'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Abstract', 'Abstract'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Particular', 'Particular'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AgentivePhysicalObject', 'Agentive Physical Object'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject', 'Physical Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion', 'Temporal Region'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'proper part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#TransitiveProperty', 'TransitiveProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://purl.org/dc/terms/creator', 'creator'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'specifically depends on'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#TransitiveProperty', 'TransitiveProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Achievement', 'Achievement'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#MentalObject', 'Mental Object'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialObject', 'Social Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature', 'Feature'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject', 'Physical Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalLocation', 'Temporal Location'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality', 'Temporal Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'constant proper part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'constant part of'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Accomplishment', 'Accomplishment'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Achievement', 'Achievement'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#State', 'State'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://purl.org/dc/terms/license', 'license'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'proper part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'part of'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'temporally located at'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval', 'Time Interval'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic', 'DOLCEbasic'), 'predicate': ('http://www.w3.org/2002/07/owl#versionIRI', 'versionIRI'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic/3.5', '3.5'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AgentiveSocialObject', 'Agentive Social Object'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Region', 'Region'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Abstract', 'Abstract'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'constant proper part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#TransitiveProperty', 'TransitiveProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'atomic part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'part of'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject', 'Physical Object'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalEndurant', 'Physical Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AbstractRegion', 'Abstract Region'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion', 'Temporal Region'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'constantly overlaps'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AbstractQuality', 'Abstract Quality'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality', 'Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'direct quality of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality', 'Quality'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'temporally located at'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#FunctionalProperty', 'FunctionalProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'constant part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SpatialLocation', 'Spatial Location'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalRegion', 'Physical Region'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion', 'Temporal Region'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Stative', 'Stative'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#ArbitrarySum', 'Arbitrary Sum'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalEndurant', 'Non-Physical Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'temporally located at'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'present at'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'constant atomic part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AbstractQuality', 'Abstract Quality'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality', 'Temporal Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant', 'Perdurant'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality', 'Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'atomic part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom', 'Atom'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl', 'CN_pl'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality', 'Temporal Quality'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality', 'Quality'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'overlaps'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonAgentivePhysicalObject', 'Non-Agentive Physical Object'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval', 'Time Interval'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantQualeOf', 'constant quale of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'overlaps'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#SymmetricProperty', 'SymmetricProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'constant atomic part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'constant part of'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Process', 'Process'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Stative', 'Stative'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'constantly overlaps'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'direct quality of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#FunctionalProperty', 'FunctionalProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'temporal part of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#TransitiveProperty', 'TransitiveProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#AgentivePhysicalObject', 'Agentive Physical Object'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg', 'TV_vbg'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'constant constituent of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#TransitiveProperty', 'TransitiveProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalEndurant', 'Physical Endurant'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalEndurant', 'Non-Physical Endurant'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'constant atomic part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom', 'Constant Atom'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg', 'CN_sg'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg', 'TV_sg'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject', 'Physical Object'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'constant proper part of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant', 'Endurant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#NonAgentiveSocialObject', 'Non-Agentive Social Object'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialObject', 'Social Object'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#Process', 'Process'), 'predicate': ('http://www.w3.org/2002/07/owl#disjointWith', 'disjointWith'), 'object': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#State', 'State'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'temporally located at'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}

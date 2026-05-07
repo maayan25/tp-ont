@@ -1,0 +1,107 @@
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation', 'Plan adaptation'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan', 'executes plan'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event', 'Event'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isGoalOf', 'is goal of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal', 'Goal'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace', 'Collaboration place'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan', 'executes plan'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith', 'associatedWith'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isGoalOf', 'is goal of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith', 'associatedWith'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan', 'executes plan'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan', 'has plan'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith', 'associatedWith'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan', 'has plan'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace', 'Collaboration place'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place', 'Place'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isGoalOf', 'is goal of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isGoalOf', 'is goal of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent', 'Agent'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation', 'Plan adaptation'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event', 'Event'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal', 'has goal'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanExecutedIn', 'is plan executed in'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event', 'Event'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan', 'has plan'), 'predicate': ('http://www.w3.org/2002/07/owl#inverseOf', 'inverseOf'), 'object': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanOf', 'is plan of'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan', 'is better plan than'), 'predicate': ('http://www.w3.org/2002/07/owl#inverseOf', 'inverseOf'), 'object': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan', 'is worse plan than'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan', 'is worse plan than'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan', 'executes plan'), 'predicate': ('http://www.w3.org/2002/07/owl#inverseOf', 'inverseOf'), 'object': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanExecutedIn', 'is plan executed in'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan', 'is better plan than'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith', 'associatedWith'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanExecutedIn', 'is plan executed in'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith', 'associatedWith'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan', 'is better plan than'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanExecutedIn', 'is plan executed in'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan', 'is better plan than'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanExecutedIn', 'is plan executed in'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanOf', 'is plan of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith', 'associatedWith'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanOf', 'is plan of'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace', 'Collaborative place'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role', 'Role'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl', 'ocra.owl'), 'predicate': ('http://www.w3.org/2002/07/owl#imports', 'imports'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl', 'DUL.owl'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanOf', 'is plan of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent', 'Agent'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal', 'has goal'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith', 'associatedWith'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl', 'ocra.owl'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Ontology', 'Ontology'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanOf', 'is plan of'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan', 'is worse plan than'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration', 'Indirectly physical collaboration'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType', 'EventType'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationRisk', 'Collaboration risk'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationRisk', 'Collaboration risk'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality', 'Quality'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan', 'has plan'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent', 'Agent'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan', 'executes plan'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Non-physicalCollaboration', 'Non-physical collaboration'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan', 'has plan'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace', 'Collaborative place'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration', 'Collaboration'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Non-physicalCollaboration', 'Non-physical collaboration'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType', 'EventType'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan', 'is worse plan than'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration', 'Indirectly physical collaboration'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal', 'has goal'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent', 'Agent'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration', 'Collaboration'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event', 'Event'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal', 'has goal'), 'predicate': ('http://www.w3.org/2002/07/owl#inverseOf', 'inverseOf'), 'object': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isGoalOf', 'is goal of'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan', 'is better plan than'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration', 'Directly physical collaboration'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal', 'has goal'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal', 'Goal'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration', 'Directly physical collaboration'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType', 'EventType'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan', 'is worse plan than'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subPropertyOf', 'subPropertyOf'), 'object': ('http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith', 'associatedWith'), 'subject_is_class': False, 'object_is_class': False}

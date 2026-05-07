@@ -1,0 +1,26 @@
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX planning-ontology: <https://purl.org/ai4s/ontology/planning#>
+    PREFIX tp-ont: <https://w3id.org/tp-ont/ontology#>
+    SELECT ?pattern (COUNT(DISTINCT ?plan) AS ?frequency) WHERE {
+    ?domain rdf:type planning-ontology:PlanningDomain ;
+            planning-ontology:hasProblem ?problem ;
+            rdfs:label "LogisticsDomain"@en .
+    ?problem rdf:type planning-ontology:PlanningProblem ;
+        tp-ont:hasPlan ?plan .
+    ?plan rdf:type tp-ont:Plan ;
+        tp-ont:hasStep ?step1 ;
+        tp-ont:hasStep ?step2 ;
+        tp-ont:hasStep ?step3 .
+          ?step1 tp-ont:happensBefore ?step2 ;
+                 rdfs:label ?action1 .
+          ?step2 tp-ont:happensBefore ?step3 ;
+                 rdfs:label ?action2 .
+          ?step3 rdfs:label ?action3 .
+          BIND(CONCAT(?action1, "+", ?action2, "+", ?action3) AS ?pattern)
+        }
+        GROUP BY ?pattern
+        ORDER BY DESC(?frequency)
+        LIMIT 10

@@ -1,0 +1,125 @@
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSensorRange', 'label': 'has sensor range', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SensorRange'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sensor', 'range']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasProcedureArgument', 'label': 'hasProcedureArgument', 'domain': ['Nf23c483f9cb5462ebc9543885575e9fd'], 'range': ['http://knowrob.org/kb/knowrob.owl#ProcedureArgument'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'compound', 'argument', 'computational', 'predicate'], 'range_text': ['procedure', 'argument']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#dependsOnConcept', 'label': 'depends on concept', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSamplingRate', 'label': 'has sampling rate', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SamplingRate'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sampling', 'rate']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#processStarted', 'label': 'processStarted', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'event'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'process']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSensorRange', 'label': 'has sensor range', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SensorRange'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sensor', 'range']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasModulePath', 'label': 'has module path', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasFirstProcedureArgument', 'label': 'hasFirstProcedureArgument', 'domain': ['N4711ab791c8f48d2923bea354d43d3f5'], 'range': ['http://knowrob.org/kb/knowrob.owl#ProcedureArgument'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'compound', 'argument', 'computational', 'predicate'], 'range_text': ['procedure', 'argument']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#processStopped', 'label': 'processStopped', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'event'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'process']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasInferredParameter', 'label': 'hasInferredParameter', 'domain': ['http://www.ease-crc.org/ont/SOMA.owl#Reasoning'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['reasoning'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'parameter']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSensorRange', 'label': 'has sensor range', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SensorRange'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sensor', 'range']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasProcedureArgument', 'label': 'hasProcedureArgument', 'domain': ['Nf23c483f9cb5462ebc9543885575e9fd'], 'range': ['http://knowrob.org/kb/knowrob.owl#ProcedureArgument'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'compound', 'argument', 'computational', 'predicate'], 'range_text': ['procedure', 'argument']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasResolution', 'label': 'has resolution', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject'], 'range': ['http://knowrob.org/kb/knowrob.owl#Resolution'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'physical', 'object'], 'range_text': ['resolution']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasArity', 'label': 'has arity', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#int'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['int']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#dependsOnConcept', 'label': 'depends on concept', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSamplingRate', 'label': 'has sampling rate', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SamplingRate'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sampling', 'rate']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasFunctor', 'label': 'has functor', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasFunctor', 'label': 'has functor', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSamplingRate', 'label': 'has sampling rate', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SamplingRate'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sampling', 'rate']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasFunctor', 'label': 'has functor', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSamplingRate', 'label': 'has sampling rate', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SamplingRate'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sampling', 'rate']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#nameString', 'label': 'nameString', 'domain': ['http://www.w3.org/2002/07/owl#Thing'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['thing'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#nameString', 'label': 'nameString', 'domain': ['http://www.w3.org/2002/07/owl#Thing'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['thing'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasFunctor', 'label': 'has functor', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#nameString', 'label': 'nameString', 'domain': ['http://www.w3.org/2002/07/owl#Thing'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['thing'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasModulePath', 'label': 'has module path', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasResolution', 'label': 'has resolution', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject'], 'range': ['http://knowrob.org/kb/knowrob.owl#Resolution'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'physical', 'object'], 'range_text': ['resolution']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasResolution', 'label': 'has resolution', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject'], 'range': ['http://knowrob.org/kb/knowrob.owl#Resolution'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'physical', 'object'], 'range_text': ['resolution']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSensorRange', 'label': 'has sensor range', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SensorRange'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sensor', 'range']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasArity', 'label': 'has arity', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#int'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['int']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#processStopped', 'label': 'processStopped', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'event'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'process']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasArity', 'label': 'has arity', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#int'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['int']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#processStopped', 'label': 'processStopped', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'event'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'process']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#processStarted', 'label': 'processStarted', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'event'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'process']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasProcedureArgument', 'label': 'hasProcedureArgument', 'domain': ['Nf23c483f9cb5462ebc9543885575e9fd'], 'range': ['http://knowrob.org/kb/knowrob.owl#ProcedureArgument'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'compound', 'argument', 'computational', 'predicate'], 'range_text': ['procedure', 'argument']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasArity', 'label': 'has arity', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#int'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['int']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#dependsOnConcept', 'label': 'depends on concept', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasModulePath', 'label': 'has module path', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasModulePath', 'label': 'has module path', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#constrains', 'label': 'constrains', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasInferredParameter', 'label': 'hasInferredParameter', 'domain': ['http://www.ease-crc.org/ont/SOMA.owl#Reasoning'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['reasoning'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'parameter']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSamplingRate', 'label': 'has sampling rate', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SamplingRate'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sampling', 'rate']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasFunctor', 'label': 'has functor', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#nameString', 'label': 'nameString', 'domain': ['http://www.w3.org/2002/07/owl#Thing'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['thing'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasFirstProcedureArgument', 'label': 'hasFirstProcedureArgument', 'domain': ['N4711ab791c8f48d2923bea354d43d3f5'], 'range': ['http://knowrob.org/kb/knowrob.owl#ProcedureArgument'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'compound', 'argument', 'computational', 'predicate'], 'range_text': ['procedure', 'argument']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#constrains', 'label': 'constrains', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasModulePath', 'label': 'has module path', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#string'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['string']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasInferredParameter', 'label': 'hasInferredParameter', 'domain': ['http://www.ease-crc.org/ont/SOMA.owl#Reasoning'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['reasoning'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'parameter']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#processStarted', 'label': 'processStarted', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'event'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'process']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#processStopped', 'label': 'processStopped', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'event'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'process']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#dependsOnConcept', 'label': 'depends on concept', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasResolution', 'label': 'has resolution', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject'], 'range': ['http://knowrob.org/kb/knowrob.owl#Resolution'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'physical', 'object'], 'range_text': ['resolution']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#dependsOnConcept', 'label': 'depends on concept', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasFirstProcedureArgument', 'label': 'hasFirstProcedureArgument', 'domain': ['N4711ab791c8f48d2923bea354d43d3f5'], 'range': ['http://knowrob.org/kb/knowrob.owl#ProcedureArgument'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'compound', 'argument', 'computational', 'predicate'], 'range_text': ['procedure', 'argument']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#processStarted', 'label': 'processStarted', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'event'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'process']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasArity', 'label': 'has arity', 'domain': ['http://knowrob.org/kb/knowrob.owl#ComputationalPredicate'], 'range': ['http://www.w3.org/2001/XMLSchema#int'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['computational', 'predicate'], 'range_text': ['int']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasProcedureArgument', 'label': 'hasProcedureArgument', 'domain': ['Nf23c483f9cb5462ebc9543885575e9fd'], 'range': ['http://knowrob.org/kb/knowrob.owl#ProcedureArgument'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'compound', 'argument', 'computational', 'predicate'], 'range_text': ['procedure', 'argument']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasInferredParameter', 'label': 'hasInferredParameter', 'domain': ['http://www.ease-crc.org/ont/SOMA.owl#Reasoning'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['reasoning'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'parameter']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#constrains', 'label': 'constrains', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasFirstProcedureArgument', 'label': 'hasFirstProcedureArgument', 'domain': ['N4711ab791c8f48d2923bea354d43d3f5'], 'range': ['http://knowrob.org/kb/knowrob.owl#ProcedureArgument'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'compound', 'argument', 'computational', 'predicate'], 'range_text': ['procedure', 'argument']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasResolution', 'label': 'has resolution', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject'], 'range': ['http://knowrob.org/kb/knowrob.owl#Resolution'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'physical', 'object'], 'range_text': ['resolution']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#constrains', 'label': 'constrains', 'domain': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'range': ['http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept'], 'range_text': ['www', 'ontologydesignpatterns', 'org', 'ont', 'dul', 'dul', 'owl', 'concept']}
+
+{'iri': 'http://knowrob.org/kb/knowrob.owl#hasSensorRange', 'label': 'has sensor range', 'domain': ['http://knowrob.org/kb/knowrob.owl#SensorDevice'], 'range': ['http://knowrob.org/kb/knowrob.owl#SensorRange'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['sensor', 'device'], 'range_text': ['sensor', 'range']}

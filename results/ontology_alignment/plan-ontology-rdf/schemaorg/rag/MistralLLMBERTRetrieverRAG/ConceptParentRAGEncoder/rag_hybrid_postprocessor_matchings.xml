@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlannerType"/>
+        <entity2 rdf:resource="https://schema.org/TravelAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3641649782657623</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="https://schema.org/State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.00000023841857</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="https://schema.org/StupidType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.619185924530029</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

@@ -1,0 +1,528 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Instrument"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.394442379474639</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Process"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4855328202247619</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Event"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4688225388526916</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Achievement"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4132756590843200</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.411800056695938</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Event"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.387344181537628</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Achievement"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3849427998065948</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.527540445327758</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4231691658496856</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalRegion"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.401532351970672</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.395910322666168</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Process"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.366443663835525</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.355418831110000</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Package"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4117573201656341</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Package"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Event"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3825103342533111</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SpatialLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.690708994865417</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.606883347034454</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.570108592510223</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000476837158</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.500331759452819</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#MentalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.427288234233856</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3714714944362640</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.358573347330093</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.766606926918029</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#MentalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.648311793804168</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#NonPhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.617503404617309</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Direction"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SpatialLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4236395359039306</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Direction"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.357302427291870</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Driver"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.372832059860229</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SpatialLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.59127622842788</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4638668596744537</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.438418954610824</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4232699573040008</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4228867888450622</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.40655225515365</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Locatable"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3594218194484710</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Duration"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.540151536464691</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Duration"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.409152567386627</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#TemporalConstraint"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.682157993316650</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#TemporalConstraint"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.674105226993560</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#TemporalConstraint"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.55337232351303</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Satellite"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SpaceRegion"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.410696595907211</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4381456077098846</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Distributor"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.359314173460006</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Proposition"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Stative"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4022573530673980</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Proposition"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Abstract"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.377994835376739</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Proposition"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.362667769193649</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Physobj"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#MentalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.379772156476974</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Truck"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.382823824882507</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Store"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.393333047628402</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Mode"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.416987568140029</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Mode"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.416035234928131</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Camera"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3979064524173736</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Waypoint"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SpatialLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3958548009395599</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Objective"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Abstract"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4098132550716</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Objective"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3920628130435943</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Objective"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.378709316253662</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.411002039909362</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3754717409610748</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.541063249111175</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.443879336118698</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SpatialLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.425490796566009</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Process"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.445989251136779</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Accomplishment"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.400564014911651</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Achievement"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3788215816020965</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

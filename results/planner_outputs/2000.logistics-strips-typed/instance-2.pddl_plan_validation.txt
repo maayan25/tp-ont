@@ -1,0 +1,160 @@
+Type-checking load-truck
+...action passes type checking.
+Type-checking load-airplane
+...action passes type checking.
+Type-checking unload-truck
+...action passes type checking.
+Type-checking unload-airplane
+...action passes type checking.
+Type-checking drive-truck
+...action passes type checking.
+Type-checking fly-airplane
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.logistics-strips-typed/instance-2.pddl_plan.txt
+Plan to validate:
+
+Plan size: 19
+1:
+(load-truck obj21 tru2 pos2)
+ 
+2:
+(load-truck obj13 tru1 pos1)
+ 
+3:
+(load-truck obj12 tru1 pos1)
+ 
+4:
+(load-truck obj11 tru1 pos1)
+ 
+5:
+(drive-truck tru1 pos1 apt1 cit1)
+ 
+6:
+(unload-truck obj13 tru1 apt1)
+ 
+7:
+(unload-truck obj12 tru1 apt1)
+ 
+8:
+(unload-truck obj11 tru1 apt1)
+ 
+9:
+(fly-airplane apn1 apt2 apt1)
+ 
+10:
+(load-airplane obj12 apn1 apt1)
+ 
+11:
+(load-airplane obj11 apn1 apt1)
+ 
+12:
+(fly-airplane apn1 apt1 apt2)
+ 
+13:
+(unload-airplane obj12 apn1 apt2)
+ 
+14:
+(unload-airplane obj11 apn1 apt2)
+ 
+15:
+(drive-truck tru2 pos2 apt2 cit2)
+ 
+16:
+(unload-truck obj21 tru2 apt2)
+ 
+17:
+(load-truck obj11 tru2 apt2)
+ 
+18:
+(drive-truck tru2 apt2 pos2 cit2)
+ 
+19:
+(unload-truck obj11 tru2 pos2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at obj21 pos2)
+Adding (in obj21 tru2)
+
+Checking next happening (time 2)
+Deleting (at obj13 pos1)
+Adding (in obj13 tru1)
+
+Checking next happening (time 3)
+Deleting (at obj12 pos1)
+Adding (in obj12 tru1)
+
+Checking next happening (time 4)
+Deleting (at obj11 pos1)
+Adding (in obj11 tru1)
+
+Checking next happening (time 5)
+Deleting (at tru1 pos1)
+Adding (at tru1 apt1)
+
+Checking next happening (time 6)
+Deleting (in obj13 tru1)
+Adding (at obj13 apt1)
+
+Checking next happening (time 7)
+Deleting (in obj12 tru1)
+Adding (at obj12 apt1)
+
+Checking next happening (time 8)
+Deleting (in obj11 tru1)
+Adding (at obj11 apt1)
+
+Checking next happening (time 9)
+Deleting (at apn1 apt2)
+Adding (at apn1 apt1)
+
+Checking next happening (time 10)
+Deleting (at obj12 apt1)
+Adding (in obj12 apn1)
+
+Checking next happening (time 11)
+Deleting (at obj11 apt1)
+Adding (in obj11 apn1)
+
+Checking next happening (time 12)
+Deleting (at apn1 apt1)
+Adding (at apn1 apt2)
+
+Checking next happening (time 13)
+Deleting (in obj12 apn1)
+Adding (at obj12 apt2)
+
+Checking next happening (time 14)
+Deleting (in obj11 apn1)
+Adding (at obj11 apt2)
+
+Checking next happening (time 15)
+Deleting (at tru2 pos2)
+Adding (at tru2 apt2)
+
+Checking next happening (time 16)
+Deleting (in obj21 tru2)
+Adding (at obj21 apt2)
+
+Checking next happening (time 17)
+Deleting (at obj11 apt2)
+Adding (in obj11 tru2)
+
+Checking next happening (time 18)
+Deleting (at tru2 apt2)
+Adding (at tru2 pos2)
+
+Checking next happening (time 19)
+Deleting (in obj11 tru2)
+Adding (at obj11 pos2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 19 
+
+Successful plans:
+Value: 19
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.logistics-strips-typed/instance-2.pddl_plan.txt 19 
+

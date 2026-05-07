@@ -1,0 +1,124 @@
+Type-checking turn_to
+...action passes type checking.
+Type-checking switch_on
+...action passes type checking.
+Type-checking switch_off
+...action passes type checking.
+Type-checking calibrate
+...action passes type checking.
+Type-checking take_image
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.satellite-strips-automatic/instance-5.pddl_plan.txt
+Plan to validate:
+
+Plan size: 15
+1:
+(switch_on instrument0 satellite0)
+ 
+2:
+(turn_to satellite0 groundstation2 phenomenon8)
+ 
+3:
+(calibrate satellite0 instrument0 groundstation2)
+ 
+4:
+(turn_to satellite0 phenomenon6 groundstation2)
+ 
+5:
+(take_image satellite0 phenomenon6 instrument0 image2)
+ 
+6:
+(turn_to satellite0 phenomenon8 phenomenon6)
+ 
+7:
+(take_image satellite0 phenomenon8 instrument0 image2)
+ 
+8:
+(turn_to satellite0 planet9 phenomenon8)
+ 
+9:
+(take_image satellite0 planet9 instrument0 spectrograph1)
+ 
+10:
+(turn_to satellite0 star3 planet9)
+ 
+11:
+(take_image satellite0 star3 instrument0 thermograph0)
+ 
+12:
+(turn_to satellite0 star7 star3)
+ 
+13:
+(take_image satellite0 star7 instrument0 thermograph0)
+ 
+14:
+(turn_to satellite0 phenomenon5 star7)
+ 
+15:
+(take_image satellite0 phenomenon5 instrument0 image2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (calibrated instrument0)
+Deleting (power_avail satellite0)
+Adding (power_on instrument0)
+
+Checking next happening (time 2)
+Deleting (pointing satellite0 phenomenon8)
+Adding (pointing satellite0 groundstation2)
+
+Checking next happening (time 3)
+Adding (calibrated instrument0)
+
+Checking next happening (time 4)
+Deleting (pointing satellite0 groundstation2)
+Adding (pointing satellite0 phenomenon6)
+
+Checking next happening (time 5)
+Adding (have_image phenomenon6 image2)
+
+Checking next happening (time 6)
+Deleting (pointing satellite0 phenomenon6)
+Adding (pointing satellite0 phenomenon8)
+
+Checking next happening (time 7)
+Adding (have_image phenomenon8 image2)
+
+Checking next happening (time 8)
+Deleting (pointing satellite0 phenomenon8)
+Adding (pointing satellite0 planet9)
+
+Checking next happening (time 9)
+Adding (have_image planet9 spectrograph1)
+
+Checking next happening (time 10)
+Deleting (pointing satellite0 planet9)
+Adding (pointing satellite0 star3)
+
+Checking next happening (time 11)
+Adding (have_image star3 thermograph0)
+
+Checking next happening (time 12)
+Deleting (pointing satellite0 star3)
+Adding (pointing satellite0 star7)
+
+Checking next happening (time 13)
+Adding (have_image star7 thermograph0)
+
+Checking next happening (time 14)
+Deleting (pointing satellite0 star7)
+Adding (pointing satellite0 phenomenon5)
+
+Checking next happening (time 15)
+Adding (have_image phenomenon5 image2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 15 
+
+Successful plans:
+Value: 15
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.satellite-strips-automatic/instance-5.pddl_plan.txt 15 
+

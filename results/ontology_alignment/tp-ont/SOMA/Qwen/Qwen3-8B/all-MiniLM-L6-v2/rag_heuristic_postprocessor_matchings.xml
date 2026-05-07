@@ -1,0 +1,488 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Instrument"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Instrument"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999761581420</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airplane"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Flying"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.764463007450103</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000357627868</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.727541089057922</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#MentalAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.645105123519897</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Precondition"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Predilection"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.76392424106597</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.572055876255035</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Surface"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999880790710</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#RoomSurface"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.704448819160461</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Shape"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.529031395912170</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Planning"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.832545101642608</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#MetaCognitionPlanningTopic"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.527108550071716</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Location"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000119209289</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.606883347034454</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Destination"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.591566920280456</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000357627868</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#StateType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.701259911060333</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#SocialState"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.631212294101715</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.656961321830749</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#StoredObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.602190196514129</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.596545696258544</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Parameter"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999761581420</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Parameter"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#GetTaskParameter"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.559412121772766</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airport"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Flying"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.549136340618133</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000596046447</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DetectedObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.703480839729309</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CreatedObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.682710349559783</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Direction"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Orienting"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.582599639892578</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Direction"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Approaching"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.548193812370300</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Driver"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Driving"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.684849798679351</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Location"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.748039066791534</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Placing"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.705771565437316</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DependentPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.628769159317016</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Planning"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.691808938980102</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DeclarativeClause"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.527676641941070</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Driving"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.689442873001098</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.554613649845123</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Transporting"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.553184509277343</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.00000023841857</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Planning"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.682069838047027</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Option"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.529697120189666</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Locatable"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#LocatumRole"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.641866028308868</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999701976776</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#RelationAdjacentRole"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.669735014438629</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialRelation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.576040029525756</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.564906001091003</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ActionExecutionPlan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.531776428222656</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Block"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Blockage"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.806210279464721</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Block"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#BlockedObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.649174809455871</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Block"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalBlockage"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.552969336509704</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Truck"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Driving"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.571555793285369</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Store"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Storage"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.619772315025329</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Store"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Location"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.538416981697082</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Waypoint"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Setpoint"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.597906351089477</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Room"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.608234226703643</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#RoomSurface"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.530179917812347</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Location"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.64885652065277</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.541063189506530</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.567168533802032</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ActionExecutionPlan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.538081824779510</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

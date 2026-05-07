@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="https://schema.org/Place"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000119209289</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airport"/>
+        <entity2 rdf:resource="https://schema.org/Airport"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000119209289</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="https://schema.org/State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Duration"/>
+        <entity2 rdf:resource="https://schema.org/Duration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="https://schema.org/Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="https://schema.org/Vehicle"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999940395355</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Store"/>
+        <entity2 rdf:resource="https://schema.org/Store"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999940395355</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="https://schema.org/City"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999880790710</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <entity2 rdf:resource="https://schema.org/Thing"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999880790710</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

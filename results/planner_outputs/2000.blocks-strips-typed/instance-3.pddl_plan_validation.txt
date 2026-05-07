@@ -1,0 +1,81 @@
+Type-checking pick-up
+...action passes type checking.
+Type-checking put-down
+...action passes type checking.
+Type-checking stack
+...action passes type checking.
+Type-checking unstack
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.blocks-strips-typed/instance-3.pddl_plan.txt
+Plan to validate:
+
+Plan size: 6
+1:
+(unstack c b)
+ 
+2:
+(stack c d)
+ 
+3:
+(pick-up b)
+ 
+4:
+(stack b c)
+ 
+5:
+(pick-up a)
+ 
+6:
+(stack a b)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (clear c)
+Deleting (handempty)
+Deleting (on c b)
+Adding (holding c)
+Adding (clear b)
+
+Checking next happening (time 2)
+Deleting (holding c)
+Deleting (clear d)
+Adding (clear c)
+Adding (handempty)
+Adding (on c d)
+
+Checking next happening (time 3)
+Deleting (ontable b)
+Deleting (clear b)
+Deleting (handempty)
+Adding (holding b)
+
+Checking next happening (time 4)
+Deleting (holding b)
+Deleting (clear c)
+Adding (clear b)
+Adding (handempty)
+Adding (on b c)
+
+Checking next happening (time 5)
+Deleting (ontable a)
+Deleting (clear a)
+Deleting (handempty)
+Adding (holding a)
+
+Checking next happening (time 6)
+Deleting (holding a)
+Deleting (clear b)
+Adding (clear a)
+Adding (handempty)
+Adding (on a b)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 6 
+
+Successful plans:
+Value: 6
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.blocks-strips-typed/instance-3.pddl_plan.txt 6 
+

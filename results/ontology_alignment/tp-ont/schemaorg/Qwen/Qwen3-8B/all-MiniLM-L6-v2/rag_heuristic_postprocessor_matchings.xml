@@ -1,0 +1,560 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Instrument"/>
+        <entity2 rdf:resource="https://schema.org/SheetMusic"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.553737640380859</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airplane"/>
+        <entity2 rdf:resource="https://schema.org/Airline"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.851551055908203</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airplane"/>
+        <entity2 rdf:resource="https://schema.org/Flight"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.803190410137176</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airplane"/>
+        <entity2 rdf:resource="https://schema.org/Airport"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.614274322986602</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="https://schema.org/Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.00000023841857</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="https://schema.org/TakeAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.663323402404785</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="https://schema.org/MoveAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.660827994346618</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Precondition"/>
+        <entity2 rdf:resource="https://schema.org/MedicalCondition"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.586332738399505</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="https://schema.org/PlanAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.608240783214569</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Package"/>
+        <entity2 rdf:resource="https://schema.org/DeliveryEvent"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.533000588417053</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="https://schema.org/Place"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.748039126396179</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="https://schema.org/City"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.64885652065277</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="https://schema.org/Country"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.639322519302368</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="https://schema.org/State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000357627868</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="https://schema.org/Country"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.575638711452484</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="https://schema.org/City"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.541063368320465</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://schema.org/TextObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.628470063209533</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://schema.org/ImageObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.609474897384643</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://schema.org/AlignmentObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.534108400344848</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airport"/>
+        <entity2 rdf:resource="https://schema.org/Airport"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999582767486</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airport"/>
+        <entity2 rdf:resource="https://schema.org/Airline"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.710512459278106</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airport"/>
+        <entity2 rdf:resource="https://schema.org/Flight"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.637080073356628</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="https://schema.org/Class"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.575881779193878</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="https://schema.org/Vehicle"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.554613709449768</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="https://schema.org/Car"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.535170912742614</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Driver"/>
+        <entity2 rdf:resource="https://schema.org/Vehicle"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.62417894601821</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Driver"/>
+        <entity2 rdf:resource="https://schema.org/Car"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.586630523204803</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="https://schema.org/Place"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.00000023841857</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="https://schema.org/Room"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.58289396762847</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="https://schema.org/House"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.571137785911560</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="https://schema.org/PlanAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.552265286445617</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="https://schema.org/Vehicle"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000476837158</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="https://schema.org/Car"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.870427310466766</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="https://schema.org/Motorcycle"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.648330211639404</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+        <entity2 rdf:resource="https://schema.org/PlanAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.630636096000671</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Passenger"/>
+        <entity2 rdf:resource="https://schema.org/Vehicle"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.653062760829925</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Passenger"/>
+        <entity2 rdf:resource="https://schema.org/Taxi"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.571788609027862</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Passenger"/>
+        <entity2 rdf:resource="https://schema.org/Car"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.543398976325988</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Duration"/>
+        <entity2 rdf:resource="https://schema.org/Duration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.00000023841857</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Lander"/>
+        <entity2 rdf:resource="https://schema.org/Landform"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.597553431987762</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Distributor"/>
+        <entity2 rdf:resource="https://schema.org/WholesaleStore"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.580001294612884</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Proposition"/>
+        <entity2 rdf:resource="https://schema.org/Statement"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.665865123271942</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="https://schema.org/ControlAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.607430338859558</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="https://schema.org/ActionAccessSpecification"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.605526208877563</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="https://schema.org/AchieveAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.583715856075286</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Block"/>
+        <entity2 rdf:resource="https://schema.org/UserBlocks"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.66255599260330</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Block"/>
+        <entity2 rdf:resource="https://schema.org/WPAdBlock"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.575868368148803</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Truck"/>
+        <entity2 rdf:resource="https://schema.org/Vehicle"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.765542924404144</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Truck"/>
+        <entity2 rdf:resource="https://schema.org/Car"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.688679754734039</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Truck"/>
+        <entity2 rdf:resource="https://schema.org/Taxi"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.550953924655914</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Store"/>
+        <entity2 rdf:resource="https://schema.org/Store"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000119209289</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Store"/>
+        <entity2 rdf:resource="https://schema.org/ComputerStore"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.62991809844970</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Store"/>
+        <entity2 rdf:resource="https://schema.org/ShoeStore"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.629115164279937</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Camera"/>
+        <entity2 rdf:resource="https://schema.org/Photograph"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.749340116977691</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Camera"/>
+        <entity2 rdf:resource="https://schema.org/PhotographAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.618803024291992</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Waypoint"/>
+        <entity2 rdf:resource="https://schema.org/EntryPoint"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.559684395790100</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Waypoint"/>
+        <entity2 rdf:resource="https://schema.org/ContactPoint"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.553036391735076</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="https://schema.org/FloorPlan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.751362025737762</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="https://schema.org/Room"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.608234226703643</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="https://schema.org/City"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000119209289</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="https://schema.org/CityHall"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.607913017272949</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="https://schema.org/Place"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.557947456836700</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="https://schema.org/CreateAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.613939046859741</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="https://schema.org/UseAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.610292315483093</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="https://schema.org/RegisterAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.601797640323638</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <entity2 rdf:resource="https://schema.org/ReactAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.5899552106857</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="https://schema.org/ActionAccessSpecification"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.610430419445037</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="https://schema.org/ActionStatusType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.586266636848449</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="https://schema.org/ControlAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.574361741542816</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

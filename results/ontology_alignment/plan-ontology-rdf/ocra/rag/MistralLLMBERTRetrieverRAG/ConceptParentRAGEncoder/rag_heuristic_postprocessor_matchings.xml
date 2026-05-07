@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2425618618726730</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainConstant"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2440509200096130</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3304512500762939</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.547068119049072</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2838666439056396</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3281312286853790</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.607977807521820</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.289092600345611</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlannerType"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.544878423213958</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.45191597938537</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.361971676349639</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3547752499580383</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.657265901565551</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.307582020759582</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2910072505474090</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.267973601818084</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

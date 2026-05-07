@@ -1,0 +1,113 @@
+{'name': 'Instrument', 'iri': 'https://w3id.org/tp-ont/ontology#Instrument', 'label': 'Instrument', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Airplane', 'iri': 'https://w3id.org/tp-ont/ontology#Airplane', 'label': 'Airplane', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Vehicle', 'label': 'Vehicle', 'name': 'Vehicle'}, {'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Action', 'iri': 'https://w3id.org/tp-ont/ontology#Action', 'label': 'Action', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Hoist', 'iri': 'https://w3id.org/tp-ont/ontology#Hoist', 'label': 'Hoist', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Locatable', 'label': 'Locatable', 'name': 'Locatable'}, {'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Precondition', 'iri': 'https://w3id.org/tp-ont/ontology#Precondition', 'label': 'Precondition', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Effect', 'iri': 'https://w3id.org/tp-ont/ontology#Effect', 'label': 'Effect', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Surface', 'iri': 'https://w3id.org/tp-ont/ontology#Surface', 'label': 'Surface', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#Crate', 'label': 'Crate', 'name': 'Crate'}, {'iri': 'https://w3id.org/tp-ont/ontology#Pallet', 'label': 'Pallet', 'name': 'Pallet'}], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Locatable', 'label': 'Locatable', 'name': 'Locatable'}, {'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'PlanningProblem', 'iri': 'https://purl.org/ai4s/ontology/planning#PlanningProblem', 'label': 'PlanningProblem', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Package', 'iri': 'https://w3id.org/tp-ont/ontology#Package', 'label': 'Package', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}, {'iri': 'https://w3id.org/tp-ont/ontology#Physobj', 'label': 'Physobj', 'name': 'Physobj'}], 'synonyms': [], 'comment': []}
+
+{'name': 'NumericFluent', 'iri': 'https://w3id.org/tp-ont/ontology#NumericFluent', 'label': 'NumericFluent', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Location', 'iri': 'https://w3id.org/tp-ont/ontology#Location', 'label': 'Location', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Place', 'label': 'Place', 'name': 'Place'}, {'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Depot', 'iri': 'https://w3id.org/tp-ont/ontology#Depot', 'label': 'Depot', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Place', 'label': 'Place', 'name': 'Place'}, {'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Obj', 'iri': 'https://w3id.org/tp-ont/ontology#Obj', 'label': 'Obj', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}, {'iri': 'https://w3id.org/tp-ont/ontology#Locatable', 'label': 'Locatable', 'name': 'Locatable'}], 'synonyms': [], 'comment': []}
+
+{'name': 'State', 'iri': 'https://w3id.org/tp-ont/ontology#State', 'label': 'State', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ProblemObject', 'iri': 'https://purl.org/ai4s/ontology/planning#ProblemObject', 'label': 'ProblemObject', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Rover', 'iri': 'https://w3id.org/tp-ont/ontology#Rover', 'label': 'Rover', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Parameter', 'iri': 'https://w3id.org/tp-ont/ontology#Parameter', 'label': 'Parameter', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Airport', 'iri': 'https://w3id.org/tp-ont/ontology#Airport', 'label': 'Airport', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}, {'iri': 'https://w3id.org/tp-ont/ontology#Place', 'label': 'Place', 'name': 'Place'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Object', 'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#Instrument', 'label': 'Instrument', 'name': 'Instrument'}, {'iri': 'https://w3id.org/tp-ont/ontology#Airplane', 'label': 'Airplane', 'name': 'Airplane'}, {'iri': 'https://w3id.org/tp-ont/ontology#Hoist', 'label': 'Hoist', 'name': 'Hoist'}, {'iri': 'https://w3id.org/tp-ont/ontology#Surface', 'label': 'Surface', 'name': 'Surface'}, {'iri': 'https://w3id.org/tp-ont/ontology#Package', 'label': 'Package', 'name': 'Package'}, {'iri': 'https://w3id.org/tp-ont/ontology#Location', 'label': 'Location', 'name': 'Location'}, {'iri': 'https://w3id.org/tp-ont/ontology#Depot', 'label': 'Depot', 'name': 'Depot'}, {'iri': 'https://w3id.org/tp-ont/ontology#Obj', 'label': 'Obj', 'name': 'Obj'}, {'iri': 'https://w3id.org/tp-ont/ontology#Rover', 'label': 'Rover', 'name': 'Rover'}, {'iri': 'https://w3id.org/tp-ont/ontology#Airport', 'label': 'Airport', 'name': 'Airport'}, {'iri': 'https://w3id.org/tp-ont/ontology#Direction', 'label': 'Direction', 'name': 'Direction'}, {'iri': 'https://w3id.org/tp-ont/ontology#Driver', 'label': 'Driver', 'name': 'Driver'}, {'iri': 'https://w3id.org/tp-ont/ontology#Place', 'label': 'Place', 'name': 'Place'}, {'iri': 'https://w3id.org/tp-ont/ontology#Vehicle', 'label': 'Vehicle', 'name': 'Vehicle'}, {'iri': 'https://w3id.org/tp-ont/ontology#Passenger', 'label': 'Passenger', 'name': 'Passenger'}, {'iri': 'https://w3id.org/tp-ont/ontology#Locatable', 'label': 'Locatable', 'name': 'Locatable'}, {'iri': 'https://w3id.org/tp-ont/ontology#Satellite', 'label': 'Satellite', 'name': 'Satellite'}, {'iri': 'https://w3id.org/tp-ont/ontology#Lander', 'label': 'Lander', 'name': 'Lander'}, {'iri': 'https://w3id.org/tp-ont/ontology#Distributor', 'label': 'Distributor', 'name': 'Distributor'}, {'iri': 'https://w3id.org/tp-ont/ontology#Physobj', 'label': 'Physobj', 'name': 'Physobj'}, {'iri': 'https://w3id.org/tp-ont/ontology#Block', 'label': 'Block', 'name': 'Block'}, {'iri': 'https://w3id.org/tp-ont/ontology#Truck', 'label': 'Truck', 'name': 'Truck'}, {'iri': 'https://w3id.org/tp-ont/ontology#Store', 'label': 'Store', 'name': 'Store'}, {'iri': 'https://w3id.org/tp-ont/ontology#Mode', 'label': 'Mode', 'name': 'Mode'}, {'iri': 'https://w3id.org/tp-ont/ontology#Camera', 'label': 'Camera', 'name': 'Camera'}, {'iri': 'https://w3id.org/tp-ont/ontology#Crate', 'label': 'Crate', 'name': 'Crate'}, {'iri': 'https://w3id.org/tp-ont/ontology#Pallet', 'label': 'Pallet', 'name': 'Pallet'}, {'iri': 'https://w3id.org/tp-ont/ontology#Waypoint', 'label': 'Waypoint', 'name': 'Waypoint'}, {'iri': 'https://w3id.org/tp-ont/ontology#Objective', 'label': 'Objective', 'name': 'Objective'}, {'iri': 'https://w3id.org/tp-ont/ontology#Floor', 'label': 'Floor', 'name': 'Floor'}, {'iri': 'https://w3id.org/tp-ont/ontology#City', 'label': 'City', 'name': 'City'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Direction', 'iri': 'https://w3id.org/tp-ont/ontology#Direction', 'label': 'Direction', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Driver', 'iri': 'https://w3id.org/tp-ont/ontology#Driver', 'label': 'Driver', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}, {'iri': 'https://w3id.org/tp-ont/ontology#Locatable', 'label': 'Locatable', 'name': 'Locatable'}], 'synonyms': [], 'comment': []}
+
+{'name': 'NegatedFluent', 'iri': 'https://w3id.org/tp-ont/ontology#NegatedFluent', 'label': 'NegatedFluent', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Fluent', 'label': 'Fluent', 'name': 'Fluent'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Place', 'iri': 'https://w3id.org/tp-ont/ontology#Place', 'label': 'Place', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#Location', 'label': 'Location', 'name': 'Location'}, {'iri': 'https://w3id.org/tp-ont/ontology#Depot', 'label': 'Depot', 'name': 'Depot'}, {'iri': 'https://w3id.org/tp-ont/ontology#Airport', 'label': 'Airport', 'name': 'Airport'}, {'iri': 'https://w3id.org/tp-ont/ontology#Distributor', 'label': 'Distributor', 'name': 'Distributor'}], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'PlanningDomain', 'iri': 'https://purl.org/ai4s/ontology/planning#PlanningDomain', 'label': 'PlanningDomain', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Predicate', 'iri': 'https://w3id.org/tp-ont/ontology#Predicate', 'label': 'Predicate', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#Precondition', 'label': 'Precondition', 'name': 'Precondition'}, {'iri': 'https://w3id.org/tp-ont/ontology#Effect', 'label': 'Effect', 'name': 'Effect'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Vehicle', 'iri': 'https://w3id.org/tp-ont/ontology#Vehicle', 'label': 'Vehicle', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#Airplane', 'label': 'Airplane', 'name': 'Airplane'}, {'iri': 'https://w3id.org/tp-ont/ontology#Truck', 'label': 'Truck', 'name': 'Truck'}], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}, {'iri': 'https://w3id.org/tp-ont/ontology#Physobj', 'label': 'Physobj', 'name': 'Physobj'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Plan', 'iri': 'https://w3id.org/tp-ont/ontology#Plan', 'label': 'Plan', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Passenger', 'iri': 'https://w3id.org/tp-ont/ontology#Passenger', 'label': 'Passenger', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Locatable', 'iri': 'https://w3id.org/tp-ont/ontology#Locatable', 'label': 'Locatable', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#Hoist', 'label': 'Hoist', 'name': 'Hoist'}, {'iri': 'https://w3id.org/tp-ont/ontology#Surface', 'label': 'Surface', 'name': 'Surface'}, {'iri': 'https://w3id.org/tp-ont/ontology#Obj', 'label': 'Obj', 'name': 'Obj'}, {'iri': 'https://w3id.org/tp-ont/ontology#Driver', 'label': 'Driver', 'name': 'Driver'}, {'iri': 'https://w3id.org/tp-ont/ontology#Truck', 'label': 'Truck', 'name': 'Truck'}], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Duration', 'iri': 'https://w3id.org/tp-ont/ontology#Duration', 'label': 'Duration', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'TemporalConstraint', 'iri': 'https://w3id.org/tp-ont/ontology#TemporalConstraint', 'label': 'TemporalConstraint', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Fluent', 'iri': 'https://w3id.org/tp-ont/ontology#Fluent', 'label': 'Fluent', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#NegatedFluent', 'label': 'NegatedFluent', 'name': 'NegatedFluent'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Satellite', 'iri': 'https://w3id.org/tp-ont/ontology#Satellite', 'label': 'Satellite', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'VerbalConcept', 'iri': 'https://w3id.org/tp-ont/ontology#VerbalConcept', 'label': 'VerbalConcept', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#Action', 'label': 'Action', 'name': 'Action'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Relation', 'iri': 'https://w3id.org/tp-ont/ontology#Relation', 'label': 'Relation', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Lander', 'iri': 'https://w3id.org/tp-ont/ontology#Lander', 'label': 'Lander', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Distributor', 'iri': 'https://w3id.org/tp-ont/ontology#Distributor', 'label': 'Distributor', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}, {'iri': 'https://w3id.org/tp-ont/ontology#Place', 'label': 'Place', 'name': 'Place'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Proposition', 'iri': 'https://w3id.org/tp-ont/ontology#Proposition', 'label': 'Proposition', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Physobj', 'iri': 'https://w3id.org/tp-ont/ontology#Physobj', 'label': 'Physobj', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#Package', 'label': 'Package', 'name': 'Package'}, {'iri': 'https://w3id.org/tp-ont/ontology#Vehicle', 'label': 'Vehicle', 'name': 'Vehicle'}], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'ActionPrecondition', 'iri': 'https://purl.org/ai4s/ontology/planning#ActionPrecondition', 'label': 'ActionPrecondition', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Block', 'iri': 'https://w3id.org/tp-ont/ontology#Block', 'label': 'Block', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Truck', 'iri': 'https://w3id.org/tp-ont/ontology#Truck', 'label': 'Truck', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Locatable', 'label': 'Locatable', 'name': 'Locatable'}, {'iri': 'https://w3id.org/tp-ont/ontology#Vehicle', 'label': 'Vehicle', 'name': 'Vehicle'}, {'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Store', 'iri': 'https://w3id.org/tp-ont/ontology#Store', 'label': 'Store', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'NominalConcept', 'iri': 'https://w3id.org/tp-ont/ontology#NominalConcept', 'label': 'NominalConcept', 'childrens': [{'iri': 'https://w3id.org/tp-ont/ontology#Parameter', 'label': 'Parameter', 'name': 'Parameter'}, {'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Mode', 'iri': 'https://w3id.org/tp-ont/ontology#Mode', 'label': 'Mode', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Camera', 'iri': 'https://w3id.org/tp-ont/ontology#Camera', 'label': 'Camera', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Crate', 'iri': 'https://w3id.org/tp-ont/ontology#Crate', 'label': 'Crate', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}, {'iri': 'https://w3id.org/tp-ont/ontology#Surface', 'label': 'Surface', 'name': 'Surface'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Pallet', 'iri': 'https://w3id.org/tp-ont/ontology#Pallet', 'label': 'Pallet', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Surface', 'label': 'Surface', 'name': 'Surface'}, {'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'ProblemPredicate', 'iri': 'https://purl.org/ai4s/ontology/planning#ProblemPredicate', 'label': 'ProblemPredicate', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Waypoint', 'iri': 'https://w3id.org/tp-ont/ontology#Waypoint', 'label': 'Waypoint', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Objective', 'iri': 'https://w3id.org/tp-ont/ontology#Objective', 'label': 'Objective', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Floor', 'iri': 'https://w3id.org/tp-ont/ontology#Floor', 'label': 'Floor', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'City', 'iri': 'https://w3id.org/tp-ont/ontology#City', 'label': 'City', 'childrens': [], 'parents': [{'iri': 'https://w3id.org/tp-ont/ontology#Object', 'label': 'Object', 'name': 'Object'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Step', 'iri': 'https://w3id.org/tp-ont/ontology#Step', 'label': 'Step', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'DomainAction', 'iri': 'https://purl.org/ai4s/ontology/planning#DomainAction', 'label': 'DomainAction', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ActionEffect', 'iri': 'https://purl.org/ai4s/ontology/planning#ActionEffect', 'label': 'ActionEffect', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ActionParameter', 'iri': 'https://purl.org/ai4s/ontology/planning#ActionParameter', 'label': 'ActionParameter', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}

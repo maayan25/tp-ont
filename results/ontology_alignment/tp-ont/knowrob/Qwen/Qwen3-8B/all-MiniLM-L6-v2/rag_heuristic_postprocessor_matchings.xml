@@ -1,0 +1,504 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Instrument"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4912594854831695</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airplane"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#FlyingRobot"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.55414640903472</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000357627868</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.591972887516021</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Actuating"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.553312242031097</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Precondition"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ConditionalSuccedence"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4828019738197326</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Actuating"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.483528047800064</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.496500343084335</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.480547904968261</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.513647079467773</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.748039007186889</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.606883287429809</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#LocationConstraint"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.487832725048065</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Obj"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.479911178350448</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.500331640243530</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.6569612026214</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.596545755863189</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.57401096820831</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Rover"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#WheeledRobot"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.599064588546752</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Rover"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/urdf.owl#Robot"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.588688254356384</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Rover"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#Wheel"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.562260031700134</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Parameter"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999761581420</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Parameter"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#ParameterInference"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.756894528865814</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Parameter"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#VariableArgument"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.554416239261627</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000357627868</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#ObjectMainAxis"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.567125976085662</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.540533125400543</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Driver"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#Wheel"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4818882048130035</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.00000023841857</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4917722940444946</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#ComputationalPredicate"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.865474462509155</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.554613530635833</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Vehicle"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#Wheel"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.538323998451232</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999940395355</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Duration"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#Duration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.00000023841857</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Duration"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.497434765100479</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#TemporalConstraint"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#TemporalConstraint"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000119209289</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#TemporalConstraint"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#SpatialConstraint"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.72507005929946</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#TemporalConstraint"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#LocationConstraint"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.64707535505294</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#VerbalConcept"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#MentalAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.503714263439178</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Lander"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#Reasoner"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.496550261974334</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Physobj"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.483373194932937</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ActionExecutionPlan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.599264085292816</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.564905881881713</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Truck"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#Wheel"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.50890398025512</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Camera"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#Image"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.569271385669708</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Camera"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#Pose"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.528427660465240</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Camera"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#Monitor"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.502281606197357</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemPredicate"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#ComputationalPredicate"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.729998946189880</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Waypoint"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.603928506374359</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Waypoint"/>
+        <entity2 rdf:resource="http://knowrob.org/kb/srdl2-comp.owl#PointMap"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.555204153060913</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.488125801086425</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Leg"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4774236977100372</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.557947456836700</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.481257557868957</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.505060315132141</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ActionExecutionPlan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.501980662345886</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.739782631397247</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.484966486692428</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ActionExecutionPlan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.61340570449829</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.567168354988098</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.511016130447387</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

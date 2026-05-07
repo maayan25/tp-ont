@@ -1,0 +1,480 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Instrument"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2435526549816131</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3542205989360809</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3282576799392</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3161358833312988</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Hoist"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.257955878973007</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.296341389417648</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationRisk"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2688120603561401</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2411814928054809</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2605034708976745</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Surface"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2362854182720184</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.657265901565551</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.307582020759582</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2910072505474090</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Package"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.28797063231468</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.51893627643585</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4899145662784576</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.297318428754806</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Depot"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.328412055969238</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Depot"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2455738484859466</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Depot"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.241422116756439</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Airport"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.296017378568649</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2746408879756927</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2414259016513824</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2379714101552963</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Direction"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.268194347620010</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Direction"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2679260075092315</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.628415167331695</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.612456023693084</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Place"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3212443590164184</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.45191597938537</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.361971676349639</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3547752499580383</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.547068119049072</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2838666439056396</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#TemporalConstraint"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.392821550369262</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Fluent"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3382636904716491</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Satellite"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.252202779054641</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Satellite"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2404039800167083</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.324175864458084</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2644266486167907</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Distributor"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2560159564018249</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.246470630168914</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Store"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.283535420894622</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Store"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2572846412658691</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Camera"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.284061968326568</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Camera"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.243569493293762</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Camera"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2380471974611282</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Pallet"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2765191197395324</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Waypoint"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.389729082584381</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Waypoint"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.331813812255859</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Objective"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3257731199264526</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Objective"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.285201549530029</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.283488869667053</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Floor"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2638536095619201</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4563403427600860</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4345062375068664</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#City"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.301756322383880</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2362880706787109</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.2425618618726730</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

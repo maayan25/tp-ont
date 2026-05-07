@@ -1,0 +1,78 @@
+Type-checking load-truck
+...action passes type checking.
+Type-checking unload-truck
+...action passes type checking.
+Type-checking board-truck
+...action passes type checking.
+Type-checking disembark-truck
+...action passes type checking.
+Type-checking drive-truck
+...action passes type checking.
+Type-checking walk
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.driverlog-strips-automatic/instance-1.pddl_plan.txt
+Plan to validate:
+
+Plan size: 7
+1:
+(walk driver1 s2 p1-2)
+ 
+2:
+(walk driver1 p1-2 s1)
+ 
+3:
+(walk driver1 s1 p1-0)
+ 
+4:
+(walk driver1 p1-0 s0)
+ 
+5:
+(board-truck driver1 truck1 s0)
+ 
+6:
+(drive-truck truck1 s0 s1 driver1)
+ 
+7:
+(disembark-truck driver1 truck1 s1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at driver1 s2)
+Adding (at driver1 p1-2)
+
+Checking next happening (time 2)
+Deleting (at driver1 p1-2)
+Adding (at driver1 s1)
+
+Checking next happening (time 3)
+Deleting (at driver1 s1)
+Adding (at driver1 p1-0)
+
+Checking next happening (time 4)
+Deleting (at driver1 p1-0)
+Adding (at driver1 s0)
+
+Checking next happening (time 5)
+Deleting (at driver1 s0)
+Deleting (empty truck1)
+Adding (driving driver1 truck1)
+
+Checking next happening (time 6)
+Deleting (at truck1 s0)
+Adding (at truck1 s1)
+
+Checking next happening (time 7)
+Deleting (driving driver1 truck1)
+Adding (at driver1 s1)
+Adding (empty truck1)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 7 
+
+Successful plans:
+Value: 7
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.driverlog-strips-automatic/instance-1.pddl_plan.txt 7 
+

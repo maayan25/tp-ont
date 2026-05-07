@@ -1,0 +1,14 @@
+State after action 1:
+
+State after action 2:
+(holding b) 
+State after action 3:
+(clear b) (handempty) (on b a) 
+State after action 4:
+(clear b) (on b a) (holding c) 
+State after action 5:
+(on b a) (clear c) (handempty) (on c b) 
+State after action 6:
+(on b a) (clear c) (on c b) (holding d) 
+State after action 7:
+(on b a) (on c b) (clear d) (handempty) (on d c) 

@@ -1,0 +1,50 @@
+Type-checking board
+...action passes type checking.
+Type-checking depart
+...action passes type checking.
+Type-checking up
+...action passes type checking.
+Type-checking down
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.elevator-strips-simple-typed/instance-1.pddl_plan.txt
+Plan to validate:
+
+Plan size: 4
+1:
+(up f0 f1)
+ 
+2:
+(board f1 p0)
+ 
+3:
+(down f1 f0)
+ 
+4:
+(depart f0 p0)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (lift-at f0)
+Adding (lift-at f1)
+
+Checking next happening (time 2)
+Adding (boarded p0)
+
+Checking next happening (time 3)
+Deleting (lift-at f1)
+Adding (lift-at f0)
+
+Checking next happening (time 4)
+Deleting (boarded p0)
+Adding (served p0)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 4 
+
+Successful plans:
+Value: 4
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.elevator-strips-simple-typed/instance-1.pddl_plan.txt 4 
+

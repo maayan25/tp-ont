@@ -1,0 +1,119 @@
+Type-checking pick-up
+...action passes type checking.
+Type-checking put-down
+...action passes type checking.
+Type-checking stack
+...action passes type checking.
+Type-checking unstack
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.blocks-strips-typed/instance-2.pddl_plan.txt
+Plan to validate:
+
+Plan size: 10
+1:
+(unstack b c)
+ 
+2:
+(put-down b)
+ 
+3:
+(unstack c a)
+ 
+4:
+(put-down c)
+ 
+5:
+(unstack a d)
+ 
+6:
+(stack a b)
+ 
+7:
+(pick-up c)
+ 
+8:
+(stack c a)
+ 
+9:
+(pick-up d)
+ 
+10:
+(stack d c)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (clear b)
+Deleting (handempty)
+Deleting (on b c)
+Adding (holding b)
+Adding (clear c)
+
+Checking next happening (time 2)
+Deleting (holding b)
+Adding (clear b)
+Adding (handempty)
+Adding (ontable b)
+
+Checking next happening (time 3)
+Deleting (clear c)
+Deleting (handempty)
+Deleting (on c a)
+Adding (holding c)
+Adding (clear a)
+
+Checking next happening (time 4)
+Deleting (holding c)
+Adding (clear c)
+Adding (handempty)
+Adding (ontable c)
+
+Checking next happening (time 5)
+Deleting (clear a)
+Deleting (handempty)
+Deleting (on a d)
+Adding (holding a)
+Adding (clear d)
+
+Checking next happening (time 6)
+Deleting (holding a)
+Deleting (clear b)
+Adding (clear a)
+Adding (handempty)
+Adding (on a b)
+
+Checking next happening (time 7)
+Deleting (ontable c)
+Deleting (clear c)
+Deleting (handempty)
+Adding (holding c)
+
+Checking next happening (time 8)
+Deleting (holding c)
+Deleting (clear a)
+Adding (clear c)
+Adding (handempty)
+Adding (on c a)
+
+Checking next happening (time 9)
+Deleting (ontable d)
+Deleting (clear d)
+Deleting (handempty)
+Adding (holding d)
+
+Checking next happening (time 10)
+Deleting (holding d)
+Deleting (clear c)
+Adding (clear d)
+Adding (handempty)
+Adding (on d c)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 10 
+
+Successful plans:
+Value: 10
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2000.blocks-strips-typed/instance-2.pddl_plan.txt 10 
+

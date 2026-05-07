@@ -1,0 +1,215 @@
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPredicate', 'label': 'hasPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainPredicate'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'predicate']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPredicate', 'label': 'hasPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainPredicate'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'predicate']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPlan', 'label': 'hasPlan', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#Plan'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['plan']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasInitialState', 'label': 'hasInitialState', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#InitialState'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['initial', 'state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner', 'label': 'hasMediumRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#solvedBy', 'label': 'solvedBy', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': 'https://purl.org/ai4s/ontology/planning#solvesRequirement', 'inverse_label': 'solvesRequirement', 'domain_text': ['domain', 'requirement'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasParameter', 'label': 'hasParameter', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionParameter'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'parameter']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#ofPlannerType', 'label': 'ofPlannerType', 'domain': ['https://purl.org/ai4s/ontology/planning#Planner'], 'range': ['https://purl.org/ai4s/ontology/planning#PlannerType'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planner'], 'range_text': ['planner', 'type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#solvedBy', 'label': 'solvedBy', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': 'https://purl.org/ai4s/ontology/planning#solvesRequirement', 'inverse_label': 'solvesRequirement', 'domain_text': ['domain', 'requirement'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasTag', 'label': 'hasTag', 'domain': ['https://purl.org/ai4s/ontology/planning#Type'], 'range': ['https://purl.org/ai4s/ontology/planning#TypeTag'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['type'], 'range_text': ['type', 'tag']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner', 'label': 'hasLowRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasEffect', 'label': 'hasEffect', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'effect']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasExtractedAction', 'label': 'hasExtractedAction', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#MacroAction'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['macro', 'action']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasConstant', 'label': 'hasConstant', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainConstant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'constant']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasExtractedAction', 'label': 'hasExtractedAction', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#MacroAction'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['macro', 'action']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasInitialState', 'label': 'hasInitialState', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#InitialState'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['initial', 'state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner', 'label': 'hasHighRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasParameter', 'label': 'hasParameter', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionParameter'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'parameter']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#deletesPredicate', 'label': 'deletesPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'range': ['https://purl.org/ai4s/ontology/planning#State'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'effect'], 'range_text': ['state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasType', 'label': 'hasType', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Type'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasObject', 'label': 'hasObject', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#ProblemObject'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['problem', 'object']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasRequirement', 'label': 'hasRequirement', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'requirement']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#solvesRequirement', 'label': 'solvesRequirement', 'domain': ['https://purl.org/ai4s/ontology/planning#Planner'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planner'], 'range_text': ['domain', 'requirement']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner', 'label': 'hasMediumRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasAction', 'label': 'hasAction', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'action']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner', 'label': 'hasMediumRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasAction', 'label': 'hasAction', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'action']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasGoalState', 'label': 'hasGoalState', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#GoalState'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['goal', 'state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPredicate', 'label': 'hasPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainPredicate'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'predicate']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasParameter', 'label': 'hasParameter', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionParameter'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'parameter']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasTag', 'label': 'hasTag', 'domain': ['https://purl.org/ai4s/ontology/planning#Type'], 'range': ['https://purl.org/ai4s/ontology/planning#TypeTag'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['type'], 'range_text': ['type', 'tag']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#solvesRequirement', 'label': 'solvesRequirement', 'domain': ['https://purl.org/ai4s/ontology/planning#Planner'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planner'], 'range_text': ['domain', 'requirement']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#deletesPredicate', 'label': 'deletesPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'range': ['https://purl.org/ai4s/ontology/planning#State'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'effect'], 'range_text': ['state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasEffect', 'label': 'hasEffect', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'effect']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasGoalState', 'label': 'hasGoalState', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#GoalState'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['goal', 'state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#addsPredicate', 'label': 'addsPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'range': ['https://purl.org/ai4s/ontology/planning#State'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'effect'], 'range_text': ['state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner', 'label': 'hasHighRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#deletesPredicate', 'label': 'deletesPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'range': ['https://purl.org/ai4s/ontology/planning#State'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'effect'], 'range_text': ['state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasProblem', 'label': 'hasProblem', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planning', 'problem']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPlanCost', 'label': 'hasPlanCost', 'domain': ['https://purl.org/ai4s/ontology/planning#Plan'], 'range': ['http://www.w3.org/2001/XMLSchema#nonNegativeInteger'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['plan'], 'range_text': ['non', 'negative', 'integer']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasProblem', 'label': 'hasProblem', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planning', 'problem']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasExtractedAction', 'label': 'hasExtractedAction', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#MacroAction'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['macro', 'action']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasTypeInstance', 'label': 'hasTypeInstance', 'domain': ['https://purl.org/ai4s/ontology/planning#Type'], 'range': ['https://purl.org/ai4s/ontology/planning#ProblemObject'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['type'], 'range_text': ['problem', 'object']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPrecondition', 'label': 'hasPrecondition', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionPrecondition'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'precondition']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner', 'label': 'hasLowRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPredicate', 'label': 'hasPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainPredicate'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'predicate']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasInitialState', 'label': 'hasInitialState', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#InitialState'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['initial', 'state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPlan', 'label': 'hasPlan', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#Plan'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['plan']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasEffect', 'label': 'hasEffect', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'effect']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPlan', 'label': 'hasPlan', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#Plan'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['plan']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasProblem', 'label': 'hasProblem', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planning', 'problem']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#isGeneratedBy', 'label': 'isGeneratedBy', 'domain': ['https://purl.org/ai4s/ontology/planning#Plan'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['plan'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasTypeInstance', 'label': 'hasTypeInstance', 'domain': ['https://purl.org/ai4s/ontology/planning#Type'], 'range': ['https://purl.org/ai4s/ontology/planning#ProblemObject'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['type'], 'range_text': ['problem', 'object']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#solvesRequirement', 'label': 'solvesRequirement', 'domain': ['https://purl.org/ai4s/ontology/planning#Planner'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planner'], 'range_text': ['domain', 'requirement']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasObject', 'label': 'hasObject', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#ProblemObject'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['problem', 'object']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasObject', 'label': 'hasObject', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#ProblemObject'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['problem', 'object']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasProblem', 'label': 'hasProblem', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planning', 'problem']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#ofPlannerType', 'label': 'ofPlannerType', 'domain': ['https://purl.org/ai4s/ontology/planning#Planner'], 'range': ['https://purl.org/ai4s/ontology/planning#PlannerType'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planner'], 'range_text': ['planner', 'type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#solvedBy', 'label': 'solvedBy', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': 'https://purl.org/ai4s/ontology/planning#solvesRequirement', 'inverse_label': 'solvesRequirement', 'domain_text': ['domain', 'requirement'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasType', 'label': 'hasType', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Type'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#ofPlannerType', 'label': 'ofPlannerType', 'domain': ['https://purl.org/ai4s/ontology/planning#Planner'], 'range': ['https://purl.org/ai4s/ontology/planning#PlannerType'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planner'], 'range_text': ['planner', 'type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPlan', 'label': 'hasPlan', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#Plan'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['plan']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPrecondition', 'label': 'hasPrecondition', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionPrecondition'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'precondition']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#solvesRequirement', 'label': 'solvesRequirement', 'domain': ['https://purl.org/ai4s/ontology/planning#Planner'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planner'], 'range_text': ['domain', 'requirement']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasRequirement', 'label': 'hasRequirement', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'requirement']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#addsPredicate', 'label': 'addsPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'range': ['https://purl.org/ai4s/ontology/planning#State'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'effect'], 'range_text': ['state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#deletesPredicate', 'label': 'deletesPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'range': ['https://purl.org/ai4s/ontology/planning#State'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'effect'], 'range_text': ['state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner', 'label': 'hasMediumRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#isGeneratedBy', 'label': 'isGeneratedBy', 'domain': ['https://purl.org/ai4s/ontology/planning#Plan'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['plan'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner', 'label': 'hasHighRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasType', 'label': 'hasType', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Type'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#ofType', 'label': 'ofType', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionParameter'], 'range': ['https://purl.org/ai4s/ontology/planning#Type'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'parameter'], 'range_text': ['type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasObject', 'label': 'hasObject', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#ProblemObject'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['problem', 'object']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#isGeneratedBy', 'label': 'isGeneratedBy', 'domain': ['https://purl.org/ai4s/ontology/planning#Plan'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['plan'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPlanCost', 'label': 'hasPlanCost', 'domain': ['https://purl.org/ai4s/ontology/planning#Plan'], 'range': ['http://www.w3.org/2001/XMLSchema#nonNegativeInteger'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['plan'], 'range_text': ['non', 'negative', 'integer']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasTag', 'label': 'hasTag', 'domain': ['https://purl.org/ai4s/ontology/planning#Type'], 'range': ['https://purl.org/ai4s/ontology/planning#TypeTag'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['type'], 'range_text': ['type', 'tag']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#solvedBy', 'label': 'solvedBy', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': 'https://purl.org/ai4s/ontology/planning#solvesRequirement', 'inverse_label': 'solvesRequirement', 'domain_text': ['domain', 'requirement'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner', 'label': 'hasHighRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasGoalState', 'label': 'hasGoalState', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#GoalState'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['goal', 'state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasInitialState', 'label': 'hasInitialState', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#InitialState'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['initial', 'state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasTypeInstance', 'label': 'hasTypeInstance', 'domain': ['https://purl.org/ai4s/ontology/planning#Type'], 'range': ['https://purl.org/ai4s/ontology/planning#ProblemObject'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['type'], 'range_text': ['problem', 'object']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPlanCost', 'label': 'hasPlanCost', 'domain': ['https://purl.org/ai4s/ontology/planning#Plan'], 'range': ['http://www.w3.org/2001/XMLSchema#nonNegativeInteger'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['plan'], 'range_text': ['non', 'negative', 'integer']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasEffect', 'label': 'hasEffect', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'effect']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasConstant', 'label': 'hasConstant', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainConstant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'constant']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasParameter', 'label': 'hasParameter', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionParameter'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'parameter']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#isGeneratedBy', 'label': 'isGeneratedBy', 'domain': ['https://purl.org/ai4s/ontology/planning#Plan'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['plan'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#solvedBy', 'label': 'solvedBy', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': 'https://purl.org/ai4s/ontology/planning#solvesRequirement', 'inverse_label': 'solvesRequirement', 'domain_text': ['domain', 'requirement'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasConstant', 'label': 'hasConstant', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainConstant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'constant']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#ofType', 'label': 'ofType', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionParameter'], 'range': ['https://purl.org/ai4s/ontology/planning#Type'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'parameter'], 'range_text': ['type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner', 'label': 'hasLowRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPrecondition', 'label': 'hasPrecondition', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionPrecondition'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'precondition']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasConstant', 'label': 'hasConstant', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainConstant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'constant']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasType', 'label': 'hasType', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Type'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasTypeInstance', 'label': 'hasTypeInstance', 'domain': ['https://purl.org/ai4s/ontology/planning#Type'], 'range': ['https://purl.org/ai4s/ontology/planning#ProblemObject'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['type'], 'range_text': ['problem', 'object']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#ofType', 'label': 'ofType', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionParameter'], 'range': ['https://purl.org/ai4s/ontology/planning#Type'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'parameter'], 'range_text': ['type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#addsPredicate', 'label': 'addsPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'range': ['https://purl.org/ai4s/ontology/planning#State'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'effect'], 'range_text': ['state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#ofPlannerType', 'label': 'ofPlannerType', 'domain': ['https://purl.org/ai4s/ontology/planning#Planner'], 'range': ['https://purl.org/ai4s/ontology/planning#PlannerType'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planner'], 'range_text': ['planner', 'type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasRequirement', 'label': 'hasRequirement', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'requirement']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#addsPredicate', 'label': 'addsPredicate', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionEffect'], 'range': ['https://purl.org/ai4s/ontology/planning#State'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'effect'], 'range_text': ['state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasTag', 'label': 'hasTag', 'domain': ['https://purl.org/ai4s/ontology/planning#Type'], 'range': ['https://purl.org/ai4s/ontology/planning#TypeTag'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['type'], 'range_text': ['type', 'tag']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasAction', 'label': 'hasAction', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'action']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#ofType', 'label': 'ofType', 'domain': ['https://purl.org/ai4s/ontology/planning#ActionParameter'], 'range': ['https://purl.org/ai4s/ontology/planning#Type'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['action', 'parameter'], 'range_text': ['type']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasExtractedAction', 'label': 'hasExtractedAction', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#MacroAction'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['macro', 'action']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasAction', 'label': 'hasAction', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'action']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasGoalState', 'label': 'hasGoalState', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningProblem'], 'range': ['https://purl.org/ai4s/ontology/planning#GoalState'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'problem'], 'range_text': ['goal', 'state']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasRequirement', 'label': 'hasRequirement', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#DomainRequirement'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['domain', 'requirement']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner', 'label': 'hasLowRelevancePlanner', 'domain': ['https://purl.org/ai4s/ontology/planning#PlanningDomain'], 'range': ['https://purl.org/ai4s/ontology/planning#Planner'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['planning', 'domain'], 'range_text': ['planner']}
+
+{'iri': 'https://purl.org/ai4s/ontology/planning#hasPrecondition', 'label': 'hasPrecondition', 'domain': ['https://purl.org/ai4s/ontology/planning#DomainAction'], 'range': ['https://purl.org/ai4s/ontology/planning#ActionPrecondition'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['domain', 'action'], 'range_text': ['action', 'precondition']}

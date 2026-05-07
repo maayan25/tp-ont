@@ -1,0 +1,16 @@
+State after action 1:
+(above f0 f1) (above f0 f2) (above f0 f3) (above f1 f2) (above f1 f3) (above f2 f3) (origin p0 f1) (destin p0 f3) (origin p1 f2) (destin p1 f3) (lift-at f0) 
+State after action 2:
+(above f0 f1) (above f0 f2) (above f0 f3) (above f1 f2) (above f1 f3) (above f2 f3) (origin p0 f1) (destin p0 f3) (origin p1 f2) (destin p1 f3) (lift-at f1) 
+State after action 3:
+(above f0 f1) (above f0 f2) (above f0 f3) (above f1 f2) (above f1 f3) (above f2 f3) (origin p0 f1) (destin p0 f3) (origin p1 f2) (destin p1 f3) (lift-at f1) (boarded p0) 
+State after action 4:
+(above f0 f1) (above f0 f2) (above f0 f3) (above f1 f2) (above f1 f3) (above f2 f3) (origin p0 f1) (destin p0 f3) (origin p1 f2) (destin p1 f3) (boarded p0) (lift-at f2) 
+State after action 5:
+(above f0 f1) (above f0 f2) (above f0 f3) (above f1 f2) (above f1 f3) (above f2 f3) (origin p0 f1) (destin p0 f3) (origin p1 f2) (destin p1 f3) (boarded p0) (lift-at f2) (boarded p1) 
+State after action 6:
+(above f0 f1) (above f0 f2) (above f0 f3) (above f1 f2) (above f1 f3) (above f2 f3) (origin p0 f1) (destin p0 f3) (origin p1 f2) (destin p1 f3) (boarded p0) (boarded p1) (lift-at f3) 
+State after action 7:
+(above f0 f1) (above f0 f2) (above f0 f3) (above f1 f2) (above f1 f3) (above f2 f3) (origin p0 f1) (destin p0 f3) (origin p1 f2) (destin p1 f3) (boarded p0) (lift-at f3) (served p1) 
+State after action 8:
+(above f0 f1) (above f0 f2) (above f0 f3) (above f1 f2) (above f1 f3) (above f2 f3) (origin p0 f1) (destin p0 f3) (origin p1 f2) (destin p1 f3) (lift-at f3) (served p1) (served p0) 

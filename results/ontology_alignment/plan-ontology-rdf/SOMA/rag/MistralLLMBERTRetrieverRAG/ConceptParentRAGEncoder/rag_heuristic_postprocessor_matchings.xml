@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.567168533802032</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ActionExecutionPlan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.538081824779510</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.564906001091003</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ActionExecutionPlan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.531776428222656</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#GoalRole"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.63140392303466</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.612521409988403</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#MacroAction"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.558602094650268</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.999999940395355</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Planning"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.682069838047027</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Planning"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.79823607206344</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.524066269397735</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlannerType"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Planning"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.689305245876312</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Planning"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.691808938980102</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Planning"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.832545101642608</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#MetaCognitionPlanningTopic"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.527108550071716</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.656961321830749</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#StoredObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.602190196514129</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.596545696258544</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.00000023841857</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#SocialState"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.631212234497070</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#StateType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.701259911060333</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#StateType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.565147280693054</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.527793347835540</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

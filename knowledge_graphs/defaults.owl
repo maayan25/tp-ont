@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:tp-ont="https://w3id.org/tp-ont/ontology#"
+>
+<owl:Ontology rdf:about="https://w3id.org/tp-ont/ontology">
+        <owl:imports rdf:resource="https://purl.org/ai4s/ontology/planning"/>
+        <tp-ont:contributor>Albert Meroño-Peñuela, Gerard Canal</tp-ont:contributor>
+        <tp-ont:creator>Ma'ayan Armony</tp-ont:creator>
+        <tp-ont:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <rdfs:comment>TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans</rdfs:comment>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <rdfs:label>TP-ONT</rdfs:label>
+    </owl:Ontology>
+
+    <!-- Terms from AI-Planning-Ontology that we set relations to -->
+    <!-- <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#DomainAction"> -->
+    <!-- <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#ActionParameter"> -->
+    <!-- <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#ActionPrecondition"> -->
+    <!--  <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#ProblemObject"> -->
+    <!-- <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#DomainPredicate"> -->
+    <!-- <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasEffect"> -->
+    <!-- <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasAction"> -->
+    <!-- <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasGoalState"> -->
+    <!-- <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasParameter"> -->
+    <!-- <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasInitialState"> -->
+    <!-- <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasObject"> -->
+    <!-- <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasPlan"> -->
+    <!-- <owl:DatatypeProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasPlanCost"> -->
+    <!-- <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasProblem"> -->
+    <!-- <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#State"> -->
+    <!-- <owl:ObjectProperty rdf:about="https://purl.org/ai4s/ontology/planning#hasPrecondition"> -->
+    <!-- <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#GoalState"> -->
+    <!-- <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#InitialState"> -->
+    <!-- <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#PlanningDomain"> -->
+    <!-- <owl:Class rdf:about="https://purl.org/ai4s/ontology/planning#PlanningProblem"> -->
+
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Effect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#admissible">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+    <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#hasAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Precondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#initialStateOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#InitialState"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#hasInitialState"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Action">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasEffect"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#goalStateOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#hasGoalState"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasPredicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasVariable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Parameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Predicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+    </rdf:RDF>

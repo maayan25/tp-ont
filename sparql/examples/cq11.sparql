@@ -1,0 +1,30 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX planning-ontology: <https://purl.org/ai4s/ontology/planning#>
+PREFIX tp-ont: <https://w3id.org/tp-ont/ontology#>
+SELECT ?type1 ?type2 (?type1 = ?type2 AS ?same) WHERE {
+  {
+    SELECT DISTINCT ?type1 WHERE {
+        ?domain1 rdf:type planning-ontology:PlanningDomain ;
+               rdfs:label "DepotDomain"@en ;
+               planning-ontology:hasPredicate ?predicate1 .
+        ?predicate1 tp-ont:hasFluent ?fluent1 ;
+                            ?property1 ?type1 .
+        ?fluent1 rdfs:label "at"@en .
+        ?property1 rdfs:subPropertyOf tp-ont:hasArg1 .
+    }
+  }
+  {
+    SELECT DISTINCT ?type2 WHERE {
+        ?domain2 rdf:type planning-ontology:PlanningDomain ;
+               rdfs:label "RoverDomain"@en ;
+               planning-ontology:hasPredicate ?predicate2 .
+        ?predicate2 tp-ont:hasFluent ?fluent2 ;
+                            ?property2 ?type2 .
+        ?fluent2 rdfs:label "at"@en .
+        ?property2 rdfs:subPropertyOf tp-ont:hasArg1 .
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasEffect', 'hasEffect'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#ActionEffect', 'ActionEffect'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasRequirement', 'hasRequirement'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasInitialState', 'hasInitialState'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasRequirement', 'hasRequirement'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPlan', 'hasPlan'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('http://purl.org/dc/terms/title', 'title'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner', 'hasMediumRelevancePlanner'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ofType', 'ofType'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#ActionParameter', 'ActionParameter'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ofPlannerType', 'ofPlannerType'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#GoalState', 'GoalState'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#InitialState', 'InitialState'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://purl.org/ai4s/ontology/planning#State', 'State'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner', 'hasLowRelevancePlanner'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasRequirement', 'hasRequirement'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainRequirement', 'DomainRequirement'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasExtractedAction', 'hasExtractedAction'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner', 'hasHighRelevancePlanner'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#Planner', 'Planner'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasType', 'hasType'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasParameter', 'hasParameter'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainAction', 'DomainAction'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#addsPredicate', 'addsPredicate'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#isGeneratedBy', 'isGeneratedBy'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#isGeneratedBy', 'isGeneratedBy'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#Planner', 'Planner'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPlanCost', 'hasPlanCost'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#DatatypeProperty', 'DatatypeProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('http://purl.org/dc/terms/language', 'language'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasInitialState', 'hasInitialState'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPrecondition', 'hasPrecondition'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#Planner', 'Planner'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ofType', 'ofType'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ActionParameter', 'ActionParameter'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#solvesRequirement', 'solvesRequirement'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasObject', 'hasObject'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasProblem', 'hasProblem'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#Plan', 'Plan'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner', 'hasMediumRelevancePlanner'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#Planner', 'Planner'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#TypeTag', 'TypeTag'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#solvedBy', 'solvedBy'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ofPlannerType', 'ofPlannerType'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#Planner', 'Planner'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#isGeneratedBy', 'isGeneratedBy'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasObject', 'hasObject'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#addsPredicate', 'addsPredicate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#State', 'State'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPlan', 'hasPlan'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner', 'hasLowRelevancePlanner'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('http://purl.org/dc/terms/license', 'license'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ProblemObject', 'ProblemObject'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasGoalState', 'hasGoalState'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasTypeInstance', 'hasTypeInstance'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#ProblemObject', 'ProblemObject'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#Authors', 'Authors'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasTag', 'hasTag'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#TypeTag', 'TypeTag'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner', 'hasHighRelevancePlanner'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasExtractedAction', 'hasExtractedAction'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('http://purl.org/dc/terms/description', 'description'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPredicate', 'hasPredicate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasType', 'hasType'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#Type', 'Type'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://purl.org/ai4s/ontology/planning#TypeTag', 'TypeTag'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#DomainPredicate', 'DomainPredicate'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#solvesRequirement', 'solvesRequirement'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#Planner', 'Planner'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasGoalState', 'hasGoalState'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPlanCost', 'hasPlanCost'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('http://www.w3.org/2001/XMLSchema#nonNegativeInteger', 'nonNegativeInteger'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasConstant', 'hasConstant'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainConstant', 'DomainConstant'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPlan', 'hasPlan'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasConstant', 'hasConstant'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning', 'planning'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Ontology', 'Ontology'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasConstant', 'hasConstant'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#MacroAction', 'MacroAction'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#deletesPredicate', 'deletesPredicate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#State', 'State'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ofType', 'ofType'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#Type', 'Type'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasType', 'hasType'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#Type', 'Type'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#solvesRequirement', 'solvesRequirement'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainRequirement', 'DomainRequirement'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasAction', 'hasAction'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#GoalState', 'GoalState'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://purl.org/ai4s/ontology/planning#State', 'State'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ActionPrecondition', 'ActionPrecondition'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#DomainAction', 'DomainAction'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#InitialState', 'InitialState'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#DomainRequirement', 'DomainRequirement'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasHighRelevancePlanner', 'hasHighRelevancePlanner'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#deletesPredicate', 'deletesPredicate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#ActionEffect', 'ActionEffect'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasProblem', 'hasProblem'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasLowRelevancePlanner', 'hasLowRelevancePlanner'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#Planner', 'Planner'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#deletesPredicate', 'deletesPredicate'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasObject', 'hasObject'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#ProblemObject', 'ProblemObject'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPrecondition', 'hasPrecondition'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#ActionPrecondition', 'ActionPrecondition'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#addsPredicate', 'addsPredicate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#ActionEffect', 'ActionEffect'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasParameter', 'hasParameter'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasEffect', 'hasEffect'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainAction', 'DomainAction'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('http://purl.org/dc/terms/contributor', 'contributor'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasTag', 'hasTag'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#Type', 'Type'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasExtractedAction', 'hasExtractedAction'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#MacroAction', 'MacroAction'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#MacroAction', 'MacroAction'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#subClassOf', 'subClassOf'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainAction', 'DomainAction'), 'subject_is_class': True, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasParameter', 'hasParameter'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#ActionParameter', 'ActionParameter'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasAction', 'hasAction'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainAction', 'DomainAction'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasMediumRelevancePlanner', 'hasMediumRelevancePlanner'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#solvedBy', 'solvedBy'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#Planner', 'Planner'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasTypeInstance', 'hasTypeInstance'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#Type', 'Type'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasAction', 'hasAction'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ofPlannerType', 'ofPlannerType'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#PlannerType', 'PlannerType'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasTag', 'hasTag'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPlanCost', 'hasPlanCost'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#Plan', 'Plan'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlanningDomain', 'PlanningDomain'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#ActionEffect', 'ActionEffect'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('http://purl.org/dc/terms/creator', 'creator'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#AnnotationProperty', 'AnnotationProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasGoalState', 'hasGoalState'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#GoalState', 'GoalState'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning', 'planning'), 'predicate': ('http://www.w3.org/2002/07/owl#versionIRI', 'versionIRI'), 'object': ('https://purl.org/ai4s/ontology/planning/v2.0', 'v2.0'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#DomainConstant', 'DomainConstant'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#State', 'State'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPrecondition', 'hasPrecondition'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainAction', 'DomainAction'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasTypeInstance', 'hasTypeInstance'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#solvedBy', 'solvedBy'), 'predicate': ('http://www.w3.org/2002/07/owl#inverseOf', 'inverseOf'), 'object': ('https://purl.org/ai4s/ontology/planning#solvesRequirement', 'solvesRequirement'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#solvedBy', 'solvedBy'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#domain', 'domain'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainRequirement', 'DomainRequirement'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPredicate', 'hasPredicate'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlannerType', 'PlannerType'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#Type', 'Type'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasInitialState', 'hasInitialState'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#InitialState', 'InitialState'), 'subject_is_class': False, 'object_is_class': True}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasProblem', 'hasProblem'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasEffect', 'hasEffect'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#ObjectProperty', 'ObjectProperty'), 'subject_is_class': False, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#PlanningProblem', 'PlanningProblem'), 'predicate': ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'type'), 'object': ('http://www.w3.org/2002/07/owl#Class', 'Class'), 'subject_is_class': True, 'object_is_class': False}
+
+{'subject': ('https://purl.org/ai4s/ontology/planning#hasPredicate', 'hasPredicate'), 'predicate': ('http://www.w3.org/2000/01/rdf-schema#range', 'range'), 'object': ('https://purl.org/ai4s/ontology/planning#DomainPredicate', 'DomainPredicate'), 'subject_is_class': False, 'object_is_class': True}

@@ -1,0 +1,67 @@
+Unsatisfiable classes: 0
+
+Object properties with no domain or range:
+type missing domain
+type missing range
+hasEffect missing domain
+hasEffect missing range
+hasGoalState missing domain
+hasGoalState missing range
+hasInitialState missing domain
+hasInitialState missing range
+hasAction missing domain
+hasAction missing range
+hasProblem missing domain
+hasProblem missing range
+hasPrecondition missing domain
+hasPrecondition missing range
+hasParameter missing domain
+hasParameter missing range
+hasPredicate missing domain
+hasPredicate missing range
+
+Inferred parents:
+Waypoint inferred parents: ['Thing', 'NominalConcept']
+Predicate inferred parents: ['ProblemPredicate']
+Rover inferred parents: ['Thing', 'NominalConcept']
+Hoist inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+Instrument inferred parents: ['Thing', 'NominalConcept']
+Object inferred parents: ['Thing', 'ProblemObject']
+Passenger inferred parents: ['Thing', 'NominalConcept']
+Floor inferred parents: ['Thing', 'NominalConcept']
+Action inferred parents: ['Thing', 'DomainAction']
+Airplane inferred parents: ['Thing', 'ProblemObject', 'NominalConcept', 'Physobj']
+Vehicle inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+Crate inferred parents: ['Thing', 'ProblemObject', 'Locatable', 'NominalConcept']
+DomainAction inferred parents: ['Thing', 'Action']
+Locatable inferred parents: ['Thing', 'NominalConcept']
+Surface inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+Store inferred parents: ['Thing', 'NominalConcept']
+Precondition inferred parents: ['Thing', 'ProblemPredicate', 'ActionPrecondition']
+ActionPrecondition inferred parents: ['Predicate', 'Thing', 'Precondition']
+Effect inferred parents: ['Thing', 'ActionEffect']
+ActionEffect inferred parents: ['Predicate', 'ProblemPredicate', 'Effect']
+Place inferred parents: ['Thing', 'NominalConcept']
+Package inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+Physobj inferred parents: ['Thing', 'NominalConcept']
+Truck inferred parents: ['Thing', 'ProblemObject', 'NominalConcept', 'Physobj']
+Satellite inferred parents: ['Thing', 'NominalConcept']
+Block inferred parents: ['Thing', 'NominalConcept']
+Location inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+Lander inferred parents: ['Thing', 'NominalConcept']
+Depot inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+Direction inferred parents: ['Thing', 'NominalConcept']
+Obj inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+Mode inferred parents: ['Thing', 'NominalConcept']
+ProblemObject inferred parents: ['Object', 'NominalConcept']
+City inferred parents: ['Thing', 'NominalConcept']
+Parameter inferred parents: ['Thing', 'ActionParameter']
+ActionParameter inferred parents: ['Parameter', 'NominalConcept']
+Airport inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+Objective inferred parents: ['Thing', 'NominalConcept']
+Driver inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+NegatedFluent inferred parents: ['Thing']
+ProblemPredicate inferred parents: ['Predicate']
+Camera inferred parents: ['Thing', 'NominalConcept']
+Distributor inferred parents: ['Thing', 'ProblemObject', 'NominalConcept']
+Pallet inferred parents: ['Thing', 'ProblemObject', 'Locatable', 'NominalConcept']

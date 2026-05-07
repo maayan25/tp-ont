@@ -1,0 +1,8 @@
+State after action 1:
+(above f0 f1) (origin p0 f0) (destin p0 f1) (lift-at f0) 
+State after action 2:
+(above f0 f1) (origin p0 f0) (destin p0 f1) (lift-at f0) (boarded p0) 
+State after action 3:
+(above f0 f1) (origin p0 f0) (destin p0 f1) (boarded p0) (lift-at f1) 
+State after action 4:
+(above f0 f1) (origin p0 f0) (destin p0 f1) (lift-at f1) (served p0) 

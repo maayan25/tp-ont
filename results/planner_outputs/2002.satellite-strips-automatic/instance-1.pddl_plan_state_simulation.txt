@@ -1,0 +1,20 @@
+State after action 1:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (power_avail satellite0) (pointing satellite0 Phenomenon6) 
+State after action 2:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (pointing satellite0 Phenomenon6) (power_on instrument0) 
+State after action 3:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (pointing satellite0 Phenomenon6) (power_on instrument0) (pointing satellite0 groundstation2) 
+State after action 4:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (pointing satellite0 Phenomenon6) (power_on instrument0) (pointing satellite0 groundstation2) (calibrated instrument0) 
+State after action 5:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (pointing satellite0 Phenomenon6) (power_on instrument0) (calibrated instrument0) (pointing satellite0 phenomenon4) 
+State after action 6:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (pointing satellite0 Phenomenon6) (power_on instrument0) (calibrated instrument0) (pointing satellite0 phenomenon4) (have_image phenomenon4 thermograph0) 
+State after action 7:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (pointing satellite0 Phenomenon6) (power_on instrument0) (calibrated instrument0) (have_image phenomenon4 thermograph0) (pointing satellite0 phenomenon6) 
+State after action 8:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (pointing satellite0 Phenomenon6) (power_on instrument0) (calibrated instrument0) (have_image phenomenon4 thermograph0) (pointing satellite0 phenomenon6) (have_image phenomenon6 thermograph0) 
+State after action 9:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (pointing satellite0 Phenomenon6) (power_on instrument0) (calibrated instrument0) (have_image phenomenon4 thermograph0) (have_image phenomenon6 thermograph0) (pointing satellite0 star5) 
+State after action 10:
+(supports instrument0 thermograph0) (calibration_target instrument0 GroundStation2) (on_board instrument0 satellite0) (pointing satellite0 Phenomenon6) (power_on instrument0) (calibrated instrument0) (have_image phenomenon4 thermograph0) (have_image phenomenon6 thermograph0) (pointing satellite0 star5) (have_image star5 thermograph0) 

@@ -1,0 +1,121 @@
+Type-checking navigate
+...action passes type checking.
+Type-checking sample_soil
+...action passes type checking.
+Type-checking sample_rock
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking calibrate
+...action passes type checking.
+Type-checking take_image
+...action passes type checking.
+Type-checking communicate_soil_data
+...action passes type checking.
+Type-checking communicate_rock_data
+...action passes type checking.
+Type-checking communicate_image_data
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.rovers-strips-automatic/instance-1.pddl_plan.txt
+Plan to validate:
+
+Plan size: 10
+1:
+(calibrate rover0 camera0 objective1 waypoint3)
+ 
+2:
+(sample_rock rover0 rover0store waypoint3)
+ 
+3:
+(navigate rover0 waypoint3 waypoint1)
+ 
+4:
+(communicate_rock_data rover0 general waypoint3 waypoint1 waypoint0)
+ 
+5:
+(drop rover0 rover0store)
+ 
+6:
+(navigate rover0 waypoint1 waypoint2)
+ 
+7:
+(take_image rover0 waypoint2 objective1 camera0 high_res)
+ 
+8:
+(communicate_image_data rover0 general objective1 high_res waypoint2 waypoint0)
+ 
+9:
+(sample_soil rover0 rover0store waypoint2)
+ 
+10:
+(communicate_soil_data rover0 general waypoint2 waypoint2 waypoint0)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Adding (calibrated camera0 rover0)
+
+Checking next happening (time 2)
+Deleting (empty rover0store)
+Deleting (at_rock_sample waypoint3)
+Adding (full rover0store)
+Adding (have_rock_analysis rover0 waypoint3)
+
+Checking next happening (time 3)
+Deleting (at rover0 waypoint3)
+Adding (at rover0 waypoint1)
+
+Checking next happening (time 4)
+WARNING: (communicate_rock_data rover0 general waypoint3 waypoint1 waypoint0) adds and deletes the literal (available rover0)
+WARNING: (communicate_rock_data rover0 general waypoint3 waypoint1 waypoint0) adds and deletes the literal (channel_free general)
+Deleting (available rover0)
+Deleting (channel_free general)
+Adding (channel_free general)
+Adding (communicated_rock_data waypoint3)
+Adding (available rover0)
+
+Checking next happening (time 5)
+Deleting (full rover0store)
+Adding (empty rover0store)
+
+Checking next happening (time 6)
+Deleting (at rover0 waypoint1)
+Adding (at rover0 waypoint2)
+
+Checking next happening (time 7)
+Deleting (calibrated camera0 rover0)
+Adding (have_image rover0 objective1 high_res)
+
+Checking next happening (time 8)
+WARNING: (communicate_image_data rover0 general objective1 high_res waypoint2 waypoint0) adds and deletes the literal (available rover0)
+WARNING: (communicate_image_data rover0 general objective1 high_res waypoint2 waypoint0) adds and deletes the literal (channel_free general)
+Deleting (available rover0)
+Deleting (channel_free general)
+Adding (channel_free general)
+Adding (communicated_image_data objective1 high_res)
+Adding (available rover0)
+
+Checking next happening (time 9)
+Deleting (empty rover0store)
+Deleting (at_soil_sample waypoint2)
+Adding (full rover0store)
+Adding (have_soil_analysis rover0 waypoint2)
+
+Checking next happening (time 10)
+WARNING: (communicate_soil_data rover0 general waypoint2 waypoint2 waypoint0) adds and deletes the literal (available rover0)
+WARNING: (communicate_soil_data rover0 general waypoint2 waypoint2 waypoint0) adds and deletes the literal (channel_free general)
+Deleting (available rover0)
+Deleting (channel_free general)
+Adding (channel_free general)
+Adding (communicated_soil_data waypoint2)
+Adding (available rover0)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 10 
+
+Successful plans:
+Value: 10
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.rovers-strips-automatic/instance-1.pddl_plan.txt 10 
+

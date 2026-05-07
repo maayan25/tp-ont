@@ -1,0 +1,6 @@
+[submodule "OntoAligner"]
+	path = OntoAligner
+	url = https://github.com/sciknoworg/OntoAligner
+[submodule "pddl-instances"]
+	path = pddl-instances
+	url = https://github.com/potassco/pddl-instances

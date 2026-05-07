@@ -1,0 +1,37 @@
+{'name': 'ActionEffect', 'iri': 'https://purl.org/ai4s/ontology/planning#ActionEffect', 'label': 'ActionEffect', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['a class that represents what happens after an action is done']}
+
+{'name': 'ActionParameter', 'iri': 'https://purl.org/ai4s/ontology/planning#ActionParameter', 'label': 'ActionParameter', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['a class that represents what is involved in an action']}
+
+{'name': 'ActionPrecondition', 'iri': 'https://purl.org/ai4s/ontology/planning#ActionPrecondition', 'label': 'ActionPrecondition', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['a class that represents what needs to be true before an action can be done']}
+
+{'name': 'DomainAction', 'iri': 'https://purl.org/ai4s/ontology/planning#DomainAction', 'label': 'DomainAction', 'childrens': [{'iri': 'https://purl.org/ai4s/ontology/planning#MacroAction', 'label': 'MacroAction', 'name': 'MacroAction'}], 'parents': [], 'synonyms': [], 'comment': ['a class that represents a type of action that can be performed in a planning domain']}
+
+{'name': 'DomainConstant', 'iri': 'https://purl.org/ai4s/ontology/planning#DomainConstant', 'label': 'DomainConstant', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['represents a fixed entity in a planning domain']}
+
+{'name': 'DomainPredicate', 'iri': 'https://purl.org/ai4s/ontology/planning#DomainPredicate', 'label': 'DomainPredicate', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['a class that represents a condition or a fact that can be true or false in a planning domain']}
+
+{'name': 'DomainRequirement', 'iri': 'https://purl.org/ai4s/ontology/planning#DomainRequirement', 'label': 'DomainRequirement', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['A feature that a planning domain requires or supports']}
+
+{'name': 'GoalState', 'iri': 'https://purl.org/ai4s/ontology/planning#GoalState', 'label': 'GoalState', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['represents a desired or a target state defined in a task that a plan should achieve']}
+
+{'name': 'InitialState', 'iri': 'https://purl.org/ai4s/ontology/planning#InitialState', 'label': 'InitialState', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['represents the starting or the given state of a planning problem']}
+
+{'name': 'MacroAction', 'iri': 'https://purl.org/ai4s/ontology/planning#MacroAction', 'label': 'MacroAction', 'childrens': [], 'parents': [{'iri': 'https://purl.org/ai4s/ontology/planning#DomainAction', 'label': 'DomainAction', 'name': 'DomainAction'}], 'synonyms': [], 'comment': ['Extracted macro action, which is a combination of multiple actions of a planning domain']}
+
+{'name': 'Plan', 'iri': 'https://purl.org/ai4s/ontology/planning#Plan', 'label': 'Plan', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Planner', 'iri': 'https://purl.org/ai4s/ontology/planning#Planner', 'label': 'Planner', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['a system that can generate plans for a given planning domain and problem']}
+
+{'name': 'PlannerType', 'iri': 'https://purl.org/ai4s/ontology/planning#PlannerType', 'label': 'PlannerType', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['a category or classification of planners based on their characteristics or features']}
+
+{'name': 'PlanningDomain', 'iri': 'https://purl.org/ai4s/ontology/planning#PlanningDomain', 'label': 'PlanningDomain', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['a class that represents a problem setting for automated planning']}
+
+{'name': 'PlanningProblem', 'iri': 'https://purl.org/ai4s/ontology/planning#PlanningProblem', 'label': 'PlanningProblem', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['represents a task of the planning domain that requires a plan to be solved']}
+
+{'name': 'ProblemObject', 'iri': 'https://purl.org/ai4s/ontology/planning#ProblemObject', 'label': 'ProblemObject', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['represents an entity or a constant that is involved in a planning problem']}
+
+{'name': 'State', 'iri': 'https://purl.org/ai4s/ontology/planning#State', 'label': 'State', 'childrens': [{'iri': 'https://purl.org/ai4s/ontology/planning#GoalState', 'label': 'GoalState', 'name': 'GoalState'}, {'iri': 'https://purl.org/ai4s/ontology/planning#InitialState', 'label': 'InitialState', 'name': 'InitialState'}], 'parents': [], 'synonyms': [], 'comment': ['represents a situation or a configuration of the world in a planning problem']}
+
+{'name': 'Type', 'iri': 'https://purl.org/ai4s/ontology/planning#Type', 'label': 'Type', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['represents a kind of entity in a planning domain']}
+
+{'name': 'TypeTag', 'iri': 'https://purl.org/ai4s/ontology/planning#TypeTag', 'label': 'TypeTag', 'childrens': [{'iri': 'https://purl.org/ai4s/ontology/planning#Type', 'label': 'Type', 'name': 'Type'}], 'parents': [], 'synonyms': [], 'comment': ['represents a label that can be assigned to a type in a planning domain']}

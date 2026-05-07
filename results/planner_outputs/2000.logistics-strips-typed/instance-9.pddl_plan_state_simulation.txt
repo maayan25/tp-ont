@@ -1,0 +1,52 @@
+State after action 1:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) 
+State after action 2:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) 
+State after action 3:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) (in obj22 tru2) 
+State after action 4:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) (in obj22 tru2) (in obj13 tru1) 
+State after action 5:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) (in obj22 tru2) (in obj13 tru1) (in obj12 tru1) 
+State after action 6:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) (in obj22 tru2) (in obj13 tru1) (in obj12 tru1) (in obj11 tru1) 
+State after action 7:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) (in obj22 tru2) (in obj13 tru1) (in obj12 tru1) (in obj11 tru1) (at tru1 apt1) 
+State after action 8:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) (in obj22 tru2) (in obj12 tru1) (in obj11 tru1) (at tru1 apt1) (at obj13 apt1) 
+State after action 9:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) (in obj22 tru2) (in obj11 tru1) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) 
+State after action 10:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) (in obj22 tru2) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) (at obj11 apt1) 
+State after action 11:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj23 tru2) (in obj22 tru2) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) (at obj11 apt1) (at tru2 apt2) 
+State after action 12:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (in obj22 tru2) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) (at obj11 apt1) (at tru2 apt2) (at obj23 apt2) 
+State after action 13:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) (at obj11 apt1) (at tru2 apt2) (at obj23 apt2) (at obj22 apt2) 
+State after action 14:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) (at obj11 apt1) (at tru2 apt2) (at obj22 apt2) (in obj23 apn1) 
+State after action 15:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) (at obj11 apt1) (at tru2 apt2) (in obj23 apn1) (in obj22 apn1) 
+State after action 16:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) (at obj11 apt1) (at tru2 apt2) (in obj23 apn1) (in obj22 apn1) (at apn1 apt1) 
+State after action 17:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) (at obj11 apt1) (at tru2 apt2) (in obj22 apn1) (at apn1 apt1) (at obj23 apt1) 
+State after action 18:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at obj12 apt1) (at obj11 apt1) (at tru2 apt2) (at apn1 apt1) (at obj23 apt1) (at obj22 apt1) 
+State after action 19:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at obj11 apt1) (at tru2 apt2) (at apn1 apt1) (at obj23 apt1) (at obj22 apt1) (in obj12 apn1) 
+State after action 20:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at tru2 apt2) (at apn1 apt1) (at obj23 apt1) (at obj22 apt1) (in obj12 apn1) (in obj11 apn1) 
+State after action 21:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at tru2 apt2) (at obj23 apt1) (at obj22 apt1) (in obj12 apn1) (in obj11 apn1) (at apn1 apt2) 
+State after action 22:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at tru2 apt2) (at obj23 apt1) (at obj22 apt1) (in obj11 apn1) (at apn1 apt2) (at obj12 apt2) 
+State after action 23:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at tru2 apt2) (at obj23 apt1) (at obj22 apt1) (at apn1 apt2) (at obj12 apt2) (at obj11 apt2) 
+State after action 24:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at tru2 apt2) (at obj23 apt1) (at obj22 apt1) (at apn1 apt2) (at obj12 apt2) (in obj11 tru2) 
+State after action 25:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at obj23 apt1) (at obj22 apt1) (at apn1 apt2) (at obj12 apt2) (in obj11 tru2) (at tru2 pos2) 
+State after action 26:
+(at obj12 pos1) (at obj13 pos1) (at tru2 pos2) (at obj21 pos2) (at obj22 pos2) (at obj23 pos2) (in-city pos1 cit1) (in-city apt1 cit1) (in-city pos2 cit2) (in-city apt2 cit2)) (at tru1 apt1) (at obj13 apt1) (at obj23 apt1) (at obj22 apt1) (at apn1 apt2) (at obj12 apt2) (at tru2 pos2) (at obj11 pos2) 

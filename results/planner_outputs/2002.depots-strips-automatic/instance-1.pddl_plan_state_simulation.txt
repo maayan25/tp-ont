@@ -1,0 +1,22 @@
+State after action 1:
+(at pallet0 depot0) (clear crate1) (at pallet1 distributor0) (clear crate0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at truck1 depot0) (at hoist0 depot0) (available hoist0) (at hoist1 distributor0) (available hoist1) (at hoist2 distributor1) (available hoist2) (at crate0 distributor0) (on crate0 pallet1) (at crate1 depot0) (on crate1 pallet0) 
+State after action 2:
+(at pallet0 depot0) (at pallet1 distributor0) (clear crate0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at truck1 depot0) (at hoist0 depot0) (at hoist1 distributor0) (available hoist1) (at hoist2 distributor1) (available hoist2) (at crate0 distributor0) (on crate0 pallet1) (lifting hoist0 crate1) (clear pallet0) 
+State after action 3:
+(at pallet0 depot0) (at pallet1 distributor0) (clear crate0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at truck1 depot0) (at hoist0 depot0) (at hoist1 distributor0) (available hoist1) (at hoist2 distributor1) (available hoist2) (at crate0 distributor0) (on crate0 pallet1) (clear pallet0) (in crate1 truck1) (available hoist0) 
+State after action 4:
+(at pallet0 depot0) (at pallet1 distributor0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at truck1 depot0) (at hoist0 depot0) (at hoist1 distributor0) (at hoist2 distributor1) (available hoist2) (clear pallet0) (in crate1 truck1) (available hoist0) (lifting hoist1 crate0) (clear pallet1) 
+State after action 5:
+(at pallet0 depot0) (at pallet1 distributor0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at hoist0 depot0) (at hoist1 distributor0) (at hoist2 distributor1) (available hoist2) (clear pallet0) (in crate1 truck1) (available hoist0) (lifting hoist1 crate0) (clear pallet1) (at truck1 distributor0) 
+State after action 6:
+(at pallet0 depot0) (at pallet1 distributor0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at hoist0 depot0) (at hoist1 distributor0) (at hoist2 distributor1) (available hoist2) (clear pallet0) (in crate1 truck1) (available hoist0) (clear pallet1) (at truck1 distributor0) (in crate0 truck1) (available hoist1) 
+State after action 7:
+(at pallet0 depot0) (at pallet1 distributor0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at hoist0 depot0) (at hoist1 distributor0) (at hoist2 distributor1) (available hoist2) (clear pallet0) (available hoist0) (clear pallet1) (at truck1 distributor0) (in crate0 truck1) (lifting hoist1 crate1) 
+State after action 8:
+(at pallet0 depot0) (at pallet1 distributor0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at hoist0 depot0) (at hoist1 distributor0) (at hoist2 distributor1) (available hoist2) (clear pallet0) (available hoist0) (clear pallet1) (in crate0 truck1) (lifting hoist1 crate1) (at truck1 distributor1) 
+State after action 9:
+(at pallet0 depot0) (at pallet1 distributor0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at hoist0 depot0) (at hoist1 distributor0) (at hoist2 distributor1) (clear pallet0) (available hoist0) (clear pallet1) (lifting hoist1 crate1) (at truck1 distributor1) (lifting hoist2 crate0) 
+State after action 10:
+(at pallet0 depot0) (at pallet1 distributor0) (at pallet2 distributor1) (clear pallet2) (at truck0 distributor1) (at hoist0 depot0) (at hoist1 distributor0) (at hoist2 distributor1) (clear pallet0) (available hoist0) (at truck1 distributor1) (lifting hoist2 crate0) (available hoist1) (at crate1 distributor0) (clear crate1) (on crate1 pallet1) 
+State after action 11:
+(at pallet0 depot0) (at pallet1 distributor0) (at pallet2 distributor1) (at truck0 distributor1) (at hoist0 depot0) (at hoist1 distributor0) (at hoist2 distributor1) (clear pallet0) (available hoist0) (at truck1 distributor1) (available hoist1) (at crate1 distributor0) (clear crate1) (on crate1 pallet1) (available hoist2) (at crate0 distributor1) (clear crate0) (on crate0 pallet2) 

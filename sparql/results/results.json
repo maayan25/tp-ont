@@ -1,0 +1,667 @@
+{
+    "cq5": {
+        "0": {
+            "numArgs": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "0"
+            }
+        }
+    },
+    "cq15": {
+        "0": {
+            "fluentLabel": {
+                "type": "literal",
+                "xml:lang": "en",
+                "value": "at"
+            },
+            "domainCount": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "4"
+            }
+        },
+        "1": {
+            "fluentLabel": {
+                "type": "literal",
+                "xml:lang": "en",
+                "value": "in"
+            },
+            "domainCount": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "3"
+            }
+        },
+        "2": {
+            "fluentLabel": {
+                "type": "literal",
+                "xml:lang": "en",
+                "value": "available"
+            },
+            "domainCount": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "2"
+            }
+        }
+    },
+    "cq9": {
+        "0": {
+            "step": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#drive-truck_truck1_s0_s1_driver1"
+            }
+        }
+    },
+    "cq6": {
+        "0": {
+            "fluent": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#can_traverse"
+            }
+        },
+        "1": {
+            "fluent": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#have_image"
+            }
+        },
+        "2": {
+            "fluent": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#RoverDomain_have_image"
+            }
+        },
+        "3": {
+            "fluent": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#RoverDomain_can_traverse"
+            }
+        }
+    },
+    "cq10": {
+        "0": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_apn1"
+            }
+        },
+        "1": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_obj11"
+            }
+        },
+        "2": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_obj13"
+            }
+        },
+        "3": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_tru2"
+            }
+        },
+        "4": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_obj23"
+            }
+        },
+        "5": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_obj12"
+            }
+        },
+        "6": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_obj21"
+            }
+        },
+        "7": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_tru1"
+            }
+        },
+        "8": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_obj22"
+            }
+        }
+    },
+    "cq7": {
+        "0": {
+            "precon": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#at_truck_loc"
+            }
+        },
+        "1": {
+            "precon": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#in_pkg_truck"
+            }
+        },
+        "2": {
+            "precon": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#in_obj_truck"
+            }
+        },
+        "3": {
+            "precon": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#at_truck_loc"
+            }
+        }
+    },
+    "cq8": {
+        "0": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Truck"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "3"
+            }
+        }
+    },
+    "cq1": {
+        "0": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#NominalConcept"
+            }
+        },
+        "1": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Depot"
+            }
+        },
+        "2": {
+            "type": {
+                "type": "uri",
+                "value": "http://www.w3.org/2002/07/owl#Nothing"
+            }
+        },
+        "3": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Physobj"
+            }
+        },
+        "4": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Vehicle"
+            }
+        },
+        "5": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Truck"
+            }
+        },
+        "6": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Airplane"
+            }
+        },
+        "7": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Package"
+            }
+        },
+        "8": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Place"
+            }
+        },
+        "9": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Location"
+            }
+        },
+        "10": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Distributor"
+            }
+        },
+        "11": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Airport"
+            }
+        },
+        "12": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Passenger"
+            }
+        },
+        "13": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Surface"
+            }
+        },
+        "14": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Pallet"
+            }
+        },
+        "15": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Crate"
+            }
+        },
+        "16": {
+            "type": {
+                "type": "uri",
+                "value": "https://purl.org/ai4s/ontology/planning#ProblemObject"
+            }
+        },
+        "17": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Hoist"
+            }
+        },
+        "18": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Mode"
+            }
+        },
+        "19": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Waypoint"
+            }
+        },
+        "20": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Store"
+            }
+        },
+        "21": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Rover"
+            }
+        },
+        "22": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Floor"
+            }
+        },
+        "23": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Lander"
+            }
+        },
+        "24": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#City"
+            }
+        },
+        "25": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Direction"
+            }
+        },
+        "26": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Instrument"
+            }
+        },
+        "27": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Object"
+            }
+        },
+        "28": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Objective"
+            }
+        },
+        "29": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Satellite"
+            }
+        },
+        "30": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Block"
+            }
+        },
+        "31": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Locatable"
+            }
+        },
+        "32": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Obj"
+            }
+        },
+        "33": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Driver"
+            }
+        },
+        "34": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Camera"
+            }
+        },
+        "35": {
+            "type": {
+                "type": "uri",
+                "value": "https://purl.org/ai4s/ontology/planning#ActionParameter"
+            }
+        },
+        "36": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/ontology#Parameter"
+            }
+        }
+    },
+    "cq11": {
+        "0": {
+            "type1": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#Place"
+            },
+            "type2": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#Waypoint"
+            },
+            "same": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+                "value": "false"
+            }
+        }
+    },
+    "cq12": {
+        "0": {
+            "result": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+                "value": "false"
+            }
+        }
+    },
+    "cq16": {
+        "0": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_tru2"
+            }
+        },
+        "1": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_obj21"
+            }
+        },
+        "2": {
+            "obj": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain_instance-1_obj23"
+            }
+        }
+    },
+    "cq13": {
+        "0": {
+            "result": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+                "value": "false"
+            }
+        }
+    },
+    "cq4": {
+        "0": {
+            "domain": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#DriverlogDomain"
+            }
+        },
+        "1": {
+            "domain": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain"
+            }
+        },
+        "2": {
+            "domain": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#DepotDomain"
+            }
+        }
+    },
+    "cq17": {
+        "0": {
+            "pattern": {
+                "type": "literal",
+                "value": "drive-truck_tru1_apt1_pos1_cit1+unload-truck_obj11_tru1_apt1+unload-truck_obj13_tru1_apt1"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        },
+        "1": {
+            "pattern": {
+                "type": "literal",
+                "value": "drive-truck_tru1_pos1_apt1_cit1+unload-airplane_obj21_apn1_apt1+unload-airplane_obj23_apn1_apt1"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        },
+        "2": {
+            "pattern": {
+                "type": "literal",
+                "value": "drive-truck_tru2_pos2_apt2_cit2+load-truck_obj21_tru2_pos2+load-truck_obj23_tru2_pos2"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        },
+        "3": {
+            "pattern": {
+                "type": "literal",
+                "value": "fly-airplane_apn1_apt2_apt1+load-airplane_obj21_apn1_apt2+load-airplane_obj23_apn1_apt2"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        },
+        "4": {
+            "pattern": {
+                "type": "literal",
+                "value": "load-airplane_obj21_apn1_apt2+load-airplane_obj23_apn1_apt2+load-truck_obj11_tru1_pos1"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        },
+        "5": {
+            "pattern": {
+                "type": "literal",
+                "value": "load-airplane_obj23_apn1_apt2+load-truck_obj11_tru1_pos1+load-truck_obj13_tru1_pos1"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        },
+        "6": {
+            "pattern": {
+                "type": "literal",
+                "value": "load-truck_obj11_tru1_pos1+load-truck_obj13_tru1_pos1+unload-truck_obj21_tru2_apt2"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        },
+        "7": {
+            "pattern": {
+                "type": "literal",
+                "value": "load-truck_obj13_tru1_pos1+unload-truck_obj21_tru2_apt2+unload-truck_obj23_tru2_apt2"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        },
+        "8": {
+            "pattern": {
+                "type": "literal",
+                "value": "load-truck_obj21_tru1_apt1+load-truck_obj23_tru1_apt1+drive-truck_tru1_pos1_apt1_cit1"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        },
+        "9": {
+            "pattern": {
+                "type": "literal",
+                "value": "load-truck_obj23_tru1_apt1+drive-truck_tru1_pos1_apt1_cit1+unload-airplane_obj21_apn1_apt1"
+            },
+            "frequency": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                "value": "1"
+            }
+        }
+    },
+    "cq14": {
+        "0": {
+            "type": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#Satellite"
+            }
+        }
+    },
+    "cq3": {
+        "0": {
+            "domain": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain"
+            }
+        },
+        "1": {
+            "domain": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#DriverlogDomain"
+            }
+        }
+    },
+    "cq18": {
+        "0": {
+            "domain": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#LogisticsDomain"
+            },
+            "avgLength": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "value": "20.0"
+            }
+        },
+        "1": {
+            "domain": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#BlocksDomain"
+            },
+            "avgLength": {
+                "type": "literal",
+                "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+                "value": "6.0"
+            }
+        }
+    },
+    "cq2": {
+        "0": {
+            "action": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#DepotDomain_lift"
+            }
+        },
+        "1": {
+            "action": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#DepotDomain_drive"
+            }
+        },
+        "2": {
+            "action": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#DepotDomain_drop"
+            }
+        },
+        "3": {
+            "action": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#DepotDomain_unload"
+            }
+        },
+        "4": {
+            "action": {
+                "type": "uri",
+                "value": "https://w3id.org/tp-ont/entities#DepotDomain_load"
+            }
+        }
+    }
+}

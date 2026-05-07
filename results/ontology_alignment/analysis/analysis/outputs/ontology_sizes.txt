@@ -1,0 +1,10 @@
+Ontology sizes (classes/properties):
+conceptnet: 51 classes, 50 properties
+dbpedia: 790 classes, 3029 properties
+DOLCEbasic: 60 classes, 17 properties
+schemaorg: 3993 classes, 1529 properties
+knowrob: 247 classes, 158 properties
+ocra: 34 classes, 8 properties
+SOMA: 622 classes, 303 properties
+pddl-kg-ontology: 80 classes, 124 properties
+plan-ontology-rdf: 19 classes, 27 properties

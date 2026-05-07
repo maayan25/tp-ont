@@ -1,0 +1,115 @@
+Type-checking drive
+...action passes type checking.
+Type-checking lift
+...action passes type checking.
+Type-checking drop
+...action passes type checking.
+Type-checking load
+...action passes type checking.
+Type-checking unload
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.depots-strips-automatic/instance-1.pddl_plan.txt
+Plan to validate:
+
+Plan size: 10
+1:
+(lift hoist0 crate1 pallet0 depot0)
+ 
+2:
+(load hoist0 crate1 truck1 depot0)
+ 
+3:
+(lift hoist1 crate0 pallet1 distributor0)
+ 
+4:
+(drive truck1 depot0 distributor0)
+ 
+5:
+(load hoist1 crate0 truck1 distributor0)
+ 
+6:
+(unload hoist1 crate1 truck1 distributor0)
+ 
+7:
+(drive truck1 distributor0 distributor1)
+ 
+8:
+(unload hoist2 crate0 truck1 distributor1)
+ 
+9:
+(drop hoist1 crate1 pallet1 distributor0)
+ 
+10:
+(drop hoist2 crate0 pallet2 distributor1)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at crate1 depot0)
+Deleting (clear crate1)
+Deleting (available hoist0)
+Deleting (on crate1 pallet0)
+Adding (lifting hoist0 crate1)
+Adding (clear pallet0)
+
+Checking next happening (time 2)
+Deleting (lifting hoist0 crate1)
+Adding (in crate1 truck1)
+Adding (available hoist0)
+
+Checking next happening (time 3)
+Deleting (at crate0 distributor0)
+Deleting (clear crate0)
+Deleting (available hoist1)
+Deleting (on crate0 pallet1)
+Adding (lifting hoist1 crate0)
+Adding (clear pallet1)
+
+Checking next happening (time 4)
+Deleting (at truck1 depot0)
+Adding (at truck1 distributor0)
+
+Checking next happening (time 5)
+Deleting (lifting hoist1 crate0)
+Adding (in crate0 truck1)
+Adding (available hoist1)
+
+Checking next happening (time 6)
+Deleting (in crate1 truck1)
+Deleting (available hoist1)
+Adding (lifting hoist1 crate1)
+
+Checking next happening (time 7)
+Deleting (at truck1 distributor0)
+Adding (at truck1 distributor1)
+
+Checking next happening (time 8)
+Deleting (in crate0 truck1)
+Deleting (available hoist2)
+Adding (lifting hoist2 crate0)
+
+Checking next happening (time 9)
+Deleting (lifting hoist1 crate1)
+Deleting (clear pallet1)
+Adding (available hoist1)
+Adding (at crate1 distributor0)
+Adding (clear crate1)
+Adding (on crate1 pallet1)
+
+Checking next happening (time 10)
+Deleting (lifting hoist2 crate0)
+Deleting (clear pallet2)
+Adding (available hoist2)
+Adding (at crate0 distributor1)
+Adding (clear crate0)
+Adding (on crate0 pallet2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 10 
+
+Successful plans:
+Value: 10
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.depots-strips-automatic/instance-1.pddl_plan.txt 10 
+

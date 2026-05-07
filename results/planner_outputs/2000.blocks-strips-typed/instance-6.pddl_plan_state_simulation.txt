@@ -1,0 +1,34 @@
+State after action 1:
+
+State after action 2:
+(holding d) (clear e) 
+State after action 3:
+(clear e) (clear d) (handempty) (ontable d) 
+State after action 4:
+(clear d) (ontable d) (holding e) (clear c) 
+State after action 5:
+(ontable d) (clear c) (clear e) (handempty) (on e d) 
+State after action 6:
+(ontable d) (clear e) (on e d) (holding c) (clear a) 
+State after action 7:
+(ontable d) (clear e) (on e d) (clear a) (clear c) (handempty) (ontable c) 
+State after action 8:
+(ontable d) (clear e) (on e d) (clear c) (ontable c) (holding a) (clear b) 
+State after action 9:
+(ontable d) (clear e) (on e d) (clear c) (ontable c) (clear b) (clear a) (handempty) (ontable a) 
+State after action 10:
+(ontable d) (clear c) (ontable c) (clear b) (clear a) (ontable a) (holding e) (clear d) 
+State after action 11:
+(ontable d) (clear c) (ontable c) (clear b) (ontable a) (clear d) (clear e) (handempty) (on e a) 
+State after action 12:
+(ontable d) (clear c) (ontable c) (ontable a) (clear d) (clear e) (on e a) (holding b) 
+State after action 13:
+(ontable d) (clear c) (ontable c) (ontable a) (clear d) (on e a) (clear b) (handempty) (on b e) 
+State after action 14:
+(ontable d) (ontable a) (clear d) (on e a) (clear b) (on b e) (holding c) 
+State after action 15:
+(ontable d) (ontable a) (clear d) (on e a) (on b e) (clear c) (handempty) (on c b) 
+State after action 16:
+(ontable a) (on e a) (on b e) (clear c) (on c b) (holding d) 
+State after action 17:
+(ontable a) (on e a) (on b e) (on c b) (clear d) (handempty) (on d c) 

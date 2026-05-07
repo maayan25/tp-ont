@@ -1,0 +1,737 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#"
+     xml:base="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <owl:inverseOf rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanExecutedIn"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <rdfs:comment xml:lang="en">The relation holding between an Event, and a Plan that is executed by the Event.
+
+This relationship is used as a primitive which means ‘following the sequence of actions in the plan as much as possible’.</rdfs:comment>
+        <rdfs:label xml:lang="en">executes plan</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <owl:inverseOf rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isGoalOf"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+        <rdfs:comment xml:lang="en">The relation holding between any Agent, and a Goal desired by the Agent.</rdfs:comment>
+        <rdfs:label xml:lang="en">has goal</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <owl:inverseOf rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanOf"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <rdfs:comment xml:lang="en">The relation holding between any Agent, and its Plan to achieve one of its desired Goals.</rdfs:comment>
+        <rdfs:label xml:lang="en">has plan</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan -->
+
+    <owl:ObjectProperty rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <owl:inverseOf rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <rdfs:label xml:lang="en">is better plan than</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isGoalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isGoalOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <rdfs:comment xml:lang="en">The relation holding between a Goal, and an Agent that desires that Goal.</rdfs:comment>
+        <rdfs:label xml:lang="en">is goal of</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanExecutedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanExecutedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <rdfs:comment xml:lang="en">The relation holding between a Plan, and an Event that executes that plan.</rdfs:comment>
+        <rdfs:label xml:lang="en">is plan executed in</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isPlanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <rdfs:comment xml:lang="en">The relation holding between a Plan, and the Agent that has that Plan to achieve one of its desired Goals.</rdfs:comment>
+        <rdfs:label xml:lang="en">is plan of</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan -->
+
+    <owl:ObjectProperty rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <rdfs:label xml:lang="en">is worse plan than</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration -->
+
+    <owl:Class rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal"/>
+                                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Event in which two or more Agents share a Goal and share and execute a Plan to achieve the Goal, by interacting and/or delegating to some of them when and where to execute some parts of the plan.
+
+
+
+
+[Note] We use interaction as a general term, an occasion when two or more people or things communicate with or react to each other. For example, during a collaboration, a robot and a human interact when they exchange forces, and also when the robot is sharing its perception about the safety situation (e.g. by voice or lights). One example of non-interaction is when the robot monitores the human’s pose by means of sensors.
+
+[Note] We use delegation also as a general term, the act of giving a particular job, duty, etc. to someone else. Since in a collaboration all the involved agents share the goal to be achieved, even when an agent delegates part of a plan, we understand that the agent is still responsible for that part of the plan.
+
+[Note] We do not restrict the definition stating that the pursued goal must be achieved at the end of the collaboration, thus, being general and considering cases in which that is not true. Furthermore, the relationship ‘executesPlan’ is used here as a primitive which means ‘following the sequence of actions in the plan as much as possible’. Hence, we do not consider this notion in the strictest sense, which would be to execute the whole plan.
+
+[Example] Let’s consider that there is a robot and a human that are collaborating to fill the different compartments of a tray with work pieces. We will say that the collaboration exists as long as:
+The robot and the human share and execute a Plan to fill the tray (e.g. sequence of steps to fill the tray). Note that the plan can be general: e.g. ‘picking some work pieces and placing them on the tray until it is full’. The plan can be more specific: ‘picking the work pieces from the top of a pile of pieces and placing them on the tray from the left to the right and from the closest to the furthest compartment’;
+The robot and the human share the Goal to be achieved by the execution of the shared plan. It can also be general, e.g. ‘all tray’s compartments with a work piece’, or more specific, e.g. ‘each tray’s compartment full with a certain work piece’;
+The robot and the human interact and/or delegate to some of them when and where to execute some parts of the plan. Note that the agreement can be flexible: e.g. ‘the part of the plan delegated to an agent must be finished within the next two days’;
+
+[Rationale] A Collaboration exists if and only if two or more agents share a plan, maintain a shared understanding about it through interaction, and share the goal to be achieved by the plan. Hence, there is an agreement among all the agents on what to do, when, where, why and how to do it, how the execution is distributed, and, if needed, who decides or how to decide (collaborations include supervision and delegation).</rdfs:comment>
+        <rdfs:label xml:lang="en">Collaboration</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace -->
+
+    <owl:Class rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The spatial location or the place of a Collaboration.
+
+[Note] This definition puts the focus on the existence of a Collaboration and where it is located. Hence, a CollaborationPlace is the union of all the spatial locations of all the Entities involved in the Collaboration, which could change across time.  For instance, if the agents involved in the Collaboration moved to other Places, the CollaborationPlace would also include those other Places. The same applies if agents connected to a software-based CollaborationPlace that was not available before.</rdfs:comment>
+        <rdfs:label xml:lang="en">Collaboration place</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationRisk -->
+
+    <owl:Class rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Quality used to characterize a Collaboration, or a part of it, which combines the probability of occurrence of a given harm and the severity of that harm during that Collaboration.
+
+This definition has been adapted from the ISO 12100:2010.</rdfs:comment>
+        <rdfs:label xml:lang="en">Collaboration risk</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace -->
+
+    <owl:Class rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborativePlace">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Role of a Place that is specifically dedicated to Collaborations.
+
+[Note] This definition puts the focus on the Place where collaborations can occur. It is meant to capture the traditional view of industrial collaborative workspaces, in which, usually for safety reasons, a collaboration is only considered inside a fixed workspace.
+
+[Note] When a Collaboration occurs in a Place whose role is to be a CollaborativePlace, there is also a CollaborationPlace that can be different to that Place.</rdfs:comment>
+        <rdfs:label xml:lang="en">Collaborative place</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration -->
+
+    <owl:Class rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
+                <owl:allValuesFrom rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Event type that classifies a Collaboration, or a part of it, in which the involved agents manifest physical forces, and they do physically restrict in some degree the freedom of movement of at least one of the agents.
+
+This includes the cases where the involved agents exchange contact forces, directly or through an object. Hence, any movement of one of the agents would affect the others.
+
+[Example] Of special interest would be the case when a robot and a human are grasping a bed sheet. If both agents held it close enough so that there was still freedom of movement, we would consider it as a IndirectlyPhysicalCollaboration. If they went further, so that the sheet is completely stretched/extended, then we would be in a DirectlyPhysicalCollaboration, because if one of the agents moved the other ones would be affected by it.</rdfs:comment>
+        <rdfs:label xml:lang="en">Directly physical collaboration</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration -->
+
+    <owl:Class rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
+                <owl:allValuesFrom rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Event type that classifies a Collaboration, or a part of it, in which the involved agents manifest physical forces but they do not physically restrict the freedom of movement of any of the other agents.
+
+For instance, when a robot moves close to a human without exchanging forces.
+
+[Note] In the case in which the freedom of movement is restricted by rules such as those related to safety (e.g. robot stops if human is closer than a given distance), a collaboration would still be considered as IndirectlyPhysicalCollaboration because the movement of the robot is restricted by the safety rule, not by a pure physical impediment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Indirectly physical collaboration</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Non-physicalCollaboration -->
+
+    <owl:Class rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Non-physicalCollaboration">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#EventType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
+                <owl:allValuesFrom rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Collaboration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Event type that classifies a Collaboration, or a part of it, in which the involved agents do not manifest any physical force.
+
+For instance, monitoring how a delegated part of a plan is executed by another agent.</rdfs:comment>
+        <rdfs:label xml:lang="en">Non-physical collaboration</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation -->
+
+    <owl:Class rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPostconditionOf"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                                                        <owl:allValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:allValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPreconditionOf"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPreconditionOf"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                                                        <owl:allValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:allValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal"/>
+                                                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan"/>
+                                                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPostconditionOf"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                                                <owl:allValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:allValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan"/>
+                                                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasGoal"/>
+                                                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#hasPlan"/>
+                                                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPreconditionOf"/>
+                                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPreconditionOf"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                                                <owl:allValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isBetterPlanThan"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:allValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#executesPlan"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isWorsePlanThan"/>
+                                                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Event in which an Agent, due to its evaluation of the current or expected future state, changes its current Plan while executing it, in order to continuously pursue the achievement of the plan’s Goal.
+
+
+Regarding the nature of the change made in the plan, we can find adaptations in plan executions’ parameters, in the plan’s sequence of events, etc.
+
+
+
+[Example] Let’s consider that there is a robot and a human that are collaborating to fill the different compartments of a tray with work pieces. We will say that an adaptation exists as long as:
+- the robot has a plan, and it is executing it while the perception of a current or future state (situation) triggers the adaptation. A possible plan could be &apos;moving to a compartment to release a piece&apos;, and the trigger might be &apos;the compartment was filled by the human&apos;;
+- the plan is changed in order to continue pursuing the achievement of the previous plan&apos;s goal. The tray&apos;s target is changed and the new plan could be &apos;moving to another free compartment&apos;; and
+- the robot no longer executes the previous plan but the new one.
+
+
+
+[Rationale] Generally speaking, an adaptation is a goal-oriented change that affects something that was already fixed. The goal of every PlanAdaptation is to continuously pursue the achievement of another goal in response to some environmental conditions that would affect the accomplishment of that another goal. In order to achieve so, an PlanAdaptation produces a change in the agent’s plan. Note that changes in the plan done before executing it are not considered adaptations in our definition, the execution of the plan must be ongoing. Those changes that happen before the plan is executed might even be considered as part of the planning. Furthemore, if a plan contains different options, choosing one of those options is not an adaptation, but any change after having chosen and started the execution would be an adaptation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Plan adaptation</rdfs:label>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#DirectlyPhysicalCollaboration"/>
+            <rdf:Description rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#IndirectlyPhysicalCollaboration"/>
+            <rdf:Description rdf:about="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#Non-physicalCollaboration"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->

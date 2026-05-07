@@ -1,0 +1,343 @@
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'label': 'constant atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['constant', 'atom'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'label': 'constant participation of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'label': 'constant participation of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'label': 'constant atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['constant', 'atom'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'label': 'constant atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['constant', 'atom'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantQualeOf', 'label': 'constant quale of', 'domain': ['Nf909924887494e21be9abdf046b1ec3d'], 'range': ['N1535f53ea671439a83556efb9b73ebad'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'region', 'physical', 'region'], 'range_text': ['union', 'of', 'abstract', 'quality', 'physical', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'label': 'constant atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['constant', 'atom'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'label': 'atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom'], 'range': ['N3ccfc1ee89aa405998c3300a889d7609'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['atom'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'label': 'atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom'], 'range': ['N3ccfc1ee89aa405998c3300a889d7609'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['atom'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'label': 'atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom'], 'range': ['N3ccfc1ee89aa405998c3300a889d7609'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['atom'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantQualeOf', 'label': 'constant quale of', 'domain': ['Nf909924887494e21be9abdf046b1ec3d'], 'range': ['N1535f53ea671439a83556efb9b73ebad'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'region', 'physical', 'region'], 'range_text': ['union', 'of', 'abstract', 'quality', 'physical', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'label': 'constant participation of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantQualeOf', 'label': 'constant quale of', 'domain': ['Nf909924887494e21be9abdf046b1ec3d'], 'range': ['N1535f53ea671439a83556efb9b73ebad'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'region', 'physical', 'region'], 'range_text': ['union', 'of', 'abstract', 'quality', 'physical', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'label': 'constant atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['constant', 'atom'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'label': 'constant participation of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'label': 'atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom'], 'range': ['N3ccfc1ee89aa405998c3300a889d7609'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['atom'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'label': 'constant atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['constant', 'atom'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'label': 'constant atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['constant', 'atom'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'label': 'constant participation of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantQualeOf', 'label': 'constant quale of', 'domain': ['Nf909924887494e21be9abdf046b1ec3d'], 'range': ['N1535f53ea671439a83556efb9b73ebad'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'region', 'physical', 'region'], 'range_text': ['union', 'of', 'abstract', 'quality', 'physical', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'label': 'atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom'], 'range': ['N3ccfc1ee89aa405998c3300a889d7609'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['atom'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'label': 'atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom'], 'range': ['N3ccfc1ee89aa405998c3300a889d7609'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['atom'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'label': 'constant participation of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'label': 'constant participation of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'label': 'constant participation of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporallyLocatedAt', 'label': 'temporally located at', 'domain': ['Nb6d901397c3b47c59d7091e3a0b1f633'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'label': 'atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom'], 'range': ['N3ccfc1ee89aa405998c3300a889d7609'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['atom'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantQualeOf', 'label': 'constant quale of', 'domain': ['Nf909924887494e21be9abdf046b1ec3d'], 'range': ['N1535f53ea671439a83556efb9b73ebad'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'region', 'physical', 'region'], 'range_text': ['union', 'of', 'abstract', 'quality', 'physical', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantParticipantOf', 'label': 'constant participation of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantQualeOf', 'label': 'constant quale of', 'domain': ['Nf909924887494e21be9abdf046b1ec3d'], 'range': ['N1535f53ea671439a83556efb9b73ebad'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'region', 'physical', 'region'], 'range_text': ['union', 'of', 'abstract', 'quality', 'physical', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantAtomicPartOf', 'label': 'constant atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#ConstantAtom'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['constant', 'atom'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantQualeOf', 'label': 'constant quale of', 'domain': ['Nf909924887494e21be9abdf046b1ec3d'], 'range': ['N1535f53ea671439a83556efb9b73ebad'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'region', 'physical', 'region'], 'range_text': ['union', 'of', 'abstract', 'quality', 'physical', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantPartOf', 'label': 'constant part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#atomicPartOf', 'label': 'atomic part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Atom'], 'range': ['N3ccfc1ee89aa405998c3300a889d7609'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['atom'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#directQualityOf', 'label': 'direct quality of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality'], 'range': ['N3f8b39022a214164985fa03e0d31d977'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantQualeOf', 'label': 'constant quale of', 'domain': ['Nf909924887494e21be9abdf046b1ec3d'], 'range': ['N1535f53ea671439a83556efb9b73ebad'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'region', 'physical', 'region'], 'range_text': ['union', 'of', 'abstract', 'quality', 'physical', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#overlaps', 'label': 'overlaps', 'domain': ['Nc3db277a48bf4dee949f93ec4a8d37af'], 'range': ['N26e939f318154132bc9f3035a65b84f4'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#partOf', 'label': 'part of', 'domain': ['Nb60845a1945f4439952ab973c46a80e3'], 'range': ['N53c0acbb6dd34790a739570547ca39d6'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#presentAt', 'label': 'present at', 'domain': ['N83855357e65c4cad9be01d8a4b702c24'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TimeInterval'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['time', 'interval']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#temporalPartOf', 'label': 'temporal part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Perdurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['perdurant'], 'range_text': ['perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantProperPartOf', 'label': 'constant proper part of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#properPartOf', 'label': 'proper part of', 'domain': ['Nc129c682294c4f9680375ad3fe267110'], 'range': ['N7233366444ca47ec806dd8013ac39107'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'abstract', 'perdurant'], 'range_text': ['union', 'of', 'abstract', 'perdurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantlyOverlaps', 'label': 'constantly overlaps', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#Endurant'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['endurant'], 'range_text': ['endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#constantConstituentOf', 'label': 'constant constituent of', 'domain': ['N32b61968a5b1424fb898930b7f15be67'], 'range': ['N1b39afab572f4287918c7ec64f4fa2fe'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant'], 'range_text': ['union', 'of', 'non', 'physical', 'endurant', 'perdurant', 'physical', 'endurant']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#specificallyDependsOn', 'label': 'specifically depends on', 'domain': ['N2ae52948dac54dacb8894f1679ee8204'], 'range': ['N76241cbae4c940adab0ff0d126ac84ff'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['union', 'of', 'endurant', 'perdurant', 'quality'], 'range_text': ['union', 'of', 'endurant', 'perdurant', 'quality']}
+
+{'iri': 'https://w3id.org/DOLCE/OWL/DOLCEbasic#qualeOf', 'label': 'quale of', 'domain': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalRegion'], 'range': ['https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality'], 'inverse_of': None, 'inverse_label': None, 'domain_text': ['temporal', 'region'], 'range_text': ['temporal', 'quality']}

@@ -1,0 +1,98 @@
+Type-checking turn_to
+...action passes type checking.
+Type-checking switch_on
+...action passes type checking.
+Type-checking switch_off
+...action passes type checking.
+Type-checking calibrate
+...action passes type checking.
+Type-checking take_image
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.satellite-strips-automatic/instance-3.pddl_plan.txt
+Plan to validate:
+
+Plan size: 11
+1:
+(switch_on instrument0 satellite0)
+ 
+2:
+(turn_to satellite0 star1 star4)
+ 
+3:
+(calibrate satellite0 instrument0 star1)
+ 
+4:
+(turn_to satellite0 phenomenon7 star1)
+ 
+5:
+(take_image satellite0 phenomenon7 instrument0 spectrograph2)
+ 
+6:
+(turn_to satellite0 star3 phenomenon7)
+ 
+7:
+(take_image satellite0 star3 instrument0 infrared0)
+ 
+8:
+(turn_to satellite0 star4 star3)
+ 
+9:
+(take_image satellite0 star4 instrument0 spectrograph2)
+ 
+10:
+(turn_to satellite0 phenomenon5 star4)
+ 
+11:
+(take_image satellite0 phenomenon5 instrument0 spectrograph2)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (calibrated instrument0)
+Deleting (power_avail satellite0)
+Adding (power_on instrument0)
+
+Checking next happening (time 2)
+Deleting (pointing satellite0 star4)
+Adding (pointing satellite0 star1)
+
+Checking next happening (time 3)
+Adding (calibrated instrument0)
+
+Checking next happening (time 4)
+Deleting (pointing satellite0 star1)
+Adding (pointing satellite0 phenomenon7)
+
+Checking next happening (time 5)
+Adding (have_image phenomenon7 spectrograph2)
+
+Checking next happening (time 6)
+Deleting (pointing satellite0 phenomenon7)
+Adding (pointing satellite0 star3)
+
+Checking next happening (time 7)
+Adding (have_image star3 infrared0)
+
+Checking next happening (time 8)
+Deleting (pointing satellite0 star3)
+Adding (pointing satellite0 star4)
+
+Checking next happening (time 9)
+Adding (have_image star4 spectrograph2)
+
+Checking next happening (time 10)
+Deleting (pointing satellite0 star4)
+Adding (pointing satellite0 phenomenon5)
+
+Checking next happening (time 11)
+Adding (have_image phenomenon5 spectrograph2)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 11 
+
+Successful plans:
+Value: 11
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.satellite-strips-automatic/instance-3.pddl_plan.txt 11 
+

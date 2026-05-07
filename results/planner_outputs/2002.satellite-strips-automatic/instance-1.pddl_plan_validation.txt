@@ -1,0 +1,85 @@
+Type-checking turn_to
+...action passes type checking.
+Type-checking switch_on
+...action passes type checking.
+Type-checking switch_off
+...action passes type checking.
+Type-checking calibrate
+...action passes type checking.
+Type-checking take_image
+...action passes type checking.
+Checking plan: /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.satellite-strips-automatic/instance-1.pddl_plan.txt
+Plan to validate:
+
+Plan size: 9
+1:
+(switch_on instrument0 satellite0)
+ 
+2:
+(turn_to satellite0 groundstation2 phenomenon6)
+ 
+3:
+(calibrate satellite0 instrument0 groundstation2)
+ 
+4:
+(turn_to satellite0 phenomenon4 groundstation2)
+ 
+5:
+(take_image satellite0 phenomenon4 instrument0 thermograph0)
+ 
+6:
+(turn_to satellite0 phenomenon6 phenomenon4)
+ 
+7:
+(take_image satellite0 phenomenon6 instrument0 thermograph0)
+ 
+8:
+(turn_to satellite0 star5 phenomenon6)
+ 
+9:
+(take_image satellite0 star5 instrument0 thermograph0)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (calibrated instrument0)
+Deleting (power_avail satellite0)
+Adding (power_on instrument0)
+
+Checking next happening (time 2)
+Deleting (pointing satellite0 phenomenon6)
+Adding (pointing satellite0 groundstation2)
+
+Checking next happening (time 3)
+Adding (calibrated instrument0)
+
+Checking next happening (time 4)
+Deleting (pointing satellite0 groundstation2)
+Adding (pointing satellite0 phenomenon4)
+
+Checking next happening (time 5)
+Adding (have_image phenomenon4 thermograph0)
+
+Checking next happening (time 6)
+Deleting (pointing satellite0 phenomenon4)
+Adding (pointing satellite0 phenomenon6)
+
+Checking next happening (time 7)
+Adding (have_image phenomenon6 thermograph0)
+
+Checking next happening (time 8)
+Deleting (pointing satellite0 phenomenon6)
+Adding (pointing satellite0 star5)
+
+Checking next happening (time 9)
+Adding (have_image star5 thermograph0)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 9 
+
+Successful plans:
+Value: 9
+ /home/maayan/PhD/Projects/kg_modelling/scripts/kg_construction/../../results/planner_outputs/2002.satellite-strips-automatic/instance-1.pddl_plan.txt 9 
+

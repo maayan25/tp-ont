@@ -6,15 +6,15 @@
     <type>??</type>
     <map>
       <Cell>
-        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
-        <entity2 rdf:resource="https://schema.org/Place"/>
+        <entity1 rdf:resource="https://w3id.org/tp-ont/ontology#Location"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#CollaborationPlace"/>
         <relation>=</relation>
       </Cell>
     </map>
     <map>
       <Cell>
-        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
-        <entity2 rdf:resource="https://schema.org/State"/>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#PlanAdaptation"/>
         <relation>=</relation>
       </Cell>
     </map>

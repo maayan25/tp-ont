@@ -4,12 +4,5 @@
     <xml>yes</xml>
     <level>0</level>
     <type>??</type>
-    <map>
-      <Cell>
-        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
-        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
-        <relation>=</relation>
-      </Cell>
-    </map>
   </Alignment>
 </rdf:RDF>

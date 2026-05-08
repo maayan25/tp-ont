@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.407429277896881</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Achievement"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.405309587717056</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Accomplishment"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.387252032756805</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#InitialState"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.441293179988861</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#MacroAction"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Abstract"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.401075869798660</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#MacroAction"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#AgentivePhysicalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.327974081039428</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3778539896011352</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialAgent"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.326053172349929</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlannerType"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.37419301271438</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialAgent"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.348268270492553</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalLocation"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3959102630615234</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Process"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.366443425416946</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#TemporalQuality"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3554186820983886</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#MentalObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.4272881150245666</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.371471822261810</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#SocialObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3585733771324157</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Region"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.500331759452819</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#PhysicalRegion"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3546429276466369</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Particular"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.475118935108184</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Feature"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.360339641571044</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Quality"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3482143878936767</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#TypeTag"/>
+        <entity2 rdf:resource="https://w3id.org/DOLCE/OWL/DOLCEbasic#Particular"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.3484677076339721</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

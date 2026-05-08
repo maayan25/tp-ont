@@ -1,0 +1,232 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <Alignment>
+    <xml>yes</xml>
+    <level>0</level>
+    <type>??</type>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <entity2 rdf:resource="https://schema.org/ReactAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.589955151081085</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+        <entity2 rdf:resource="https://schema.org/ActionStatusType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.50888299942016</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="https://schema.org/ActionAccessSpecification"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.610430836677551</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="https://schema.org/ActionStatusType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.58626681566238</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+        <entity2 rdf:resource="https://schema.org/ControlAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.574361741542816</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="https://schema.org/ControlAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.607430458068847</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="https://schema.org/ActionAccessSpecification"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.605526566505432</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+        <entity2 rdf:resource="https://schema.org/AchieveAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.583715736865997</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="https://schema.org/CreateAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.613938927650451</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="https://schema.org/UseAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.610292196273803</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
+        <entity2 rdf:resource="https://schema.org/RegisterAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.601797819137573</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#MacroAction"/>
+        <entity2 rdf:resource="https://schema.org/TradeAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.608280003070831</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#MacroAction"/>
+        <entity2 rdf:resource="https://schema.org/PlayGameAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.602439641952514</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#MacroAction"/>
+        <entity2 rdf:resource="https://schema.org/UseAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.589120388031005</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Plan"/>
+        <entity2 rdf:resource="https://schema.org/PlanAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.630636274814605</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Planner"/>
+        <entity2 rdf:resource="https://schema.org/PlanAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.589531540870666</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlannerType"/>
+        <entity2 rdf:resource="https://schema.org/PlanAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.572229444980621</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+        <entity2 rdf:resource="https://schema.org/PlanAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.552265167236328</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+        <entity2 rdf:resource="https://schema.org/PlanAction"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.608240842819213</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://schema.org/TextObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.628470182418823</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://schema.org/ImageObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.609474837779998</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+        <entity2 rdf:resource="https://schema.org/AlignmentObject"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.534108459949493</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="https://schema.org/State"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">1.000000119209289</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="https://schema.org/Country"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.575638949871063</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#State"/>
+        <entity2 rdf:resource="https://schema.org/City"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.541063189506530</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="https://schema.org/DataType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.630631208419799</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="https://schema.org/StupidType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.619185984134674</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://purl.org/ai4s/ontology/planning#Type"/>
+        <entity2 rdf:resource="https://schema.org/PurchaseType"/>
+        <relation>=</relation>
+        <measure rdf:datatype="xsd:float">0.605713844299316</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

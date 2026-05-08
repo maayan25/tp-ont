@@ -345,10 +345,13 @@ def parse_plan_and_simulation(domain_name, problem_name) -> (list[str], list[str
         for line in state_lines:
             if line.startswith("State after action"):
                 continue
+            elif line.startswith("Initial state"):
+                continue
             else:
                 # print(f"State line: {line.strip()}, type: {type(line)}")
                 state_str = line.strip()
                 if state_str:
+                    state_str = state_str.replace("))", ")")
                     states.append(state_str)
 
     return actions, states

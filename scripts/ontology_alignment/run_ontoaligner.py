@@ -212,7 +212,7 @@ def main():
     print(f"Using knowledge ontology: {knowledge_onto_name} from path: {knowledge_onto}")
 
     # ontoaligner_dir = os.path.join(os.getcwd(), os.pardir, os.pardir, "OntoAligner")
-    results_dir = os.path.join(root_dir, "results", "ontology_alignment")
+    results_dir = os.path.join(root_dir, "results")
     os.makedirs(results_dir, exist_ok=True)
 
     matchings_dir = os.path.join(results_dir, pddl_onto_name, knowledge_onto_name)
@@ -269,6 +269,7 @@ def run_ontoaligner_pipeline(src_onto, tgt_onto, matchings_dir, dataset, model):
                          evaluate=False,
                          save_matchings=True
                          )
+
     # print(f"Matchings: {matchings}")
     fix_llm_results_location(matchings_dir, llm_path, retriever_path)
 
@@ -335,7 +336,7 @@ def choose_config(config_name) -> AlignmentConfig:
                 {"topk_confidence_ratio": 3, "topk_confidence_score": 3},  # heuristic
                 {"ir_score_threshold": 0.1, "llm_confidence_th": 0.8},  # hybrid
             ],
-            aligner_load_config={"llm_path": "TinyLlama/TinyLlama-1.1B-Chat-v1.0", "ir_path": "all-MiniLM-L6-v2"}, # TODO testing, change back!
+            aligner_load_config={"llm_path": "mistralai/Mistral-7B-v0.3", "ir_path": "all-MiniLM-L6-v2"}, # TODO testing, change back! TinyLlama/TinyLlama-1.1B-Chat-v1.0
             # llm_models={"llm_path": "mistralai/Mistral-7B-v0.3", "ir_path": "all-MiniLM-L6-v2"},
             aligner_config= {"device": 'cuda', "top_k": 5, "threshold": 0.1},
             llm_config = {

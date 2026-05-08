@@ -34,7 +34,51 @@
   },
   "@graph": [
     {
-      "@id": "tp-ont:BlocksDomain_on_hasArg1",
+      "@id": "planning-ontology:ActionEffect",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "tp-ont:Physobj",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_store_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:Airport",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Place"
+        },
+        {
+          "@id": "tp-ont:Object"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:RoverDomain_can_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_available_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Rover"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:BlocksDomain_ontable_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
@@ -43,46 +87,28 @@
         "@id": "tp-ont:Block"
       },
       "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
+        "@id": "tp-ont:hasArg0"
       }
     },
     {
-      "@id": "tp-ont:City",
+      "@id": "tp-ont:Plan",
       "@type": "owl:Class",
       "rdfs:subClassOf": {
+        "@id": "owl:Thing"
+      }
+    },
+    {
+      "@id": "tp-ont:hasVariable",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
         "@id": "tp-ont:Object"
       }
     },
     {
-      "@id": "tp-ont:SatelliteDomain_power_hasArg0",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_have_hasArg1",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "rdf:type",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Location",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "tp-ont:Place"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:RoverDomain_have_hasArg4",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:MiconicDomain_not-served_hasArg0",
+      "@id": "tp-ont:MiconicDomain_destin_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
@@ -95,32 +121,23 @@
       }
     },
     {
-      "@id": "planning-ontology:PlanningProblem",
-      "@type": "owl:Class",
-      "owl:disjointWith": [
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "tp-ont:Relation"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:hasPlan",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:MiconicDomain_boarded_hasArg0",
+      "@id": "tp-ont:RoverDomain_empty_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
       },
       "rdfs:range": {
-        "@id": "tp-ont:Passenger"
+        "@id": "tp-ont:Store"
       },
       "rdfs:subPropertyOf": {
         "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Floor",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
       }
     },
     {
@@ -137,270 +154,13 @@
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_at_lander_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Lander"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Airport",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "tp-ont:Place"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:Instrument",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:hasType",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "planning-ontology:PlanningDomain"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_channel_hasArg1",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:MiconicDomain_above_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Floor"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:DriverlogDomain_in_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Obj"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_channel_hasArg0",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Predicate",
-      "@type": "owl:Class",
-      "owl:disjointWith": [
-        {
-          "@id": "planning-ontology:PlanningProblem"
-        },
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "tp-ont:State"
-        },
-        {
-          "@id": "planning-ontology:PlanningDomain"
-        },
-        {
-          "@id": "tp-ont:Relation"
-        }
-      ],
-      "owl:equivalentClass": {
-        "@id": "planning-ontology:ProblemPredicate"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_store_of_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Rover"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_store_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Block",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:hasState",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Plan"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:State"
-      }
-    },
-    {
-      "@id": "tp-ont:goalStateOf",
-      "@type": "owl:ObjectProperty",
-      "owl:inverseOf": {
-        "@id": "planning-ontology:hasGoalState"
-      },
-      "rdfs:domain": {
-        "@id": "planning-ontology:GoalState"
-      },
-      "rdfs:range": {
-        "@id": "planning-ontology:PlanningProblem"
-      }
-    },
-    {
-      "@id": "tp-ont:DepotDomain_in_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Crate"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "planning-ontology:hasAction",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Passenger",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_on_hasArg0",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_calibration_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:BlocksDomain_holding_hasArg0",
+      "@id": "tp-ont:BlocksDomain_on_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
       },
       "rdfs:range": {
         "@id": "tp-ont:Block"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:DriverlogDomain_path_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Location"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:hasDuration",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Action"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Duration"
-      }
-    },
-    {
-      "@id": "tp-ont:MiconicDomain_origin_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Passenger"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Surface",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Locatable"
-        },
-        {
-          "@id": "tp-ont:Object"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:LogisticsDomain_in-city_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Place"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_calibration_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:MiconicDomain_served_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Passenger"
       },
       "rdfs:subPropertyOf": {
         "@id": "tp-ont:hasArg0"
@@ -420,95 +180,155 @@
       }
     },
     {
-      "@id": "planning-ontology:DomainAction",
-      "@type": "owl:Class"
+      "@id": "tp-ont:admissible",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "planning-ontology:hasAction"
+      },
+      "rdfs:domain": {
+        "@id": "tp-ont:Action"
+      },
+      "rdfs:range": {
+        "@id": "planning-ontology:PlanningDomain"
+      }
     },
     {
-      "@id": "tp-ont:SatelliteDomain_calibration_hasArg1",
+      "@id": "tp-ont:DriverlogDomain_path_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Location"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_communicated_rock_data_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Waypoint"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_at_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Rover"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:DepotDomain_at_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Place"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_equipped_hasArg3",
       "@type": "owl:ObjectProperty"
     },
     {
-      "@id": "tp-ont:hasNumericFluent",
+      "@id": "tp-ont:MiconicDomain_above_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Floor"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:hasStep",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Plan"
       },
       "rdfs:range": {
-        "@id": "tp-ont:NumericFluent"
+        "@id": "tp-ont:Step"
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_communicated_image_data_hasArg1",
+      "@id": "tp-ont:hasArg1",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
       },
       "rdfs:range": {
-        "@id": "tp-ont:Mode"
+        "@id": "tp-ont:Object"
       },
       "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
+        "@id": "tp-ont:hasArgument"
       }
     },
     {
-      "@id": "tp-ont:Distributor",
+      "@id": "tp-ont:RoverDomain_communicated_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:Precondition",
       "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "tp-ont:Place"
-        }
-      ]
+      "owl:equivalentClass": {
+        "@id": "planning-ontology:ActionPrecondition"
+      },
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Predicate"
+      }
     },
     {
-      "@id": "tp-ont:RoverDomain_can_hasArg1",
-      "@type": "owl:ObjectProperty"
+      "@id": "tp-ont:MiconicDomain_origin_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Passenger"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
     },
     {
-      "@id": "tp-ont:RoverDomain_equipped_hasArg0",
-      "@type": "owl:ObjectProperty"
+      "@id": "tp-ont:SatelliteDomain_power_avail_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Satellite"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
     },
     {
-      "@id": "tp-ont:Waypoint",
+      "@id": "tp-ont:Lander",
       "@type": "owl:Class",
       "rdfs:subClassOf": {
         "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_have_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "tp-ont:LogisticsDomain_in-city_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:City"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:DriverlogDomain_driving_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Truck"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
       }
     },
     {
@@ -525,32 +345,107 @@
       }
     },
     {
-      "@id": "planning-ontology:PlanningDomain",
+      "@id": "tp-ont:RoverDomain_communicated_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:Obj",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Object"
+        },
+        {
+          "@id": "tp-ont:Locatable"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:Predicate",
       "@type": "owl:Class",
       "owl:disjointWith": [
         {
           "@id": "tp-ont:Relation"
         },
         {
+          "@id": "planning-ontology:PlanningDomain"
+        },
+        {
           "@id": "planning-ontology:PlanningProblem"
         },
         {
           "@id": "tp-ont:Object"
+        },
+        {
+          "@id": "tp-ont:State"
         }
-      ]
-    },
-    {
-      "@id": "tp-ont:Floor",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
+      ],
+      "owl:equivalentClass": {
+        "@id": "planning-ontology:ProblemPredicate"
       }
     },
     {
-      "@id": "tp-ont:Physobj",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
+      "@id": "tp-ont:DriverlogDomain_at_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Locatable"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:DepotDomain_in_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Crate"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_at_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "planning-ontology:ActionPrecondition",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_have_image_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Direction"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_calibration_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:LogisticsDomain_in-city_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Place"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
       }
     },
     {
@@ -567,6 +462,32 @@
       }
     },
     {
+      "@id": "tp-ont:RoverDomain_visible_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Waypoint"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:BlocksDomain_holding_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Block"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
       "@id": "tp-ont:SatelliteDomain_pointing_hasArg1",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
@@ -580,15 +501,98 @@
       }
     },
     {
-      "@id": "planning-ontology:hasParameter",
+      "@id": "tp-ont:Store",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_on_board_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Camera"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_on_hasArg1",
       "@type": "owl:ObjectProperty"
     },
     {
-      "@id": "planning-ontology:ActionParameter",
-      "@type": "owl:Class"
+      "@id": "tp-ont:hasPrecondition",
+      "@type": "owl:ObjectProperty"
     },
     {
-      "@id": "tp-ont:RoverDomain_can_traverse_hasArg0",
+      "@id": "planning-ontology:PlanningProblem",
+      "@type": "owl:Class",
+      "owl:disjointWith": [
+        {
+          "@id": "tp-ont:Object"
+        },
+        {
+          "@id": "tp-ont:Relation"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:RoverDomain_equipped_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_on_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:DriverlogDomain_in_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Obj"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:DepotDomain_on_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Crate"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Objective",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:hasArgument",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_image_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
@@ -601,143 +605,86 @@
       }
     },
     {
-      "@id": "tp-ont:LogisticsDomain_in_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Vehicle"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:DepotDomain_lifting_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Crate"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "https://w3id.org/tp-ont/ontology",
-      "@type": "owl:Ontology",
-      "rdfs:comment": "TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans"
-    },
-    {
-      "@id": "tp-ont:VerbalConcept",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_on_hasArg1",
+      "@id": "tp-ont:SatelliteDomain_power_hasArg1",
       "@type": "owl:ObjectProperty"
     },
     {
-      "@id": "tp-ont:RoverDomain_communicated_hasArg4",
+      "@id": "tp-ont:hasType",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "planning-ontology:PlanningDomain"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:NumericFluent",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "owl:Thing"
+      }
+    },
+    {
+      "@id": "planning-ontology:hasAction",
       "@type": "owl:ObjectProperty"
     },
     {
-      "@id": "tp-ont:SatelliteDomain_supports_hasArg1",
+      "@id": "tp-ont:RoverDomain_store_of_hasArg1",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
       },
       "rdfs:range": {
-        "@id": "tp-ont:Mode"
+        "@id": "tp-ont:Rover"
       },
       "rdfs:subPropertyOf": {
         "@id": "tp-ont:hasArg1"
       }
     },
     {
-      "@id": "tp-ont:BlocksDomain_on_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Block"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Satellite",
+      "@id": "tp-ont:Mode",
       "@type": "owl:Class",
       "rdfs:subClassOf": {
         "@id": "tp-ont:Object"
       }
     },
     {
-      "@id": "tp-ont:hasVariable",
+      "@id": "tp-ont:Vehicle",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Physobj"
+        },
+        {
+          "@id": "tp-ont:Object"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:Distributor",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Place"
+        },
+        {
+          "@id": "tp-ont:Object"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:RoverDomain_equipped_for_imaging_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
       },
       "rdfs:range": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_communicated_hasArg0",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Action",
-      "@type": "owl:Class",
-      "owl:disjointWith": [
-        {
-          "@id": "tp-ont:Relation"
-        },
-        {
-          "@id": "tp-ont:Predicate"
-        },
-        {
-          "@id": "tp-ont:State"
-        },
-        {
-          "@id": "planning-ontology:PlanningProblem"
-        },
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "planning-ontology:PlanningDomain"
-        }
-      ],
-      "owl:equivalentClass": {
-        "@id": "planning-ontology:DomainAction"
+        "@id": "tp-ont:Rover"
       },
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:VerbalConcept"
-        },
-        {
-          "@id": "_:N92e37e571c2f4923a2272897c5b05e1b"
-        }
-      ]
-    },
-    {
-      "@id": "_:N92e37e571c2f4923a2272897c5b05e1b",
-      "@type": "owl:Restriction",
-      "owl:onProperty": {
-        "@id": "planning-ontology:hasEffect"
-      },
-      "owl:someValuesFrom": {
-        "@id": "tp-ont:Effect"
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
       }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_on_hasArg2",
-      "@type": "owl:ObjectProperty"
     },
     {
       "@id": "tp-ont:DriverlogDomain_empty_hasArg0",
@@ -753,28 +700,39 @@
       }
     },
     {
-      "@id": "tp-ont:State",
-      "@type": "owl:Class",
-      "owl:disjointWith": [
-        {
-          "@id": "planning-ontology:PlanningProblem"
-        },
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "planning-ontology:PlanningDomain"
-        },
-        {
-          "@id": "tp-ont:Relation"
-        }
-      ],
-      "rdfs:subClassOf": {
-        "@id": "owl:Thing"
+      "@id": "tp-ont:hasPlan",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "planning-ontology:DomainAction",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "tp-ont:hasNumericValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:NumericFluent"
+      },
+      "rdfs:range": {
+        "@id": "xsd:float"
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_on_board_hasArg1",
+      "@id": "planning-ontology:hasProblem",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:happensAfter",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Step"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Step"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_soil_analysis_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
@@ -783,46 +741,66 @@
         "@id": "tp-ont:Rover"
       },
       "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
+        "@id": "tp-ont:hasArg0"
       }
     },
     {
-      "@id": "tp-ont:MiconicDomain_above_hasArg1",
+      "@id": "tp-ont:RoverDomain_have_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_supports_hasArg1",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
       },
       "rdfs:range": {
-        "@id": "tp-ont:Floor"
+        "@id": "tp-ont:Mode"
       },
       "rdfs:subPropertyOf": {
         "@id": "tp-ont:hasArg1"
       }
     },
     {
-      "@id": "tp-ont:Place",
+      "@id": "tp-ont:Passenger",
       "@type": "owl:Class",
       "rdfs:subClassOf": {
         "@id": "tp-ont:Object"
       }
     },
     {
-      "@id": "tp-ont:Plan",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "owl:Thing"
+      "@id": "tp-ont:hasNumericFluent",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Plan"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:NumericFluent"
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_calibration_hasArg0",
+      "@id": "tp-ont:SatelliteDomain_on_hasArg0",
       "@type": "owl:ObjectProperty"
     },
     {
-      "@id": "tp-ont:SatelliteDomain_have_hasArg0",
+      "@id": "planning-ontology:hasParameter",
       "@type": "owl:ObjectProperty"
     },
     {
-      "@id": "tp-ont:RoverDomain_calibration_target_hasArg0",
+      "@id": "tp-ont:LogisticsDomain_at_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Place"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_supports_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
@@ -835,42 +813,68 @@
       }
     },
     {
-      "@id": "tp-ont:Effect",
+      "@id": "tp-ont:Action",
       "@type": "owl:Class",
-      "owl:equivalentClass": {
-        "@id": "planning-ontology:ActionEffect"
-      },
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Predicate"
-      }
-    },
-    {
-      "@id": "tp-ont:MiconicDomain_lift-at_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Floor"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Vehicle",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
+      "owl:disjointWith": [
+        {
+          "@id": "tp-ont:Predicate"
+        },
         {
           "@id": "tp-ont:Object"
         },
         {
-          "@id": "tp-ont:Physobj"
+          "@id": "tp-ont:State"
+        },
+        {
+          "@id": "planning-ontology:PlanningDomain"
+        },
+        {
+          "@id": "tp-ont:Relation"
+        },
+        {
+          "@id": "planning-ontology:PlanningProblem"
+        }
+      ],
+      "owl:equivalentClass": {
+        "@id": "planning-ontology:DomainAction"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:VerbalConcept"
+        },
+        {
+          "@id": "_:N40b5588f421a4fe3b6a0aa169fc7a127"
         }
       ]
     },
     {
-      "@id": "tp-ont:RoverDomain_can_traverse_hasArg1",
+      "@id": "_:N40b5588f421a4fe3b6a0aa169fc7a127",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "planning-ontology:hasEffect"
+      },
+      "owl:someValuesFrom": {
+        "@id": "tp-ont:Effect"
+      }
+    },
+    {
+      "@id": "tp-ont:Package",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Physobj"
+        },
+        {
+          "@id": "tp-ont:Object"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:RoverDomain_on_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_soil_analysis_hasArg1",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
@@ -883,7 +887,87 @@
       }
     },
     {
-      "@id": "planning-ontology:hasPredicate",
+      "@id": "tp-ont:DepotDomain_lifting_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Hoist"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Place",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:partOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Proposition"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:State"
+      }
+    },
+    {
+      "@id": "tp-ont:DriverlogDomain_link_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Location"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:Locatable",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "owl:Thing",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "tp-ont:DriverlogDomain_driving_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Truck"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_at_lander_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Lander"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "rdf:type",
       "@type": "owl:ObjectProperty"
     },
     {
@@ -900,7 +984,1112 @@
       }
     },
     {
+      "@id": "tp-ont:hasFluent",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Proposition"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Fluent"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_store_of_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Store"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_can_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_full_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Store"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Fluent",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "owl:Thing"
+      }
+    },
+    {
       "@id": "tp-ont:SatelliteDomain_power_on_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Instrument"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:hasTemporalConstraint",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Plan"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:TemporalConstraint"
+      }
+    },
+    {
+      "@id": "tp-ont:MiconicDomain_not-boarded_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Passenger"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Surface",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Object"
+        },
+        {
+          "@id": "tp-ont:Locatable"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:RoverDomain_on_board_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Rover"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:Satellite",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_hasArg4",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_on_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_equipped_for_soil_analysis_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Rover"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_communicated_hasArg4",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:DepotDomain_in_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Truck"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_can_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:DepotDomain_at_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Locatable"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:VerbalConcept",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "tp-ont:Step",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "owl:Thing"
+      }
+    },
+    {
+      "@id": "tp-ont:precedes",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:State"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:State"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_on_board_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Satellite"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:State",
+      "@type": "owl:Class",
+      "owl:disjointWith": [
+        {
+          "@id": "tp-ont:Relation"
+        },
+        {
+          "@id": "planning-ontology:PlanningDomain"
+        },
+        {
+          "@id": "planning-ontology:PlanningProblem"
+        },
+        {
+          "@id": "tp-ont:Object"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "owl:Thing"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_hasArg3",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_calibration_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:NegatedFluent",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Fluent"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_can_hasArg3",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_have_image_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Mode"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:Rover",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:Block",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:DepotDomain_available_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Hoist"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "planning-ontology:hasEffect",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_image_hasArg2",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Mode"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg2"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_supports_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Mode"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_calibrated_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Camera"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Airplane",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Object"
+        },
+        {
+          "@id": "tp-ont:Vehicle"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:goalStateOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "planning-ontology:hasGoalState"
+      },
+      "rdfs:domain": {
+        "@id": "planning-ontology:GoalState"
+      },
+      "rdfs:range": {
+        "@id": "planning-ontology:PlanningProblem"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_calibrated_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Rover"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:MiconicDomain_served_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Passenger"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:DepotDomain_lifting_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Crate"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_image_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Objective"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_calibration_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_channel_free_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Lander"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Driver",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Locatable"
+        },
+        {
+          "@id": "tp-ont:Object"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:LogisticsDomain_in_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Vehicle"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:DriverlogDomain_link_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Location"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_power_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_calibrated_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Instrument"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:DriverlogDomain_path_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Location"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:DriverlogDomain_at_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Location"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:Hoist",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Object"
+        },
+        {
+          "@id": "tp-ont:Locatable"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:Truck",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Locatable"
+        },
+        {
+          "@id": "tp-ont:Vehicle"
+        },
+        {
+          "@id": "tp-ont:Object"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:hasDuration",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Action"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Duration"
+      }
+    },
+    {
+      "@id": "tp-ont:Instrument",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
+    },
+    {
+      "@id": "tp-ont:Effect",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "planning-ontology:ActionEffect"
+      },
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Predicate"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_communicated_hasArg3",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:MiconicDomain_boarded_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Passenger"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_have_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_calibration_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_on_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:NominalConcept",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_calibration_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_rock_analysis_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Waypoint"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_have_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_equipped_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "tp-ont:Relation",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "tp-ont:Pallet",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Object"
+        },
+        {
+          "@id": "tp-ont:Surface"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:RoverDomain_can_traverse_hasArg2",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Waypoint"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg2"
+      }
+    },
+    {
+      "@id": "tp-ont:DriverlogDomain_in_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Truck"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_visible_from_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Objective"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_calibration_target_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Camera"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:BlocksDomain_on_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Block"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_calibration_target_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Direction"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:hasArg2",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Object"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArgument"
+      }
+    },
+    {
+      "@id": "tp-ont:LogisticsDomain_at_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Physobj"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Object",
+      "@type": "owl:Class",
+      "owl:disjointWith": {
+        "@id": "tp-ont:Relation"
+      },
+      "owl:equivalentClass": {
+        "@id": "planning-ontology:ProblemObject"
+      },
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:NominalConcept"
+      }
+    },
+    {
+      "@id": "tp-ont:DepotDomain_clear_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Surface"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:MiconicDomain_above_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Floor"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:DriverlogDomain_driving_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Driver"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Duration",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "owl:Thing"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_store_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:MiconicDomain_not-served_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Passenger"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_communicated_image_data_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Mode"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:MiconicDomain_lift-at_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Floor"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_equipped_for_rock_analysis_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Rover"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:hasState",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Plan"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:State"
+      }
+    },
+    {
+      "@id": "tp-ont:hasPredicate",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "planning-ontology:PlanningDomain"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Predicate"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_store_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_at_lander_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Waypoint"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_equipped_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_visible_from_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Waypoint"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_calibration_target_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Instrument"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_channel_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "planning-ontology:hasInitialState",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_can_traverse_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Waypoint"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:isNegationOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Predicate"
+      }
+    },
+    {
+      "@id": "tp-ont:RoverDomain_communicated_image_data_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Objective"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_have_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_at_soil_sample_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Waypoint"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "tp-ont:Depot",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Place"
+        },
+        {
+          "@id": "tp-ont:Object"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:Location",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "tp-ont:Place"
+        },
+        {
+          "@id": "tp-ont:Object"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:RoverDomain_calibration_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "planning-ontology:ProblemObject",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "tp-ont:LogisticsDomain_in_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Package"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "planning-ontology:PlanningDomain",
+      "@type": "owl:Class",
+      "owl:disjointWith": [
+        {
+          "@id": "tp-ont:Object"
+        },
+        {
+          "@id": "tp-ont:Relation"
+        },
+        {
+          "@id": "planning-ontology:PlanningProblem"
+        }
+      ]
+    },
+    {
+      "@id": "tp-ont:RoverDomain_can_traverse_hasArg0",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Rover"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg0"
+      }
+    },
+    {
+      "@id": "planning-ontology:hasPrecondition",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_supports_hasArg2",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_channel_hasArg1",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "tp-ont:RoverDomain_have_hasArg0",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "https://w3id.org/tp-ont/ontology",
+      "@type": "owl:Ontology",
+      "rdfs:comment": "TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans"
+    },
+    {
+      "@id": "tp-ont:DepotDomain_on_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:Surface"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:LogisticsDomain_in-city_hasArg1",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "tp-ont:Predicate"
+      },
+      "rdfs:range": {
+        "@id": "tp-ont:City"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "tp-ont:hasArg1"
+      }
+    },
+    {
+      "@id": "tp-ont:SatelliteDomain_on_board_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
@@ -926,220 +2115,25 @@
       }
     },
     {
-      "@id": "tp-ont:SatelliteDomain_have_image_hasArg1",
+      "@id": "tp-ont:hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
       },
       "rdfs:range": {
-        "@id": "tp-ont:Mode"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_supports_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Mode"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:DriverlogDomain_path_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Location"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_visible_from_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Objective"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_calibration_target_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Instrument"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_at_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Proposition",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "owl:Thing"
-      }
-    },
-    {
-      "@id": "tp-ont:hasNumericValue",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:NumericFluent"
-      },
-      "rdfs:range": {
-        "@id": "xsd:float"
-      }
-    },
-    {
-      "@id": "planning-ontology:ProblemObject",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "planning-ontology:hasPrecondition",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:RoverDomain_can_traverse_hasArg2",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Waypoint"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg2"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_communicated_rock_data_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Waypoint"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Object",
-      "@type": "owl:Class",
-      "owl:disjointWith": {
-        "@id": "tp-ont:Relation"
-      },
-      "owl:equivalentClass": {
-        "@id": "planning-ontology:ProblemObject"
-      },
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:NominalConcept"
-      }
-    },
-    {
-      "@id": "tp-ont:Mode",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
         "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:DepotDomain_on_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Crate"
       },
       "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
+        "@id": "tp-ont:hasArgument"
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_have_hasArg3",
+      "@id": "tp-ont:RoverDomain_communicated_hasArg0",
       "@type": "owl:ObjectProperty"
     },
     {
-      "@id": "tp-ont:DriverlogDomain_at_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Locatable"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_available_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Rover"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Hoist",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Locatable"
-        },
-        {
-          "@id": "tp-ont:Object"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:RoverDomain_equipped_hasArg1",
+      "@id": "planning-ontology:hasGoalState",
       "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Relation",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "tp-ont:RoverDomain_have_soil_analysis_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Waypoint"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
     },
     {
       "@id": "tp-ont:SatelliteDomain_supports_hasArg0",
@@ -1155,187 +2149,38 @@
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_on_hasArg1",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:BlocksDomain_clear_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Block"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:LogisticsDomain_at_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Place"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_on_hasArg0",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:RoverDomain_communicated_hasArg3",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:LogisticsDomain_at_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Physobj"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:BlocksDomain_ontable_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Block"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_store_hasArg1",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:RoverDomain_at_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Rover"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:NominalConcept",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "planning-ontology:ProblemPredicate",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "tp-ont:DriverlogDomain_in_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Truck"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_store_of_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Store"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Parameter",
-      "@type": "owl:Class",
-      "owl:equivalentClass": {
-        "@id": "planning-ontology:ActionParameter"
-      },
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:NominalConcept"
-      }
-    },
-    {
-      "@id": "tp-ont:Rover",
+      "@id": "tp-ont:City",
       "@type": "owl:Class",
       "rdfs:subClassOf": {
         "@id": "tp-ont:Object"
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_visible_from_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Waypoint"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:DriverlogDomain_driving_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Driver"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_store_hasArg0",
+      "@id": "tp-ont:RoverDomain_visible_hasArg2",
       "@type": "owl:ObjectProperty"
     },
     {
-      "@id": "tp-ont:Depot",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Place"
-        },
-        {
-          "@id": "tp-ont:Object"
-        }
-      ]
+      "@id": "planning-ontology:ProblemPredicate",
+      "@type": "owl:Class"
     },
     {
-      "@id": "tp-ont:hasStep",
+      "@id": "tp-ont:initialStateOf",
       "@type": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "planning-ontology:hasInitialState"
+      },
       "rdfs:domain": {
-        "@id": "tp-ont:Plan"
+        "@id": "planning-ontology:InitialState"
       },
       "rdfs:range": {
-        "@id": "tp-ont:Step"
+        "@id": "planning-ontology:PlanningProblem"
+      }
+    },
+    {
+      "@id": "tp-ont:TemporalConstraint",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "owl:Thing"
       }
     },
     {
@@ -1352,81 +2197,22 @@
       }
     },
     {
-      "@id": "tp-ont:Airplane",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Vehicle"
-        },
-        {
-          "@id": "tp-ont:Object"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:NumericFluent",
+      "@id": "tp-ont:Proposition",
       "@type": "owl:Class",
       "rdfs:subClassOf": {
         "@id": "owl:Thing"
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_have_hasArg0",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:RoverDomain_have_soil_analysis_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Rover"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_channel_free_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Lander"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_on_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Store",
+      "@id": "tp-ont:Waypoint",
       "@type": "owl:Class",
       "rdfs:subClassOf": {
         "@id": "tp-ont:Object"
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_full_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Store"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_calibration_hasArg1",
-      "@type": "owl:ObjectProperty"
+      "@id": "planning-ontology:ActionParameter",
+      "@type": "owl:Class"
     },
     {
       "@id": "tp-ont:RoverDomain_communicated_soil_data_hasArg0",
@@ -1442,576 +2228,17 @@
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_at_rock_sample_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Waypoint"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:DepotDomain_at_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Place"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_can_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Crate",
+      "@id": "tp-ont:Parameter",
       "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Surface"
-        },
-        {
-          "@id": "tp-ont:Object"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:RoverDomain_supports_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
+      "owl:equivalentClass": {
+        "@id": "planning-ontology:ActionParameter"
       },
-      "rdfs:range": {
-        "@id": "tp-ont:Camera"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Direction",
-      "@type": "owl:Class",
       "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
+        "@id": "tp-ont:NominalConcept"
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_communicated_hasArg1",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Fluent",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "owl:Thing"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_visible_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:LogisticsDomain_in_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Package"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_calibration_target_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Direction"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "owl:Thing",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "tp-ont:TemporalConstraint",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "owl:Thing"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_visible_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Waypoint"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_equipped_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:DriverlogDomain_link_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Location"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_have_image_hasArg2",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Mode"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg2"
-      }
-    },
-    {
-      "@id": "tp-ont:Objective",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:hasPredicate",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "planning-ontology:PlanningDomain"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Predicate"
-      }
-    },
-    {
-      "@id": "planning-ontology:ActionEffect",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "tp-ont:DepotDomain_on_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Surface"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "planning-ontology:hasEffect",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Camera",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_can_hasArg0",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:DepotDomain_in_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Truck"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:isNegationOf",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Predicate"
-      }
-    },
-    {
-      "@id": "tp-ont:NegatedFluent",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Fluent"
-      }
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_on_board_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Satellite"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:hasFluent",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Proposition"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Fluent"
-      }
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_power_hasArg1",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:partOf",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Proposition"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:State"
-      }
-    },
-    {
-      "@id": "tp-ont:Locatable",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_have_image_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Objective"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "planning-ontology:hasInitialState",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:RoverDomain_have_image_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Rover"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:admissible",
-      "@type": "owl:ObjectProperty",
-      "owl:inverseOf": {
-        "@id": "planning-ontology:hasAction"
-      },
-      "rdfs:domain": {
-        "@id": "tp-ont:Action"
-      },
-      "rdfs:range": {
-        "@id": "planning-ontology:PlanningDomain"
-      }
-    },
-    {
-      "@id": "tp-ont:Lander",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_communicated_image_data_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Objective"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_calibrated_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Rover"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "planning-ontology:hasProblem",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:DriverlogDomain_at_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Location"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:DriverlogDomain_link_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Location"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:hasTemporalConstraint",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Plan"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:TemporalConstraint"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_on_board_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Camera"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:initialStateOf",
-      "@type": "owl:ObjectProperty",
-      "owl:inverseOf": {
-        "@id": "planning-ontology:hasInitialState"
-      },
-      "rdfs:domain": {
-        "@id": "planning-ontology:InitialState"
-      },
-      "rdfs:range": {
-        "@id": "planning-ontology:PlanningProblem"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_at_lander_hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Waypoint"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:DepotDomain_available_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Hoist"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:MiconicDomain_not-boarded_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Passenger"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:hasArg1",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Object"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArgument"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_at_soil_sample_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Waypoint"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_equipped_for_soil_analysis_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Rover"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Object"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArgument"
-      }
-    },
-    {
-      "@id": "tp-ont:Driver",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "tp-ont:Locatable"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:DepotDomain_lifting_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Hoist"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_calibrated_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Instrument"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "planning-ontology:hasGoalState",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_calibration_hasArg0",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:happensAfter",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Step"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Step"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_equipped_hasArg3",
+      "@id": "planning-ontology:hasPredicate",
       "@type": "owl:ObjectProperty"
     },
     {
@@ -2028,66 +2255,34 @@
       }
     },
     {
-      "@id": "tp-ont:SatelliteDomain_have_image_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Direction"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "planning-ontology:ActionPrecondition",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "tp-ont:RoverDomain_have_hasArg1",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Package",
+      "@id": "tp-ont:Direction",
       "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "tp-ont:Physobj"
-        }
-      ]
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
+      }
     },
     {
-      "@id": "tp-ont:DepotDomain_at_hasArg0",
+      "@id": "tp-ont:BlocksDomain_clear_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
       },
       "rdfs:range": {
-        "@id": "tp-ont:Locatable"
+        "@id": "tp-ont:Block"
       },
       "rdfs:subPropertyOf": {
         "@id": "tp-ont:hasArg0"
       }
     },
     {
-      "@id": "tp-ont:SatelliteDomain_on_board_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Instrument"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
+      "@id": "tp-ont:Camera",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "tp-ont:Object"
       }
     },
     {
-      "@id": "tp-ont:RoverDomain_have_rock_analysis_hasArg1",
+      "@id": "tp-ont:RoverDomain_at_rock_sample_hasArg0",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "tp-ont:Predicate"
@@ -2096,162 +2291,11 @@
         "@id": "tp-ont:Waypoint"
       },
       "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg1"
-      }
-    },
-    {
-      "@id": "tp-ont:Obj",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Locatable"
-        },
-        {
-          "@id": "tp-ont:Object"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:RoverDomain_supports_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:hasPrecondition",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:RoverDomain_equipped_for_imaging_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Rover"
-      },
-      "rdfs:subPropertyOf": {
         "@id": "tp-ont:hasArg0"
       }
     },
     {
-      "@id": "tp-ont:MiconicDomain_destin_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Passenger"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_can_hasArg3",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:RoverDomain_empty_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Store"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Truck",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": [
-        {
-          "@id": "tp-ont:Locatable"
-        },
-        {
-          "@id": "tp-ont:Object"
-        },
-        {
-          "@id": "tp-ont:Vehicle"
-        }
-      ]
-    },
-    {
-      "@id": "tp-ont:RoverDomain_equipped_for_rock_analysis_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Rover"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:hasArgument",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Object"
-      }
-    },
-    {
-      "@id": "tp-ont:SatelliteDomain_power_avail_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Satellite"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:hasArg2",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Object"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArgument"
-      }
-    },
-    {
-      "@id": "tp-ont:DepotDomain_clear_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Surface"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_communicated_hasArg2",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "tp-ont:Duration",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "owl:Thing"
-      }
-    },
-    {
-      "@id": "tp-ont:Pallet",
+      "@id": "tp-ont:Crate",
       "@type": "owl:Class",
       "rdfs:subClassOf": [
         {
@@ -2261,50 +2305,6 @@
           "@id": "tp-ont:Object"
         }
       ]
-    },
-    {
-      "@id": "tp-ont:Step",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "owl:Thing"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_calibrated_hasArg0",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:Predicate"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:Camera"
-      },
-      "rdfs:subPropertyOf": {
-        "@id": "tp-ont:hasArg0"
-      }
-    },
-    {
-      "@id": "tp-ont:Precondition",
-      "@type": "owl:Class",
-      "owl:equivalentClass": {
-        "@id": "planning-ontology:ActionPrecondition"
-      },
-      "rdfs:subClassOf": {
-        "@id": "tp-ont:Predicate"
-      }
-    },
-    {
-      "@id": "tp-ont:precedes",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "tp-ont:State"
-      },
-      "rdfs:range": {
-        "@id": "tp-ont:State"
-      }
-    },
-    {
-      "@id": "tp-ont:RoverDomain_have_hasArg2",
-      "@type": "owl:ObjectProperty"
     }
   ]
 }

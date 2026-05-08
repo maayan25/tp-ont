@@ -41,27 +41,43 @@ def get_initial_state(problem_path):
                 in_init_section = True
                 # Count opening parentheses in this line
                 paren_count = line.count('(') - line.count(')')
-                continue
+                # Get any predicates on the same line as :init
+                if line.endswith("(:init"):
+                    continue
+                else:
+                    init_part = line.split("(:init", 1)[1].strip()
+                    if init_part:
+                        # This line contains predicate(s) after :init
+                        if init_part.startswith('('):
+                            init.append(init_part)
+            else:
+                if in_init_section:
+                    # Stop if :goal or :metric (next section)
+                    if line.startswith("(:goal") or line.startswith("(:metric"):
+                        break
 
-            if in_init_section:
-                # Stop if :goal or :metric (next section)
-                if line.startswith("(:goal") or line.startswith("(:metric"):
-                    break
+                    # Update parenthesis count
+                    paren_count += line.count('(') - line.count(')')
 
-                # Update parenthesis count
-                paren_count += line.count('(') - line.count(')')
+                    # Extract predicates from this line
+                    if line and not line == ")":
+                        # This line contains predicate(s)
+                        if line.startswith('('):
+                            init.append(line.replace("))", ")"))  # Remove extra parentheses if they exist
 
-                # Extract predicates from this line
-                if line and not line == ")":
-                    # This line contains predicate(s)
-                    if line.startswith('('):
-                        init.append(line)
-
-                # If closed all parentheses done with :init
-                if paren_count <= 0:
-                    break
+                    # If closed all parentheses done with :init
+                    if paren_count <= 0:
+                        break
 
     print(f"Initial state: {init}")
+    # Remove dangling parantheses at the end of the last predicate if there is "))" at the end of the last predicate in init list
+    cleaned_init = []
+    for pred in init:
+        if pred.endswith("))"):
+            cleaned_init.append(pred[:-1])
+        else:
+            cleaned_init.append(pred)
+
     return init
 
 def get_effects(plan_validation_path) -> dict[int, list[str]]:
@@ -208,7 +224,11 @@ if __name__ == "__main__":
         states = simulate_states(problem_path=problem_file, plan_validation_path=plan_validation_path, plan_size=plan_length)
         print(f"Simulated states for plan: {states}")
         with open(state_simulation_path, "w") as f:
-            for i, state in enumerate(states):
+            f.write("Initial state:\n")
+            for predicate in states[0]:
+                f.write(f"{predicate} ")
+            f.write("\n")
+            for i, state in enumerate(states[1:]):
                 f.write(f"State after action {i+1}:\n")
                 for predicate in state:
                     f.write(f"{predicate} ")

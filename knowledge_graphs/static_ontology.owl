@@ -6,24 +6,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:tp-ont="https://w3id.org/tp-ont/ontology#"
 >
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#State">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
-    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en">State</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasTemporalConstraint">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">hasTemporalConstraint</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#TemporalConstraint"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Action">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="Nd21a2792dcdf4a76994dc61099829569"/>
+    <rdfs:subClassOf rdf:nodeID="Ne987327e145d412fa94fcccefd58263e"/>
     <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#VerbalConcept"/>
     <lexinfo:partOfSpeech rdf:resource="https://www.lexinfo.net/ontology/3.0/lexinfo#verb"/>
     <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
@@ -34,66 +19,26 @@
     <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
     <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#DomainAction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ProblemObject">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ActionParameter">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Effect">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
-    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#precedes">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">precedes</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Plan">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Step">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en">Plan</rdfs:label>
+    <rdfs:label xml:lang="en">Step</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <owl:imports rdf:resource="https://purl.org/ai4s/ontology/planning"/>
-    <tp-ont:contributor>Albert Meroño-Peñuela, Gerard Canal</tp-ont:contributor>
-    <tp-ont:creator>Ma'ayan Armony</tp-ont:creator>
-    <tp-ont:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-    <rdfs:comment>TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans</rdfs:comment>
-    <owl:versionInfo>1.0</owl:versionInfo>
-    <rdfs:label>TP-ONT</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#NumericFluent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">NumericFluent</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasNumericValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="en">hasNumericValue</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#NumericFluent"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#admissible">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasDuration">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">hasDuration</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
-    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
-    <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#hasAction"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Duration"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#goalStateOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
-    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
-    <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#hasGoalState"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#TemporalConstraint">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Duration">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en">TemporalConstraint</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasNumericFluent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">hasNumericFluent</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#NumericFluent"/>
+    <rdfs:label xml:lang="en">Duration</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasArgument">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -101,40 +46,32 @@
     <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
     <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Predicate">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Parameter">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#NominalConcept"/>
+    <lexinfo:partOfSpeech rdf:resource="https://www.lexinfo.net/ontology/3.0/lexinfo#noun"/>
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#isNegationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">isNegationOf</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#initialStateOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#InitialState"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#hasInitialState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#State">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
     <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
     <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
     <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
-    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemPredicate"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasPredicate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasState">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">hasState</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ActionPrecondition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Object">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#NominalConcept"/>
-    <lexinfo:partOfSpeech rdf:resource="https://www.lexinfo.net/ontology/3.0/lexinfo#noun"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
-    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#NegatedFluent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#Fluent"/>
-    <rdfs:label xml:lang="en">NegatedFluent</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">State</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasStep">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -148,34 +85,11 @@
     <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
     <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#initialStateOf">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasFluent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#InitialState"/>
-    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
-    <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#hasInitialState"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Relation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#VerbalConcept">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasDuration">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">hasDuration</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Duration"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Step">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en">Step</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#happensAfter">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">happensAfter</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
+    <rdfs:label xml:lang="en">hasFluent</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Proposition"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Fluent"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#PlanningDomain">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -183,38 +97,22 @@
     <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
     <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasFluent">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#admissible">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">hasFluent</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Proposition"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Fluent"/>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Action"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+    <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#hasAction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasVariable">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#happensAfter">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+    <rdfs:label xml:lang="en">happensAfter</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Parameter">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#NegatedFluent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#NominalConcept"/>
-    <lexinfo:partOfSpeech rdf:resource="https://www.lexinfo.net/ontology/3.0/lexinfo#noun"/>
-    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ActionParameter"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#NumericFluent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en">NumericFluent</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#isNegationOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">isNegationOf</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
-    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Precondition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
-    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#Fluent"/>
+    <rdfs:label xml:lang="en">NegatedFluent</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#partOf">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -222,15 +120,107 @@
     <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Proposition"/>
     <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd21a2792dcdf4a76994dc61099829569">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasNumericValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">hasNumericValue</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#NumericFluent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#NominalConcept"/>
+    <lexinfo:partOfSpeech rdf:resource="https://www.lexinfo.net/ontology/3.0/lexinfo#noun"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ProblemPredicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne987327e145d412fa94fcccefd58263e">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="https://purl.org/ai4s/ontology/planning#hasEffect"/>
     <owl:someValuesFrom rdf:resource="https://w3id.org/tp-ont/ontology#Effect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#TemporalConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">TemporalConstraint</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasState">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">hasState</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasTemporalConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">hasTemporalConstraint</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#TemporalConstraint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#precedes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">precedes</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Fluent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en">Fluent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="https://purl.org/ai4s/ontology/planning"/>
+    <tp-ont:contributor>Albert Meroño-Peñuela, Gerard Canal</tp-ont:contributor>
+    <tp-ont:creator>Ma'ayan Armony</tp-ont:creator>
+    <tp-ont:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <rdfs:comment>TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans</rdfs:comment>
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <rdfs:label>TP-ONT</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Predicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#State"/>
+    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+    <owl:disjointWith rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ProblemPredicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#PlanningProblem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Proposition">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:label xml:lang="en">Proposition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#goalStateOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#GoalState"/>
+    <rdfs:range rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningProblem"/>
+    <owl:inverseOf rdf:resource="https://purl.org/ai4s/ontology/planning#hasGoalState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#NominalConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ActionParameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasNumericFluent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">hasNumericFluent</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Plan"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#NumericFluent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#VerbalConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#happensBefore">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -239,34 +229,44 @@
     <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Step"/>
     <owl:inverseOf rdf:resource="https://w3id.org/tp-ont/ontology#happensAfter"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#PlanningProblem">
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ActionEffect">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
-    <owl:disjointWith rdf:resource="https://w3id.org/tp-ont/ontology#Relation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Fluent">
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ProblemObject">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en">Fluent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ActionPrecondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Precondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ActionPrecondition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasPredicate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.org/ai4s/ontology/planning#PlanningDomain"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Effect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+    <owl:equivalentClass rdf:resource="https://purl.org/ai4s/ontology/planning#ActionEffect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#hasVariable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/tp-ont/ontology#Predicate"/>
+    <rdfs:range rdf:resource="https://w3id.org/tp-ont/ontology#Object"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#DomainAction">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Duration">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Plan">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label xml:lang="en">Duration</rdfs:label>
+    <rdfs:label xml:lang="en">Plan</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ProblemPredicate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://purl.org/ai4s/ontology/planning#ActionEffect">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#NominalConcept">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+  <rdf:Description rdf:about="https://w3id.org/tp-ont/ontology#Relation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

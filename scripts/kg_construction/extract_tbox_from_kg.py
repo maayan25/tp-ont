@@ -64,9 +64,6 @@ def extract_tbox(input_path: str, output_path: str):
             tbox_graph.add((s, p, o))
 
     tbox_graph.serialize(output_path, format="xml")
-    
-    # For HF dataset
-    # tbox_graph.serialize(output_path.replace(".owl", ".json"), format="json-ld", auto_compact=True)
     print(f"Full graph:  {len(full_kg)} triples")
     print(f"TBox extracted: {len(tbox_graph)} triples")
     print(f"ABox filtered:  {len(full_kg) - len(tbox_graph)} triples")

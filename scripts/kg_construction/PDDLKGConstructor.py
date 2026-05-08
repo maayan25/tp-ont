@@ -350,6 +350,8 @@ class DomainPDDLKG(BasePDDLKG):
         for pred in lst:
             fluent = pred["name"]
             args = pred["args"]
+            if "apt2" in args:
+                print(f"DEBUG: Adding predicate {pred} with fluen {fluent} and args {args} to state {state_uri}")
 
             predicate = f"{fluent}_{'_'.join(args)}" if args else fluent
             # self.add_predicate_data(predicate, fluent, args, state_type, state_type)
@@ -468,6 +470,9 @@ class DomainPDDLKG(BasePDDLKG):
         # Decompose states and link to steps
         state_uris = [self.init_uri]
         self.record_relation((step_strings[0], "hasPrecondition", self.init_uri))
+        self.record_relation((plan_name, "hasState", self.init_uri))
+        self.record_relation((plan_name, "hasState", self.goal_uri))
+
         for i, state in enumerate(plan_states):
             state: str = str(state).strip()
             state_uri = add_state_entity(state, "planning-ontology:State", self.kg_data)
@@ -509,7 +514,7 @@ class DomainPDDLKG(BasePDDLKG):
                 num += 1
 
     # General
-    def add_problem_entities(self) -> None:
+    def add_problem_entities(self, initial_state) -> None:
         """
         Add entities that are not directly parsed, e.g. domain and problem, and their relations
         :return: None
@@ -520,7 +525,8 @@ class DomainPDDLKG(BasePDDLKG):
 
         self.record_entity((problem_name, "planning-ontology:PlanningProblem"), is_class=False)
 
-        ser_init, ser_goal = str(self.parser.init), str(self.parser.goal)
+        ser_init, ser_goal = str(initial_state), str(self.parser.goal)
+        print(f"DEBUG SECOND: Adding problem entities with initial state \n {ser_init} \n and goal state \n {ser_goal}")
         self.init_uri = add_state_entity(ser_init, "planning-ontology:InitialState", self.kg_data)
         self.goal_uri = add_state_entity(ser_goal, "planning-ontology:GoalState", self.kg_data)
         print(f"Adding initial state entity: {ser_init} with URI {self.init_uri}")
@@ -533,8 +539,8 @@ class DomainPDDLKG(BasePDDLKG):
         self.record_relation((problem_name, "planning-ontology:hasGoalState", self.goal_uri))
 
         # Add the grounded predicates in initial and goal states
-        print(f"Adding initial state predicates with state URI {self.init_uri}: {self.parser.initial_state}")
-        self.add_grounded_predicates(self.parser.initial_state, self.init_uri)
+        # print(f"Adding initial state predicates with state URI {self.init_uri}: {initial_state}")
+        # self.add_grounded_predicates(initial_state, self.init_uri)
         print(f"Adding goal state predicates with state URI {self.goal_uri}: {self.parser.goal_state}")
         self.add_grounded_predicates(self.parser.goal_state, self.goal_uri)
 
@@ -566,10 +572,12 @@ class DomainPDDLKG(BasePDDLKG):
             self.add_actions() # Add action names, preconditions, and effects
 
         # Add problem-specific entities and relations
-        self.add_problem_entities()
+        actions, states = parse_plan_and_simulation(self.domain_name, self.problem_name)
+        initial_state = states[0]
+        print(f"IMPORTANT: adding initial state from plan and simulation parsing: \n {initial_state}")
+        self.add_problem_entities(initial_state)
         self.add_objects()
 
-        actions, states = parse_plan_and_simulation(self.domain_name, self.problem_name)
         self.add_plan_to_kg(f"{self.parser.domain_name}_{self.problem_name}_plan", actions, states)
 
 

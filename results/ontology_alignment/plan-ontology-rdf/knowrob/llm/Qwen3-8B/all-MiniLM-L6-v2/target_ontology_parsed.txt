@@ -1,0 +1,483 @@
+{'name': 'Mapping', 'iri': 'http://knowrob.org/kb/actions.owl#Mapping', 'label': 'Mapping', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Accuracy', 'iri': 'http://knowrob.org/kb/knowrob.owl#Accuracy', 'label': 'Accuracy', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'AffordanceTransform', 'iri': 'http://knowrob.org/kb/knowrob.owl#AffordanceTransform', 'label': 'AffordanceTransform', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#StaticTransform', 'label': 'StaticTransform', 'name': 'StaticTransform'}], 'synonyms': [], 'comment': []}
+
+{'name': 'AssemblyDisposition', 'iri': 'http://knowrob.org/kb/knowrob.owl#AssemblyDisposition', 'label': 'AssemblyDisposition', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Assignment', 'iri': 'http://knowrob.org/kb/knowrob.owl#Assignment', 'label': 'Assignment', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'AtomArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#AtomArgument', 'label': 'AtomArgument', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#AtomicArgument', 'label': 'AtomicArgument', 'name': 'AtomicArgument'}], 'synonyms': [], 'comment': []}
+
+{'name': 'AtomicArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#AtomicArgument', 'label': 'AtomicArgument', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#AtomArgument', 'label': 'AtomArgument', 'name': 'AtomArgument'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#NumberArgument', 'label': 'NumberArgument', 'name': 'NumberArgument'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#StringArgument', 'label': 'StringArgument', 'name': 'StringArgument'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#VariableArgument', 'label': 'VariableArgument', 'name': 'VariableArgument'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ProcedureArgument', 'label': 'Procedure argument', 'name': 'Procedure argument'}], 'synonyms': [], 'comment': ['An atomic term in the language in which the procedure is implemented.']}
+
+{'name': 'AvoidLookingAt', 'iri': 'http://knowrob.org/kb/knowrob.owl#AvoidLookingAt', 'label': 'AvoidLookingAt', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#OrientationConstraint', 'label': 'OrientationConstraint', 'name': 'OrientationConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'B21', 'iri': 'http://knowrob.org/kb/knowrob.owl#B21', 'label': 'B21', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#WheeledRobot', 'label': 'WheeledRobot', 'name': 'WheeledRobot'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Battery', 'iri': 'http://knowrob.org/kb/knowrob.owl#Battery', 'label': 'Battery', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#NonRechargeableBattery', 'label': 'NonRechargeableBattery', 'name': 'NonRechargeableBattery'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#RechargeableBattery', 'label': 'RechargeableBattery', 'name': 'RechargeableBattery'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalDevice', 'label': 'ElectricalDevice', 'name': 'ElectricalDevice'}], 'synonyms': [], 'comment': ['providers of DC electricity from chemical reactions']}
+
+{'name': 'BottleCap', 'iri': 'http://knowrob.org/kb/knowrob.owl#BottleCap', 'label': 'BottleCap', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Candle', 'iri': 'http://knowrob.org/kb/knowrob.owl#Candle', 'label': 'Candle', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'CartesianCoordinateSystem', 'iri': 'http://knowrob.org/kb/knowrob.owl#CartesianCoordinateSystem', 'label': 'CartesianCoordinateSystem', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#CoordinateSystem', 'label': 'CoordinateSystem', 'name': 'CoordinateSystem'}], 'synonyms': [], 'comment': ['A specialization of CoordinateSystem. Each instance of CartesianCoordinateSystem is based on two or three perpendicular axes that intersect at a point, called the origin. Two axes are used for coordinating a two-dimensional space; three axes are used for coordinating a three-dimensional space. Any point in the space coordinated by the system can be specified by a pair (or triple) of Distances, representing distances from the origin along each of the two (or three) axes.']}
+
+{'name': 'CeilingLight', 'iri': 'http://knowrob.org/kb/knowrob.owl#CeilingLight', 'label': 'CeilingLight', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#LightFixture', 'label': 'LightFixture', 'name': 'LightFixture'}], 'synonyms': [], 'comment': ['The collection of all ceiling lights.']}
+
+{'name': 'CenterOfObject', 'iri': 'http://knowrob.org/kb/knowrob.owl#CenterOfObject', 'label': 'CenterOfObject', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Chopping', 'iri': 'http://knowrob.org/kb/knowrob.owl#Chopping', 'label': 'Chopping', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Cutting', 'label': 'Cutting', 'name': 'Cutting'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Cleaning', 'iri': 'http://knowrob.org/kb/knowrob.owl#Cleaning', 'label': 'Cleaning', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Cloth', 'iri': 'http://knowrob.org/kb/knowrob.owl#Cloth', 'label': 'Cloth', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#TextileArtifact', 'label': 'TextileArtifact', 'name': 'TextileArtifact'}], 'synonyms': [], 'comment': []}
+
+{'name': 'CompoundArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#CompoundArgument', 'label': 'CompoundArgument', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ProcedureArgument', 'label': 'Procedure argument', 'name': 'Procedure argument'}], 'synonyms': [], 'comment': ['A compound term in the language in which the procedure is implemented.']}
+
+{'name': 'Computational predicate', 'iri': 'http://knowrob.org/kb/knowrob.owl#ComputationalPredicate', 'label': 'Computational predicate', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ComputationalProcedure', 'label': 'Computational procedure', 'name': 'Computational procedure'}], 'synonyms': [], 'comment': ['A boolean procedure yielding true if the fact implied by the predicate can be derived using the argument instantiation provided when the predicate is called. In some implementations arguments may be left without instantiation before a predicate is called in which case the call yields true if an appropiate instantiation could be found.']}
+
+{'name': 'Computational procedure', 'iri': 'http://knowrob.org/kb/knowrob.owl#ComputationalProcedure', 'label': 'Computational procedure', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ComputationalPredicate', 'label': 'Computational predicate', 'name': 'Computational predicate'}], 'parents': [], 'synonyms': [], 'comment': ['An implemented procedure with specific functor and arity that can be computed by calling it with appropiate arguments possibly yielding one or more outputs.']}
+
+{'name': 'Connector', 'iri': 'http://knowrob.org/kb/knowrob.owl#Connector', 'label': 'Connector', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Hook', 'label': 'Hook', 'name': 'Hook'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Pin', 'label': 'Pin', 'name': 'Pin'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Constraint', 'iri': 'http://knowrob.org/kb/knowrob.owl#Constraint', 'label': 'Constraint', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#SpatialConstraint', 'label': 'SpatialConstraint', 'name': 'SpatialConstraint'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#TemporalConstraint', 'label': 'TemporalConstraint', 'name': 'TemporalConstraint'}], 'parents': [], 'synonyms': [], 'comment': ["fixme: there is an issue with the DUL axiom that parameters only classify regions, and 'is constraint for' is a sub-property of classifies with domain Parameter and range Entity. this seems like a bug in DUL."]}
+
+{'name': 'Cooling', 'iri': 'http://knowrob.org/kb/knowrob.owl#Cooling', 'label': 'Cooling', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['A specialization of TemperatureChangingProcess. Each instance of CoolingProcess is an event in which the temperature of some object (related to the instance of CoolingProcess by objectOfStateChange) is lowered.']}
+
+{'name': 'CoordinateSystem', 'iri': 'http://knowrob.org/kb/knowrob.owl#CoordinateSystem', 'label': 'CoordinateSystem', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#CartesianCoordinateSystem', 'label': 'CartesianCoordinateSystem', 'name': 'CartesianCoordinateSystem'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#FrameOfReference', 'label': 'FrameOfReference', 'name': 'FrameOfReference'}], 'synonyms': [], 'comment': ['A specialization of FrameOfReference. This is the collection of systems with respect to which the locations of SpatialThings can be specified.\nThe two most common types of coordinate systems are CartesianCoordinateSystems and PolarCoordinateSystems.']}
+
+{'name': 'Cutting', 'iri': 'http://knowrob.org/kb/knowrob.owl#Cutting', 'label': 'Cutting', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Chopping', 'label': 'Chopping', 'name': 'Chopping'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Slicing', 'label': 'Slicing', 'name': 'Slicing'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Destructing', 'label': 'Destructing', 'name': 'Destructing'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Date', 'iri': 'http://knowrob.org/kb/knowrob.owl#Date', 'label': 'Date', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Destructing', 'iri': 'http://knowrob.org/kb/knowrob.owl#Destructing', 'label': 'Destructing', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Cutting', 'label': 'Cutting', 'name': 'Cutting'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'DistanceConstraint', 'iri': 'http://knowrob.org/kb/knowrob.owl#DistanceConstraint', 'label': 'DistanceConstraint', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepAwayFrom', 'label': 'KeepAwayFrom', 'name': 'KeepAwayFrom'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepCloseTo', 'label': 'KeepCloseTo', 'name': 'KeepCloseTo'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#SpatialConstraint', 'label': 'SpatialConstraint', 'name': 'SpatialConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Duration', 'iri': 'http://knowrob.org/kb/knowrob.owl#Duration', 'label': 'Duration', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ElectricLamp', 'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricLamp', 'label': 'ElectricLamp', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#LightFixture', 'label': 'LightFixture', 'name': 'LightFixture'}], 'synonyms': [], 'comment': ['The collection for all kinds of freestanding (easily moveable) electrical lamps.']}
+
+{'name': 'ElectricalDevice', 'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalDevice', 'label': 'ElectricalDevice', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Battery', 'label': 'Battery', 'name': 'Battery'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalLightingDevice', 'label': 'ElectricalLightingDevice', 'name': 'ElectricalLightingDevice'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalOutlet', 'label': 'ElectricalOutlet', 'name': 'ElectricalOutlet'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalPlug', 'label': 'ElectricalPlug', 'name': 'ElectricalPlug'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Lightbulb', 'label': 'Lightbulb', 'name': 'Lightbulb'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#VideoScreen', 'label': 'VideoScreen', 'name': 'VideoScreen'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ElectricalLightingDevice', 'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalLightingDevice', 'label': 'ElectricalLightingDevice', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Flashlight', 'label': 'Flashlight', 'name': 'Flashlight'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#IndicatorLight', 'label': 'IndicatorLight', 'name': 'IndicatorLight'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Lamp-Hanging', 'label': 'Lamp-Hanging', 'name': 'Lamp-Hanging'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#LightFixture', 'label': 'LightFixture', 'name': 'LightFixture'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#StreetLight', 'label': 'StreetLight', 'name': 'StreetLight'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalDevice', 'label': 'ElectricalDevice', 'name': 'ElectricalDevice'}], 'synonyms': [], 'comment': ['Devices that provide light by transforming electrical current into light energy.']}
+
+{'name': 'ElectricalOutlet', 'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalOutlet', 'label': 'ElectricalOutlet', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalDevice', 'label': 'ElectricalDevice', 'name': 'ElectricalDevice'}], 'synonyms': [], 'comment': []}
+
+{'name': 'ElectricalPlug', 'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalPlug', 'label': 'ElectricalPlug', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalDevice', 'label': 'ElectricalDevice', 'name': 'ElectricalDevice'}], 'synonyms': [], 'comment': []}
+
+{'name': 'FaultyHardware', 'iri': 'http://knowrob.org/kb/knowrob.owl#FaultyHardware', 'label': 'FaultyHardware', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#InoperableHardware', 'label': 'InoperableHardware', 'name': 'InoperableHardware'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Finger', 'iri': 'http://knowrob.org/kb/knowrob.owl#Finger', 'label': 'Finger', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#IndexFinger', 'label': 'IndexFinger', 'name': 'IndexFinger'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#LittleFinger', 'label': 'LittleFinger', 'name': 'LittleFinger'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#MiddleFinger', 'label': 'MiddleFinger', 'name': 'MiddleFinger'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#RingFinger', 'label': 'RingFinger', 'name': 'RingFinger'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Thumb', 'label': 'Thumb', 'name': 'Thumb'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'FinishBefore', 'iri': 'http://knowrob.org/kb/knowrob.owl#FinishBefore', 'label': 'FinishBefore', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#TemporalConstraint', 'label': 'TemporalConstraint', 'name': 'TemporalConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Flashlight', 'iri': 'http://knowrob.org/kb/knowrob.owl#Flashlight', 'label': 'Flashlight', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalLightingDevice', 'label': 'ElectricalLightingDevice', 'name': 'ElectricalLightingDevice'}], 'synonyms': [], 'comment': ['A small portable electric lamp powered by batteries.']}
+
+{'name': 'FlatScreenMonitor', 'iri': 'http://knowrob.org/kb/knowrob.owl#FlatScreenMonitor', 'label': 'FlatScreenMonitor', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Monitor', 'label': 'Monitor', 'name': 'Monitor'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Flipping', 'iri': 'http://knowrob.org/kb/knowrob.owl#Flipping', 'label': 'Flipping', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'FloatArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#FloatArgument', 'label': 'FloatArgument', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#NumberArgument', 'label': 'NumberArgument', 'name': 'NumberArgument'}], 'synonyms': [], 'comment': []}
+
+{'name': 'FlyingRobot', 'iri': 'http://knowrob.org/kb/knowrob.owl#FlyingRobot', 'label': 'FlyingRobot', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'FrameOfReference', 'iri': 'http://knowrob.org/kb/knowrob.owl#FrameOfReference', 'label': 'FrameOfReference', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#CoordinateSystem', 'label': 'CoordinateSystem', 'name': 'CoordinateSystem'}], 'parents': [], 'synonyms': [], 'comment': ['Each instance of FrameOfReference is a representation of the context in which certain data are to be interpreted. Such contexts are typically physical, but may be purely mathematical. For example, a CartesianCoordinateSystem can be used to represent the positions of things on the surface of the Eath, but can also be used to represent an abstract gepometric space.']}
+
+{'name': 'GraspingDisposition', 'iri': 'http://knowrob.org/kb/knowrob.owl#GraspingDisposition', 'label': 'GraspingDisposition', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#SideGraspDisposition', 'label': 'SideGraspDisposition', 'name': 'SideGraspDisposition'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#TopGraspDisposition', 'label': 'TopGraspDisposition', 'name': 'TopGraspDisposition'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Heating', 'iri': 'http://knowrob.org/kb/knowrob.owl#Heating', 'label': 'Heating', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['A specialization of TemperatureChangingProcess. During each HeatingProcess event, the temperature of the objectOfStateChange is increased by applying heat to the object. Any instance of IntrinsicStateChangeEvent in which an object temperature is increased is also an instance of this collection.']}
+
+{'name': 'Hook', 'iri': 'http://knowrob.org/kb/knowrob.owl#Hook', 'label': 'Hook', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Connector', 'label': 'Connector', 'name': 'Connector'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Image', 'iri': 'http://knowrob.org/kb/knowrob.owl#Image', 'label': 'Image', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'IncompleteModel', 'iri': 'http://knowrob.org/kb/knowrob.owl#IncompleteModel', 'label': 'IncompleteModel', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'IndexFinger', 'iri': 'http://knowrob.org/kb/knowrob.owl#IndexFinger', 'label': 'IndexFinger', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Finger', 'label': 'Finger', 'name': 'Finger'}], 'synonyms': [], 'comment': []}
+
+{'name': 'IndicatorLight', 'iri': 'http://knowrob.org/kb/knowrob.owl#IndicatorLight', 'label': 'IndicatorLight', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalLightingDevice', 'label': 'ElectricalLightingDevice', 'name': 'ElectricalLightingDevice'}], 'synonyms': [], 'comment': ['The collection of all indicator lights.']}
+
+{'name': 'InoperableHardware', 'iri': 'http://knowrob.org/kb/knowrob.owl#InoperableHardware', 'label': 'InoperableHardware', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#FaultyHardware', 'label': 'FaultyHardware', 'name': 'FaultyHardware'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#UnpoweredHardware', 'label': 'UnpoweredHardware', 'name': 'UnpoweredHardware'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'IntegerArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#IntegerArgument', 'label': 'IntegerArgument', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#NumberArgument', 'label': 'NumberArgument', 'name': 'NumberArgument'}], 'synonyms': [], 'comment': []}
+
+{'name': 'InvalidArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#InvalidArgument', 'label': 'InvalidArgument', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'KBQuerying', 'iri': 'http://knowrob.org/kb/knowrob.owl#KBQuerying', 'label': 'KBQuerying', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['A querying action where some predicate of the KB is called.']}
+
+{'name': 'KBQueryingExecution', 'iri': 'http://knowrob.org/kb/knowrob.owl#KBQueryingExecution', 'label': 'KBQueryingExecution', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepAbove', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepAbove', 'label': 'KeepAbove', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRelativeLocation', 'label': 'KeepRelativeLocation', 'name': 'KeepRelativeLocation'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepAtAngle', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepAtAngle', 'label': 'KeepAtAngle', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#OrientationConstraint', 'label': 'OrientationConstraint', 'name': 'OrientationConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepAwayFrom', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepAwayFrom', 'label': 'KeepAwayFrom', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#DistanceConstraint', 'label': 'DistanceConstraint', 'name': 'DistanceConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepBehind', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepBehind', 'label': 'KeepBehind', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRelativeLocation', 'label': 'KeepRelativeLocation', 'name': 'KeepRelativeLocation'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepBelow', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepBelow', 'label': 'KeepBelow', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRelativeLocation', 'label': 'KeepRelativeLocation', 'name': 'KeepRelativeLocation'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepCloseTo', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepCloseTo', 'label': 'KeepCloseTo', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#DistanceConstraint', 'label': 'DistanceConstraint', 'name': 'DistanceConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepInfront', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepInfront', 'label': 'KeepInfront', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRelativeLocation', 'label': 'KeepRelativeLocation', 'name': 'KeepRelativeLocation'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepLeftOf', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepLeftOf', 'label': 'KeepLeftOf', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRelativeLocation', 'label': 'KeepRelativeLocation', 'name': 'KeepRelativeLocation'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepLookingAt', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepLookingAt', 'label': 'KeepLookingAt', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#OrientationConstraint', 'label': 'OrientationConstraint', 'name': 'OrientationConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepPerpendicularTo', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepPerpendicularTo', 'label': 'KeepPerpendicularTo', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepUpright', 'label': 'KeepUpright', 'name': 'KeepUpright'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#OrientationConstraint', 'label': 'OrientationConstraint', 'name': 'OrientationConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepRelativeLocation', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRelativeLocation', 'label': 'KeepRelativeLocation', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepAbove', 'label': 'KeepAbove', 'name': 'KeepAbove'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepBehind', 'label': 'KeepBehind', 'name': 'KeepBehind'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepBelow', 'label': 'KeepBelow', 'name': 'KeepBelow'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepInfront', 'label': 'KeepInfront', 'name': 'KeepInfront'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepLeftOf', 'label': 'KeepLeftOf', 'name': 'KeepLeftOf'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRightOf', 'label': 'KeepRightOf', 'name': 'KeepRightOf'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#LocationConstraint', 'label': 'LocationConstraint', 'name': 'LocationConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepRightOf', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRightOf', 'label': 'KeepRightOf', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRelativeLocation', 'label': 'KeepRelativeLocation', 'name': 'KeepRelativeLocation'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepStill', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepStill', 'label': 'KeepStill', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#LocationConstraint', 'label': 'LocationConstraint', 'name': 'LocationConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'KeepUpright', 'iri': 'http://knowrob.org/kb/knowrob.owl#KeepUpright', 'label': 'KeepUpright', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepPerpendicularTo', 'label': 'KeepPerpendicularTo', 'name': 'KeepPerpendicularTo'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Knedding', 'iri': 'http://knowrob.org/kb/knowrob.owl#Knedding', 'label': 'Knedding', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Lamp-Hanging', 'iri': 'http://knowrob.org/kb/knowrob.owl#Lamp-Hanging', 'label': 'Lamp-Hanging', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalLightingDevice', 'label': 'ElectricalLightingDevice', 'name': 'ElectricalLightingDevice'}], 'synonyms': [], 'comment': ['The collection of all hanging lamps.']}
+
+{'name': 'LeftArm', 'iri': 'http://knowrob.org/kb/knowrob.owl#LeftArm', 'label': 'LeftArm', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'LeftHand', 'iri': 'http://knowrob.org/kb/knowrob.owl#LeftHand', 'label': 'LeftHand', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'LeftLeg', 'iri': 'http://knowrob.org/kb/knowrob.owl#LeftLeg', 'label': 'LeftLeg', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'LeggedRobot', 'iri': 'http://knowrob.org/kb/knowrob.owl#LeggedRobot', 'label': 'LeggedRobot', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'LightFixture', 'iri': 'http://knowrob.org/kb/knowrob.owl#LightFixture', 'label': 'LightFixture', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#CeilingLight', 'label': 'CeilingLight', 'name': 'CeilingLight'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricLamp', 'label': 'ElectricLamp', 'name': 'ElectricLamp'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalLightingDevice', 'label': 'ElectricalLightingDevice', 'name': 'ElectricalLightingDevice'}], 'synonyms': [], 'comment': ['Light fixtures are lights that are permanently attached as parts of rooms or buildings. e.g. Flourescent light fixtures in office building ceilings.']}
+
+{'name': 'Lightbulb', 'iri': 'http://knowrob.org/kb/knowrob.owl#Lightbulb', 'label': 'Lightbulb', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalDevice', 'label': 'ElectricalDevice', 'name': 'ElectricalDevice'}], 'synonyms': [], 'comment': ['A bulb of glass or quartz enclosing material that incandesces or fluoresces when provided with current, thus generating light.']}
+
+{'name': 'LittleFinger', 'iri': 'http://knowrob.org/kb/knowrob.owl#LittleFinger', 'label': 'LittleFinger', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Finger', 'label': 'Finger', 'name': 'Finger'}], 'synonyms': [], 'comment': []}
+
+{'name': 'LocationConstraint', 'iri': 'http://knowrob.org/kb/knowrob.owl#LocationConstraint', 'label': 'LocationConstraint', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KeepRelativeLocation', 'label': 'KeepRelativeLocation', 'name': 'KeepRelativeLocation'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepStill', 'label': 'KeepStill', 'name': 'KeepStill'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#MoveCarefully', 'label': 'MoveCarefully', 'name': 'MoveCarefully'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#SpatialConstraint', 'label': 'SpatialConstraint', 'name': 'SpatialConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Map', 'iri': 'http://knowrob.org/kb/knowrob.owl#Map', 'label': 'Map', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap', 'label': 'SemanticEnvironmentMap', 'name': 'SemanticEnvironmentMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#EnvironmentMap', 'label': 'EnvironmentMap', 'name': 'EnvironmentMap'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'MiddleFinger', 'iri': 'http://knowrob.org/kb/knowrob.owl#MiddleFinger', 'label': 'MiddleFinger', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Finger', 'label': 'Finger', 'name': 'Finger'}], 'synonyms': [], 'comment': []}
+
+{'name': 'MissingArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#MissingArgument', 'label': 'MissingArgument', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'MobileBase', 'iri': 'http://knowrob.org/kb/knowrob.owl#MobileBase', 'label': 'MobileBase', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Monitor', 'iri': 'http://knowrob.org/kb/knowrob.owl#Monitor', 'label': 'Monitor', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#FlatScreenMonitor', 'label': 'FlatScreenMonitor', 'name': 'FlatScreenMonitor'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#VideoScreen', 'label': 'VideoScreen', 'name': 'VideoScreen'}], 'synonyms': [], 'comment': []}
+
+{'name': 'MoveCarefully', 'iri': 'http://knowrob.org/kb/knowrob.owl#MoveCarefully', 'label': 'MoveCarefully', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#LocationConstraint', 'label': 'LocationConstraint', 'name': 'LocationConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'NonRechargeableBattery', 'iri': 'http://knowrob.org/kb/knowrob.owl#NonRechargeableBattery', 'label': 'NonRechargeableBattery', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Battery', 'label': 'Battery', 'name': 'Battery'}], 'synonyms': [], 'comment': ['Batteries which may not be recharged (cf. ChargingABattery).']}
+
+{'name': 'NumberArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#NumberArgument', 'label': 'NumberArgument', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#FloatArgument', 'label': 'FloatArgument', 'name': 'FloatArgument'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#IntegerArgument', 'label': 'IntegerArgument', 'name': 'IntegerArgument'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#AtomicArgument', 'label': 'AtomicArgument', 'name': 'AtomicArgument'}], 'synonyms': [], 'comment': []}
+
+{'name': 'ObjectMainAxis', 'iri': 'http://knowrob.org/kb/knowrob.owl#ObjectMainAxis', 'label': 'ObjectMainAxis', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ObjectOverlooked', 'iri': 'http://knowrob.org/kb/knowrob.owl#ObjectOverlooked', 'label': 'ObjectOverlooked', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'OperableHardware', 'iri': 'http://knowrob.org/kb/knowrob.owl#OperableHardware', 'label': 'OperableHardware', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'OrientationConstraint', 'iri': 'http://knowrob.org/kb/knowrob.owl#OrientationConstraint', 'label': 'OrientationConstraint', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#AvoidLookingAt', 'label': 'AvoidLookingAt', 'name': 'AvoidLookingAt'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepAtAngle', 'label': 'KeepAtAngle', 'name': 'KeepAtAngle'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepLookingAt', 'label': 'KeepLookingAt', 'name': 'KeepLookingAt'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#KeepPerpendicularTo', 'label': 'KeepPerpendicularTo', 'name': 'KeepPerpendicularTo'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#SpatialConstraint', 'label': 'SpatialConstraint', 'name': 'SpatialConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'PR2', 'iri': 'http://knowrob.org/kb/knowrob.owl#PR2', 'label': 'PR2', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#WheeledRobot', 'label': 'WheeledRobot', 'name': 'WheeledRobot'}], 'synonyms': [], 'comment': []}
+
+{'name': 'ParameterInference', 'iri': 'http://knowrob.org/kb/knowrob.owl#ParameterInference', 'label': 'ParameterInference', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['A reasoning task where the value of a parameter is determined.']}
+
+{'name': 'PartOffset', 'iri': 'http://knowrob.org/kb/knowrob.owl#PartOffset', 'label': 'PartOffset', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Perception', 'iri': 'http://knowrob.org/kb/knowrob.owl#Perception', 'label': 'Perception', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Proprioception', 'label': 'Proprioception', 'name': 'Proprioception'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#RfidPerception', 'label': 'RfidPerception', 'name': 'RfidPerception'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#TouchPerception', 'label': 'TouchPerception', 'name': 'TouchPerception'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#VisualPerception', 'label': 'VisualPerception', 'name': 'VisualPerception'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'PerceptionFeature', 'iri': 'http://knowrob.org/kb/knowrob.owl#PerceptionFeature', 'label': 'PerceptionFeature', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['A feature that visually pops out, and is rather easy perceivable.']}
+
+{'name': 'Pin', 'iri': 'http://knowrob.org/kb/knowrob.owl#Pin', 'label': 'Pin', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Connector', 'label': 'Connector', 'name': 'Connector'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Point', 'iri': 'http://knowrob.org/kb/knowrob.owl#Point', 'label': 'Point', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Pose', 'iri': 'http://knowrob.org/kb/knowrob.owl#Pose', 'label': 'Pose', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Pouring', 'iri': 'http://knowrob.org/kb/knowrob.owl#Pouring', 'label': 'Pouring', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#PouringInto', 'label': 'PouringInto', 'name': 'PouringInto'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#PouringOnto', 'label': 'PouringOnto', 'name': 'PouringOnto'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'PouringInto', 'iri': 'http://knowrob.org/kb/knowrob.owl#PouringInto', 'label': 'PouringInto', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Pouring', 'label': 'Pouring', 'name': 'Pouring'}], 'synonyms': [], 'comment': []}
+
+{'name': 'PouringOnto', 'iri': 'http://knowrob.org/kb/knowrob.owl#PouringOnto', 'label': 'PouringOnto', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Pouring', 'label': 'Pouring', 'name': 'Pouring'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Precision', 'iri': 'http://knowrob.org/kb/knowrob.owl#Precision', 'label': 'Precision', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Procedure argument', 'iri': 'http://knowrob.org/kb/knowrob.owl#ProcedureArgument', 'label': 'Procedure argument', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#AtomicArgument', 'label': 'AtomicArgument', 'name': 'AtomicArgument'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#CompoundArgument', 'label': 'CompoundArgument', 'name': 'CompoundArgument'}], 'parents': [], 'synonyms': [], 'comment': ['An argument of a procedure. Note that this is *not* the instantiation of the argument but rather a description of it in terms of structure and type. e.g., NumberArgument is used to denote arguments that are a number constant! In most cases VariableArgument should be used.']}
+
+{'name': 'Proprioception', 'iri': 'http://knowrob.org/kb/knowrob.owl#Proprioception', 'label': 'Proprioception', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Perception', 'label': 'Perception', 'name': 'Perception'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Query', 'iri': 'http://knowrob.org/kb/knowrob.owl#Query', 'label': 'Query', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Reasoner', 'iri': 'http://knowrob.org/kb/knowrob.owl#Reasoner', 'label': 'Reasoner', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'RechargeableBattery', 'iri': 'http://knowrob.org/kb/knowrob.owl#RechargeableBattery', 'label': 'RechargeableBattery', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Battery', 'label': 'Battery', 'name': 'Battery'}], 'synonyms': [], 'comment': ['Batteries which may be recharged (cf. ChargingABattery).']}
+
+{'name': 'Resolution', 'iri': 'http://knowrob.org/kb/knowrob.owl#Resolution', 'label': 'Resolution', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ResourceMissing', 'iri': 'http://knowrob.org/kb/knowrob.owl#ResourceMissing', 'label': 'ResourceMissing', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ResourceNotFound', 'iri': 'http://knowrob.org/kb/knowrob.owl#ResourceNotFound', 'label': 'ResourceNotFound', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'RfidPerception', 'iri': 'http://knowrob.org/kb/knowrob.owl#RfidPerception', 'label': 'RfidPerception', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Perception', 'label': 'Perception', 'name': 'Perception'}], 'synonyms': [], 'comment': []}
+
+{'name': 'RightArm', 'iri': 'http://knowrob.org/kb/knowrob.owl#RightArm', 'label': 'RightArm', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'RightHand', 'iri': 'http://knowrob.org/kb/knowrob.owl#RightHand', 'label': 'RightHand', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'RightLeg', 'iri': 'http://knowrob.org/kb/knowrob.owl#RightLeg', 'label': 'RightLeg', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'RingFinger', 'iri': 'http://knowrob.org/kb/knowrob.owl#RingFinger', 'label': 'RingFinger', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Finger', 'label': 'Finger', 'name': 'Finger'}], 'synonyms': [], 'comment': []}
+
+{'name': 'RobovieMR2', 'iri': 'http://knowrob.org/kb/knowrob.owl#RobovieMR2', 'label': 'RobovieMR2', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#WheeledRobot', 'label': 'WheeledRobot', 'name': 'WheeledRobot'}], 'synonyms': [], 'comment': []}
+
+{'name': 'SamplingRate', 'iri': 'http://knowrob.org/kb/knowrob.owl#SamplingRate', 'label': 'SamplingRate', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['The frequency at which a sensor takes measurements.']}
+
+{'name': 'SemanticEnvironmentMap', 'iri': 'http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap', 'label': 'SemanticEnvironmentMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Map', 'label': 'Map', 'name': 'Map'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Sensitivity', 'iri': 'http://knowrob.org/kb/knowrob.owl#Sensitivity', 'label': 'Sensitivity', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Sensor device', 'iri': 'http://knowrob.org/kb/knowrob.owl#SensorDevice', 'label': 'Sensor device', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['todo: axiomatize measured quantitiy.']}
+
+{'name': 'Sensor range', 'iri': 'http://knowrob.org/kb/knowrob.owl#SensorRange', 'label': 'Sensor range', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Serving', 'iri': 'http://knowrob.org/kb/knowrob.owl#Serving', 'label': 'Serving', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'SideGraspDisposition', 'iri': 'http://knowrob.org/kb/knowrob.owl#SideGraspDisposition', 'label': 'SideGraspDisposition', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#GraspingDisposition', 'label': 'GraspingDisposition', 'name': 'GraspingDisposition'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Slicing', 'iri': 'http://knowrob.org/kb/knowrob.owl#Slicing', 'label': 'Slicing', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Cutting', 'label': 'Cutting', 'name': 'Cutting'}], 'synonyms': [], 'comment': []}
+
+{'name': 'SpatialConstraint', 'iri': 'http://knowrob.org/kb/knowrob.owl#SpatialConstraint', 'label': 'SpatialConstraint', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#DistanceConstraint', 'label': 'DistanceConstraint', 'name': 'DistanceConstraint'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#LocationConstraint', 'label': 'LocationConstraint', 'name': 'LocationConstraint'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#OrientationConstraint', 'label': 'OrientationConstraint', 'name': 'OrientationConstraint'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Constraint', 'label': 'Constraint', 'name': 'Constraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'StampedPose', 'iri': 'http://knowrob.org/kb/knowrob.owl#StampedPose', 'label': 'StampedPose', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'StaticTransform', 'iri': 'http://knowrob.org/kb/knowrob.owl#StaticTransform', 'label': 'StaticTransform', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#AffordanceTransform', 'label': 'AffordanceTransform', 'name': 'AffordanceTransform'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Stirring', 'iri': 'http://knowrob.org/kb/knowrob.owl#Stirring', 'label': 'Stirring', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'StreetLight', 'iri': 'http://knowrob.org/kb/knowrob.owl#StreetLight', 'label': 'StreetLight', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalLightingDevice', 'label': 'ElectricalLightingDevice', 'name': 'ElectricalLightingDevice'}], 'synonyms': [], 'comment': ['The collection of all streetlights.']}
+
+{'name': 'StringArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#StringArgument', 'label': 'StringArgument', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#AtomicArgument', 'label': 'AtomicArgument', 'name': 'AtomicArgument'}], 'synonyms': [], 'comment': []}
+
+{'name': 'TUM_Rosie', 'iri': 'http://knowrob.org/kb/knowrob.owl#TUM_Rosie', 'label': 'TUM_Rosie', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#WheeledRobot', 'label': 'WheeledRobot', 'name': 'WheeledRobot'}], 'synonyms': [], 'comment': []}
+
+{'name': 'TemporalConstraint', 'iri': 'http://knowrob.org/kb/knowrob.owl#TemporalConstraint', 'label': 'TemporalConstraint', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#FinishBefore', 'label': 'FinishBefore', 'name': 'FinishBefore'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#WaitUntil', 'label': 'WaitUntil', 'name': 'WaitUntil'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Constraint', 'label': 'Constraint', 'name': 'Constraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'TextileArtifact', 'iri': 'http://knowrob.org/kb/knowrob.owl#TextileArtifact', 'label': 'TextileArtifact', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Cloth', 'label': 'Cloth', 'name': 'Cloth'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Towel', 'label': 'Towel', 'name': 'Towel'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Thumb', 'iri': 'http://knowrob.org/kb/knowrob.owl#Thumb', 'label': 'Thumb', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Finger', 'label': 'Finger', 'name': 'Finger'}], 'synonyms': [], 'comment': []}
+
+{'name': 'TimePoint', 'iri': 'http://knowrob.org/kb/knowrob.owl#TimePoint', 'label': 'TimePoint', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['An instance of TimePoint is an interval of time that has no duration (or, if you prefer, an infinitely small duration). A time point corresponds to what is colloquially described as an "instant" or "moment". If time is likened to a (perhaps infinitely long) straight line, then each TimePoint is like a particular point on that line. Given that time intervals are defined purely by their locations in time, no two time intervals can occupy exactly the same times; and since time points are intervals with no duration, no two time points can even overlap.']}
+
+{'name': 'TopGraspDisposition', 'iri': 'http://knowrob.org/kb/knowrob.owl#TopGraspDisposition', 'label': 'TopGraspDisposition', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#GraspingDisposition', 'label': 'GraspingDisposition', 'name': 'GraspingDisposition'}], 'synonyms': [], 'comment': []}
+
+{'name': 'TouchPerception', 'iri': 'http://knowrob.org/kb/knowrob.owl#TouchPerception', 'label': 'TouchPerception', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Perception', 'label': 'Perception', 'name': 'Perception'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Towel', 'iri': 'http://knowrob.org/kb/knowrob.owl#Towel', 'label': 'Towel', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#TextileArtifact', 'label': 'TextileArtifact', 'name': 'TextileArtifact'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Trajectory', 'iri': 'http://knowrob.org/kb/knowrob.owl#Trajectory', 'label': 'Trajectory', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'UndefinedReference', 'iri': 'http://knowrob.org/kb/knowrob.owl#UndefinedReference', 'label': 'UndefinedReference', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Ungraspable', 'iri': 'http://knowrob.org/kb/knowrob.owl#Ungraspable', 'label': 'Ungraspable', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Unliftable', 'iri': 'http://knowrob.org/kb/knowrob.owl#Unliftable', 'label': 'Unliftable', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'UnpoweredHardware', 'iri': 'http://knowrob.org/kb/knowrob.owl#UnpoweredHardware', 'label': 'UnpoweredHardware', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#InoperableHardware', 'label': 'InoperableHardware', 'name': 'InoperableHardware'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Unreachable', 'iri': 'http://knowrob.org/kb/knowrob.owl#Unreachable', 'label': 'Unreachable', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'VariableArgument', 'iri': 'http://knowrob.org/kb/knowrob.owl#VariableArgument', 'label': 'VariableArgument', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#AtomicArgument', 'label': 'AtomicArgument', 'name': 'AtomicArgument'}], 'synonyms': [], 'comment': []}
+
+{'name': 'VideoScreen', 'iri': 'http://knowrob.org/kb/knowrob.owl#VideoScreen', 'label': 'VideoScreen', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Monitor', 'label': 'Monitor', 'name': 'Monitor'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalDevice', 'label': 'ElectricalDevice', 'name': 'ElectricalDevice'}], 'synonyms': [], 'comment': []}
+
+{'name': 'VisualPerception', 'iri': 'http://knowrob.org/kb/knowrob.owl#VisualPerception', 'label': 'VisualPerception', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Perception', 'label': 'Perception', 'name': 'Perception'}], 'synonyms': [], 'comment': []}
+
+{'name': 'WaitUntil', 'iri': 'http://knowrob.org/kb/knowrob.owl#WaitUntil', 'label': 'WaitUntil', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#TemporalConstraint', 'label': 'TemporalConstraint', 'name': 'TemporalConstraint'}], 'synonyms': [], 'comment': []}
+
+{'name': 'WallMirror', 'iri': 'http://knowrob.org/kb/knowrob.owl#WallMirror', 'label': 'WallMirror', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'WasteBasket', 'iri': 'http://knowrob.org/kb/knowrob.owl#WasteBasket', 'label': 'WasteBasket', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Water', 'iri': 'http://knowrob.org/kb/knowrob.owl#Water', 'label': 'Water', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Wheel', 'iri': 'http://knowrob.org/kb/knowrob.owl#Wheel', 'label': 'Wheel', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'WheeledRobot', 'iri': 'http://knowrob.org/kb/knowrob.owl#WheeledRobot', 'label': 'WheeledRobot', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#B21', 'label': 'B21', 'name': 'B21'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#PR2', 'label': 'PR2', 'name': 'PR2'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#RobovieMR2', 'label': 'RobovieMR2', 'name': 'RobovieMR2'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#TUM_Rosie', 'label': 'TUM_Rosie', 'name': 'TUM_Rosie'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'BeaconMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#BeaconMap', 'label': 'BeaconMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#TopologicalMap', 'label': 'TopologicalMap', 'name': 'TopologicalMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'CollisionMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#CollisionMap', 'label': 'CollisionMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#EnvironmentMap', 'label': 'EnvironmentMap', 'name': 'EnvironmentMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'EnvironmentMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#EnvironmentMap', 'label': 'EnvironmentMap', 'childrens': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#CollisionMap', 'label': 'CollisionMap', 'name': 'CollisionMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MapBuiltFromSensorData', 'label': 'MapBuiltFromSensorData', 'name': 'MapBuiltFromSensorData'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MetricMap', 'label': 'MetricMap', 'name': 'MetricMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#ThreeDimensionalMap', 'label': 'ThreeDimensionalMap', 'name': 'ThreeDimensionalMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#TopologicalMap', 'label': 'TopologicalMap', 'name': 'TopologicalMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#TwoDimensionalMap', 'label': 'TwoDimensionalMap', 'name': 'TwoDimensionalMap'}], 'parents': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Map', 'label': 'Map', 'name': 'Map'}], 'synonyms': [], 'comment': []}
+
+{'name': 'LaserScannerMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#LaserScannerMap', 'label': 'LaserScannerMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MapBuiltFromSensorData', 'label': 'MapBuiltFromSensorData', 'name': 'MapBuiltFromSensorData'}], 'synonyms': [], 'comment': []}
+
+{'name': 'MapBuiltFromSensorData', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MapBuiltFromSensorData', 'label': 'MapBuiltFromSensorData', 'childrens': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#LaserScannerMap', 'label': 'LaserScannerMap', 'name': 'LaserScannerMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#SonarMap', 'label': 'SonarMap', 'name': 'SonarMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#StereoCameraMap', 'label': 'StereoCameraMap', 'name': 'StereoCameraMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#VisualSlamMap', 'label': 'VisualSlamMap', 'name': 'VisualSlamMap'}], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#EnvironmentMap', 'label': 'EnvironmentMap', 'name': 'EnvironmentMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'MetricMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MetricMap', 'label': 'MetricMap', 'childrens': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#ObjectMap', 'label': 'ObjectMap', 'name': 'ObjectMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#OccupancyGridMap', 'label': 'OccupancyGridMap', 'name': 'OccupancyGridMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#PointMap', 'label': 'PointMap', 'name': 'PointMap'}], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#EnvironmentMap', 'label': 'EnvironmentMap', 'name': 'EnvironmentMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'ObjectMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#ObjectMap', 'label': 'ObjectMap', 'childrens': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#SemanticEnvironmentMap', 'label': 'SemanticEnvironmentMap', 'name': 'SemanticEnvironmentMap'}], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MetricMap', 'label': 'MetricMap', 'name': 'MetricMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#TopologicalMap', 'label': 'TopologicalMap', 'name': 'TopologicalMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'OccupancyGridMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#OccupancyGridMap', 'label': 'OccupancyGridMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MetricMap', 'label': 'MetricMap', 'name': 'MetricMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'PointMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#PointMap', 'label': 'PointMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MetricMap', 'label': 'MetricMap', 'name': 'MetricMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'SemanticEnvironmentMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#SemanticEnvironmentMap', 'label': 'SemanticEnvironmentMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#ObjectMap', 'label': 'ObjectMap', 'name': 'ObjectMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'SonarMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#SonarMap', 'label': 'SonarMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MapBuiltFromSensorData', 'label': 'MapBuiltFromSensorData', 'name': 'MapBuiltFromSensorData'}], 'synonyms': [], 'comment': []}
+
+{'name': 'StereoCameraMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#StereoCameraMap', 'label': 'StereoCameraMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MapBuiltFromSensorData', 'label': 'MapBuiltFromSensorData', 'name': 'MapBuiltFromSensorData'}], 'synonyms': [], 'comment': []}
+
+{'name': 'ThreeDimensionalMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#ThreeDimensionalMap', 'label': 'ThreeDimensionalMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#EnvironmentMap', 'label': 'EnvironmentMap', 'name': 'EnvironmentMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'TopologicalMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#TopologicalMap', 'label': 'TopologicalMap', 'childrens': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#BeaconMap', 'label': 'BeaconMap', 'name': 'BeaconMap'}, {'iri': 'http://knowrob.org/kb/srdl2-comp.owl#ObjectMap', 'label': 'ObjectMap', 'name': 'ObjectMap'}], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#EnvironmentMap', 'label': 'EnvironmentMap', 'name': 'EnvironmentMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'TwoDimensionalMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#TwoDimensionalMap', 'label': 'TwoDimensionalMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#EnvironmentMap', 'label': 'EnvironmentMap', 'name': 'EnvironmentMap'}], 'synonyms': [], 'comment': []}
+
+{'name': 'VisualSlamMap', 'iri': 'http://knowrob.org/kb/srdl2-comp.owl#VisualSlamMap', 'label': 'VisualSlamMap', 'childrens': [], 'parents': [{'iri': 'http://knowrob.org/kb/srdl2-comp.owl#MapBuiltFromSensorData', 'label': 'MapBuiltFromSensorData', 'name': 'MapBuiltFromSensorData'}], 'synonyms': [], 'comment': []}
+
+{'name': 'Robot', 'iri': 'http://knowrob.org/kb/urdf.owl#Robot', 'label': 'Robot', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#FlyingRobot', 'label': 'FlyingRobot', 'name': 'FlyingRobot'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#LeggedRobot', 'label': 'LeggedRobot', 'name': 'LeggedRobot'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#WheeledRobot', 'label': 'WheeledRobot', 'name': 'WheeledRobot'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ActionExecutionPlan', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#ActionExecutionPlan', 'label': 'ActionExecutionPlan', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KBQueryingExecution', 'label': 'KBQueryingExecution', 'name': 'KBQueryingExecution'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Actuating', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Actuating', 'label': 'Actuating', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Flipping', 'label': 'Flipping', 'name': 'Flipping'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Pouring', 'label': 'Pouring', 'name': 'Pouring'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Serving', 'label': 'Serving', 'name': 'Serving'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Appliance', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Appliance', 'label': 'Appliance', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ElectricalDevice', 'label': 'ElectricalDevice', 'name': 'ElectricalDevice'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#MobileBase', 'label': 'MobileBase', 'name': 'MobileBase'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#SensorDevice', 'label': 'Sensor device', 'name': 'Sensor device'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Arm', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Arm', 'label': 'Arm', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#LeftArm', 'label': 'LeftArm', 'name': 'LeftArm'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#RightArm', 'label': 'RightArm', 'name': 'RightArm'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Condensing', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Condensing', 'label': 'Condensing', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ConditionalSuccedence', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#ConditionalSuccedence', 'label': 'ConditionalSuccedence', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'DependentPlace', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#DependentPlace', 'label': 'DependentPlace', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#CenterOfObject', 'label': 'CenterOfObject', 'name': 'CenterOfObject'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#ObjectMainAxis', 'label': 'ObjectMainAxis', 'name': 'ObjectMainAxis'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'DesignedComponent', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#DesignedComponent', 'label': 'DesignedComponent', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#BottleCap', 'label': 'BottleCap', 'name': 'BottleCap'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Connector', 'label': 'Connector', 'name': 'Connector'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Wheel', 'label': 'Wheel', 'name': 'Wheel'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'DesignedContainer', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#DesignedContainer', 'label': 'DesignedContainer', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'DesignedFurniture', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture', 'label': 'DesignedFurniture', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#WallMirror', 'label': 'WallMirror', 'name': 'WallMirror'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#WasteBasket', 'label': 'WasteBasket', 'name': 'WasteBasket'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'DesignedTool', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#DesignedTool', 'label': 'DesignedTool', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Flashlight', 'label': 'Flashlight', 'name': 'Flashlight'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'EntryOGPWorkflow', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#EntryOGPWorkflow', 'label': 'EntryOGPWorkflow', 'childrens': [], 'parents': [{'iri': 'http://www.ease-crc.org/ont/SOMA.owl#OGPTask', 'label': 'OGPTask', 'name': 'OGPTask'}], 'synonyms': [], 'comment': ["Note: equality constraints between parameter sets for Entry/Exit points and the OGPTask defined by a RobotWorkflow might suggest that the OGPTask defined by the workflow can be used as an entry/exit point.\n\nThis however is not the case, as these tasks have different meanings for the KnowRob workflow interpreter.\n\n-- work-flow defined task: any general purpose task, such as some robot behavior, described by a workflow. Encountering such a task during a run of the interpreter will evoke the defining workflow.\n-- entry point task: bind roles and parameters in the workflow to values obtained from the evoker of the workflow\n-- exit point task: bind roles and parameters in the workflow to outputs, and return control to the workflow's evoker.", 'The first Task in a RobotWorkflow, which is simply to receive the inputs and bind them to the appropriate roles defined in the workflow.\n\nA RobotWorkflow has only 1 entry point.\n\nThis task has no outputs.', 'WARNING: the following constraint was not modelled in the Tbox, but it is expected that RobotWorkflows will implement it.\n\nThe EntryRobotWorkflow should have the same inputs as the RobotTask defined by the RobotWorkflow.']}
+
+{'name': 'ExecutionStateRegion', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#ExecutionStateRegion', 'label': 'ExecutionStateRegion', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ExitOGPWorkflow', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#ExitOGPWorkflow', 'label': 'ExitOGPWorkflow', 'childrens': [], 'parents': [{'iri': 'http://www.ease-crc.org/ont/SOMA.owl#OGPTask', 'label': 'OGPTask', 'name': 'OGPTask'}], 'synonyms': [], 'comment': ['A final Task in a OGPWorkflow, which is simply to return some information as a "result" of the workflow\'s execution.\n\nThis task only uses outputs. The values for the outputs are calculated by the KnowRob workflow interpreter based on the Bindings between roles that exist in the workflow.']}
+
+{'name': 'FailedAttempt', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#FailedAttempt', 'label': 'FailedAttempt', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ObjectOverlooked', 'label': 'ObjectOverlooked', 'name': 'ObjectOverlooked'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#ResourceNotFound', 'label': 'ResourceNotFound', 'name': 'ResourceNotFound'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'FaultySoftware', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#FaultySoftware', 'label': 'FaultySoftware', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#IncompleteModel', 'label': 'IncompleteModel', 'name': 'IncompleteModel'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#InvalidArgument', 'label': 'InvalidArgument', 'name': 'InvalidArgument'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#MissingArgument', 'label': 'MissingArgument', 'name': 'MissingArgument'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#UndefinedReference', 'label': 'UndefinedReference', 'name': 'UndefinedReference'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Fluid', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Fluid', 'label': 'Fluid', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Water', 'label': 'Water', 'name': 'Water'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Freezing', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Freezing', 'label': 'Freezing', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Hand', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Hand', 'label': 'Hand', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#LeftHand', 'label': 'LeftHand', 'name': 'LeftHand'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#RightHand', 'label': 'RightHand', 'name': 'RightHand'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'HardwareDiagnosis', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#HardwareDiagnosis', 'label': 'HardwareDiagnosis', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#InoperableHardware', 'label': 'InoperableHardware', 'name': 'InoperableHardware'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#OperableHardware', 'label': 'OperableHardware', 'name': 'OperableHardware'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Inability', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Inability', 'label': 'Inability', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Ungraspable', 'label': 'Ungraspable', 'name': 'Ungraspable'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Unliftable', 'label': 'Unliftable', 'name': 'Unliftable'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Unreachable', 'label': 'Unreachable', 'name': 'Unreachable'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Infeasibility', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Infeasibility', 'label': 'Infeasibility', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ResourceMissing', 'label': 'ResourceMissing', 'name': 'ResourceMissing'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Leg', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Leg', 'label': 'Leg', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#LeftLeg', 'label': 'LeftLeg', 'name': 'LeftLeg'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#RightLeg', 'label': 'RightLeg', 'name': 'RightLeg'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Localization', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Localization', 'label': 'Localization', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Melting', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Melting', 'label': 'Melting', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'MentalAction', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#MentalAction', 'label': 'MentalAction', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#KBQuerying', 'label': 'KBQuerying', 'name': 'KBQuerying'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Perception', 'label': 'Perception', 'name': 'Perception'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Mixing', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Mixing', 'label': 'Mixing', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Knedding', 'label': 'Knedding', 'name': 'Knedding'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Stirring', 'label': 'Stirring', 'name': 'Stirring'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ModifyingPhysicalObject', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#ModifyingPhysicalObject', 'label': 'ModifyingPhysicalObject', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Cleaning', 'label': 'Cleaning', 'name': 'Cleaning'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'OGPTask', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#OGPTask', 'label': 'OGPTask', 'childrens': [{'iri': 'http://www.ease-crc.org/ont/SOMA.owl#EntryOGPWorkflow', 'label': 'EntryOGPWorkflow', 'name': 'EntryOGPWorkflow'}, {'iri': 'http://www.ease-crc.org/ont/SOMA.owl#ExitOGPWorkflow', 'label': 'ExitOGPWorkflow', 'name': 'ExitOGPWorkflow'}], 'parents': [], 'synonyms': [], 'comment': ['A Task to be interpreted by the KnowRob Workflow interpreter.\n\nUsually, has a non-empty set of input (Role or Parameter)s, and a non-empty set of output (Role or Parameter)s-- however, eiter or both of these sets may be empty in the case of tasks with trivial input/outputs.']}
+
+{'name': 'OGPWorkflow', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#OGPWorkflow', 'label': 'OGPWorkflow', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': ['A natural exit of an OGPWorkflow is the arrival at an ExitOGPWorkflow task.\n\nA premature exit will however happen when an OGPTask is completed, which is not an ExitOGPWorkflow, and which has no triggerable ConditionalSuccedence relations for which it is the predecessor task.\n\nThis situation can occur when\n\n-- the OGPTask in question is not a predecessor task for any ConditionalSuccedence in the workflow;\n-- none of the ConditionalSuccedence relations that have the task as predecessor can fire, because neither of their conditions are met.\n\nBoth of these situations are errors: they signal that the workflow is incompletely described.', 'A workflow meant to guide the action of a robot agent and interpreted by the KnowRob workflow interpreter.\n\nIt is a workflow for exactly one OGPTask, but may contain several invocations of OGPTasks linked by ConditionalSuccedence relations.\n\nIt has at most one entry point, which is the first OGPTask to execute when enacting the Workflow. If no first task is present, then the Workflow is empty.\n\nIt may have several exit points. When an exit point is reached, the Workflow execution has completed. They result in a termination of the workflow, and a return to its invoker, with a special error status and a record of the output of the last task.', 'WARNING: not all constraints are easy to enforce in OWL Tboxes; in particular, the following constraints have not been modelled in the Tbox. It is required however that OGPWorkflows obey them.\n\n-- the input parameters of the OGPTask defined by the OGPWorkflow are exactly the same as the input parameters of the EntryOGPWorkflow belonging to the OGPWorkflow;\n-- the output parameters of the OGPTask defined by the OGPWorkflow are exactly the same as the output parameters defined by every ExitOGPWorkflow belonging to the OGPWorkflow.']}
+
+{'name': 'Perceiving', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Perceiving', 'label': 'Perceiving', 'childrens': [{'iri': 'http://knowrob.org/kb/actions.owl#Mapping', 'label': 'Mapping', 'name': 'Mapping'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'PhaseTransition', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#PhaseTransition', 'label': 'PhaseTransition', 'childrens': [{'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Condensing', 'label': 'Condensing', 'name': 'Condensing'}, {'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Freezing', 'label': 'Freezing', 'name': 'Freezing'}, {'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Melting', 'label': 'Melting', 'name': 'Melting'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'PhysicalEffector', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#PhysicalEffector', 'label': 'PhysicalEffector', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Finger', 'label': 'Finger', 'name': 'Finger'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'PhysicalTask', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask', 'label': 'PhysicalTask', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Destructing', 'label': 'Destructing', 'name': 'Destructing'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'ProcessType', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#ProcessType', 'label': 'ProcessType', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Cooling', 'label': 'Cooling', 'name': 'Cooling'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Heating', 'label': 'Heating', 'name': 'Heating'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Reasoning', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Reasoning', 'label': 'Reasoning', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ParameterInference', 'label': 'ParameterInference', 'name': 'ParameterInference'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'SoftwareDiagnosis', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#SoftwareDiagnosis', 'label': 'SoftwareDiagnosis', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Status', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#Status', 'label': 'Status', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': '3DPosition', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#3DPosition', 'label': '3DPosition', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Point', 'label': 'Point', 'name': 'Point'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': '6DPose', 'iri': 'http://www.ease-crc.org/ont/SOMA.owl#6DPose', 'label': '6DPose', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Pose', 'label': 'Pose', 'name': 'Pose'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#StaticTransform', 'label': 'StaticTransform', 'name': 'StaticTransform'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Action', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action', 'label': 'Action', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Agent', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent', 'label': 'Agent', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Concept', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept', 'label': 'Concept', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'DesignedArtifact', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact', 'label': 'DesignedArtifact', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#TextileArtifact', 'label': 'TextileArtifact', 'name': 'TextileArtifact'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'DesignedSubstance', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedSubstance', 'label': 'DesignedSubstance', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Candle', 'label': 'Candle', 'name': 'Candle'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Entity', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity', 'label': 'Entity', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Event', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event', 'label': 'Event', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'FormalEntity', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FormalEntity', 'label': 'FormalEntity', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#FrameOfReference', 'label': 'FrameOfReference', 'name': 'FrameOfReference'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'InformationEntity', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity', 'label': 'InformationEntity', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Query', 'label': 'Query', 'name': 'Query'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'InformationObject', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject', 'label': 'InformationObject', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#ComputationalProcedure', 'label': 'Computational procedure', 'name': 'Computational procedure'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Image', 'label': 'Image', 'name': 'Image'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#ProcedureArgument', 'label': 'Procedure argument', 'name': 'Procedure argument'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Object', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object', 'label': 'Object', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Organization', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization', 'label': 'Organization', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Parameter', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Parameter', 'label': 'Parameter', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Constraint', 'label': 'Constraint', 'name': 'Constraint'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'PhysicalAgent', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAgent', 'label': 'PhysicalAgent', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'PhysicalArtifact', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact', 'label': 'PhysicalArtifact', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'PhysicalAttribute', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute', 'label': 'PhysicalAttribute', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Accuracy', 'label': 'Accuracy', 'name': 'Accuracy'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Precision', 'label': 'Precision', 'name': 'Precision'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Resolution', 'label': 'Resolution', 'name': 'Resolution'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#SamplingRate', 'label': 'SamplingRate', 'name': 'SamplingRate'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Sensitivity', 'label': 'Sensitivity', 'name': 'Sensitivity'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#SensorRange', 'label': 'Sensor range', 'name': 'Sensor range'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'PhysicalObject', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject', 'label': 'PhysicalObject', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Place', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place', 'label': 'Place', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Map', 'label': 'Map', 'name': 'Map'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Plan', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan', 'label': 'Plan', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Process', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process', 'label': 'Process', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Quality', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality', 'label': 'Quality', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Region', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region', 'label': 'Region', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Role', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role', 'label': 'Role', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Reasoner', 'label': 'Reasoner', 'name': 'Reasoner'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Situation', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation', 'label': 'Situation', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Assignment', 'label': 'Assignment', 'name': 'Assignment'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'SpaceRegion', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion', 'label': 'SpaceRegion', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#PartOffset', 'label': 'PartOffset', 'name': 'PartOffset'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'SpatioTemporalRegion', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpatioTemporalRegion', 'label': 'SpatioTemporalRegion', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#StampedPose', 'label': 'StampedPose', 'name': 'StampedPose'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Trajectory', 'label': 'Trajectory', 'name': 'Trajectory'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Substance', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Substance', 'label': 'Substance', 'childrens': [], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Task', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task', 'label': 'Task', 'childrens': [{'iri': 'http://www.ease-crc.org/ont/SOMA.owl#OGPTask', 'label': 'OGPTask', 'name': 'OGPTask'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'TimeInterval', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval', 'label': 'TimeInterval', 'childrens': [{'iri': 'http://knowrob.org/kb/knowrob.owl#Date', 'label': 'Date', 'name': 'Date'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#Duration', 'label': 'Duration', 'name': 'Duration'}, {'iri': 'http://knowrob.org/kb/knowrob.owl#TimePoint', 'label': 'TimePoint', 'name': 'TimePoint'}], 'parents': [], 'synonyms': [], 'comment': []}
+
+{'name': 'Workflow', 'iri': 'http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow', 'label': 'Workflow', 'childrens': [{'iri': 'http://www.ease-crc.org/ont/SOMA.owl#OGPWorkflow', 'label': 'OGPWorkflow', 'name': 'OGPWorkflow'}], 'parents': [], 'synonyms': [], 'comment': []}

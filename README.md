@@ -1,5 +1,5 @@
-# tp-ont
-The Task-Planning Ontology
+# TP-ONT
+A Task-Planning Ontology
 
 ### Setup Instructions
 Create and activate a virtual environment:

@@ -6,13 +6,13 @@
     <dcat:keyword>AI planning</dcat:keyword>
     <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
     <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tp-ont</vann:preferredNamespacePrefix>
-    <owl:versionInfo>1.0.0</owl:versionInfo>
+    <owl:versionInfo>1.0.1</owl:versionInfo>
     <foaf:homepage rdf:resource="https://github.com/maayan25/tp-ont"/>
     <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/tp-ont/ontology#</vann:preferredNamespaceUri>
     <dcterms:identifier rdf:resource="https://w3id.org/tp-ont/ontology"/>
     <rdfs:comment>TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans</rdfs:comment>
     <owl:imports rdf:resource="https://purl.org/ai4s/ontology/planning"/>
-    <owl:versionIRI rdf:resource="https://w3id.org/tp-ont/1.0.0/ontology"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/tp-ont/1.0.1/ontology"/>
     <dcterms:contributor rdf:resource="https://orcid.org/0000−0002−6718−1198"/>
     <dcterms:contributor rdf:resource="https://orcid.org/0000−0003−4646−5842"/>
     <dcterms:creator rdf:resource="https://orcid.org/0009−0007−5742−4452"/>

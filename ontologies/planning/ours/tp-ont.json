@@ -2993,9 +2993,9 @@
         "@id": "https://purl.org/ai4s/ontology/planning"
       },
       "owl:versionIRI": {
-        "@id": "https://w3id.org/tp-ont/1.0.0/ontology"
+        "@id": "https://w3id.org/tp-ont/1.0.1/ontology"
       },
-      "owl:versionInfo": "1.0.0",
+      "owl:versionInfo": "1.0.1",
       "rdfs:comment": "TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans",
       "rdfs:label": "TP-ONT",
       "vann:preferredNamespacePrefix": "tp-ont",

@@ -131,6 +131,12 @@ class BasePDDLKG:
         # self.create_type_relations()
 
         self.log_graph_stats()
+
+        bad_uri = URIRef("https://w3id.org/tp-ont/ontology#")
+
+        for s, p, o in self.kg_data:
+            if s == bad_uri or p == bad_uri or o == bad_uri:
+                print(f"DEBUG: Found bad URI in triple: {s}, {p}, {o}")
         self.kg_data.serialize(output_file, format=format)
 
 class DomainPDDLKG(BasePDDLKG):

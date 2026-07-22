@@ -4,15 +4,34 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:tp-ont="https://w3id.org/tp-ont/ontology#"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:dcat="http://www.w3.org/ns/dcat#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
 >
 <owl:Ontology rdf:about="https://w3id.org/tp-ont/ontology">
+        <owl:versionIRI rdf:resource="https://w3id.org/tp-ont/1.0/ontology"/>
         <owl:imports rdf:resource="https://purl.org/ai4s/ontology/planning"/>
-        <tp-ont:contributor>Albert Meroño-Peñuela, Gerard Canal</tp-ont:contributor>
-        <tp-ont:creator>Ma'ayan Armony</tp-ont:creator>
-        <tp-ont:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <rdfs:comment>TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans</rdfs:comment>
         <owl:versionInfo>1.0</owl:versionInfo>
         <rdfs:label>TP-ONT</rdfs:label>
+        <rdfs:comment>TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans</rdfs:comment>
+        <dcterms:title>TP-ONT</dcterms:title>
+        <dcterms:description>TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans</dcterms:description>
+
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:creator rdf:resource="https://orcid.org/0009−0007−5742−4452"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000−0003−4646−5842"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000−0002−6718−1198"/>
+
+        <dcterms:identifier rdf:resource="https://w3id.org/tp-ont/ontology"/>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tp-ont</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/tp-ont/ontology#</vann:preferredNamespaceUri>
+        <dcat:keyword>task planning</dcat:keyword>
+        <dcat:keyword>PDDL</dcat:keyword>
+        <dcat:keyword>AI planning</dcat:keyword>
+
+        <foaf:homepage rdf:resource="https://github.com/maayan25/tp-ont"/>
+        <dcterms:format>application/rdf+xml</dcterms:format>
     </owl:Ontology>
 
     <!-- Terms from AI-Planning-Ontology that we set relations to -->

@@ -1,10 +1,10 @@
 # TP-ONT: A Task-Planning Ontology
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI](https://zenodo.org/badge/1228188718.svg)](https://doi.org/10.5281/zenodo.21495382)
 [![HuggingFace Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/ma25/tp-ont)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 
-[//]: # ([![DOI]&#40;https://img.shields.io/badge/DOI-10.5281%2Fzenodo.1234567-blue&#41;]&#40;https://doi.org/10.5281/zenodo.1234567&#41;)
 
 **TP-ONT** is an ontology designed for task planning and knowledge representation. This repository provides:
 1. The current ontology definition
@@ -94,8 +94,5 @@ Both scripts will output the generated plans and a corresponding state simulatio
 ## License
 This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-[//]: # (You are free to share and adapt the material, provided you give appropriate credit, a link to the license, and indicate if changes were made.)
-
 [//]: # (## Citing TP-ONT)
-
 [//]: # (If you use TP-ONT in your research, please cite the following paper:)

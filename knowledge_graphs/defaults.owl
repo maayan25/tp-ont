@@ -10,9 +10,9 @@
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
 >
 <owl:Ontology rdf:about="https://w3id.org/tp-ont/ontology">
-        <owl:versionIRI rdf:resource="https://w3id.org/tp-ont/1.0/ontology"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/tp-ont/1.0.0/ontology"/>
         <owl:imports rdf:resource="https://purl.org/ai4s/ontology/planning"/>
-        <owl:versionInfo>1.0</owl:versionInfo>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
         <rdfs:label>TP-ONT</rdfs:label>
         <rdfs:comment>TP-ONT ontology for task planning in OWL. Represents PDDL description of planning domains, problems, and plans</rdfs:comment>
         <dcterms:title>TP-ONT</dcterms:title>

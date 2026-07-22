@@ -103,6 +103,7 @@ def extract_tbox(input_path: str, output_path: str):
 
     ensure_ontology_header(tbox_graph, "https://w3id.org/tp-ont/ontology")
     tbox_graph.serialize(output_path, format="pretty-xml")
+    # tbox_graph.serialize(output_path.replace(".owl", ".json"), format="json-ld", auto_compact=True)
     move_ontology_desc_to_top(output_path)
     print(f"Full graph:  {len(full_kg)} triples")
     print(f"TBox extracted: {len(tbox_graph)} triples")
@@ -110,21 +111,6 @@ def extract_tbox(input_path: str, output_path: str):
     print(f"TBox classes: {len(list(tbox_graph.subjects(RDF.type, OWL.Class)))}")
     print(f"TBox object properties: {len(list(tbox_graph.subjects(RDF.type, OWL.ObjectProperty)))}")
     print(f"Saved to {output_path}")
-
-# def ensure_ontology_header(g: Graph, ontology_uri: str):
-#     """Make sure the ontology node serializes as <owl:Ontology>, not <rdf:Description>."""
-#     ont = URIRef(ontology_uri)
-#
-#     # Bind owl explicitly — don't rely on it being inherited
-#     g.bind("owl", OWL, override=True)
-#
-#     # Ensure there is exactly ONE rdf:type triple for the ontology subject
-#     existing_types = list(g.objects(ont, RDF.type))
-#     for t in existing_types:
-#         if t != OWL.Ontology:
-#             g.remove((ont, RDF.type, t))
-#     if (ont, RDF.type, OWL.Ontology) not in g:
-#         g.add((ont, RDF.type, OWL.Ontology))
 
 def ensure_ontology_header(g: Graph, ontology_uri: str):
     """Bind namespaces and ensure the ontology header is present in the graph."""

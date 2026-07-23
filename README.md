@@ -31,16 +31,36 @@ If you just want to view or query the ontology:
 * **Compatibility:** Compatible with Protégé, `rdflib`, or any standard OWL/RDF reasoner.
 
 ## Installation & Setup
-> The framework was tested on Ubuntu 24.04 using Python 3.12.3.
+Clone the repository with its submodules:
+```bash
+git clone --recursive git@github.com:maayan25/tp-ont.git
+cd tp-ont
+```
 
-Create and activate a virtual environment and install the required packages:
+> **Environment Note:** Tested on Ubuntu 24.04 with Python 3.12.3. We recommend using Python 3.12 for best compatibility.
+
+### Setup Python Environment
+Choose either `venv` or `Conda` to set up your environment:
+
+1. Using `venv`:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
+2. Using `Conda` (Recommended if on another Python version):
+```bash
+conda create -n tp-ont python=3.12
+conda activate tp-ont
+```
+
+### Install dependencies
+Install the required packages
+```bash
 python3 -m pip install -r requirements.txt
 ```
 
 #### For KG Construction
+Install the `libxcb-cursor-dev` package for visualisation support:
 ```bash
 sudo apt update && sudo apt install libxcb-cursor-dev
 ```
@@ -49,12 +69,7 @@ sudo apt update && sudo apt install libxcb-cursor-dev
 Download nltk required data:
 ```bash
 python3 -m pip install nltk
-```
-
-In Python:
-```python
-import nltk
-nltk.download('averaged_perceptron_tagger_eng')
+python3 -c "import nltk; nltk.download('averaged_perceptron_tagger_eng')"
 ```
 
 ## Running the Pipeline

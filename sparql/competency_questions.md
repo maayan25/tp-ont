@@ -14,7 +14,7 @@ function in [run_queries.py](../run_queries.py), and run the server (`./fuseki-s
 
 Below are the general templates for the competency questions (CQs) we have defined for our ontology:
 
-**CQ 1 - What object types are of type O? **
+**CQ 1 - What object types are of type O?**
 ```
 SELECT ?obj WHERE {
   ?type rdfs:subClassOf* tp-ont:O .

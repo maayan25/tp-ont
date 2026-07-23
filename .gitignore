@@ -194,3 +194,5 @@ cython_debug/
 # .cursorindexingignore
 
 /data/
+/knowledge_graphs/catalog-v001.xml
+/catalog-v001.xml

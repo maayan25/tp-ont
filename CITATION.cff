@@ -1,18 +1,25 @@
-cff-version: 1.1.0
-message: "If you use this software, please cite it as below."
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: TP-ONT
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
 authors:
-- family-names: Armony
-  given-names: Ma'ayan
-  orcid: https://orcid.org/0009-0007-5742-4452
-- family-names: Meroño-Peñuela
-  given-names: Albert
-  orcid: https://orcid.org/0000-0003-4646-5842
-- family-names: Canal
-  given-names: Gerard
-  orcid: https://orcid.org/0000−0002−6718−1198
-title:maayan25/tp-ont: v1.0.1
+  - given-names: Ma'ayan
+    family-names: Armony
+    affiliation: King's College London
+    orcid: 'https://orcid.org/0009-0007-5742-4452'
+  - given-names: Albert
+    family-names: Meroño-Peñuela
+    orcid: 'https://orcid.org/0000-0003-4646-5842'
+    affiliation: King's College London
+  - given-names: Gerard
+    family-names: Canal
+    affiliation: King's College London
+    orcid: 'https://orcid.org/0000-0002-6718-1198'
+license: CC-BY-4.0
 version: v1.0.1
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.21495383
-date-released: 2026-07-22
+date-released: '2026-07-24'

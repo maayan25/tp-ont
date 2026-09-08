@@ -23,6 +23,19 @@ PLAN = Namespace("https://w3id.org/tp-ont/entities#")
 ONTO = Namespace(PREFIXES[DEFAULT_PREFIX])
 # PLANR = Namespace(PREFIXES[DEFAULT_PREFIX])
 
+def load_graph(kg_path):
+    """
+    Load a knowledge graph from a given path
+    :param kg_path: the path to the knowledge graph file
+    :return: an rdflib.Graph object containing the loaded knowledge graph
+    """
+    if not os.path.exists(kg_path):
+        raise FileNotFoundError(f"Knowledge graph not found at {kg_path}")
+    kg = Graph()
+    bind_namespaces(kg)
+    kg.parse(kg_path, format="xml")
+    return kg
+
 def get_mamespaces() -> dict:
     return {
         "plan": PLAN,

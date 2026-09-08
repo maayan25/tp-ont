@@ -246,8 +246,6 @@ class DomainPDDLKG(BasePDDLKG):
         for pred in lst:
             fluent = pred["name"]
             args = pred["args"]
-            if "apt2" in args:
-                print(f"DEBUG: Adding predicate {pred} with fluen {fluent} and args {args} to state {state_uri}")
 
             predicate = f"{fluent}_{'_'.join(args)}" if args else fluent
             # self.add_predicate_data(predicate, fluent, args, state_type, state_type)
@@ -262,7 +260,6 @@ class DomainPDDLKG(BasePDDLKG):
                 # self.record_relation((predicate, f"hasArg{i}", arg))
 
             # print(f"DEBUG: Adding grounded predicate {predicate} as part of state {state_uri}")
-
 
     def add_predicate_data(self, predicate, fluent, args: list, pred_type, action_name) -> None:
         """
@@ -314,100 +311,6 @@ class DomainPDDLKG(BasePDDLKG):
         # print(f"DEBUG: r is {r}, pos_r is {pos_r}, predicate is {predicate}, neg_predicate is {neg_predicate}")
         #     self.record_relation((fluent, OWL.complementOf, pos_fluent), is_head_class=True, is_tail_class=True)
         #     self.record_instance_of(neg_predicate, fluent)
-
-    def add_plan_to_kg(self, plan_name, plan_steps, plan_states) -> None:
-        """
-        Add an entity for the plan itself
-        :param plan_name: the name of the plan
-        :param plan_steps: the list of steps in the plan, as strings (e.g. ["(move robot1 room1 room2)"])
-        :param plan_states: the list of states in the plan, as strings (e.g. ["(at robot1 room2)", "(at robot2 room1)"])
-        :return: None
-        """
-        self.record_entity((plan_name, "Plan"), is_class=False)
-        problem_name = f"{self.parser.domain_name}_{self.problem_name}"
-        self.record_relation((problem_name, "hasPlan", plan_name), is_head_class=False, is_tail_class=False) # e.g. Problem1 hasPlan Plan1
-
-        self.add_plan_terms(plan_name, plan_steps, plan_states)
-
-    def add_plan_terms(self, plan_name, plan_steps, plan_states) -> None:
-        """
-        Add entities and relations for a plan, including actions and their parameters, preconditions, and effects
-        :param plan_name: the name of the plan
-        :param plan_steps: the list of steps in the plan, as strings (e.g. ["(move robot1 room1 room2)"])
-        :param plan_states: the list of states in the plan, as strings (e.g. ["(at robot1 room2)", "(at robot2 room1)"])
-        :return: None
-        """
-        print(f"Adding plan: {plan_name} \n with steps: {plan_steps} \n and states: {plan_states}")
-        step_strings = []
-        # Decompose steps
-        for step in plan_steps:
-            step: str = step.replace("(", "").replace(")", "").strip()
-            step = "_".join(step.split())
-            # print(f"Adding step {step} as an entity for plan {plan_name}")
-            step_strings.append(step)
-            self.record_entity((step, "Step"), is_class=False) # e.g. move_robot1_room1_room2 is a Step
-            self.record_relation((plan_name, "hasStep", step)) # e.g. Plan1 hasStep move_robot1_room1_room2
-
-            # Decompose the step into action name and parameters, e.g. (move robot1 room1 room2) -> action name: move, parameters: robot1, room1, room2
-            act_name = step.split()[0]
-            act_name = self.create_dependent_identifiers(act_name, "domain")
-
-            args = step.split()[1:]
-            for i, arg in enumerate(args):
-                arg = self.create_dependent_identifiers(arg, "problem")
-                slot_prop = f"{act_name}_hasArg{i}"
-                self.record_relation((step, slot_prop, arg)) # e.g. move_robot1_room1_room2 Domain1/move_hasArg0 Domain1/robot1
-
-        # Temporal relations between steps
-        for i in range(len(plan_steps)-1):
-            self.record_relation((step_strings[i], "happensAfter", step_strings[i+1]))
-            self.record_relation((step_strings[i+1], "happensBefore", step_strings[i]))
-
-        # Decompose states and link to steps
-        state_uris = [self.init_uri]
-        self.record_relation((step_strings[0], "hasPrecondition", self.init_uri))
-        self.record_relation((plan_name, "hasState", self.init_uri))
-        self.record_relation((plan_name, "hasState", self.goal_uri))
-
-        for i, state in enumerate(plan_states):
-            state: str = str(state).strip()
-            state_uri = add_state_entity(state, "planning-ontology:State", self.kg_data)
-            # print(f"Adding state entity: {state} with URI {state_uri}")
-            self.record_relation((plan_name, "hasState", state_uri))
-            state_uris.append(state_uri)
-            self.record_relation((state_uris[i], "precedes", state_uri))
-
-            # Relate to step if not the last state (which is the goal state)
-            if i < len(plan_states)-2:
-                # print(f"Adding relation between step at index {i+1} and state at index {i} with URI {state_uri}")
-                print(f"Number of states: {len(plan_states)}, number of steps: {len(plan_steps)}")
-                self.record_relation((step_strings[i+1], "hasPrecondition", state_uri))
-
-            # Decompose the state into its propositions and link to the state entity
-            # Add each as an element of a list, e,g, "(at driver2 s2) (at truck1 s0) (at truck2 s0)" -> ["at_driver2_s2", "at_truck1_s0", "at_truck2_s0"]
-            state_list = state.strip().split(") (")
-            state_list[0] = state_list[0].lstrip("(")
-            state_list[-1] = state_list[-1].rstrip(")")
-            state_lst = ["_".join(s.split()) for s in state_list]
-
-            num = 0
-            for prop in state_lst:
-                prop = prop.replace(" ", "_").replace("(", "").replace(")", "").replace(",", "_").replace("?", "")
-                prop_name = self.create_dependent_identifiers(prop, plan_name)
-                self.record_entity((prop_name, "Proposition"), is_class=False)
-                self.record_relation((prop_name, "partOf", state_uri))
-
-                fluent = prop.split("_")[0]
-                fluent = self.create_dependent_identifiers(fluent, "domain")
-                self.record_relation((prop_name, "hasFluent", fluent)) # e.g. at_robot1_room2 hasFluent at
-                for i, arg in enumerate(prop.split("_")[1:]):
-                    arg = self.create_dependent_identifiers(arg, "problem")
-                    slot_prop = f"{fluent}_hasArg{i}"
-                    print(f"Adding relation for state proposition {prop_name} \n "
-                          f"with fluent {fluent} and argument {arg} using slot property {slot_prop}"
-                          f"for state number {num} in plan {plan_name}")
-                    self.record_relation((prop_name, slot_prop, arg))
-                num += 1
 
     # General
     def add_problem_entities(self, initial_state) -> None:
@@ -468,14 +371,12 @@ class DomainPDDLKG(BasePDDLKG):
             self.add_actions() # Add action names, preconditions, and effects
 
         # Add problem-specific entities and relations
+        # TODO make this not have to run the whole plan and simulation parsing 
         actions, states = parse_plan_and_simulation(self.domain_name, self.problem_name)
         initial_state = states[0]
         print(f"IMPORTANT: adding initial state from plan and simulation parsing: \n {initial_state}")
         self.add_problem_entities(initial_state)
         self.add_objects()
-
-        self.add_plan_to_kg(f"{self.parser.domain_name}_{self.problem_name}_plan", actions, states)
-
 
     def create_kg(self) -> None:
         """

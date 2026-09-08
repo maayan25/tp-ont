@@ -4,3 +4,6 @@
 [submodule "pddl-instances"]
 	path = pddl-instances
 	url = https://github.com/potassco/pddl-instances
+[submodule "pddlgym"]
+	path = pddlgym
+	url = git@github.com:tomsilver/pddlgym.git

@@ -773,9 +773,23 @@ def main():
     if is_IPC:
         domain_path = "pddl-instances/" + "ipc-" + args.domain.split(".")[0] + "/domains/" + args.domain.split(".")[1]
     else:
-        domain_path = "domains/" + args.domain
-    domain_file = os.path.join(current_dir, domain_path, "domain.pddl")
-    problem_file = os.path.join(current_dir, domain_path, "instances", args.problem + ".pddl")
+        if args.domain.startswith("pddlgym"):
+            domain_name = args.domain.split(":")[1]
+            domain_path = "pddlgym/pddlgym/pddl/"
+            is_pddlgym = True
+        else:
+            domain_path = "domains/" + args.domain
+            is_pddlgym = False
+
+    if is_pddlgym:
+        domain_file = os.path.join(current_dir, domain_path, domain_name + ".pddl")
+        problem_file = os.path.join(current_dir, domain_path, domain_name, args.problem + ".pddl")
+        if not os.path.exists(problem_file):
+            # Get a random problem file from the pddlgym directory because they don't have a standard naming convention
+            problem_file = next((f for f in os.listdir(os.path.join(current_dir, domain_path, domain_name)) if f.endswith(".pddl") and args.problem in f), None)
+    else:
+        domain_file = os.path.join(current_dir, domain_path, "domain.pddl") 
+        problem_file = os.path.join(current_dir, domain_path, "instances", args.problem + ".pddl")
 
     if args.problem_specific:
         print(f"Creating problem-specific knowledge graph for domain {args.domain} and problem {args.problem}.")

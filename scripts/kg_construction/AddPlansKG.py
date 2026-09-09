@@ -5,10 +5,9 @@ import os
 import argparse
 
 from ParsePDDL import UnifiedPlanningParser
-from utils import add_state_entity, get_mamespaces, bind_namespaces, parse_plan_and_simulation, load_graph
+from utils import add_state_entity, get_mamespaces, parse_plan_and_simulation, load_graph, query_kg_for_object
 from BaseKG import BasePDDLKG
-
-from rdflib import RDF, RDFS, Graph
+from PlanAndValidate import run_planner_and_validate
 
 namespace_dict = get_mamespaces()
 PLAN = namespace_dict["plan"]
@@ -19,7 +18,8 @@ class PlanPDDLKG(BasePDDLKG):
         self.parser = UnifiedPlanningParser(domain_file, problem_file)
 
         self.output_path = data["output_path"] if "output_path" in data else f"{os.getcwd()}/knowledge_graphs/"
-        self.domain_name = data["domain_name"] if "domain_name" in data else self.parser.domain_name
+        self.domain_path = data["domain_name"] if "domain_name" in data else self.parser.domain_name
+        self.domain_name = self.parser.domain_name
         self.problem_name = data["problem_name"] if "problem_name" in data else self.parser.problem_name
         os.makedirs(self.output_path, exist_ok=True)
         self.plans_file = plans_file
@@ -139,8 +139,11 @@ class PlanPDDLKG(BasePDDLKG):
         Get the initial and goal state entities from the knowledge graph.
         :return: A tuple of (init_uri, goal_uri)
         """
-        init_uri = self.kg_data.get_related_entities(self.problem_name, "planning-ontology:hasInitialState")[0]
-        goal_uri = self.kg_data.get_related_entities(self.problem_name, "planning-ontology:hasGoalState")[0]
+        # Query the knowledge graph for the initial and goal state entities, which are the subject of a relation (problem_name, "hasInitState", init_state) and (problem_name, "planning-ontology:hasGoalState", goal_uri)
+        problem_name = f"{self.domain_name}_{self.problem_name}"
+        init_uri = query_kg_for_object(self.input_kg, PLAN[problem_name], "planning-ontology:hasInitialState")
+        goal_uri = query_kg_for_object(self.input_kg, PLAN[problem_name], "planning-ontology:hasGoalState")
+        # print(f"DEBUG: init_uri is {init_uri}, goal_uri is {goal_uri}")
         return init_uri, goal_uri
 
     # Step entities (grounded actions) and relations
@@ -170,6 +173,7 @@ class PlanPDDLKG(BasePDDLKG):
         """Register state entities, link them to the plan and steps, and decompose their propositions."""
         init_uri, goal_uri = self.get_init_and_goal_state_entities()
         state_uris = [init_uri]
+        print(f"DEBUG STEP: step strings are {step_strings}, plan_states are {plan_states}, init_uri is {init_uri}, goal_uri is {goal_uri}")
         self.record_relation((step_strings[0], "hasPrecondition", init_uri))
         self.record_relation((plan_name, "hasState", init_uri))
         self.record_relation((plan_name, "hasState", goal_uri))
@@ -215,10 +219,12 @@ class PlanPDDLKG(BasePDDLKG):
         :param plan_states: the state simulation, each state is a string
         :return: None
         """
+        print(f"DEBUG: Adding plan terms for plan {plan_name} with {len(plan_steps)} steps and {len(plan_states)} states.")
         step_strings = [self.parse_step_string(s) for s in plan_steps]
 
         for step, step_string in zip(plan_steps, step_strings):
             self.add_step_entities(plan_name, step, step_string)
+        print(f"DEBUG: Added {len(step_strings)} step entities for plan {plan_name}.")
 
         self.add_step_temporal_relations(step_strings)
         self.add_state_entities(plan_name, plan_states, step_strings)
@@ -233,7 +239,7 @@ class PlanPDDLKG(BasePDDLKG):
         # print(f"Skipping adding domain-level entities and relations for domain {self.domain_name} to the knowledge graph.")
         
         # Add problem-specific entities and relations
-        actions, states = parse_plan_and_simulation(self.domain_name, self.problem_name)
+        actions, states = parse_plan_and_simulation(self.domain_path, self.problem_name, plan_index=1)
 
         self.add_plan_to_kg(f"{self.parser.domain_name}_{self.problem_name}_plan", actions, states)
 
@@ -246,13 +252,30 @@ class PlanPDDLKG(BasePDDLKG):
         output_file = os.path.join(self.output_path, "plans_tp-kg.owl")
         self.save_kg_to_owl(output_file)
 
+def resolve_domain_name(domain_arg: str) -> str:
+    """
+    Resolve the domain name from the command line argument to the parser name format.
+    :param domain_arg: The domain argument from the command line.
+    :return: The resolved domain name.
+    """
+    domain_names = {
+        "2000.blocks-strips-typed": "BlocksDomain",
+        "2000.elevator-strips-simple-typed": "ElevatorDomain",
+        "2000.logistics-strips-typed": "LogisticsDomain",
+        "2002.depots-strips-automatic": "DepotDomain",
+        "2002.driverlog-strips-automatic": "DriverlogDomain",
+        "2002.rovers-strips-automatic": "RoverDomain",
+        "2002.satellite-strips-automatic": "SatelliteDomain"
+    }
+    return domain_names.get(domain_arg, domain_arg)
+
 def main():
     current_dir = os.getcwd()
-    current_dir = os.path.abspath(os.path.join(current_dir, os.pardir, os.pardir))
+    # current_dir = os.path.abspath(os.path.join(current_dir, os.pardir, os.pardir))
 
     # Get arguments from command line
     parser = argparse.ArgumentParser(description="Construct a PDDL knowledge graph from domain and problem files.")
-    parser.add_argument("--domain", type=str, default="2000.logistics-strips-typed", help="Name of the PDDL domain directory. If IPC, use the format <ipc-year>.<domain-name> (e.g., '2000.blocks-strips-typed').")
+    parser.add_argument("--domain", type=str, default="2000.elevator-strips-simple-typed", help="Name of the PDDL domain directory. If IPC, use the format <ipc-year>.<domain-name> (e.g., '2000.blocks-strips-typed').")
     parser.add_argument("--problem", type=str, default="instance-1", help="The instance filename (e.g., 'instance-1').")
     parser.add_argument("--plans_file", type=str, default=None, help="The path to the plans file (optional). If not provided, the default location will be used.")
     parser.add_argument("--is_IPC", default="True", help="Whether the problem is from an IPC benchmark set.")
@@ -270,6 +293,9 @@ def main():
     input_kg_path = os.path.join(current_dir, "knowledge_graphs", "tp-kg.owl")
     if not os.path.exists(input_kg_path):
         raise FileNotFoundError(f"Input knowledge graph not found at {input_kg_path}")
+
+    # Create k plans for the problem file and validate them, saving the results to the plans file
+    run_planner_and_validate(args.domain, is_IPC, args.problem)
 
     plans_file = args.plans_file if args.plans_file else os.path.join(current_dir, "plans", args.domain, args.problem + ".plan")
     pddl_kg = PlanPDDLKG(domain_file, problem_file, plans_file=plans_file, data={"output_path": f"{current_dir}/knowledge_graphs/", "domain_name":args.domain, "problem_name":args.problem, "input_kg_path": input_kg_path})

@@ -333,15 +333,15 @@ def cleanup_term(term: str) -> str:
     term = unquote(term)
     return re.sub(r'[^\w\-]', '_', term)
 
-def parse_plan_and_simulation(domain_name, problem_name) -> (list[str], list[str]):
+def parse_plan_and_simulation(domain_name, problem_name, plan_index = 1) -> tuple[list[str], list[str]]:
     """
     Parse the plan and the simulation of its execution to extract the actions and states
     :param domain_name: the name of the domain file
     :param problem_name: the name of the problem file
     """
-    project_dir = os.path.join(os.getcwd(), os.pardir, os.pardir)
+    project_dir = os.path.join(os.getcwd()) # , os.pardir, os.pardir)
     output_dir = os.path.join(project_dir, "results", "planner_outputs", domain_name)
-    output_path = os.path.join(output_dir, f"{problem_name}.pddl_plan.txt")
+    output_path = os.path.join(output_dir, f"{problem_name}.pddl_plan{plan_index}.txt")
     state_simulation_path = output_path.replace(".txt", "_state_simulation.txt")
     if not os.path.exists(state_simulation_path):
         print(f"State simulation file not found at {state_simulation_path}, cannot parse states.")
@@ -368,3 +368,18 @@ def parse_plan_and_simulation(domain_name, problem_name) -> (list[str], list[str
                     states.append(state_str)
 
     return actions, states
+
+def query_kg_for_object(kg: Graph, subject: str, predicate: str) -> URIRef:
+    """
+    Query the knowledge graph for the object of a given subject and predicate.
+    :param kg: the rdflib Graph
+    :param subject: the subject entity name
+    :param predicate: the predicate name
+    :return: the object URIRef if found, else None
+    """
+    subject_uri = resolve_term(subject)
+    predicate_uri = resolve_term(predicate)
+    print(f"DEBUG: Querying KG for subject '{subject_uri}' and predicate '{predicate_uri}'")
+    for obj in kg.objects(subject=subject_uri, predicate=predicate_uri):
+        return obj
+    return None

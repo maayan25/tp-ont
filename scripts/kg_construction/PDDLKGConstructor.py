@@ -13,21 +13,10 @@ from rdflib import RDFS, Graph
 
 namespace_dict = get_mamespaces()
 PLAN = namespace_dict["plan"]
-# PLANR = namespace_dict["planr"]
 
 # TODO 1. continue difference between typed and untyped objects in PDDL (elevator domain)
 # TODO 3. handle numerics: 2004.satellite-complex-strips, 2008.transport-sequential-optimal-strips, 2008.woodworking-sequential-optimal-strips, 2011.barman-sequential-multi-core
 # TODO 4. handle temporal
-
-def _add_domain_name_to_entity(entity_name, domain_name):
-    """Helper function to add domain name as a prefix to an entity name if not already present"""
-    if not entity_name.startswith(f"{domain_name}/"):
-        return f"{domain_name}/{entity_name}"
-    return entity_name
-
-def _add_domain_name_to_entities(entities, domain_name):
-    """Helper function to add domain name as a prefix to a list of entity names if not already present"""
-    return [_add_domain_name_to_entity(e, domain_name) for e in entities]
 
 class DomainPDDLKG(BasePDDLKG):
     def __init__(self, domain_file, problem_file, problem_specific=True, domain_specific=True, data=None):
@@ -60,8 +49,6 @@ class DomainPDDLKG(BasePDDLKG):
                 defaults_kg = os.path.join(self.output_path, "static_ontology.owl")
                 self.kg_data.parse(defaults_kg, format="xml")
 
-                # kg_uri = URIRef(f"http://tp-ont.org/kg")
-                # self.record_instance_of(kg_uri, "KnowledgeGraph")
         elif not self.problem_specific and self.domain_kg:
             print(f"Found existing knowledge graph for domain {self.domain_name} at {self.domain_kg}. It will be loaded into the graph.")
             self.kg_data = Graph()
@@ -76,8 +63,6 @@ class DomainPDDLKG(BasePDDLKG):
             bind_namespaces(self.kg_data)
             self.kg_data.parse(defaults_kg, format="xml")
 
-            # kg_uri = URIRef(f"http://tp-ont.org/kg/{self.domain_name}")
-            # self.record_instance_of(kg_uri, "KnowledgeGraph")
 
     def create_dependent_identifiers(self, ent_name, dependency_type):
         """
@@ -340,6 +325,7 @@ class DomainPDDLKG(BasePDDLKG):
         # Add the grounded predicates in initial and goal states
         # print(f"Adding initial state predicates with state URI {self.init_uri}: {initial_state}")
         # self.add_grounded_predicates(initial_state, self.init_uri)
+        # TODO add correct init here
         print(f"Adding goal state predicates with state URI {self.goal_uri}: {self.parser.goal_state}")
         self.add_grounded_predicates(self.parser.goal_state, self.goal_uri)
 

@@ -196,20 +196,19 @@ def find_and_read_plan(plan_file: str, planner_dir: str) -> list[str] | None:
             return lines
     return None
 
-def resolve_paths(args) -> dict[str, str]:
+def resolve_paths(domain_name: str, is_IPC: bool) -> dict[str, str]:
     project_dir = os.path.join(os.getcwd()) # , os.pardir, os.pardir
-    is_IPC = args.is_IPC.lower() in ['true', '1', 't', 'y', 'yes']
-
+    
     if is_IPC:
-        domain_path = "pddl-instances/ipc-{}/domains/{}".format(*args.domain.split("."))
+        domain_path = "pddl-instances/ipc-{}/domains/{}".format(*domain_name.split("."))
     else:
-        domain_path = f"domains/{args.domain}"
+        domain_path = f"domains/{domain_name}"
 
     return {
         "domain_file":  os.path.join(project_dir, domain_path, "domain.pddl"),
         "problem_dir":  os.path.join(project_dir, domain_path, "instances"),
         "planners_dir": os.path.join(project_dir, os.pardir, "planners"),
-        "output_dir":   os.path.join(project_dir, "results", "planner_outputs", args.domain),
+        "output_dir":   os.path.join(project_dir, "results", "planner_outputs", domain_name),
     }
 
 def save_plans(plans: list[tuple[str, int]], output_path_base: str) -> list[str]:
@@ -250,17 +249,32 @@ def process_problem(problem_file: str, domain_file: str, planner_dir: str, outpu
         sim_path = plan_path.replace(".txt", "_state_simulation.txt")
         save_state_simulation(states, sim_path)
 
-def run_pipeline(args, max_instances: int = 10) -> None:
-    paths = resolve_paths(args)
+def run_planner_and_validate(domain_name: str, is_IPC: bool, problem_name: str = None, max_instances: int = 10) -> None:
+    """
+    Run the FD planner on a list of PDDL problems and validate the plans using VAL
+    :param domain_name: the name of the PDDL domain directory
+    :param is_IPC: whether the domain is from the IPC dataset
+    :param problem_name: the name of the PDDL problem file (without the .pddl extension)
+    :param max_instances: the maximum number of instances to process, only used if problem_name is None
+    :return: None
+    """
+    paths = resolve_paths(domain_name, is_IPC)
     os.makedirs(paths["output_dir"], exist_ok=True)
 
-    for i in range(1, max_instances):
-        problem_file = os.path.join(paths["problem_dir"], f"instance-{i}.pddl")
+    if problem_name:
+        problem_file = os.path.join(paths["problem_dir"], f"{problem_name}.pddl")
         if not os.path.exists(problem_file):
-            print(f"No problem file found at {problem_file}, stopping.")
-            break
+            print(f"No problem file found at {problem_file}")
+            return
+        print(f"Processing specified problem: {problem_file}")
         process_problem(problem_file, paths["domain_file"], paths["planners_dir"], paths["output_dir"])
-
+    else:
+        for i in range(1, max_instances):
+            problem_file = os.path.join(paths["problem_dir"], f"instance-{i}.pddl")
+            if not os.path.exists(problem_file):
+                print(f"No problem file found at {problem_file}, stopping.")
+                break
+            process_problem(problem_file, paths["domain_file"], paths["planners_dir"], paths["output_dir"])
 
 def parse_args():
     parser = ArgumentParser(description="Run the FD planner on a list of PDDL problems and log the results")
@@ -271,4 +285,4 @@ def parse_args():
 
 if __name__ == "__main__":
     args = parse_args()
-    run_pipeline(args)
+    run_planner_and_validate(args.domain, args.is_IPC)

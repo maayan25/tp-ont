@@ -196,19 +196,37 @@ def find_and_read_plan(plan_file: str, planner_dir: str) -> list[str] | None:
             return lines
     return None
 
-def resolve_paths(domain_name: str, is_IPC: bool) -> dict[str, str]:
-    project_dir = os.path.join(os.getcwd()) # , os.pardir, os.pardir
-    
-    if is_IPC:
-        domain_path = "pddl-instances/ipc-{}/domains/{}".format(*domain_name.split("."))
+def resolve_base_dir(base_dir: str | None = None, project_dir: str | None = None) -> str:
+    """Return TP-ONT's project root, either explicitly provided or inferred from cwd."""
+    if base_dir:
+        return os.path.abspath(base_dir)
+    elif project_dir:
+        return os.path.abspath(project_dir)
     else:
-        domain_path = f"domains/{domain_name}"
+        return os.path.abspath(os.path.join(os.getcwd(), os.pardir, os.pardir))
 
+def resolve_domain_path(domain: str, is_IPC: bool) -> str:
+    """Return the relative path to the domain directory."""
+    if is_IPC:
+        year, domain_name = domain.split(".", 1)
+        return os.path.join("pddl-instances", f"ipc-{year}", "domains", domain_name)
+    return os.path.join("domains", domain)
+
+def resolve_paths(domain_name: str, is_IPC: bool, problem_path: str | None = None, base_dir: str | None = None  ) -> dict[str, str]:
+    project_dir = os.path.join(os.getcwd(), os.pardir, os.pardir)
+
+    base_dir = resolve_base_dir(base_dir, project_dir)
+    domain_path = resolve_domain_path(domain_name, is_IPC)
+
+    output_path = os.path.join(base_dir, "knowledge_graphs")
+    os.makedirs(output_path, exist_ok=True)
+
+    problem_dir = os.path.join(base_dir, domain_path, "instances") if problem_path is None else problem_path
     return {
         "domain_file":  os.path.join(project_dir, domain_path, "domain.pddl"),
-        "problem_dir":  os.path.join(project_dir, domain_path, "instances"),
+        "problem_dir":  problem_dir,
         "planners_dir": os.path.join(project_dir, os.pardir, "planners"),
-        "output_dir":   os.path.join(project_dir, "results", "planner_outputs", domain_name),
+        "output_dir":   os.path.join(base_dir, "results", "planner_outputs", domain_name),
     }
 
 def save_plans(plans: list[tuple[str, int]], output_path_base: str) -> list[str]:
@@ -249,20 +267,34 @@ def process_problem(problem_file: str, domain_file: str, planner_dir: str, outpu
         sim_path = plan_path.replace(".txt", "_state_simulation.txt")
         save_state_simulation(states, sim_path)
 
-def run_planner_and_validate(domain_name: str, is_IPC: bool, problem_name: str = None, max_instances: int = 10) -> None:
+def run_planner_and_validate(domain_name: str, is_IPC: bool, problems: list[str] = None, problem_path: str = None, base_dir: str = None, max_instances: int = 10) -> None:
     """
     Run the FD planner on a list of PDDL problems and validate the plans using VAL
     :param domain_name: the name of the PDDL domain directory
     :param is_IPC: whether the domain is from the IPC dataset
-    :param problem_name: the name of the PDDL problem file (without the .pddl extension)
-    :param max_instances: the maximum number of instances to process, only used if problem_name is None
+    :param problems: the names of the PDDL problem files (without the .pddl extension)
+    :param problem_path: the path to the directory containing the problem files
+    :param max_instances: the maximum number of instances to process, only used if problems is None
+    :param base_dir: TP-ONT project root directory. Inferred from cwd if not provided.
+
     :return: None
     """
-    paths = resolve_paths(domain_name, is_IPC)
+
+    paths = resolve_paths(domain_name, is_IPC, problem_path=problem_path, base_dir=base_dir)
     os.makedirs(paths["output_dir"], exist_ok=True)
 
-    if problem_name:
-        problem_file = os.path.join(paths["problem_dir"], f"{problem_name}.pddl")
+    problems = problems if problems is not None else ["instance-1"]
+
+    if problems is not None:
+        for problem in problems:
+            problem_file = os.path.join(paths["problem_dir"], f"{problem}.pddl")
+            if not os.path.exists(problem_file):
+                print(f"No problem file found at {problem_file}")
+                continue
+            print(f"Processing specified problem: {problem_file}")
+            process_problem(problem_file, paths["domain_file"], paths["planners_dir"], paths["output_dir"])
+    elif args.problem:
+        problem_file = os.path.join(paths["problem_dir"], f"{args.problem}.pddl")
         if not os.path.exists(problem_file):
             print(f"No problem file found at {problem_file}")
             return
@@ -280,9 +312,12 @@ def parse_args():
     parser = ArgumentParser(description="Run the FD planner on a list of PDDL problems and log the results")
     # parser.add_argument("--planner_dir", type=str, default=, help="Directory containing the FD planner executable from project directory")
     parser.add_argument("--domain", type=str, default="2000.logistics-strips-typed", help="Name of the PDDL domain directory. If IPC, use the format <ipc-year>.<domain-name> (e.g., '2000.blocks-strips-typed').")
-    parser.add_argument("--is_IPC", type=str, default="True", help="Whether the domain is from the IPC (International Planning Competition) dataset, which has a specific directory structure")
+    parser.add_argument("--is_IPC", action="store_true", help="Whether the domain is from the IPC (International Planning Competition) dataset, which has a specific directory structure")
+    parser.add_argument("--problem_path", type=str, default=None, help="Path to the PDDL problem file (without the .pddl extension). If not provided, the domain's path will be used.")
+    parser.add_argument("--problems", nargs="+", default=None, help="List of PDDL problem files (without the .pddl extension) to process.")
+    parser.add_argument("--base_dir", type=str, default=None, help="TP-ONT project root directory. Inferred from cwd if not provided.")
     return parser.parse_args()
 
 if __name__ == "__main__":
     args = parse_args()
-    run_planner_and_validate(args.domain, args.is_IPC)
+    run_planner_and_validate(args.domain, args.is_IPC, problem_path=args.problem_path, problems=args.problems, max_instances=10, base_dir=args.base_dir)

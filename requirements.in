@@ -18,3 +18,4 @@ nltk~=3.9.1
 Jinja2~=3.1.6            # Template rendering for LLM prompts
 SPARQLWrapper
 lxml~=6.1.1              # For getting metadata to the top
+owlrl~=7.6.2             # For materliasing the KG

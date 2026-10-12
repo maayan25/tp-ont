@@ -333,6 +333,55 @@ def cleanup_term(term: str) -> str:
     term = unquote(term)
     return re.sub(r'[^\w\-]', '_', term)
 
+def get_initial_state_from_problem(problem_path: str) -> list[str]:
+    if not os.path.exists(problem_path):
+        raise FileNotFoundError(f"Problem file not found at {problem_path}")
+
+    with open(problem_path, "r") as f:
+        content = f.read()
+
+    # Find the start of the :init block
+    init_start = content.find("(:init")
+    if init_start == -1:
+        raise ValueError(f"No initial state found in problem file {problem_path}")
+
+    depth = 0
+    init_end = -1
+    for i in range(init_start, len(content)):
+        if content[i] == "(":
+            depth += 1
+        elif content[i] == ")":
+            depth -= 1
+            if depth == 0:
+                init_end = i
+                break
+
+    if init_end == -1:
+        raise ValueError(f"Unmatched parentheses in :init block of {problem_path}")
+
+    init_block = content[init_start + len("(:init"):init_end].strip()
+    # print(f"DEBUG utils: Extracted :init block from {problem_path}: {init_block}")
+
+    predicates = []
+    i = 0
+    while i < len(init_block):
+        if init_block[i] == "(":
+            depth = 0
+            start = i
+            while i < len(init_block):
+                if init_block[i] == "(":
+                    depth += 1
+                elif init_block[i] == ")":
+                    depth -= 1
+                    if depth == 0:
+                        predicates.append(init_block[start:i + 1].strip())
+                        break
+                i += 1
+        i += 1
+
+    # print(f"DEBUG utils: Parsed predicates from :init block: {predicates}")
+    return predicates
+
 def parse_plan_and_simulation(domain_name, problem_name, plan_index = 1) -> tuple[list[str], list[str]]:
     """
     Parse the plan and the simulation of its execution to extract the actions and states

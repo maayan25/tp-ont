@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # To run from current directory
-PYTHON_SCRIPT="RunFDPlanner.py"
+PYTHON_SCRIPT="PlanAndValidate.py"
 
 IPC_DOMAINS=(
     "2000.blocks-strips-typed" # ALL (about 400 triples, 60 entities, 5 classes)

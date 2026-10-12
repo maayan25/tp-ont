@@ -158,11 +158,11 @@ class UnifiedPlanningParser:
 
         # Problem entities
         self.init = list(self.pddl.initial_values) # set of tuples of strings
-        print(f"DEBUG FIRST: Initial values from PDDL length: {len(self.init)}, sample: {list(self.init)[:5]}")
+        # print(f"DEBUG FIRST: Initial values from PDDL length: {len(self.init)}, sample: {list(self.init)[:5]}")
         self.goal = list(self.pddl.goals)
 
         self.initial_state = self.parse_predicates(self.init)
-        print(f"DEBUG: LENGTH of initial state predicates: {len(self.initial_state)}")
+        # print(f"DEBUG: LENGTH of initial state predicates: {len(self.initial_state)}")
         self.goal_state = self.parse_predicates(self.goal)
         # print("*" * 20)
         # print(f"Initial state raw: {self.init}")
@@ -275,7 +275,7 @@ class UnifiedPlanningParser:
             pred_name = f"not_{pred_name}" if str(value) == "false" else pred_name
             assert pred_name, "Predicate name not found in predicate content"
             new_pred = {"name": pred_name, "args": pred_args}
-            print(f"DEBUG: adding predicate {new_pred} from original predicate {pred} with content {pred_content} and args {pred_args}")
+            # print(f"DEBUG: adding predicate {new_pred} from original predicate {pred} with content {pred_content} and args {pred_args}")
             parsed_predicates.append(new_pred)
         return parsed_predicates
 

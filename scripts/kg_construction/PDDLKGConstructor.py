@@ -5,7 +5,7 @@ import os
 import argparse
 
 from ParsePDDL import UnifiedPlanningParser
-from utils import add_state_entity, get_mamespaces, bind_namespaces, parse_plan_and_simulation  # add_predicate_instance
+from utils import add_state_entity, get_mamespaces, bind_namespaces, get_initial_state_from_problem
 from BaseKG import BasePDDLKG
 from StaticOntology import StaticOntology
 
@@ -22,10 +22,12 @@ class DomainPDDLKG(BasePDDLKG):
     def __init__(self, domain_file, problem_file, problem_specific=True, domain_specific=True, data=None):
         super().__init__()
         self.parser = UnifiedPlanningParser(domain_file, problem_file)
+        self.domain_file = domain_file
+        self.problem_file = problem_file
 
         self.output_path = data["output_path"] if "output_path" in data else f"{os.getcwd()}/knowledge_graphs/"
         self.domain_name = data["domain_name"] if "domain_name" in data else self.parser.domain_name
-        self.problem_name = data["problem_name"] if "problem_name" in data else self.parser.problem_name
+        self.problem_name = data["problem_name"].split("/")[-1] if "problem_name" in data else self.parser.problem_name
         os.makedirs(self.output_path, exist_ok=True)
 
         self.problem_specific = problem_specific
@@ -62,7 +64,6 @@ class DomainPDDLKG(BasePDDLKG):
             self.kg_data = Graph()
             bind_namespaces(self.kg_data)
             self.kg_data.parse(defaults_kg, format="xml")
-
 
     def create_dependent_identifiers(self, ent_name, dependency_type):
         """
@@ -310,7 +311,7 @@ class DomainPDDLKG(BasePDDLKG):
         self.record_entity((problem_name, "planning-ontology:PlanningProblem"), is_class=False)
 
         ser_init, ser_goal = str(initial_state), str(self.parser.goal)
-        print(f"DEBUG SECOND: Adding problem entities with initial state \n {ser_init} \n and goal state \n {ser_goal}")
+        # print(f"DEBUG SECOND: Adding problem entities with initial state \n {ser_init} \n and goal state \n {ser_goal}")
         self.init_uri = add_state_entity(ser_init, "planning-ontology:InitialState", self.kg_data)
         self.goal_uri = add_state_entity(ser_goal, "planning-ontology:GoalState", self.kg_data)
         print(f"Adding initial state entity: {ser_init} with URI {self.init_uri}")
@@ -358,9 +359,12 @@ class DomainPDDLKG(BasePDDLKG):
 
         # Add problem-specific entities and relations
         # TODO make this not have to run the whole plan and simulation parsing 
-        actions, states = parse_plan_and_simulation(self.domain_name, self.problem_name)
-        initial_state = states[0]
-        print(f"IMPORTANT: adding initial state from plan and simulation parsing: \n {initial_state}")
+        # actions, states = parse_plan_and_simulation(self.domain_name, self.problem_name)
+        # initial_state = states[0]
+        print(f"IMPORTANT: adding initial state from problem {self.problem_name} in path {self.problem_file} to the knowledge graph.")
+        initial_state = get_initial_state_from_problem(self.problem_file)
+        print(f"DEBUG: initial state from problem {self.problem_name} is {initial_state}")
+
         self.add_problem_entities(initial_state)
         self.add_objects()
 
@@ -397,51 +401,106 @@ def find_kg_for_domain(domain_name: str, kg_path: str) -> str:
         return kg_file
     return ""
 
-def main():
-    current_dir = os.getcwd()
-    current_dir = os.path.abspath(os.path.join(current_dir, os.pardir, os.pardir))
+def resolve_base_dir(base_dir: str | None = None) -> str:
+    """Return TP-ONT's project root, either explicitly provided or inferred from cwd."""
+    if base_dir:
+        return os.path.abspath(base_dir)
+    return os.path.abspath(os.path.join(os.getcwd(), os.pardir, os.pardir))
 
-    # Get arguments from command line
-    parser = argparse.ArgumentParser(description="Construct a PDDL knowledge graph from domain and problem files.")
-    parser.add_argument("--domain", type=str, default="2000.logistics-strips-typed", help="Name of the PDDL domain directory. If IPC, use the format <ipc-year>.<domain-name> (e.g., '2000.blocks-strips-typed').")
-    parser.add_argument("--problem", type=str, default="instance-1", help="The instance filename (e.g., 'instance-1').")
-    parser.add_argument("--problem_specific", action='store_true', help="Whether to create a problem-specific knowledge graph (True) or use/load a domain-level knowledge graph (False).")
-    parser.add_argument("--domain_specific", action='store_true', help="Whether to create a domain-specific knowledge graph (True) or augment a general KG with domain/problem info (False). If False, will create a problem-specific KG that extends the general KG.")
-    parser.add_argument("--is_IPC", default="True", help="Whether the problem is from an IPC benchmark set.")
-    args = parser.parse_args()
-
-    # DID NOT PARSE
-    # sokoban-temporal_instance-1.pddl
-    # 2014.hiking-sequential-optimal
-
-    is_IPC = args.is_IPC.lower() in ['true', '1', 't', 'y', 'yes']
+def resolve_domain_path(domain: str, is_IPC: bool) -> str:
+    """Return the relative path to the domain directory."""
     if is_IPC:
-        domain_path = "pddl-instances/" + "ipc-" + args.domain.split(".")[0] + "/domains/" + args.domain.split(".")[1]
-    else:
-        domain_path = "domains/" + args.domain
-    domain_file = os.path.join(current_dir, domain_path, "domain.pddl")
-    problem_file = os.path.join(current_dir, domain_path, "instances", args.problem + ".pddl")
+        year, domain_name = domain.split(".", 1)
+        return os.path.join("pddl-instances", f"ipc-{year}", "domains", domain_name)
+    return os.path.join("domains", domain)
 
-    if args.problem_specific:
-        print(f"Creating problem-specific knowledge graph for domain {args.domain} and problem {args.problem}.")
-        problem_specific = True
-        domain_specific = True
-    else:
-        if args.domain_specific:
-            print(f"Creating/loading domain-level knowledge graph for domain {args.domain}.")
-            problem_specific = False
-            domain_specific = True
-        else:
-            print(f"Augmenting the general knowledge graph with domain information for domain {args.domain}.")
-            problem_specific = False
-            domain_specific = False
-
-    defaults_kg = os.path.join(current_dir, "knowledge_graphs", "defaults.owl")
+def build_static_ontology(output_path: str) -> StaticOntology:
+    """Load and initialise the shared static ontology."""
+    defaults_kg = os.path.join(output_path, "defaults.owl")
     static_onto = StaticOntology(defaults_kg)
     static_onto.create_kg()
+    return static_onto
 
-    pddl_kg = DomainPDDLKG(domain_file, problem_file, problem_specific=problem_specific, domain_specific=domain_specific, data={"output_path": f"{current_dir}/knowledge_graphs/", "domain_name":args.domain, "problem_name":args.problem, })
+def build_problem_kg(base_dir: str, domain: str, domain_path: str, problem: str, 
+                     problem_specific: bool, domain_specific: bool, output_path: str, problem_path = None) -> DomainPDDLKG:
+    """Construct and return the KG for a single problem instance."""
+    domain_file = os.path.join(base_dir, domain_path, "domain.pddl")
+    problem_file = os.path.join(base_dir, domain_path, "instances", f"{problem}.pddl") if problem_path is None else os.path.join(problem_path, f"{problem}.pddl")
+
+    pddl_kg = DomainPDDLKG(domain_file, problem_file, problem_specific=problem_specific, domain_specific=domain_specific,
+        data={
+            "output_path": output_path,
+            "domain_name": domain,
+            "problem_name": problem,
+        },
+    )
+    
     pddl_kg.create_kg()
+    return pddl_kg
+
+def create_kg(domain: str = "2000.logistics-strips-typed", problems: list[str] | None = None, problem_specific: bool = False, 
+        domain_specific: bool = False, is_IPC: bool = True, base_dir: str | None = None, problem_path: str | None = None) -> list[DomainPDDLKG]:
+    """
+    Build knowledge graphs for one domain and one or more problem instances.
+
+    :param domain: Domain identifier in IPC format (e.g., '2000.blocks-strips-typed').
+    :param problems: List of problem instance names. Defaults to ['instance-1'].
+    :param problem_specific: If True, build a problem-specific KG (implies domain_specific=True).
+    :param domain_specific: If True, build/load a domain-level KG. If both flags are False, augment the general KG instead.
+    :param is_IPC: Whether the domain comes from an IPC benchmark set.
+    :param base_dir: TP-ONT project root directory. Inferred from cwd if not provided.
+
+    :return: List of constructed DomainPDDLKG objects, one for each problem instance.
+    """
+    problems = ["instance-1"] if problems is None else problems
+
+    base_dir = resolve_base_dir(base_dir)
+    domain_path = resolve_domain_path(domain, is_IPC)
+
+    if problem_specific:
+        problem_specific, domain_specific = True, True
+    else:
+        problem_specific, domain_specific = False, domain_specific
+
+    output_path = os.path.join(base_dir, "knowledge_graphs")
+    os.makedirs(output_path, exist_ok=True)
+
+    build_static_ontology(output_path)
+
+    results = []
+    for problem in problems:
+        _log_kg_mode(domain, problem, problem_specific, domain_specific)
+        kg = build_problem_kg(base_dir, domain, domain_path, problem, problem_specific, domain_specific, output_path, problem_path)
+        results.append(kg)
+
+    return results
+
+def _log_kg_mode(domain: str, problem: str, problem_specific: bool, domain_specific: bool) -> None:
+    """Print a summary of the KG mode being used."""
+    if problem_specific:
+        print(f"[{problem}] Creating problem-specific KG for domain '{domain}'.")
+    elif domain_specific:
+        print(f"[{problem}] Creating/loading domain-level KG for domain '{domain}'.")
+    else:
+        print(f"[{problem}] Augmenting general KG with domain info for domain '{domain}'.")
+
+
+def parse_args() -> argparse.Namespace:
+    """Parse and return command-line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Construct a PDDL knowledge graph from domain and problem files."
+    )
+    parser.add_argument("--base_dir", type=str, default=None, help="TP-ONT project root directory. Defaults to two levels above cwd.")
+    parser.add_argument("--domain", type=str, default="2000.logistics-strips-typed", help="IPC format: '<year>.<domain-name>' (e.g. '2000.blocks-strips-typed').")
+    parser.add_argument("--problems", type=str, nargs="+", default=["instance-1"], help="One or more instance names to run in sequence.")
+    parser.add_argument("--problem_specific", action="store_true", help="Create a problem-specific KG.")
+    parser.add_argument("--domain_specific", action="store_true", help="Create a domain-level KG (ignored if --problem_specific is set).")
+    parser.add_argument("--is_IPC", default="True", help="Whether the domain is from an IPC benchmark set.")
+    parser.add_argument("--problem_path", type=str, default=None, help="Path to the problem file if not in the standard IPC directory structure.")
+    return parser.parse_args()
 
 if __name__ == "__main__":
-    main()
+    args = parse_args()
+    is_IPC = args.is_IPC.lower() in ["true", "1", "t", "y", "yes"]
+    create_kg(domain=args.domain, problems=args.problems, problem_specific=args.problem_specific, 
+        domain_specific=args.domain_specific, is_IPC=is_IPC, base_dir=args.base_dir, problem_path=args.problem_path)

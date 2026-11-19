@@ -27,7 +27,11 @@ class DomainPDDLKG(BasePDDLKG):
 
         self.output_path = data["output_path"] if "output_path" in data else f"{os.getcwd()}/knowledge_graphs/"
         self.domain_name = data["domain_name"] if "domain_name" in data else self.parser.domain_name
+        # Only the last path segment: for igibson the file stem already ends with the complexity (e.g. cleaning_out_drawers_simple)
         self.problem_name = data["problem_name"].split("/")[-1] if "problem_name" in data else self.parser.problem_name
+
+        print(f"DEBUG: problem name is {self.problem_name}, domain name is {self.domain_name}")
+            
         os.makedirs(self.output_path, exist_ok=True)
 
         self.problem_specific = problem_specific

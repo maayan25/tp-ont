@@ -147,7 +147,9 @@ def check_plan_validity(domain_file, problem_file, plan_path, val_path) -> None:
     """
     Check if the plan is valid using VAL validator
     """
-    plan_validation_path = plan_path.replace(".txt", "_validation.txt")
+    plan_validation_dir = os.path.join(os.path.dirname(plan_path), "plan_validation")
+    os.makedirs(plan_validation_dir, exist_ok=True)
+    plan_validation_path = os.path.join(plan_validation_dir, f"{os.path.basename(plan_path).replace('.txt', '_validation.txt')}")
 
     cmd = [f"{val_path}/validate", "-v", domain_file, problem_file, plan_path]
     subprocess.run(cmd, timeout=300, stdout=open(plan_validation_path, "w"), stderr=subprocess.DEVNULL)
@@ -171,6 +173,7 @@ def run_fd_planner(domain_file: str, problem_file: str, planner_dir: str) -> tup
 
 def run_symk_planner(domain_file: str, problem_file: str, planner_dir: str, top_k: int = 5) -> list[tuple[str, int]]:
     """Run the symk planner and return the top-k plans and their lengths."""
+
     cmd = [f"{planner_dir}/fast-downward.py", domain_file, problem_file, "--search", f"symk_bd(plan_selection=top_k(num_plans={top_k}))",]
     subprocess.run(cmd, timeout=300, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
@@ -205,18 +208,21 @@ def resolve_base_dir(base_dir: str | None = None, project_dir: str | None = None
     else:
         return os.path.abspath(os.path.join(os.getcwd(), os.pardir, os.pardir))
 
-def resolve_domain_path(domain: str, is_IPC: bool) -> str:
-    """Return the relative path to the domain directory."""
+def resolve_domain_path(domain: str, is_IPC: bool, tp_ont_dir: str) -> str:
+    """Return the absolute path to the domain directory."""
+    # print(f"DEBUG: Resolving domain path for domain '{domain}' with is_IPC={is_IPC}")
     if is_IPC:
         year, domain_name = domain.split(".", 1)
-        return os.path.join("pddl-instances", f"ipc-{year}", "domains", domain_name)
-    return os.path.join("domains", domain)
+        return os.path.join(tp_ont_dir, "pddl-instances", f"ipc-{year}", "domains", domain_name)
+    return domain
 
 def resolve_paths(domain_name: str, is_IPC: bool, problem_path: str | None = None, base_dir: str | None = None  ) -> dict[str, str]:
-    project_dir = os.path.join(os.getcwd(), os.pardir, os.pardir)
+    project_dir = os.path.join(os.getcwd(), os.pardir, os.pardir) if base_dir is None else base_dir
 
     base_dir = resolve_base_dir(base_dir, project_dir)
-    domain_path = resolve_domain_path(domain_name, is_IPC)
+    tp_ont_dir = os.path.join(base_dir, "tp-ont") if not "tp-ont" in base_dir else base_dir
+    domain_path = resolve_domain_path(domain_name, is_IPC, tp_ont_dir=tp_ont_dir)
+    # print(f"DEBUG: Resolved paths:\n  project_dir: {project_dir}\n  base_dir: {base_dir}\n  domain_path: {domain_path}")
 
     output_path = os.path.join(base_dir, "knowledge_graphs")
     os.makedirs(output_path, exist_ok=True)
@@ -226,7 +232,8 @@ def resolve_paths(domain_name: str, is_IPC: bool, problem_path: str | None = Non
         "domain_file":  os.path.join(project_dir, domain_path, "domain.pddl"),
         "problem_dir":  problem_dir,
         "planners_dir": os.path.join(project_dir, os.pardir, "planners"),
-        "output_dir":   os.path.join(base_dir, "results", "planner_outputs", domain_name),
+        # "output_dir":   os.path.join(base_dir, "results", "planner_outputs", domain_name),
+        "output_dir": os.path.join(base_dir, "results", "planner_outputs", os.path.basename(os.path.normpath(domain_name))),
     }
 
 def save_plans(plans: list[tuple[str, int]], output_path_base: str) -> list[str]:
@@ -263,8 +270,10 @@ def process_problem(problem_file: str, domain_file: str, planner_dir: str, outpu
 
         states = simulate_states(problem_path=problem_file, plan_validation_path=plan_validation_path, plan_size=plan_length)
         # print(f"Simulated states: {states}")
-
-        sim_path = plan_path.replace(".txt", "_state_simulation.txt")
+        
+        sim_dir = os.path.join(os.path.dirname(plan_path), "state_simulations")
+        os.makedirs(sim_dir, exist_ok=True)
+        sim_path = os.path.join(sim_dir, f"{os.path.basename(plan_path).replace('.txt', '_state_simulation.txt')}")
         save_state_simulation(states, sim_path)
 
 def run_planner_and_validate(domain_name: str, is_IPC: bool, problems: list[str] = None, problem_path: str = None, base_dir: str = None, max_instances: int = 10) -> None:

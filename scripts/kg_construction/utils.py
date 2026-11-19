@@ -432,3 +432,44 @@ def query_kg_for_object(kg: Graph, subject: str, predicate: str) -> URIRef:
     for obj in kg.objects(subject=subject_uri, predicate=predicate_uri):
         return obj
     return None
+
+# Robust parsing of plans and their state simulations (names may contain underscores, e.g. igibson's piece_of_cloth_1)
+_STATE_HEADER_RE = re.compile(r"^(?:Initial state|State after action \d+):\s*$", re.MULTILINE)
+
+def parse_atom(atom: str) -> tuple[str, tuple[str, ...]]:
+    """'(at robot_1 room_2)' or 'at robot_1 room_2' -> ('at', ('robot_1', 'room_2'))"""
+    tokens = atom.replace("(", " ").replace(")", " ").split()
+    return tokens[0], tuple(tokens[1:])
+
+def parse_state_atoms(state_block: str) -> frozenset:
+    """
+    Parse the text of one simulated state into a frozenset of positive (name, args) atoms.
+    Negated atoms are dropped: the simulator output keeps stale negations (e.g. '(not (open x)' next to '(open x)',
+    often with a missing closing parenthesis), so only positive atoms are reliable.
+    """
+    block = re.sub(r"\(not\s*\(([^()]*)\)\)?", "", state_block)
+    return frozenset(parse_atom(a) for a in re.findall(r"\(([^()]+)\)", block))
+
+def parse_plan_and_states(plans_dir: str, problem_stem: str, plan_index: int):
+    """
+    Parse plan k of a problem and its state simulation.
+    :param plans_dir: directory with the planner outputs of the domain (results/planner_outputs/<domain>)
+    :param problem_stem: file stem as in '<stem>.pddl_plan<k>.txt' (e.g. 'instance-1', or 'sorting_books_simple' for igibson)
+    :return: (steps, states): steps is a list of (action, args); states has len(steps) + 1 entries
+             (initial state, then the state after each action), each a frozenset of (fluent, args) atoms.
+             Returns None if the plan or its simulation does not exist.
+    """
+    plan_path = os.path.join(plans_dir, f"{problem_stem}.pddl_plan{plan_index}.txt")
+    sim_path = os.path.join(plans_dir, "state_simulations", f"{problem_stem}.pddl_plan{plan_index}_state_simulation.txt")
+    if not os.path.exists(plan_path) or not os.path.exists(sim_path):
+        print(f"Plan or state simulation not found for plan {plan_index} ({plan_path}, {sim_path}), skipping.")
+        return None
+
+    with open(plan_path) as f:
+        steps = [parse_atom(line) for line in f if line.strip() and not line.strip().startswith(";")]
+    with open(sim_path) as f:
+        states = [parse_state_atoms(block) for block in _STATE_HEADER_RE.split(f.read())[1:]]
+
+    if len(states) != len(steps) + 1:
+        raise ValueError(f"{sim_path}: expected {len(steps) + 1} states (initial + one per action) but found {len(states)}")
+    return steps, states

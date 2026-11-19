@@ -5,7 +5,8 @@ import os
 import argparse
 
 from ParsePDDL import UnifiedPlanningParser
-from utils import add_state_entity, get_mamespaces, parse_plan_and_simulation, load_graph, query_kg_for_object
+from rdflib import Graph
+from utils import bind_namespaces, get_mamespaces, parse_plan_and_states, load_graph, query_kg_for_object, generate_uid
 from BaseKG import BasePDDLKG
 from PlanAndValidate import run_planner_and_validate
 
@@ -15,6 +16,10 @@ PLAN = namespace_dict["plan"]
 class PlanPDDLKG(BasePDDLKG):
     def __init__(self, domain_file, problem_file, plans_file, data=None):
         super().__init__()
+        # Optionally add to an existing (shared) graph, e.g. to accumulate the plans of many problems in one KG
+        self.owns_graph = "kg_data" not in data
+        if not self.owns_graph:
+            self.kg_data = data["kg_data"]
         self.parser = UnifiedPlanningParser(domain_file, problem_file)
 
         self.output_path = data["output_path"] if "output_path" in data else f"{os.getcwd()}/knowledge_graphs/"
@@ -23,9 +28,15 @@ class PlanPDDLKG(BasePDDLKG):
         self.problem_name = data["problem_name"] if "problem_name" in data else self.parser.problem_name
         os.makedirs(self.output_path, exist_ok=True)
         self.plans_file = plans_file
+        self.plans_dir = data.get("plans_dir", os.path.join(os.getcwd(), "results", "planner_outputs", self.domain_path))
+        self.problem_stem = data.get("problem_stem", self.problem_name)
+        self.k = data.get("k", 5)
+        self.output_filename = data.get("output_filename", "plans_tp-kg.owl")
 
         self.input_kg_path = data["input_kg_path"] if "input_kg_path" in data else os.path.join(self.output_path, "tp-kg.owl")
-        self.input_kg = load_graph(self.input_kg_path)
+        self.input_kg = load_graph(self.input_kg_path) if os.path.exists(self.input_kg_path) else None
+        if self.input_kg is None:
+            print(f"Input KG not found at {self.input_kg_path}; initial/goal state entities will not be linked.")
 
     def create_dependent_identifiers(self, ent_name, dependency_type):
         """
@@ -120,137 +131,113 @@ class PlanPDDLKG(BasePDDLKG):
         #     self.record_relation((fluent, OWL.complementOf, pos_fluent), is_head_class=True, is_tail_class=True)
         #     self.record_instance_of(neg_predicate, fluent)
 
-    def add_plan_to_kg(self, plan_name, plan_steps, plan_states) -> None:
+    def add_plan_to_kg(self, plan_name, steps, states) -> None:
         """
-        Add an entity for the plan itself
-        :param plan_name: the name of the plan
-        :param plan_steps: the list of steps in the plan, as strings (e.g. ["(move robot1 room1 room2)"])
-        :param plan_states: the list of states in the plan, as strings (e.g. ["(at robot1 room2)", "(at robot2 room1)"])
-        :return: None
+        Add a plan with its steps, states and propositions to the KG.
+        :param plan_name: unique name of the plan (includes the plan index)
+        :param steps: list of (action, args) tuples
+        :param states: list of len(steps) + 1 states (initial state, then the state after each action),
+                       each a frozenset of (fluent, args) atoms
         """
         self.record_entity((plan_name, "Plan"), is_class=False)
         problem_name = f"{self.domain_name}_{self.problem_name}"
         self.record_relation((problem_name, "hasPlan", plan_name), is_head_class=False, is_tail_class=False) # e.g. Problem1 hasPlan Plan1
 
-        self.add_plan_terms(plan_name, plan_steps, plan_states)
+        print(f"Adding plan {plan_name} with {len(steps)} steps and {len(states)} states.")
+        step_ids = self.add_step_entities(plan_name, steps)
+        self.add_step_temporal_relations(step_ids)
+        self.add_state_entities(plan_name, states, step_ids)
 
-    def get_init_and_goal_state_entities(self) -> tuple[str, str]:
+    def get_init_and_goal_state_entities(self):
         """
-        Get the initial and goal state entities from the knowledge graph.
-        :return: A tuple of (init_uri, goal_uri)
+        Get the initial and goal state entities of the problem from the input knowledge graph.
+        :return: (init_uri, goal_uri); each is None if the input KG is missing or does not contain it
         """
-        # Query the knowledge graph for the initial and goal state entities, which are the subject of a relation (problem_name, "hasInitState", init_state) and (problem_name, "planning-ontology:hasGoalState", goal_uri)
+        if self.input_kg is None:
+            return None, None
         problem_name = f"{self.domain_name}_{self.problem_name}"
         init_uri = query_kg_for_object(self.input_kg, PLAN[problem_name], "planning-ontology:hasInitialState")
         goal_uri = query_kg_for_object(self.input_kg, PLAN[problem_name], "planning-ontology:hasGoalState")
-        # print(f"DEBUG: init_uri is {init_uri}, goal_uri is {goal_uri}")
         return init_uri, goal_uri
 
     # Step entities (grounded actions) and relations
-    def add_step_entities(self, plan_name: str, step: str, step_string: str) -> None:
-        """Register a step entity and its argument relations for a given plan."""
-        self.record_entity((step_string, "Step"), is_class=False)
-        self.record_relation((plan_name, "hasStep", step_string))
+    def add_step_entities(self, plan_name: str, steps: list) -> list[str]:
+        """
+        Register one step entity per grounded action. Step ids are unique per plan and position, so the same
+        grounded action in different plans (or twice in the same plan) is a different entity.
+        :return: the list of step ids, in plan order
+        """
+        step_ids = []
+        for i, (action, args) in enumerate(steps, start=1):
+            step_id = "_".join([plan_name, f"step{i}", action, *args])
+            step_ids.append(step_id)
+            self.record_entity((step_id, "Step"), is_class=False)
+            self.record_relation((plan_name, "hasStep", step_id))
 
-        parts = step_string.split("_")
-        act_name = self.create_dependent_identifiers(parts[0], "domain")
-        for i, arg in enumerate(parts[1:]):
-            arg = self.create_dependent_identifiers(arg, "problem")
-            self.record_relation((step_string, f"{act_name}_hasArg{i}", arg))
+            act_name = self.create_dependent_identifiers(action, "domain")
+            for k, arg in enumerate(args):
+                self.record_relation((step_id, f"{act_name}_hasArg{k}", self.create_dependent_identifiers(arg, "problem")))
+        return step_ids
 
-    def parse_step_string(self, step: str) -> str:
-            """Normalize a step string: '(move robot1 room1 room2)' -> 'move_robot1_room1_room2'"""
-            return "_".join(step.replace("(", "").replace(")", "").strip().split())
-
-    def add_step_temporal_relations(self, step_strings: list[str]) -> None:
-        """Add happensBefore/happensAfter relations between consecutive steps."""
-        for i in range(len(step_strings) - 1):
-            self.record_relation((step_strings[i], "happensAfter", step_strings[i + 1]))
-            self.record_relation((step_strings[i + 1], "happensBefore", step_strings[i]))
+    def add_step_temporal_relations(self, step_ids: list[str]) -> None:
+        """Add happensBefore/happensAfter relations between consecutive steps (step i happens before step i+1)."""
+        for earlier, later in zip(step_ids, step_ids[1:]):
+            self.record_relation((earlier, "happensBefore", later))
+            self.record_relation((later, "happensAfter", earlier))
 
     # State entities and relations
-    def add_state_entities(self, plan_name: str, plan_states: list[str], step_strings: list[str]) -> None:
-        """Register state entities, link them to the plan and steps, and decompose their propositions."""
+    def make_state_id(self, state: frozenset) -> str:
+        """A state is identified by its set of atoms, so identical states of different plans are the same entity."""
+        canonical = " ".join(sorted(f"({name} {' '.join(args)})" for name, args in state))
+        return f"{PLAN}state_{self.domain_name}_{self.problem_name}_{generate_uid(canonical)}"
+
+    def add_state_entities(self, plan_name: str, states: list, step_ids: list[str]) -> None:
+        """
+        Register state entities, link them to the plan and steps, and decompose them into propositions.
+        states[i] is the state before step i + 1 (so it is its precondition); the last state is the final state.
+        """
         init_uri, goal_uri = self.get_init_and_goal_state_entities()
-        state_uris = [init_uri]
-        print(f"DEBUG STEP: step strings are {step_strings}, plan_states are {plan_states}, init_uri is {init_uri}, goal_uri is {goal_uri}")
-        self.record_relation((step_strings[0], "hasPrecondition", init_uri))
-        self.record_relation((plan_name, "hasState", init_uri))
-        self.record_relation((plan_name, "hasState", goal_uri))
+        if init_uri is not None:
+            self.record_relation((plan_name, "hasState", init_uri))
+        if goal_uri is not None:
+            self.record_relation((plan_name, "hasState", goal_uri))
 
-        for i, state in enumerate(plan_states):
-            state_uri = add_state_entity(str(state).strip(), "planning-ontology:State", self.kg_data)
-            self.record_relation((plan_name, "hasState", state_uri))
-            self.record_relation((state_uris[i], "precedes", state_uri))
-            state_uris.append(state_uri)
+        state_ids = [self.make_state_id(state) for state in states]
+        for i, (state, state_id) in enumerate(zip(states, state_ids)):
+            self.record_entity((state_id, "planning-ontology:State"), is_class=False)
+            self.record_relation((plan_name, "hasState", state_id))
+            if i > 0:
+                self.record_relation((state_ids[i - 1], "precedes", state_id))
+            if i < len(step_ids):
+                self.record_relation((step_ids[i], "hasPrecondition", state_id))
+            for name, args in sorted(state):
+                self.add_proposition_relations(name, args, state_id)
 
-            if i < len(plan_states) - 2:
-                self.record_relation((step_strings[i + 1], "hasPrecondition", state_uri))
-
-            for prop in self.parse_state_propositions(state):
-                self.add_proposition_relations(prop, state_uri, plan_name)
-
-    def parse_state_propositions(self, state: str) -> list[str]:
-            """Split a state string into normalized proposition tokens."""
-            parts = state.strip().split(") (")
-            parts[0] = parts[0].lstrip("(")
-            parts[-1] = parts[-1].rstrip(")")
-            return ["_".join(p.split()) for p in parts]
-
-    def add_proposition_relations(self, prop_raw: str, state_uri: str, plan_name: str) -> None:
-        """Add a proposition entity and link it to its state, fluent, and arguments."""
-        prop = prop_raw.replace(" ", "_").replace("(", "").replace(")", "").replace(",", "_").replace("?", "")
-        prop_name = self.create_dependent_identifiers(prop, plan_name)
+    def add_proposition_relations(self, fluent_name: str, args: tuple, state_id: str) -> None:
+        """Add a proposition entity (shared by all states/plans of the problem) and link it to its state, fluent and arguments."""
+        prop_name = self.create_dependent_identifiers("_".join([fluent_name, *args]), "problem")
         self.record_entity((prop_name, "Proposition"), is_class=False)
-        self.record_relation((prop_name, "partOf", state_uri))
+        self.record_relation((prop_name, "partOf", state_id))
 
-        fluent = self.create_dependent_identifiers(prop.split("_")[0], "domain")
+        fluent = self.create_dependent_identifiers(fluent_name, "domain")
         self.record_relation((prop_name, "hasFluent", fluent))
-
-        for i, arg in enumerate(prop.split("_")[1:]):
-            arg = self.create_dependent_identifiers(arg, "problem")
-            self.record_relation((prop_name, f"{fluent}_hasArg{i}", arg))
-
-    def add_plan_terms(self, plan_name: str, plan_steps: list[str], plan_states: list[str]) -> None:
-        """
-        Add entities and relations for a plan, including steps, states, and propositions.
-        :param plan_name: the name of the plan
-        :param plan_steps: the list of steps in the plan, as strings (e.g. ["(move robot1 room1 room2)"])
-        :param plan_states: the state simulation, each state is a string
-        :return: None
-        """
-        print(f"DEBUG: Adding plan terms for plan {plan_name} with {len(plan_steps)} steps and {len(plan_states)} states.")
-        step_strings = [self.parse_step_string(s) for s in plan_steps]
-
-        for step, step_string in zip(plan_steps, step_strings):
-            self.add_step_entities(plan_name, step, step_string)
-        print(f"DEBUG: Added {len(step_strings)} step entities for plan {plan_name}.")
-
-        self.add_step_temporal_relations(step_strings)
-        self.add_state_entities(plan_name, plan_states, step_strings)
+        for i, arg in enumerate(args):
+            self.record_relation((prop_name, f"{fluent}_hasArg{i}", self.create_dependent_identifiers(arg, "problem")))
 
     def create_relations(self) -> None:
-        """
-        Call all the methods to create entities and relations from different types of info
-        :return: None
-        """
-        # TODO get k plans and run this all in a loop
-        print(f"Plan-level construction for plan {self.domain_name}_{self.problem_name}_plan")
-        # print(f"Skipping adding domain-level entities and relations for domain {self.domain_name} to the knowledge graph.")
-        
-        # Add problem-specific entities and relations
-        actions, states = parse_plan_and_simulation(self.domain_path, self.problem_name, plan_index=1)
-
-        self.add_plan_to_kg(f"{self.parser.domain_name}_{self.problem_name}_plan", actions, states)
+        """Add all k plans of the problem to the KG."""
+        for plan_index in range(1, self.k + 1):
+            parsed = parse_plan_and_states(self.plans_dir, self.problem_stem, plan_index)
+            if parsed is None:
+                continue
+            steps, states = parsed
+            self.add_plan_to_kg(f"{self.parser.domain_name}_{self.problem_name}_plan{plan_index}", steps, states)
 
     def create_kg(self) -> None:
-        """
-        Create Dataframes for entities and relations, convert them to JSON and load to a file
-        :return: None
-        """
+        """Add the plans and save the KG"""
         self.create_relations()
-        output_file = os.path.join(self.output_path, "plans_tp-kg.owl")
-        self.save_kg_to_owl(output_file)
+        if self.owns_graph:  # with a shared graph, the caller saves once at the end
+            self.save_kg_to_owl(os.path.join(self.output_path, self.output_filename))
 
 def resolve_domain_name(domain_arg: str) -> str:
     """
@@ -271,35 +258,66 @@ def resolve_domain_name(domain_arg: str) -> str:
 
 def main():
     current_dir = os.getcwd()
-    # current_dir = os.path.abspath(os.path.join(current_dir, os.pardir, os.pardir))
 
-    # Get arguments from command line
-    parser = argparse.ArgumentParser(description="Construct a PDDL knowledge graph from domain and problem files.")
-    parser.add_argument("--domain", type=str, default="2000.elevator-strips-simple-typed", help="Name of the PDDL domain directory. If IPC, use the format <ipc-year>.<domain-name> (e.g., '2000.blocks-strips-typed').")
-    parser.add_argument("--problem", type=str, default="instance-1", help="The instance filename (e.g., 'instance-1').")
-    parser.add_argument("--plans_file", type=str, default=None, help="The path to the plans file (optional). If not provided, the default location will be used.")
+    parser = argparse.ArgumentParser(description="Add plans and their simulated states to a PDDL knowledge graph.")
+    parser.add_argument("--domain", type=str, default="2000.elevator-strips-simple-typed", help="Name of the PDDL domain directory. If IPC, use the format <ipc-year>.<domain-name> (e.g., '2000.blocks-strips-typed'). Also the folder under results/planner_outputs (e.g. 'igibson').")
+    parser.add_argument("--problems", type=str, nargs="+", default=["instance-1"], help="Problem file stems (e.g. 'instance-1', or 'sorting_books_simple' for igibson). The plans are read from <plans_dir>/<problem>.pddl_plan<k>.txt.")
+    parser.add_argument("--k", type=int, default=5, help="Number of plans per problem.")
+    parser.add_argument("--plans_dir", type=str, default=None, help="Directory with the planner outputs of the domain. Defaults to results/planner_outputs/<domain>.")
+    parser.add_argument("--plans_file", type=str, default=None, help="The path to the plans file (optional).")
+    parser.add_argument("--domain_file", type=str, default=None, help="Path to the domain PDDL (overrides the standard location, e.g. for non-IPC domains).")
+    parser.add_argument("--problem_file", type=str, default=None, help="Path to the problem PDDL (overrides the standard location; only valid with a single problem).")
+    parser.add_argument("--input_kg", type=str, default=None, help="Input KG with the problem's initial/goal states. Defaults to knowledge_graphs/tp-kg.owl; optional.")
+    parser.add_argument("--run_planner", action="store_true", help="Run the planner and VAL first to (re)generate the plans. By default existing plans are used.")
     parser.add_argument("--is_IPC", default="True", help="Whether the problem is from an IPC benchmark set.")
+    parser.add_argument("--aggregate", action="store_true", help="Accumulate the plans of all problems into one KG file (--output_file) instead of one file per problem. An existing --output_file is loaded and extended, so repeated runs (e.g. for other domains) add to it; re-adding the same plans is idempotent.")
+    parser.add_argument("--output_file", type=str, default=None, help="With --aggregate: path of the aggregate KG. Defaults to knowledge_graphs/tp-kg_plans.owl.")
+    parser.add_argument("--base_kg", type=str, default=None, help="With --aggregate: start a new aggregate from this KG (e.g. knowledge_graphs/tp-kg.owl) instead of an empty graph. Ignored if --output_file already exists.")
 
     args = parser.parse_args()
+    if args.problem_file and len(args.problems) > 1:
+        parser.error("--problem_file can only be used with a single problem")
 
     is_IPC = args.is_IPC.lower() in ['true', '1', 't', 'y', 'yes']
     if is_IPC:
         domain_path = "pddl-instances/" + "ipc-" + args.domain.split(".")[0] + "/domains/" + args.domain.split(".")[1]
     else:
         domain_path = "domains/" + args.domain
-    domain_file = os.path.join(current_dir, domain_path, "domain.pddl")
-    problem_file = os.path.join(current_dir, domain_path, "instances", args.problem + ".pddl")
+    domain_file = args.domain_file or os.path.join(current_dir, domain_path, "domain.pddl")
+    input_kg_path = args.input_kg or os.path.join(current_dir, "knowledge_graphs", "tp-kg.owl")
 
-    input_kg_path = os.path.join(current_dir, "knowledge_graphs", "tp-kg.owl")
-    if not os.path.exists(input_kg_path):
-        raise FileNotFoundError(f"Input knowledge graph not found at {input_kg_path}")
+    shared_graph, output_file = None, None
+    if args.aggregate:
+        output_file = args.output_file or os.path.join(current_dir, "knowledge_graphs", "tp-kg_plans.owl")
+        if os.path.exists(output_file):
+            print(f"Extending existing aggregate KG {output_file}")
+            shared_graph = load_graph(output_file)
+        elif args.base_kg:
+            print(f"Starting aggregate KG from {args.base_kg}")
+            shared_graph = load_graph(args.base_kg)
+        else:
+            shared_graph = Graph()
+            bind_namespaces(shared_graph)
 
-    # Create k plans for the problem file and validate them, saving the results to the plans file
-    run_planner_and_validate(args.domain, is_IPC, args.problem)
+    for problem in args.problems:
+        problem_file = args.problem_file or os.path.join(current_dir, domain_path, "instances", problem + ".pddl")
+        if args.run_planner:
+            run_planner_and_validate(args.domain, is_IPC, problem)
 
-    plans_file = args.plans_file if args.plans_file else os.path.join(current_dir, "plans", args.domain, args.problem + ".plan")
-    pddl_kg = PlanPDDLKG(domain_file, problem_file, plans_file=plans_file, data={"output_path": f"{current_dir}/knowledge_graphs/", "domain_name":args.domain, "problem_name":args.problem, "input_kg_path": input_kg_path})
-    pddl_kg.create_kg()
+        plans_file = args.plans_file if args.plans_file else os.path.join(current_dir, "plans", args.domain, problem + ".plan")
+        data = {"output_path": f"{current_dir}/knowledge_graphs/", "domain_name": args.domain, "problem_name": problem,
+                "input_kg_path": input_kg_path, "k": args.k,
+                "output_filename": f"plans_{args.domain}_{problem}_tp-kg.owl"}
+        if args.plans_dir:
+            data["plans_dir"] = args.plans_dir
+        if shared_graph is not None:
+            data["kg_data"] = shared_graph
+        PlanPDDLKG(domain_file, problem_file, plans_file=plans_file, data=data).create_kg()
+
+    if shared_graph is not None:
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
+        shared_graph.serialize(output_file, format="xml")
+        print(f"Saved aggregate KG with {len(shared_graph)} triples to {output_file}")
 
 if __name__ == "__main__":
     main()

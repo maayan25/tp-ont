@@ -426,9 +426,9 @@ def build_static_ontology(output_path: str) -> StaticOntology:
     return static_onto
 
 def build_problem_kg(base_dir: str, domain: str, domain_path: str, problem: str, 
-                     problem_specific: bool, domain_specific: bool, output_path: str, problem_path = None) -> DomainPDDLKG:
+                     problem_specific: bool, domain_specific: bool, output_path: str, problem_path = None, domain_file: str | None = None) -> DomainPDDLKG:
     """Construct and return the KG for a single problem instance."""
-    domain_file = os.path.join(base_dir, domain_path, "domain.pddl")
+    domain_file = domain_file or os.path.join(base_dir, domain_path, "domain.pddl")
     problem_file = os.path.join(base_dir, domain_path, "instances", f"{problem}.pddl") if problem_path is None else os.path.join(problem_path, f"{problem}.pddl")
 
     pddl_kg = DomainPDDLKG(domain_file, problem_file, problem_specific=problem_specific, domain_specific=domain_specific,
@@ -443,7 +443,7 @@ def build_problem_kg(base_dir: str, domain: str, domain_path: str, problem: str,
     return pddl_kg
 
 def create_kg(domain: str = "2000.logistics-strips-typed", problems: list[str] | None = None, problem_specific: bool = False, 
-        domain_specific: bool = False, is_IPC: bool = True, base_dir: str | None = None, problem_path: str | None = None) -> list[DomainPDDLKG]:
+        domain_specific: bool = False, is_IPC: bool = True, base_dir: str | None = None, problem_path: str | None = None, domain_file: str | None = None) -> list[DomainPDDLKG]:
     """
     Build knowledge graphs for one domain and one or more problem instances.
 
@@ -453,6 +453,7 @@ def create_kg(domain: str = "2000.logistics-strips-typed", problems: list[str] |
     :param domain_specific: If True, build/load a domain-level KG. If both flags are False, augment the general KG instead.
     :param is_IPC: Whether the domain comes from an IPC benchmark set.
     :param base_dir: TP-ONT project root directory. Inferred from cwd if not provided.
+    :param domain_file: Path to the domain PDDL, overriding the standard location (for non-IPC domains, where the domain is just the name, e.g. igibson).
 
     :return: List of constructed DomainPDDLKG objects, one for each problem instance.
     """
@@ -474,7 +475,7 @@ def create_kg(domain: str = "2000.logistics-strips-typed", problems: list[str] |
     results = []
     for problem in problems:
         _log_kg_mode(domain, problem, problem_specific, domain_specific)
-        kg = build_problem_kg(base_dir, domain, domain_path, problem, problem_specific, domain_specific, output_path, problem_path)
+        kg = build_problem_kg(base_dir, domain, domain_path, problem, problem_specific, domain_specific, output_path, problem_path, domain_file)
         results.append(kg)
 
     return results
@@ -501,10 +502,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--domain_specific", action="store_true", help="Create a domain-level KG (ignored if --problem_specific is set).")
     parser.add_argument("--is_IPC", default="True", help="Whether the domain is from an IPC benchmark set.")
     parser.add_argument("--problem_path", type=str, default=None, help="Path to the problem file if not in the standard IPC directory structure.")
+    parser.add_argument("--domain_file", type=str, default=None, help="Path to the domain PDDL if not in the standard directory structure (the --domain value is then only the domain name, e.g. 'igibson').")
     return parser.parse_args()
 
 if __name__ == "__main__":
     args = parse_args()
     is_IPC = args.is_IPC.lower() in ["true", "1", "t", "y", "yes"]
     create_kg(domain=args.domain, problems=args.problems, problem_specific=args.problem_specific, 
-        domain_specific=args.domain_specific, is_IPC=is_IPC, base_dir=args.base_dir, problem_path=args.problem_path)
+        domain_specific=args.domain_specific, is_IPC=is_IPC, base_dir=args.base_dir, problem_path=args.problem_path, domain_file=args.domain_file)

@@ -279,6 +279,48 @@ class UnifiedPlanningParser:
             parsed_predicates.append(new_pred)
         return parsed_predicates
 
+    def parse_action_conditions(self, action) -> dict:
+        """
+        Parse the preconditions and effects of an action into atoms and text, walking the unified-planning expressions explicitly
+        (parse_predicates flattens them with str() and is only correct for atoms).
+
+        Atoms ({"name": fluent, "args": [...], "negated": bool}) are what the knowledge graph can represent as Precondition/Effect nodes:
+          - preconditions: the atoms of the top-level `and` (also nested `and`), and `not atom` (negated=True);
+          - effects: unconditional, unquantified effects (negated if the value is false).
+        Everything else (forall, or, imply, exists, `not` over a compound, conditional `when` effects, quantified effects) is not an atom, 
+        so its text (str of the expression / effect) is returned in precondition_text / effect_text so that the KG can keep it as an annotation of the action.
+
+        :param action: a unified_planning InstantaneousAction
+        :return: {"preconditions": [atoms], "precondition_text": [str], "effects": [atoms], "effect_text": [str]}
+        """
+        result = {"preconditions": [], "precondition_text": [], "effects": [], "effect_text": []}
+
+        def atom(fluent_exp: FNode, negated: bool) -> dict:
+            return {"name": fluent_exp.fluent().name, "args": [str(arg) for arg in fluent_exp.args], "negated": negated}
+
+        def walk(node: FNode) -> None:
+            if node.is_true():
+                return
+            if node.is_and():
+                for arg in node.args:
+                    walk(arg)
+            elif node.is_fluent_exp():
+                result["preconditions"].append(atom(node, False))
+            elif node.is_not() and node.arg(0).is_fluent_exp():
+                result["preconditions"].append(atom(node.arg(0), True))
+            else:
+                result["precondition_text"].append(str(node))
+
+        for condition in action.preconditions:
+            walk(condition)
+
+        for effect in action.effects:
+            if effect.forall or not effect.condition.is_true() or not (effect.value.is_true() or effect.value.is_false()):
+                result["effect_text"].append(str(effect))
+            else:
+                result["effects"].append(atom(effect.fluent, effect.value.is_false()))
+        return result
+
 
 def main():
     args = parse_args()

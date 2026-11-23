@@ -5,11 +5,11 @@ import os
 import argparse
 
 from ParsePDDL import UnifiedPlanningParser
-from utils import add_state_entity, get_mamespaces, bind_namespaces, get_initial_state_from_problem
+from utils import add_state_entity, get_mamespaces, bind_namespaces, get_initial_state_from_problem, make_entity_uri, resolve_term
 from BaseKG import BasePDDLKG
 from StaticOntology import StaticOntology
 
-from rdflib import RDFS, Graph
+from rdflib import RDF, RDFS, OWL, Graph, Literal
 
 namespace_dict = get_mamespaces()
 PLAN = namespace_dict["plan"]
@@ -41,7 +41,7 @@ class DomainPDDLKG(BasePDDLKG):
 
         self.domain_kg = find_kg_for_domain(self.domain_name, self.output_path)
         # self.general_kg = os.path.join(os.getcwd(), "knowledge_graphs", "tp-kg.owl")
-        self.general_kg = os.path.join(self.output_path, "tp-kg.owl")
+        self.general_kg = data.get("general_kg") or os.path.join(self.output_path, "tp-kg.owl")
         if not self.domain_specific:
             self.kg_data = Graph()
             bind_namespaces(self.kg_data)
@@ -153,7 +153,7 @@ class DomainPDDLKG(BasePDDLKG):
         for param in params:
             if param.name not in parsed_params:
                 # param_name = param.name
-                param_name = self.create_dependent_identifiers(param.name, "domain")
+                param_name = self.create_dependent_identifiers(f"{act_name}_{param.name}", "domain")
                 param_type = param.type.name.capitalize() if param.type is not None else "Object"
                 self.record_entity((param_name, param_type), is_class=False) # e.g. x in bw
                 domain_action = self.create_dependent_identifiers(act_name, "domain")
@@ -167,16 +167,32 @@ class DomainPDDLKG(BasePDDLKG):
         Add preconditions of an action to the knowledge graph
         :param action: the action object containing preconditions
         """
-        precons = self.parser.parse_predicates(list(action.preconditions))
-        self.add_precons_effects(precons, action_name=action.name, pred_type="Precondition")
+        conditions = self.parser.parse_action_conditions(action)
+        self.add_precons_effects(conditions["preconditions"], action_name=action.name, pred_type="Precondition", params={p.name for p in action.parameters})
+        self.add_condition_text(action.name, "hasPreconditionText", conditions["precondition_text"])
 
     def add_effects(self, action) -> None:
         """
         Add effects of an action to the knowledge graph
         :param action: the action object containing effects
         """
-        effects = self.parser.parse_predicates(list(action.effects))
-        self.add_precons_effects(effects, action_name=action.name, pred_type="Effect")
+        conditions = self.parser.parse_action_conditions(action)
+        self.add_precons_effects(conditions["effects"], action_name=action.name, pred_type="Effect", params={p.name for p in action.parameters})
+        self.add_condition_text(action.name, "hasEffectText", conditions["effect_text"])
+
+    def add_condition_text(self, action_name: str, prop_name: str, texts: list[str]) -> None:
+        """
+        Keep the conditions the KG cannot represent as atoms (forall, or, when, quantified or conditional effects) as text on the action,
+        instead of inventing fluents for them. prop_name: tp-ont:hasPreconditionText / tp-ont:hasEffectText (annotation properties).
+        """
+        if not texts:
+            return
+        prop = resolve_term(prop_name)
+        self.kg_data.add((prop, RDF.type, OWL.AnnotationProperty))
+        self.kg_data.add((prop, RDFS.label, Literal(prop_name, lang="en")))
+        action_uri = make_entity_uri(self.create_dependent_identifiers(action_name, "domain"))
+        for text in texts:
+            self.kg_data.add((action_uri, prop, Literal(text)))
 
     def add_domain_predicates(self) -> None:
         """
@@ -204,20 +220,28 @@ class DomainPDDLKG(BasePDDLKG):
                 self.record_constraint((f"hasArg{i}", RDFS.subPropertyOf, "hasArgument", "rdfs"))
                 self.record_relation((full_predicate, slot_prop, arg_type.capitalize())) # e.g. Logistics/at_location has Logistics/at_hasArg0 Location
 
-    def add_precons_effects(self, lst, action_name="", pred_type="predicate") -> None:
+    def add_precons_effects(self, lst, action_name="", pred_type="predicate", params=None) -> None:
         """
         Takes a set of predicates from the domain definition file and adds them to the KG
         :param lst: the list of predicates (list of dictionaries with keys "name", "args")
         :param action_name: the name of the action these predicates are associated with
         :param pred_type: precond, effect, or predicate
+        :param params: names of the action's parameters. Their individuals are scoped by the action (<Domain>/<action>_<param>), because
+                       the same parameter name has different types in different actions; other arguments (constants of the domain, e.g. kitchen) are shared.
         """
+        params = params or set()
+        base_action_name = action_name
         action_name = self.create_dependent_identifiers(action_name, "domain")
         for pred in lst:
             r = pred["name"]
             args = pred["args"]
+            args = [f"{base_action_name}_{arg}" if arg in params else arg for arg in args]  # parameters are scoped by the action
 
-            is_negated = "not_" in r
-            base_fluent = r.replace("not_", "")
+            if "negated" in pred:  # atoms from parse_action_conditions carry the negation explicitly
+                is_negated, base_fluent = pred["negated"], r
+            else:  # states (parse_predicates): the negation is the name prefix
+                is_negated = r.startswith("not_")
+                base_fluent = r[len("not_"):] if is_negated else r
             fluent = f"not_{base_fluent}" if is_negated else base_fluent
 
             predicate = f"{fluent}_{"_".join(args)}" if args else fluent
@@ -275,8 +299,9 @@ class DomainPDDLKG(BasePDDLKG):
         for i, arg_val in enumerate(args):
             if arg_val is not None:
                 arg = self.create_dependent_identifiers(arg_val, "domain")
-                self.record_entity((arg, self.get_entity_type(arg_val)), is_class=False) # e.g. robot1 is an instance of Robot, room2 is an instance of Location
-                self.record_relation((predicate, f"hasArg{i}", arg)) # e.g. at hasArg0 robot1, hasArg1 room2 # TODO repetitive, but not sure there is a more effective place to record this
+                if make_entity_uri(arg) not in self.get_entity_names():  # action parameters are typed in add_action_params; this is for constants
+                    self.record_entity((arg, self.get_entity_type(arg_val)), is_class=False) # e.g. robot1 is an instance of Robot, room2 is an instance of Location
+                self.record_relation((predicate, f"hasArg{i}", arg)) # e.g. at hasArg0 robot1, hasArg1 room2is
 
     def add_negative_predicate_data(self, predicate, fluent, pred_type, action_name) -> None:
         """
@@ -426,7 +451,7 @@ def build_static_ontology(output_path: str) -> StaticOntology:
     return static_onto
 
 def build_problem_kg(base_dir: str, domain: str, domain_path: str, problem: str, 
-                     problem_specific: bool, domain_specific: bool, output_path: str, problem_path = None, domain_file: str | None = None) -> DomainPDDLKG:
+                     problem_specific: bool, domain_specific: bool, output_path: str, problem_path = None, domain_file: str | None = None, general_kg: str | None = None) -> DomainPDDLKG:
     """Construct and return the KG for a single problem instance."""
     domain_file = domain_file or os.path.join(base_dir, domain_path, "domain.pddl")
     problem_file = os.path.join(base_dir, domain_path, "instances", f"{problem}.pddl") if problem_path is None else os.path.join(problem_path, f"{problem}.pddl")
@@ -436,6 +461,7 @@ def build_problem_kg(base_dir: str, domain: str, domain_path: str, problem: str,
             "output_path": output_path,
             "domain_name": domain,
             "problem_name": problem,
+            "general_kg": general_kg,
         },
     )
     
@@ -443,7 +469,7 @@ def build_problem_kg(base_dir: str, domain: str, domain_path: str, problem: str,
     return pddl_kg
 
 def create_kg(domain: str = "2000.logistics-strips-typed", problems: list[str] | None = None, problem_specific: bool = False, 
-        domain_specific: bool = False, is_IPC: bool = True, base_dir: str | None = None, problem_path: str | None = None, domain_file: str | None = None) -> list[DomainPDDLKG]:
+        domain_specific: bool = False, is_IPC: bool = True, base_dir: str | None = None, problem_path: str | None = None, domain_file: str | None = None, general_kg: str | None = None) -> list[DomainPDDLKG]:
     """
     Build knowledge graphs for one domain and one or more problem instances.
 
@@ -453,6 +479,7 @@ def create_kg(domain: str = "2000.logistics-strips-typed", problems: list[str] |
     :param domain_specific: If True, build/load a domain-level KG. If both flags are False, augment the general KG instead.
     :param is_IPC: Whether the domain comes from an IPC benchmark set.
     :param base_dir: TP-ONT project root directory. Inferred from cwd if not provided.
+    :param general_kg: Path of the general KG to load (if it exists) and augment when neither problem_specific nor domain_specific is set. Defaults to <output_path>/tp-kg.owl.
     :param domain_file: Path to the domain PDDL, overriding the standard location (for non-IPC domains, where the domain is just the name, e.g. igibson).
 
     :return: List of constructed DomainPDDLKG objects, one for each problem instance.
@@ -475,7 +502,7 @@ def create_kg(domain: str = "2000.logistics-strips-typed", problems: list[str] |
     results = []
     for problem in problems:
         _log_kg_mode(domain, problem, problem_specific, domain_specific)
-        kg = build_problem_kg(base_dir, domain, domain_path, problem, problem_specific, domain_specific, output_path, problem_path, domain_file)
+        kg = build_problem_kg(base_dir, domain, domain_path, problem, problem_specific, domain_specific, output_path, problem_path, domain_file, general_kg)
         results.append(kg)
 
     return results
@@ -502,6 +529,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--domain_specific", action="store_true", help="Create a domain-level KG (ignored if --problem_specific is set).")
     parser.add_argument("--is_IPC", default="True", help="Whether the domain is from an IPC benchmark set.")
     parser.add_argument("--problem_path", type=str, default=None, help="Path to the problem file if not in the standard IPC directory structure.")
+    parser.add_argument("--general_kg", type=str, default=None, help="Path of the general KG to extend (created from static_ontology.owl if it does not exist) when neither --problem_specific nor --domain_specific is set. Defaults to knowledge_graphs/tp-kg.owl.")
     parser.add_argument("--domain_file", type=str, default=None, help="Path to the domain PDDL if not in the standard directory structure (the --domain value is then only the domain name, e.g. 'igibson').")
     return parser.parse_args()
 
@@ -509,4 +537,4 @@ if __name__ == "__main__":
     args = parse_args()
     is_IPC = args.is_IPC.lower() in ["true", "1", "t", "y", "yes"]
     create_kg(domain=args.domain, problems=args.problems, problem_specific=args.problem_specific, 
-        domain_specific=args.domain_specific, is_IPC=is_IPC, base_dir=args.base_dir, problem_path=args.problem_path, domain_file=args.domain_file)
+        domain_specific=args.domain_specific, is_IPC=is_IPC, base_dir=args.base_dir, problem_path=args.problem_path, domain_file=args.domain_file, general_kg=args.general_kg)

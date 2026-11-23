@@ -341,7 +341,7 @@ def get_initial_state_from_problem(problem_path: str) -> list[str]:
         content = f.read()
 
     # Find the start of the :init block
-    init_start = content.find("(:init")
+    init_start = content.lower().find("(:init")  # some IPC problems write (:INIT
     if init_start == -1:
         raise ValueError(f"No initial state found in problem file {problem_path}")
 

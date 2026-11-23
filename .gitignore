@@ -199,3 +199,5 @@ cython_debug/
 
 
 /results/planner_outputs/
+/scripts/kg_construction/sas_plan*
+/scripts/kg_construction/output.sas
